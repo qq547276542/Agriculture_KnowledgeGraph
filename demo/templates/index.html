@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<title>Homepage</title>
+
+<div class="container">
+    <h1 > 农业知识图谱 </h1>
+  <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">实体解析</h4>
+                  <form action="/ER-post" method="post" class="form-inline">
+                     <div class="form-group">
+                        {% csrf_token %}
+                        <input type="text" name="q" class="form-control" placeholder="Enter text">
+                     </div>
+                    &nbsp;
+                     <button type="submit" class="btn btn-success"> Submit </button>
+                  </form>
+                  <p class="card-text">
+                  {% autoescape off %}
+                  <p>{{ rlt }}</p>
+                  {% endautoescape %}
+                  </p>
+        </div>
+  </div>
+</div>
+    
+       
+{% endblock %}

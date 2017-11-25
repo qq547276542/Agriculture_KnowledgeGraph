@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<title>详细资料</title>
+
+<div class="container">
+<div class="card">
+    <div class="card-body">
+     <h4 class="card-title">{{ title }}</h4>
+     {% autoescape off %}
+     {{ imgList }}
+     <p class="card-text">{{ detail }}</p>
+     {% endautoescape %}
+    </div>
+</div>
+</div>
+    
+{% endblock %}
