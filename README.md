@@ -69,3 +69,6 @@
 
 5.最后提取出农业词语，剔除非农业词语
 
+###  HudongItem
+
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/1.png)
