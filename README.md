@@ -1,8 +1,7 @@
 # Agriculture_KnowledgeGraph
 
-------------
 
-### 目录结构：
+## 目录结构：
 
 ```
 .
@@ -45,7 +44,7 @@
 		└── index.html
 ```
 
-### 项目配置
+## 项目配置
 
 系统需要安装：
 
@@ -69,6 +68,6 @@
 
 5.最后提取出农业词语，剔除非农业词语
 
-###  HudongItem
+##  HudongItem
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/1.png)
