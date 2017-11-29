@@ -66,7 +66,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'MyCrawler.pipelines.AgriPipeline': 300,
+    'MyCrawler.pipelines.HudongPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

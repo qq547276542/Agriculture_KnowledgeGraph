@@ -58,3 +58,4 @@ def ER_post(request):
 		ctx['rlt'] = text
 		
 	return render(request, "index.html", ctx)
+	
