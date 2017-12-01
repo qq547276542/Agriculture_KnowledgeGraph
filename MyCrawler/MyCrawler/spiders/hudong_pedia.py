@@ -13,13 +13,14 @@ class HudongSpider(scrapy.Spider):
 	
 	start_urls = []
 	count = 0
+	
 	for i in wordList:    ##生成url列表
 		cur = "http://www.baike.com/wiki/"
 		cur = cur + str(i)
 		start_urls.append(cur)
-		count += 1
-		#print(cur)
-#		if count > 500:
+#		count += 1
+#		#print(cur)
+#		if count > 1000:
 #			break	
 
 	def parse(self, response):		
@@ -64,12 +65,15 @@ class HudongSpider(scrapy.Spider):
 			baseInfoKeyList += p.extract().strip()
 			flag = 1
 			
+		## 继续调xpath！！！！！！！！！！！！！
 		flag = 0
 		baseInfoValueList = "" #基本信息的value值
-		for p in main_div.xpath('.//div[@class="l w-640"]/div[@name="datamodule"]/div[@class="module zoom"]/table//span/text()'):
+		base_xpath = main_div.xpath('.//div[@class="l w-640"]/div[@name="datamodule"]/div[@class="module zoom"]/table')
+		for p in base_xpath.xpath('.//span'):
 			if flag == 1 :
 				baseInfoValueList += split_sign
-			baseInfoValueList += p.extract().strip()
+			all_text = p.xpath('string(.)').extract()[0].strip()
+			baseInfoValueList += all_text
 			flag = 1
 		
 		item = HudongItem()

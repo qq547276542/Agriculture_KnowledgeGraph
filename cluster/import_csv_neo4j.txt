@@ -1,4 +1,0 @@
-LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia_1.csv" AS line  
-CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,
-openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,
-baseInfoValueList:line.baseInfoValueList})  

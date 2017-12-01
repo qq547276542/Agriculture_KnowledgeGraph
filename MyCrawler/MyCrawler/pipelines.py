@@ -5,6 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import json
+import csv
 import sys
 import time
 from scrapy.exceptions import DropItem
@@ -54,7 +55,8 @@ class HudongPipeline(object):   ##用于将hudongItem转化为json，并存到�
             self.file.write(line)
             self.count += 1
             cur = time.time()
-            print("page count: " + str(self.count) + "      time:" + str(int(cur-self.start)) + "s......")
+            T = int(cur-self.start)
+            print("page count: " + str(self.count) + "      time:" + str(int(T/3600)) + "h " + str(int(T/60)%60) + "m " + str(T) + "s......")
             return item
         else:
             raise DropItem("百科中找不到对应页面！")

@@ -11,3 +11,8 @@ class Neo4j():
 	def matchItembyTitle(self,value):
 		answer = self.graph.find_one(label="Item",property_key="title",property_value=value)
 		return answer
+
+	# 根据title值返回互动百科item
+	def matchHudongItembyTitle(self,value):
+		answer = self.graph.find_one(label="HudongItem",property_key="title",property_value=value)
+		return answer

@@ -1,28 +1,45 @@
-{% extends "base.html" %}
-{% block mainbody %}
+{% extends "base.html" %} {% block mainbody %}
 <title>Homepage</title>
 
 <div class="container">
-    <h1 > 农业知识图谱 </h1>
-  <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">实体解析</h4>
-                  <form action="/ER-post" method="post" class="form-inline">
-                     <div class="form-group">
-                        {% csrf_token %}
-                        <input type="text" name="q" class="form-control" placeholder="Enter text">
-                     </div>
-                    &nbsp;
-                     <button type="submit" class="btn btn-success"> Submit </button>
-                  </form>
-                  <p class="card-text">
-                  {% autoescape off %}
-                  <p>{{ rlt }}</p>
-                  {% endautoescape %}
-                  </p>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h1 class="display-4"> 农业知识图谱 </h1>
+            <div class="card ">
+                <div class="card-body">
+                    <h4 class="card-title ">农业实体识别</h4>
+                    <form action="/ER-post" method="post">
+                        <div class="form-group">
+                            {% csrf_token %}
+                            <textarea type="text" name="user_text" class="form-control" placeholder="Enter text" style="height:150px"> </textarea>
+                        </div>
+                        <button type="submit" class="float-right btn btn-success btn-lg"> Submit! </button>
+                    </form>
+
+                </div>
+            </div>
+
+            <p>
+                {% autoescape off %}
+                <p>{{ rlt }}</p>
+                {% endautoescape %}
+            </p>
+            <hr class="my-4" />
+            <div class="container">
+                <a href="#demo" class="float-right  btn-sm" data-toggle="collapse">&nbsp 显示分词结果</a>
+                <div id="demo" class="collapse">
+                    {{ seg_word }}
+                </div>
+            </div>
         </div>
-  </div>
+        <div class="col-sm-2"></div>
+    </div>
 </div>
-    
-       
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
 {% endblock %}

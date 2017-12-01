@@ -22,8 +22,12 @@ LOG_LEVEL = "INFO"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+REDIRECT_ENABLED = False #关闭重定向
+
+DOWNLOAD_TIMEOUT = 15  #设置超时限制
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 128
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
@@ -34,7 +38,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
