@@ -8,20 +8,25 @@ class HudongSpider(scrapy.Spider):
 	name = "hudong"   #爬虫启动命令：scrapy crawl hudong
 	allowed_domains = ["http://www.baike.com"]    #声明地址域
 	
-	file_object = open('merge_table1.txt','r').read()
+	file_object = open('merge_table2.txt','r').read()
 	wordList = file_object.split()  # 获取词表
 	
 	start_urls = []
 	count = 0
 	
-	for i in wordList:    ##生成url列表
-		cur = "http://www.baike.com/wiki/"
-		cur = cur + str(i)
-		start_urls.append(cur)
-#		count += 1
-#		#print(cur)
-#		if count > 1000:
-#			break	
+	start_urls.append('http://www.baike.com/wiki/小米%5B农作物%5D')
+	start_urls.append('http://www.baike.com/wiki/苹果%5B果实%5D')
+	start_urls.append('http://www.baike.com/wiki/李%5B蔷薇科李属植物%5D')
+	
+#   本处是用于构造原始json
+#	for i in wordList:    ##生成url列表
+#		cur = "http://www.baike.com/wiki/"
+#		cur = cur + str(i)
+#		start_urls.append(cur)
+##		count += 1
+##		#print(cur)
+##		if count > 1000:
+##			break	
 
 	def parse(self, response):		
 		# div限定范围

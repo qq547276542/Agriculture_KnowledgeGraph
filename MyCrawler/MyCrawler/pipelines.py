@@ -43,7 +43,7 @@ class HudongPipeline(object):   ##用于将hudongItem转化为json，并存到�
     
     def __init__(self):
         self.count = 0
-        self.file = open('MyCrawler/data/hudong_pedia.json', 'w')
+        self.file = open('MyCrawler/data/change_error.json', 'w')
         self.start = time.time()
         
     def process_item(self, item, spider):

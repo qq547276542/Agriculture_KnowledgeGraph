@@ -17,7 +17,7 @@ import time
 def preok(s):  #上一个词的词性筛选
 	if s=='n' or s=='np' or s=='ns' or s=='ni' or s=='nz':
 		return True
-	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id':
+	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id' or s=='g' or s=='u' or s=='t':
 		return True
 	return False
 def nowok(s): #当前词的词性筛选
@@ -59,15 +59,13 @@ def createWordSet(x):
 def createTable(num):
 	start = time.time()
 	thu = thulac.thulac()
-	file = open('hudong_pedia.json', encoding='utf-8')
+	file = open('agri_economic.json', encoding='utf-8')
 	print("begin!")
 	table = set()
 	f = json.load(file)
 	count = 0
 	file_text = ""
 	for p in f:
-		if len(p['openTypeList']) < 2:
-			continue
 		count += 1
 		if int(count/2000) != num:
 			continue
@@ -76,8 +74,8 @@ def createTable(num):
 			print("now id : " + str(count) + "  table size :" + str(len(table)))
 			print("Running Time : " + str(int(cur-start)) + " s......")
 		detail = p['detail']
-		if len(detail) > 600:
-			detail = detail[0:600]
+#		if len(detail) > 600:
+#			detail = detail[0:600]
 		title = p['title']
 		table.add(title)
 		# 分词
@@ -90,16 +88,17 @@ def createTable(num):
 	file_object.write(file_text)
 	file_object.close()
 
-#createTable(0)
-#createTable(1)
-#createTable(2)
-#createTable(3)
-#createTable(4)
-#createTable(5)
-#createTable(6)
-#createTable(7)
-#createTable(8)
-#createTable(9)
+createTable(0)
+createTable(1)
+createTable(2)
+createTable(3)
+createTable(4)
+createTable(5)
+createTable(6)
+createTable(7)
+createTable(8)
+createTable(9)
+
 #test()
 	
 	

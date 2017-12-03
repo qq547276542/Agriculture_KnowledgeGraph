@@ -29,7 +29,7 @@ def get_explain(s):
 def preok(s):  #上一个词的词性筛选
 	if s=='n' or s=='np' or s=='ns' or s=='ni' or s=='nz':
 		return True
-	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id':
+	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id' or s=='g' or s=='u' or s=='t':
 		return True
 	return False
 	
@@ -66,9 +66,9 @@ def ER_post(request):
 		for t in TagList:   #测试打印词性序列
 			seg_word += t[0]+"_"+t[1]+"  "
 		while i < length:
-			# 尝试将3个词组合，若不是NE则组合两个，还不是NE则组合一个，还不是就直接打印文本
+			# 尝试将2个词组合，若不是NE则组合一个，还不是就直接打印文本
 			p1 = TagList[i][0]
-			p2 = "*-"  # 保证p2和p3没被赋值时，p1+p2+p3必不存在
+			p2 = "*-"  # 保证p2没被赋值时，p1+p2必不存在
 			if i+1 < length:
 				p2 = TagList[i+1][0]
 				
