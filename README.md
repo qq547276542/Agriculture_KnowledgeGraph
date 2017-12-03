@@ -64,10 +64,32 @@
 
 3.将词典1的词在互动百科中进行爬取，抛弃不存在的页面，提取页面内容，存到数据库中
 
-4.根据页面内容，构造每个词的特征，进行聚类
+4.根据页面内容，构造每个词的特征，进行聚类/分类
 
 5.最后提取出农业词语，剔除非农业词语
 
 ##  HudongItem
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/1.png)
+
+
+
+## 特征工程
+
+### 分类：（分类特征）
+
+- 所有的openType中的出现情况0/1
+- 是否出现一些关键的openType，baseInfoKey
+- 是否被识别为人名，地名，机构名，其它专名
+
+### 聚类：（相似度度量）
+
+- 
+  title的word2vec值
+- Title的最后一个词是否相同
+- 相同openType的个数
+- Detail中关键词相同的个数
+- 相同baseInfoKey的个数
+- 相同baseInfoKey下baseInfoValue相同的个数
+- 是否出现一些关键的openType，baseInfoKey
+- 是否被识别为人名，地名，机构名，其它专名

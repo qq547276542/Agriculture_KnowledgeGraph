@@ -1,10 +1,10 @@
-分类：
+分类：（分类特征）
 所有的openType中的出现情况0/1
 是否出现一些关键的openType，baseInfoKey
 是否被识别为人名，地名，机构名，其它专名
 
 
-聚类：（两两之间的相似度）
+聚类：（相似度度量）
 title的word2vec值
 Title的最后一个词是否相同
 相同openType的个数
