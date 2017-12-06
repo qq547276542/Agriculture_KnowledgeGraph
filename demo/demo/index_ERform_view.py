@@ -30,7 +30,9 @@ def preok(s):  #上一个词的词性筛选
 	
 	if s=='n' or s=='np' or s=='ns' or s=='ni' or s=='nz':
 		return True
-	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id' or s=='g' or s=='u' or s=='t':
+	if s=='a' or s=='i' or s=='j' or s=='x' or s=='id' or s=='g' or s=='u':
+		return True
+	if s=='t' or s=='m':
 		return True
 	return False
 	
@@ -39,6 +41,8 @@ def nowok(s): #当前词的词性筛选
 	if s=='n' or s=='np' or s=='ns' or s=='ni' or s=='nz':
 		return True
 	if s=='i' or s=='j' or s=='x' or s=='id' or s=='g' or s=='t':
+		return True
+	if s=='t' or s=='m':
 		return True
 	return False	
 	
