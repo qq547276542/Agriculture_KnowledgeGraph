@@ -43,7 +43,7 @@ class HudongPipeline(object):   ##用于将hudongItem转化为json，并存到�
     
     def __init__(self):
         self.count = 0
-        self.file = open('MyCrawler/data/change_error.json', 'w')
+        self.file = open('MyCrawler/data/hudong_pedia.json', 'w')
         self.start = time.time()
         
     def process_item(self, item, spider):
@@ -56,7 +56,7 @@ class HudongPipeline(object):   ##用于将hudongItem转化为json，并存到�
             self.count += 1
             cur = time.time()
             T = int(cur-self.start)
-            print("page count: " + str(self.count) + "      time:" + str(int(T/3600)) + "h " + str(int(T/60)%60) + "m " + str(T) + "s......")
+            print("page count: " + str(self.count) + "      time:" + str(int(T/3600)) + "h " + str(int(T/60)%60) + "m " + str(T%60) + "s......")
             return item
         else:
             raise DropItem("百科中找不到对应页面！")

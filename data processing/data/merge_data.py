@@ -8,7 +8,7 @@ def merge():
 		for c in table:
 			s.add(c)
 	print(len(s))
-	file_object = open("merge_table1.txt",'w')
+	file_object = open("merge_table3.txt",'w')
 	file_text = ""
 	for i in s:
 		file_text += i + " "

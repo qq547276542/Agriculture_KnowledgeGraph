@@ -1,5 +1,8 @@
 LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia.csv" AS line  
 CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,baseInfoValueList:line.baseInfoValueList})  
 
-CREATE CONSTRAINT ON (HudongItem)
-ASSERT title IS UNIQUE
+CREATE CONSTRAINT ON (c:HudongItem)
+ASSERT c.title IS UNIQUE
+
+
+Ubuntu import 路径：  /var/lib/neo4j/import

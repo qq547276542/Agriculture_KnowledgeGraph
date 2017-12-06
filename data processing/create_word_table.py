@@ -23,13 +23,19 @@ def preok(s):  #上一个词的词性筛选
 def nowok(s): #当前词的词性筛选
 	if s=='n' or s=='np' or s=='ns' or s=='ni' or s=='nz':
 		return True
-	if s=='i' or s=='j' or s=='x' or s=='id':
+	if s=='i' or s=='j' or s=='x' or s=='id' or s=='g'  or s=='t':
 		return True
 	return False
 
-def judge(s):  #含有非中文的词丢弃
+def judge(s):  #含有非中文和英文，数字的词丢弃
 	for ch in s:
 		if u'\u4e00' <= ch <= u'\u9fff':
+			pass
+		elif '0' <= ch <= '9':
+			pass
+		elif 'a' <= ch <= 'z':
+			pass
+		elif 'A' <= ch <= 'Z':
 			pass
 		else:
 			return False
@@ -88,12 +94,12 @@ def createTable(num):
 	file_object.write(file_text)
 	file_object.close()
 
-createTable(0)
-createTable(1)
-createTable(2)
-createTable(3)
-createTable(4)
-createTable(5)
+#createTable(0)
+#createTable(1)
+#createTable(2)
+#createTable(3)
+#createTable(4)
+#createTable(5)
 createTable(6)
 createTable(7)
 createTable(8)
