@@ -17,6 +17,9 @@ def showtagging_data(request):
 		db.connectDB()
 		title = request.GET['title']
 		answer = db.matchHudongItembyTitle(title)
+		if answer == None:
+			ctx['title'] = '<h1> 该url不存在，别乱搞！ </h1>'
+			return render(request, "tagging_data.html", ctx)
 		ctx['detail'] = answer['detail']
 		ctx['title'] = answer['title']
 		image = answer['image']
@@ -97,6 +100,26 @@ def showtagging_data(request):
 		# 放置一个隐藏的输入框，传递title的值到缓冲页面
 		text += '<input name="title" value="' + str(answer['title']) + '"  style="display:none;" ></input>'
 		ctx['taggingCheck'] = text
+		
+		
+		# 统计当前标注情况
+		file_object = open('label_data/labels.txt','r')
+		s = []
+		sum = 0
+		for i in range(17):
+			s.append(set())
+		for f in file_object:
+			pair = f.split()
+			s[int(pair[1].strip())].add(pair[0].strip())
+		for i in range(17):	
+			sum += len(s[i])
+		file_object.close()
+		text = "" ##用于记录已标注样本个数
+		for i in range(17):
+			text += '<p>' + str(i) + '类: ' + str(len(s[i])) + '个</p>'
+		text += '<p>总计: ' + str(sum) + '个</p>'
+		ctx['already'] = text
+
 				
 	return render(request, "tagging_data.html", ctx)
 	

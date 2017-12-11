@@ -17,19 +17,19 @@ def tagging_push(request):
 	s = set()
 	for f in file_object:
 		pair = f.split()
-		s.add(pair[0])
+		s.add(pair[0].strip())
 	file_object.close()
 	
 	file_object = open('label_data/word_list.txt','r')
 	all_list = []
 	for f in file_object:
-		all_list.append(f)
+		all_list.append(f.strip())
 	ln = len(all_list)
 	next_title = all_list[random.randint(0,ln)]
 	
 	if 'label' in request.GET and 'title' in request.GET:
-		title = request.GET['title']
-		label = request.GET['label']
+		title = request.GET['title'].strip()
+		label = request.GET['label'].strip()
 		if label != None:
 			file_object = open('label_data/labels.txt','a')
 			if title in s:
