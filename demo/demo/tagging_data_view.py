@@ -83,7 +83,7 @@ def showtagging_data(request):
 		tag_name_list.append('Nutrients（营养素，包括脂肪，矿物质，维生素，碳水化合物等）')
 		tag_name_list.append('Biochemistry（生物学名词，包括基因相关，人体部位，组织器官，细胞，细菌，术语）')
 		tag_name_list.append('Agricultural implements（农机具，一般指机械或物理设施）')
-		tag_name_list.append('measure(农业相关技术和措施)')
+		tag_name_list.append('Technology(农业相关术语，技术和措施)')
 		tag_name_list.append('other（除上面类别之外的其它名词实体，可以与农业无关但必须是实体）')
 		
 		count = 0

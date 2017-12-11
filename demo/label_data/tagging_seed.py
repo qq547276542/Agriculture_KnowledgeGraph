@@ -202,4 +202,73 @@ def create_foodItem():  ##
 			file_object.write(word+" 9\n")
 	file_object.close()
 	
-create_foodItem()
+#create_foodItem()
+	
+# 标注动植物疾病
+def dis_table():
+	table = set({'病','症','痛','疼','衰'})
+	return table
+	
+def create_disease():  ##只检查了200个
+	all_list = read_word()
+	file_object = open('disease.txt','w')
+	dis = dis_table()
+	for word in all_list:
+		word = word.strip()
+		if word[len(word)-1] in dis :
+			file_object.write(word+" 10\n")
+	file_object.close()
+	
+#create_disease()
+
+# 标注营养素
+def is_nut(s):
+	if '营养' in s or '维生素' in s or '矿物质' in s or '脂肪' in s or '碳水化合物' in s:
+		return True
+	return False
+	
+def create_nutrient():  ##
+	all_list = read_word()
+	file_object = open('Nutrients.txt','w')
+	for word in all_list:
+		word = word.strip()
+		if is_nut(word) :
+			file_object.write(word+" 12\n")
+	file_object.close()
+
+#create_nutrient()
+
+# 标注农机具
+# 标注动植物疾病
+def imple_table():
+	table = set({'机','器','备','犁','耙'})
+	return table
+	
+def create_implements():  ##只检查了200个
+	all_list = read_word()
+	file_object = open('Agricultural_implements.txt','w')
+	imple = imple_table()
+	for word in all_list:
+		word = word.strip()
+		if word[len(word)-1] in imple :
+			file_object.write(word+" 14\n")
+	file_object.close()
+	
+#create_implements()
+	
+# 标注农业技术
+def is_tech(s):
+	if '栽培' in s or '防疫' in s or '嫁接' in s :
+		return True
+	return False
+	
+def create_technology():  ##
+	all_list = read_word()
+	file_object = open('Technology.txt','w')
+	for word in all_list:
+		word = word.strip()
+		if is_tech(word) :
+			file_object.write(word+" 15\n")
+	file_object.close()
+	
+create_technology()
