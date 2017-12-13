@@ -1,4 +1,4 @@
-# Agriculture_KnowledgeGraph
+# ，Agriculture_KnowledgeGraph
 
 
 ## 目录结构：
@@ -74,25 +74,20 @@
 
 
 
-## 特征工程（暂定使用半监督聚类）
+## 页面分类
 
-### 分类：（分类特征）
+### 分类器：KNN算法
 
-- 所有的openType中的出现情况0/1
-- 是否出现一些关键的openType，baseInfoKey
-- 是否被识别为人名，地名，机构名，其它专名
+- 无需表示成向量，比较相似度即可
 
-### 聚类：（相似度度量）
+### 定义两个页面的相似度sim(p1,p2)：
 
 - 
-  title的word2vec值(如果由多个词组成，看最后一个词)（最后一个词相同则返回1）
+  title之间的word2vec值
 - 2组openType之间的word2vec的平均值
-- 2组openType之间的交集大小（光看平均值的话，容易受标签个数影响。应当突出具有相同openType个数的这一特点）
-- Detail中2组关键词之间的word2vec的平均值
+- Detail中2组关键词之间的word2vec的平均值（每个文本只取前m个TF-IDF值最高的词作为关键词）
 - 相同baseInfoKey的个数
 - 相同baseInfoKey下baseInfoValue相同的个数
-- 是否出现一些关键的openType，baseInfoKey
-- 是否都被thulac识别为人名，地名，机构名
 
 
 
