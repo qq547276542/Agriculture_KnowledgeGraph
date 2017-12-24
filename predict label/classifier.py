@@ -130,18 +130,20 @@ class Classifier:
 		count = 0
 		for p in item1.baseInfoKeyList:
 			s1.add(p)
-			dict1[p] = item1.baseInfoValueList[count]
+			if count < len(item1.baseInfoValueList):
+				dict1[p] = item1.baseInfoValueList[count]
 			count += 1
 		count = 0
 		for p in item2.baseInfoKeyList:
 			s2.add(p)
-			dict2[p] = item2.baseInfoValueList[count]
+			if count < len(item2.baseInfoValueList):
+				dict2[p] = item2.baseInfoValueList[count]
 			count += 1
 		and12 = s1&s2
 			
 		baseInfoValueList_simi = 0.0  # 基本信息的属性名相同的属性值，对应值相似度求平均
 		for s in and12:
-			if dict1[s] == dict2[s]:
+			if s in dict1 and s in dict2 and dict1[s] == dict2[s] and s in self.baseInfoKeyList_IDF:
 				baseInfoValueList_simi += 1.0*self.baseInfoKeyList_IDF[s]
 #		if len(and12)>0:
 #			baseInfoValueList_simi /= len(and12)
@@ -285,7 +287,7 @@ class Classifier:
 		for i in range(self.k):
 			label = int(curList[i].label)
 			count[label] += curList[i].simi
-			print(curList[i].title+"----"+str(curList[i].simi)+'  '+str(label)) # 打印这k个
+			#print(curList[i].title+"----"+str(curList[i].simi)+'  '+str(label)) # 打印这k个
 		
 		
 		maxx = -233
