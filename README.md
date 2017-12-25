@@ -90,9 +90,7 @@ ASSERT c.title IS UNIQUE
 
    ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
 
-   ​
-
-   **彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。手动标注的结果会追加到/label_data/labels.txt文件中：
+   **彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
 
    ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
