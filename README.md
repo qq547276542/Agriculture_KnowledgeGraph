@@ -5,48 +5,44 @@
 
 ```
 .
-├── MyCrawler                 // ---scrapy爬虫项目---
-│   ├── MyCrawler
-│   │   ├── __init__.py
-│   │   ├── data             //爬取数据存放路径
-│   │   │   └── agri_economic.json
-│   │   ├── items.py         //items对应图谱中的结点
-│   │   ├── middlewares.py
-│   │   ├── pipelines.py     //过滤管道
-│   │   ├── settings.py
-│   │   └── spiders          //爬虫脚本存放路径
-│   │       ├── __init__.py
-│   │       └── agri_pedia.py
-│   ├── mySpider.log
-│   └── scrapy.cfg
-└── demo                       // ---django知识图谱项目---
-	├── demo				   // 存放view,用于后台和前端交互
-	│   ├── __init__.py
-	│   ├── detail_view.py
-	│   ├── index_ERform_view.py
-	│   ├── index_view.py
-	│   ├── settings.py
-	│   ├── urls.py
-	│   └── wsgi.py
-	├── manage.py
-	├── neo4jModel             // 自己写的neo4j Model层
-	│   ├── __init__.py
-	│   └── models.py
-	├── static                 // 用于保存静态模板
-	│   ├── css
-	│   │   └── bootstrap.min.css
-	│   └── js
-	│       ├── bootstrap.min.js
-	│       └── jquery.min.js
-	└── templates              // html前端页面
-		├── base.html
-		├── detail.html
-		└── index.html
+├── MyCrawler      // 互动百科的爬虫(已经爬好数据了)
+│   └── MyCrawler
+│       ├── data    
+│       └── spiders
+│           
+├── data\ processing    //用于数据清洗，不用管
+│   └── data
+├── demo		// django项目，可运行web项目
+│   ├── demo      //该目录存放
+│   │   └── data
+│   ├── label_data     	//该目录用于训练集标注
+│   │   └── handwork
+│   ├── neo4jModel    //封装了neo4j的模型层
+│   │   
+│   ├── static     //静态文件
+│   │   ├── css
+│   │   ├── js
+│   │   └── open-iconic
+│   │       ├── font
+│   │       │   ├── css
+│   │       │   └── fonts
+│   │       ├── png
+│   │       ├── sprite
+│   │       ├── svg
+│   │       └── webp
+│   └── templates    //放html页面
+└── predict\ label    // KNN算法目录，用于预测所有页面标注
 ```
+
+## 可复用资源
+
+- hudong_pedia.csv : 已经爬好的农业实体的百科页面的结构化csv文件
+- labels.txt： 5000多个手工标注的实体类别
+- predict_labels.txt:  KNN算法预测的10W多个实体的类别
 
 ## 项目配置
 
-系统需要安装：
+**系统需要安装：**
 
 - scrapy     ---爬虫框架
 - django     ---web框架
@@ -54,7 +50,51 @@
 - thulac      ---分词、词性标注
 - py2neo    ---python连接neo4j的工具
 - pyfasttext    ---facebook开源的词向量计算框架
+- 预训练好的词向量模型wiki.zh.bin    ---下载链接请看predict label目录中的README.md
 
+
+（以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
+
+**项目部署：**
+
+1. 将hudong_pedia.csv导入neo4j：开启neo4j，进入neo4j控制台。将hudong_pedia.csv放入neo4j安装目录下的/import目录。在控制台依次输入：
+
+```
+LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia.csv" AS line  
+CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,baseInfoValueList:line.baseInfoValueList})  
+
+```
+
+```
+CREATE CONSTRAINT ON (c:HudongItem)
+ASSERT c.title IS UNIQUE
+```
+
+以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
+
+2. 进入demo目录，然后输入：
+
+   ```
+   sudo manage.py runserver
+   ```
+
+   这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
+
+   ​
+
+   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/2.png)
+
+   ​
+
+   点击实体的超链接，可以跳转到词条页面：
+
+   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+
+   ​
+
+   **彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。手动标注的结果会追加到/label_data/labels.txt文件中：
+
+   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
 ## 思路
 
