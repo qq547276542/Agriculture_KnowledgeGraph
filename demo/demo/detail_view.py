@@ -5,7 +5,7 @@ import thulac
  
 import sys
 sys.path.append("..")
-from neo4jModel.models import Neo4j
+from toolkit.pre_load import neo_con
 
 
 # 接收GET请求数据
@@ -13,8 +13,8 @@ def showdetail(request):
 	ctx = {}
 	if 'title' in request.GET:
 		# 连接数据库
-		db = Neo4j()
-		db.connectDB()
+		db = neo_con
+		
 		title = request.GET['title']
 		answer = db.matchHudongItembyTitle(title)
 		ctx['detail'] = answer['detail']

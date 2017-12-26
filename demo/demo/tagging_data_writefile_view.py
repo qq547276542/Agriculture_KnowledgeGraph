@@ -6,8 +6,7 @@ import json
 import random
 
 sys.path.append("..")
-from neo4jModel.models import Neo4j
-from pre_load import pre_load_thu
+from toolkit.pre_load import pre_load_thu
 
 ##  先将标注写入文件，之后跳转到tagging_cache.html再进行新页面的跳转
 def tagging_push(request):

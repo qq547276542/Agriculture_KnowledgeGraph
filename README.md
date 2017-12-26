@@ -5,21 +5,22 @@
 
 ```
 .
-├── MyCrawler      // 互动百科的爬虫(已经爬好数据了)
+├── MyCrawler      // scrapy爬虫项目路径(已爬好)
 │   └── MyCrawler
-│       ├── data    
+│       ├── __pycache__
+│       ├── data
 │       └── spiders
 │           
-├── data\ processing    //用于数据清洗，不用管
+├── data\ processing    // 数据清洗(已无用)
 │   └── data
-├── demo		// django项目，可运行web项目
-│   ├── demo      //该目录存放
-│   │   └── data
-│   ├── label_data     	//该目录用于训练集标注
-│   │   └── handwork
-│   ├── neo4jModel    //封装了neo4j的模型层
+├── demo     // django项目路径
+│   ├── Model  // 模型层，用于封装Item类，以及neo4j和csv的读取
 │   │   
-│   ├── static     //静态文件
+│   ├── demo   // 用于写页面的逻辑(View)
+│   │   
+│   ├── label_data    // 标注训练集页面的保存路径
+│   │   └── handwork
+│   ├── static    // 静态资源
 │   │   ├── css
 │   │   ├── js
 │   │   └── open-iconic
@@ -30,8 +31,10 @@
 │   │       ├── sprite
 │   │       ├── svg
 │   │       └── webp
-│   └── templates    //放html页面
-└── predict\ label    // KNN算法目录，用于预测所有页面标注
+│   ├── templates   // html页面
+│   └── toolkit   // 工具库，包括预加载，命名实体识别
+│       
+└── predict\ label   // KNN算法预测标签
 ```
 
 ## 可复用资源

@@ -7,6 +7,14 @@ def readCSV(filename):   ##读取csv的二维数组，第一行是列名
 		for row in reader:
 			List.append(row)
 	return List
+	
+def readCSV2(filename):   ##读取csv的二维数组，第一行是列名(空格分割)
+	List = []
+	with open(filename,'r') as csvfile:
+		reader = csv.reader(csvfile, delimiter=' ')
+		for row in reader:
+			List.append(row)
+	return List
 
 
 def readCSVbyColumn(filename , columnname):   ##读取csv列名对应列，不包括列名
@@ -28,3 +36,4 @@ def readCSVbyColumn(filename , columnname):   ##读取csv列名对应列，不�
 			if p == -1:
 				break
 	return List
+	
