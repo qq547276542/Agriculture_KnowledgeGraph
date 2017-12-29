@@ -90,8 +90,8 @@ def showtagging_data(request):
 		
 		count = 0
 		for i in range(len(tag_name_list)):
-			text += '<div class="form-check"> <label class="form-check-label">'
-			text += '<input class="form-check-input" type="radio" name="label" value="' + str(i) + '">'
+			text += '<div class="radio"> <label class="form-check-label">'
+			text += '<input type="radio" name="label" value="' + str(i) + '">'
 			text +=  str(count) + '. ' + tag_name_list[i]
 			text += '</label>  </div>'
 			count += 1

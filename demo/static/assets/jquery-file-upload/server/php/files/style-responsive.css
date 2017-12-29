@@ -1,0 +1,493 @@
+@media (min-width: 1280px) { 
+	.header .hor-menu {
+  		margin-left: 99px;
+	}
+}
+
+@media (max-width: 1024px) { 
+	.header .hor-menu {
+  		margin-left: 29px;
+	}
+}
+
+/***
+Large notebooks and desktops
+***/
+ @media (min-width: 980px) { 
+
+ 	/***
+ 	Page sidebar
+ 	***/
+ 	.page-sidebar {
+		position: absolute;
+ 		width: 225px;
+  	}
+
+  	.page-sidebar ul{
+  		width: 225px;
+  	}
+
+  	/***
+  	Page content
+  	***/
+  	.page-content { 
+  		margin-left: 225px; 
+		margin-top: 0px;
+		min-height: 860px; 
+	}
+
+	.page-content.no-min-height {
+		min-height: auto;
+	}
+
+	.full-width-page .page-content {
+		margin-left: 0px !important;
+	}
+}
+
+/***
+For tablets and phones
+***/
+@media (max-width:979px) { 
+	
+	/***
+	Body
+	***/
+	body {
+		margin: 0px !important;
+	}	
+
+	/***
+ 	Page header
+ 	***/
+ 	.header {
+ 		margin: 0 !important;
+ 	}
+
+	.header .nav li.dropdown i {
+		display: inline-block;
+		position: relative;
+		top:1px;
+		right:0px;
+	}
+
+	.header .nav {
+		margin-bottom: 0px !important;
+	}
+
+	/***
+	Page container
+	***/
+	.page-container {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.fixed-top .page-container {
+		margin-top: 0px !important;
+	}
+
+	/***
+  	Page content
+  	***/
+  	.page-content {
+  		margin: 0px !important;
+  		padding: 0px !important;  		
+		min-height: 280px; 
+  	}
+
+	/***
+	Page sidebar
+	***/
+	.page-sidebar {
+		margin: 0 10px;
+	}
+
+	.page-sidebar.in {
+		margin: 10px;
+		position: relative;
+		z-index: 5;
+	}
+
+	.page-sidebar .sidebar-toggler {
+		display: none;
+	}
+
+	.page-sidebar ul {
+		margin-top:0px;
+		width:100%;
+	}
+
+	.page-sidebar .selected {
+		display: none !important;
+	}
+
+	.page-sidebar .sidebar-search {
+	  width: 220px;
+	  margin-top: 20px;
+	  margin-bottom:20px;
+	}
+
+	/***
+	Page title
+	***/
+	.page-title {
+		margin: 15px 0px;
+	}
+
+	/***
+	Styler panel
+	***/
+	.styler-panel {
+		top:55px;
+		right:20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1280px) { 
+
+	/***
+	Form wizard
+	***/
+	.form-wizard .step .desc {
+	  margin-top: 10px;
+	  display: block;
+	}
+
+	/***
+	Pricing tables
+	***/
+
+	.pricing-table .rate .price,
+	.pricing-table2 .rate .price {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+} 
+ 
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	/***
+	Body
+	***/
+	body {
+	 	padding-top: 0px;
+	}
+
+	/***
+	Page sidebar
+	***/
+	.page-sidebar .btn-navbar.collapsed .arrow { 
+		display: none;
+	}	
+
+	.page-sidebar .btn-navbar .arrow {
+	  position: absolute;
+	  right: 25px;
+	  width: 0; 
+	  height: 0;
+	  top:50px;
+	  border-bottom: 15px solid #5f646b;
+	  border-left: 15px solid transparent; 
+	  border-right: 15px solid transparent; 
+	}
+
+} 
+ 
+@media (max-width: 767px) { 
+	
+	/***
+	Page header
+	***/
+	.header .navbar-inner .container-fluid,
+	.header .navbar-inner .container {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+
+	.header .top-nav .nav{  
+	 	margin-top: 0px;
+	 	margin-right: 5px;
+	}
+
+	.header .nav > li > .dropdown-menu.notification:after, 
+	.header .nav > li > .dropdown-menu.notification:before {
+		margin-right: 180px;
+	}
+
+	.header .nav > li > .dropdown-menu.notification {
+  		margin-right: -180px;
+	}
+
+	.header .nav > li > .dropdown-menu.inbox:after, 
+	.header .nav > li > .dropdown-menu.inbox:before {
+		margin-right: 140px;
+	}
+
+	.header .nav > li > .dropdown-menu.inbox {
+  		margin-right: -140px;
+	}
+
+	.header .nav > li > .dropdown-menu.tasks:after, 
+	.header .nav > li > .dropdown-menu.tasks:before {
+		margin-right: 90px;
+	}
+
+	.header .nav > li > .dropdown-menu.tasks {
+  		margin-right: -90px;
+	}
+	
+	/***
+	Page content
+	***/
+	.page-content {
+		padding: 10px !important;
+	}
+
+	/***
+	Page title
+	***/
+	.page-title {
+		margin-bottom: 20px;
+	}
+	
+	/***
+	Styler pagel
+	***/
+	.styler-panel {
+		top:58px;
+		right:12px;
+	}	
+
+	/***
+	Page breadcrumb
+	***/
+	.breadcrumb {
+		padding-left: 10px;
+  		padding-right: 10px;
+	}
+
+	/***
+	Portlet form action
+	***/
+	.portlet-body.form .form-actions{
+	  padding-left: 15px;	
+	} 
+
+	/***
+	Gritter notification
+	***/
+	#gritter-notice-wrapper {
+		right:1px !important;
+	}
+
+	/***
+	Form input validation states
+	***/
+	.input-icon .input-error, 
+	.input-icon .input-warning, 
+	.input-icon .input-success { 
+		top:-27px;
+		float: right;
+		right:10px !important;
+	}	
+
+	/***
+	Advance tables
+	***/
+	.table-advance tr td.highlight:first-child a {
+		margin-left: 8px;
+	}
+
+	/***
+	Footer	
+	***/	
+	.footer {
+		padding-left: 10px;
+		padding-right: 10px;		
+	}	
+	
+	.footer .go-top {  
+		float: right;
+		display: block;
+		margin-top: -22px;
+		margin-right: 0px;
+		margin-bottom: 5px !important;
+	}
+
+	/***
+	Vertical inline menu
+	***/
+	.ver-inline-menu li.active:after {
+		display: none;
+	}
+
+	/***
+	Form controls
+	***/
+	.form-horizontal .form-actions {
+  		padding-left: 180px; 	
+  	}
+
+  	.portlet .form-horizontal .form-actions {
+  		padding-left: 190px; 	
+  	}
+}
+
+@media (max-width: 480px) {
+
+	/***
+	Header navbar
+	***/
+	.header .nav {
+		clear:both !important;
+	}
+
+	.header .nav > li.dropdown .dropdown-toggle {
+  		margin-top:3px !important;
+  	}	
+
+  	.header .nav li.dropdown .dropdown-toggle .badge {
+  		top: 11px;
+  	}
+
+  	/***
+	Page sidebar
+	***/
+	.page-sidebar.in {
+		margin-top: 7px !important;
+	}
+
+	/***
+	Styler panel
+	***/
+	.styler-panel {
+		top:92px;
+		right:12px;
+	}	
+
+	/***
+	Page title
+	***/
+	.page-title small {
+		display: block;
+		clear: both;
+	}
+
+	/***
+	Dashboard date range panel
+	***/
+	.page-content .breadcrumb .dashboard-date-range  {
+		padding-bottom: 8px;
+	} 
+
+	.page-content .breadcrumb .dashboard-date-range span {
+		display: none;
+	}
+
+	/***
+	Login page
+	***/
+	.login .logo {
+		margin-top:10px;
+	}
+
+	.login .content {
+		padding: 30px; 
+		width: 222px;
+	}
+
+	.login .content h3 {
+		font-size: 22px;
+	}
+
+	.login .content .m-wrap {
+  		width: 180px;
+	}
+
+	.login .checkbox {
+		font-size: 13px;
+	}
+
+	/***
+	Form controls
+	***/	
+	.form-horizontal.form-bordered .control-label {
+	    float: none;
+	    width: auto;
+	    padding-top: 0;
+	    text-align: left;
+	    margin-top: 0;
+	    margin-left: 10px;
+	}
+
+	.form-horizontal.form-bordered .controls {
+		padding-top: 0 !important;
+		border-left: 0 !important;	
+	}
+
+	.form-horizontal.form-bordered.form-label-stripped .control-group:nth-child(even) {
+	  background-color: none !important;
+	} 
+
+	.form-horizontal.form-bordered.form-label-stripped .control-group:nth-child(even) .controls {
+	  background-color: none !important;  
+	}
+
+	.form-horizontal.form-row-seperated .control-label {
+	    float: none;
+	    width: auto;
+	    padding-top: 0;
+	    text-align: left;
+	    margin-left: 10px;
+	}
+
+  	.form-horizontal.form-row-seperated .controls {
+		border-left: 0;
+    	margin-left: 10px;
+  	}
+
+  	.portlet .form-horizontal .form-actions {
+  		padding-left: 10px; 	
+  	}
+
+	/***
+	Hidden phone
+	***/
+	.hidden-480 {
+		display: none;
+	}
+
+	/***
+	Modal header close button fix
+	***/
+	.modal-header .close {
+		margin-top: 5px !important;
+	}
+
+	/***
+	Fix text view
+	***/
+	.control-group .controls .text {
+  		display: block !important;
+  		margin-bottom: 10px;
+  	}
+}
+
+@media (max-width: 320px) {
+
+	.header .nav > li.dropdown .dropdown-toggle {
+	  padding-left: 8px !important;
+	  padding-right: 8px !important;
+	}
+
+	/***
+	Hidden phone
+	***/
+	.hidden-320 {
+		display: none;
+	}
+}	

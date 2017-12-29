@@ -21,7 +21,7 @@ def showdetail(request):
 		ctx['title'] = answer['title']
 		image = answer['image']
 		
-		ctx['image'] = '<img class="rounded card-img-top img-fluid" src="' + str(image) + '" alt="该条目无图片" style="width:30%" >'
+		ctx['image'] = '<img src="' + str(image) + '" alt="该条目无图片" height="100%" width="100%" >'
 		
 		ctx['baseInfoKeyList'] = []
 		List = answer['baseInfoKeyList'].split('##')
@@ -36,10 +36,10 @@ def showdetail(request):
 		text = ""
 		List = answer['openTypeList'].split('##')
 		for p in List:
-			text += '<span class="badge badge-success">' + str(p) + '</span> '
+			text += '<span class="badge bg-important">' + str(p) + '</span> '
 		ctx['openTypeList'] = text
 		
-		text = ""
+		text = '<table class="table table-striped table-advance table-hover"> <tbody>'
 		keyList = answer['baseInfoKeyList'].split('##')
 		valueList = answer['baseInfoValueList'].split('##')
 		i = 0
@@ -48,21 +48,24 @@ def showdetail(request):
 			if i < len(valueList):
 				value = valueList[i]
 			text += "<tr>"
-			text += '<td class="font-weight-bold">' + keyList[i] + '</td>'
+			text += '<td><strong>' + keyList[i] + '</strong></td>'
 			text += '<td>' + value + '</td>'
 			i += 1
 			
 			if i < len(valueList):
 				value = valueList[i]
 			if i < len(keyList) :
-				text += '<td class="font-weight-bold">' + keyList[i] + '</td>'
+				text += '<td><strong>' + keyList[i] + '</strong></td>'
 				text += '<td>' + value + '</td>'
 			else :
-				text += '<td class="font-weight-bold">' + '</td>'
+				text += '<td><strong>' + '</strong></td>'
 				text += '<td>' + '</td>'
 			i += 1
 			text += "</tr>"
-		ctx['baseInfoTable'] = text
+		text += " </tbody> </table>"
+		if answer['baseInfoKeyList'].strip() == '':
+			text = ''
+		ctx['baseInfoTable'] = text 
 				
 	return render(request, "detail.html", ctx)
 	

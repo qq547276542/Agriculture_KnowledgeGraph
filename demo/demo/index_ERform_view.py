@@ -13,7 +13,7 @@ def get_explain(s):
 	if s == 2:
 		return '地点'
 	if s == 3:
-		return r'机构\会议'
+		return r'机构'
 	if s == 4:
 		return '政治经济名词'
 	if s == 5:
@@ -40,9 +40,7 @@ def get_explain(s):
 		return '农业技术术语'	
 	if s == 16:
 		return '其它实体'	
-		
-	if s == 'n':
-		return '名词实体'
+	
 	if s == 'np':
 		return '人物'
 	if s == 'ns':
@@ -63,6 +61,60 @@ def get_explain(s):
 	return '非实体'		
 
 
+def get_detail_explain(s):
+	if s == 1:
+		return '包括人名，职位'
+	if s == 2:
+		return '包括地名，区域，行政区等'
+	if s == 3:
+		return '包括机构名，会议名，期刊名等'
+	if s == 4:
+		return '包括政府政策，政治术语，经济学术语'
+	if s == 5:
+		return '包括动物名称，动物类别，动物学相关术语'
+	if s == 6:
+		return '包括植物名称，植物类别，植物学相关术语'
+	if s == 7:
+		return '包括化肥，农药，杀菌剂，其它化学品，以及一些化学术语'	
+	if s == 8:
+		return '包括天气气候，季节，节气'
+	if s == 9:
+		return '包括肉制品，蔬菜制品，水果制品，豆制品等以动植物为原料的食品，以及一些非食物制品'
+	if s == 10:
+		return '包括传染病，原发性疾病，遗传病等'
+	if s == 11:
+		return '包括一些大型灾害，环境污染，或其它造成经济损失的自然现象'
+	if s == 12:
+		return '包括脂肪，矿物质，维生素，碳水化合物，无机盐等'
+	if s == 13:
+		return '包括人体部位，组织器官，基因相关，微生物，以及一些生物学术语'
+	if s == 14:
+		return '包括用于农业生产的自动化机械，手工工具'
+	if s == 15:
+		return '包括农学名词，农业技术措施'	
+	if s == 16:
+		return '与农业领域没有特别直接的关系，但是也是实体'	
+		
+	
+	if s == 'np':
+		return '包括人名，职位'
+	if s == 'ns':
+		return '包括地名，区域，行政区等'	
+	if s == 'ni':
+		return '包括机构名，会议名，期刊名等'
+	if s == 'nz':
+		return ' '
+	if s == 'i' or s == 'id':
+		return ' '
+	if s == 'j':
+		return ' '
+	if s == 'x':
+		return ' '
+	if s == 't':
+		return ' '
+		
+	return '非实体'	
+
 # 读取实体解析的文本
 def ER_post(request):
 	ctx ={}
@@ -81,9 +133,10 @@ def ER_post(request):
 				text += pair[0]
 				continue
 			if temporaryok(pair[1]):
-				text += "<a href='#' data-toggle='tooltip' title='" + get_explain(pair[1]) + "(暂无资料)'>" + pair[0] + "</a>"
+				text += "<a href='#'  data-original-title='" + get_explain(pair[1]) + "(暂无资料)'  data-placement='top' data-trigger='hover' data-content='"+get_detail_explain(pair[1])+"' class='popovers'>" + pair[0] + "</a>"
 				continue
-			text += "<a href='detail.html?title=" + pair[0] + "' data-toggle='tooltip' title='" + get_explain(pair[1]) + "'>" + pair[0] + "</a>"
+			
+			text += "<a href='detail.html?title=" + pair[0] + "'  data-original-title='" + get_explain(pair[1]) + "'  data-placement='top' data-trigger='hover' data-content='"+get_detail_explain(pair[1])+"' class='popovers'>" + pair[0] + "</a>"
 		
 		ctx['rlt'] = text
 			
@@ -126,8 +179,8 @@ def ER_post(request):
 		seg_word = ""
 		length = len(TagList)
 		for t in TagList:   #测试打印词性序列
-			seg_word += t[0]+"_"+t[1]+"  "
-			
+			seg_word += t[0]+" <strong><small>["+t[1]+"]</small></strong> "
+		seg_word += ""
 		ctx['seg_word'] = seg_word
 		
 	return render(request, "index.html", ctx)

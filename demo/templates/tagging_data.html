@@ -6,10 +6,10 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-6">
             <br/>
-            <div class="card">
+            <div class="panel panel-default">
                 {% autoescape off %}
                 <!--代表将html标签文本转义成标签显示-->
-                <div class="card-body">
+                <div class="panel-body">
                     <p class="card-title">
                         <h1>{{ title }}</h1>
                         {{ openTypeList }}
@@ -17,15 +17,16 @@
                     </p>
                     {{ image }}
                     <p class="card-text">{{ detail }}</p>
+
+                    <table class="table table-striped table-advance table-hover">
+
+                        <tbody>
+                            {{ baseInfoTable }}
+
+                        </tbody>
+                    </table>
                 </div>
 
-                <table class="table">
-
-                    <tbody>
-                        {{ baseInfoTable }}
-
-                    </tbody>
-                </table>
                 {% endautoescape %}
             </div>
 
@@ -33,8 +34,8 @@
         <div class="col-sm-4">
             {% autoescape off %}
             <br/>
-            <div class="card">
-                <div class="card-body">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     <form action="tagging-get" method="get">
                         {{ taggingCheck }}
 
