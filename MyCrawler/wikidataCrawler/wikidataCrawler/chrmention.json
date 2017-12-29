@@ -1,0 +1,897 @@
+{"rid": "P1284", "chrmention": "no chinese label"}
+{"rid": "P1271", "chrmention": "no chinese label"}
+{"rid": "P1270", "chrmention": "no chinese label"}
+{"rid": "P1277", "chrmention": "no chinese label"}
+{"rid": "P1280", "chrmention": "no chinese label"}
+{"rid": "P1275", "chrmention": "no chinese label"}
+{"rid": "P1272", "chrmention": "no chinese label"}
+{"rid": "P1281", "chrmention": "no chinese label"}
+{"rid": "P1274", "chrmention": "no chinese label"}
+{"rid": "P1273", "chrmention": "CANTIC"}
+{"rid": "P1255", "chrmention": "Helveticarchives编号"}
+{"rid": "P1243", "chrmention": "國際標準錄音錄影資料代碼"}
+{"rid": "P1245", "chrmention": "OmegaWiki定義"}
+{"rid": "P1252", "chrmention": "AUSTLANG代码"}
+{"rid": "P1250", "chrmention": "丹麥書目學術指標(BFI) SNO/CNO"}
+{"rid": "P1239", "chrmention": "ISFDB出版社索引碼"}
+{"rid": "P1253", "chrmention": "no chinese label"}
+{"rid": "P1251", "chrmention": "ABS ASCL代码"}
+{"rid": "P1238", "chrmention": "瑞典足球聯盟索引碼"}
+{"rid": "P1218", "chrmention": "IBDB製作索引碼"}
+{"rid": "P1233", "chrmention": "ISFDB作者索引碼"}
+{"rid": "P1232", "chrmention": "Linguist list代碼"}
+{"rid": "P1217", "chrmention": "IBDB場地索引碼"}
+{"rid": "P1219", "chrmention": "IBDB演出索引碼"}
+{"rid": "P1234", "chrmention": "ISFDB出版品索引碼"}
+{"rid": "P1235", "chrmention": "ISFDB期刊索引碼"}
+{"rid": "P1220", "chrmention": "IBDB人物索引碼"}
+{"rid": "P1208", "chrmention": "ISMN"}
+{"rid": "P1188", "chrmention": "法鼓佛教學院地方碼"}
+{"rid": "P1216", "chrmention": "英國襲產署編號"}
+{"rid": "P208", "chrmention": "行政机构"}
+{"rid": "P1209", "chrmention": "統一刊號"}
+{"rid": "P209", "chrmention": "最高司法机关"}
+{"rid": "P1187", "chrmention": "法鼓佛教學院人物碼"}
+{"rid": "P2368", "chrmention": "沙盒-属性"}
+{"rid": "P1450", "chrmention": "沙盒單語言文字"}
+{"rid": "P626", "chrmention": "沙盒-地理坐标"}
+{"rid": "P1106", "chrmention": "沙盒-数量"}
+{"rid": "P578", "chrmention": "沙盒-时间"}
+{"rid": "P370", "chrmention": "沙盒-字串"}
+{"rid": "P855", "chrmention": "沙盒-URL"}
+{"rid": "P369", "chrmention": "沙盒-项"}
+{"rid": "P368", "chrmention": "沙盒-共享资源媒体文件"}
+{"rid": "P2121", "chrmention": "獎金"}
+{"rid": "P1351", "chrmention": "得分或進球數"}
+{"rid": "P1750", "chrmention": "no chinese label"}
+{"rid": "P2105", "chrmention": "no chinese label"}
+{"rid": "P2103", "chrmention": "no chinese label"}
+{"rid": "P1350", "chrmention": "参赛次数"}
+{"rid": "P1049", "chrmention": "no chinese label"}
+{"rid": "P611", "chrmention": "no chinese label"}
+{"rid": "P708", "chrmention": "教區"}
+{"rid": "P894", "chrmention": "no chinese label"}
+{"rid": "P893", "chrmention": "no chinese label"}
+{"rid": "P1276", "chrmention": "no chinese label"}
+{"rid": "P892", "chrmention": "评论请求（RFC）标示符"}
+{"rid": "P889", "chrmention": "no chinese label"}
+{"rid": "P888", "chrmention": "no chinese label"}
+{"rid": "P886", "chrmention": "LIR"}
+{"rid": "P887", "chrmention": "no chinese label"}
+{"rid": "P819", "chrmention": "no chinese label"}
+{"rid": "P820", "chrmention": "no chinese label"}
+{"rid": "P818", "chrmention": "no chinese label"}
+{"rid": "P476", "chrmention": "no chinese label"}
+{"rid": "P478", "chrmention": "卷"}
+{"rid": "P433", "chrmention": "期号"}
+{"rid": "P304", "chrmention": "页码"}
+{"rid": "P792", "chrmention": "章"}
+{"rid": "P92", "chrmention": "主要規管文獻"}
+{"rid": "P2045", "chrmention": "軌道傾角"}
+{"rid": "P248", "chrmention": "载于"}
+{"rid": "P143", "chrmention": "導入自"}
+{"rid": "P1418", "chrmention": "完成轨道圈数"}
+{"rid": "P1194", "chrmention": "接收訊號"}
+{"rid": "P1170", "chrmention": "發送訊號"}
+{"rid": "P1016", "chrmention": "no chinese label"}
+{"rid": "P1046", "chrmention": "发现方法"}
+{"rid": "P491", "chrmention": "no chinese label"}
+{"rid": "P399", "chrmention": "伴天体"}
+{"rid": "P490", "chrmention": "临时编号"}
+{"rid": "P398", "chrmention": "子天体"}
+{"rid": "P397", "chrmention": "母天体"}
+{"rid": "P376", "chrmention": "所在天体"}
+{"rid": "P367", "chrmention": "天文圖像符號"}
+{"rid": "P223", "chrmention": "星系类型"}
+{"rid": "P196", "chrmention": "小行星族"}
+{"rid": "P65", "chrmention": "天文发现地"}
+{"rid": "P1404", "chrmention": "世界冰川資料庫編號"}
+{"rid": "P215", "chrmention": "光譜分類"}
+{"rid": "P59", "chrmention": "星座"}
+{"rid": "P761", "chrmention": "no chinese label"}
+{"rid": "P207", "chrmention": "等深线图"}
+{"rid": "P206", "chrmention": "相接水体"}
+{"rid": "P205", "chrmention": "集水区国家"}
+{"rid": "P201", "chrmention": "流出河流"}
+{"rid": "P200", "chrmention": "流入河流"}
+{"rid": "P2053", "chrmention": "no chinese label"}
+{"rid": "P469", "chrmention": "no chinese label"}
+{"rid": "P1200", "chrmention": "河盆類"}
+{"rid": "P403", "chrmention": "河流出口"}
+{"rid": "P1064", "chrmention": "軌距"}
+{"rid": "P1103", "chrmention": "站台对应轨道数量"}
+{"rid": "P81", "chrmention": "线路"}
+{"rid": "P296", "chrmention": "車站編號"}
+{"rid": "P197", "chrmention": "相邻车站"}
+{"rid": "P529", "chrmention": "跑道"}
+{"rid": "P137", "chrmention": "營運者"}
+{"rid": "P240", "chrmention": "FAA机场代码"}
+{"rid": "P239", "chrmention": "ICAO機場代碼"}
+{"rid": "P238", "chrmention": "IATA机场代码"}
+{"rid": "P2505", "chrmention": "承载"}
+{"rid": "P177", "chrmention": "横跨"}
+{"rid": "P1382", "chrmention": "相交集"}
+{"rid": "P1314", "chrmention": "桥孔数量"}
+{"rid": "P1311", "chrmention": "lostbridges.org編碼"}
+{"rid": "P1302", "chrmention": "主要目的地"}
+{"rid": "P833", "chrmention": "换乘车站"}
+{"rid": "P126", "chrmention": "养护者"}
+{"rid": "P16", "chrmention": "公路系統"}
+{"rid": "P1301", "chrmention": "升降機數量"}
+{"rid": "P1369", "chrmention": "INH註冊號"}
+{"rid": "P15", "chrmention": "线路图"}
+{"rid": "P14", "chrmention": "公路標示"}
+{"rid": "P1139", "chrmention": "地下层数"}
+{"rid": "P1101", "chrmention": "地上层数"}
+{"rid": "P762", "chrmention": "捷克文化遗产编码"}
+{"rid": "P455", "chrmention": "Emporis編碼"}
+{"rid": "P167", "chrmention": "取代建筑"}
+{"rid": "P454", "chrmention": "Structurae 編碼"}
+{"rid": "P193", "chrmention": "主要建筑承建商"}
+{"rid": "P631", "chrmention": "结构工程师"}
+{"rid": "P901", "chrmention": "FIPS 10-4 (国家和地区)"}
+{"rid": "P374", "chrmention": "INSEE市政当局编码"}
+{"rid": "P605", "chrmention": "NUTS欧盟地区代码"}
+{"rid": "P300", "chrmention": "ISO 3166-2"}
+{"rid": "P395", "chrmention": "牌照代码"}
+{"rid": "P984", "chrmention": "IOC国家代码"}
+{"rid": "P473", "chrmention": "电话区号"}
+{"rid": "P474", "chrmention": "國際電話區號"}
+{"rid": "P281", "chrmention": "邮政编码"}
+{"rid": "P299", "chrmention": "国家代码 (ISO 3166-1 numeric)"}
+{"rid": "P298", "chrmention": "国家代码 (ISO 3166-1 alpha-3)"}
+{"rid": "P190", "chrmention": "友好城市"}
+{"rid": "P500", "chrmention": "飞地从属于"}
+{"rid": "P501", "chrmention": "内飞于"}
+{"rid": "P297", "chrmention": "国家代码 (ISO 3166-1 alpha-2)"}
+{"rid": "P210", "chrmention": "党委书记"}
+{"rid": "P47", "chrmention": "接壤"}
+{"rid": "P1336", "chrmention": "领土主张"}
+{"rid": "P1383", "chrmention": "包含聚落"}
+{"rid": "P194", "chrmention": "立法机构"}
+{"rid": "P1001", "chrmention": "管辖区域"}
+{"rid": "P6", "chrmention": "政府首长"}
+{"rid": "P150", "chrmention": "下辖行政区"}
+{"rid": "P78", "chrmention": "顶级域名"}
+{"rid": "P122", "chrmention": "政治體系"}
+{"rid": "P35", "chrmention": "国家元首"}
+{"rid": "P85", "chrmention": "頌歌"}
+{"rid": "P37", "chrmention": "官方语言"}
+{"rid": "P38", "chrmention": "货币"}
+{"rid": "P36", "chrmention": "行政中心"}
+{"rid": "P1879", "chrmention": "no chinese label"}
+{"rid": "P1334", "chrmention": "最东点"}
+{"rid": "P1766", "chrmention": "路牌图档"}
+{"rid": "P1335", "chrmention": "最西点"}
+{"rid": "P1333", "chrmention": "最南点"}
+{"rid": "P654", "chrmention": "no chinese label"}
+{"rid": "P1332", "chrmention": "最北点"}
+{"rid": "P669", "chrmention": "坐落在该街道"}
+{"rid": "P706", "chrmention": "所处地理环境"}
+{"rid": "P421", "chrmention": "时区"}
+{"rid": "P1082", "chrmention": "人口"}
+{"rid": "P131", "chrmention": "所在行政区"}
+{"rid": "P1397", "chrmention": "國家地理名稱目錄(俄)"}
+{"rid": "P1465", "chrmention": "死亡地分类"}
+{"rid": "P30", "chrmention": "大洲"}
+{"rid": "P1464", "chrmention": "出生地分类"}
+{"rid": "P17", "chrmention": "国家"}
+{"rid": "P804", "chrmention": "GNIS南极洲编码"}
+{"rid": "P402", "chrmention": "OpenStreetMap关系标识符"}
+{"rid": "P1249", "chrmention": "最早文獻記錄時間"}
+{"rid": "P948", "chrmention": "维基导游横幅"}
+{"rid": "P1740", "chrmention": "取景地分類"}
+{"rid": "P418", "chrmention": "印章描述"}
+{"rid": "P158", "chrmention": "印章图像"}
+{"rid": "P163", "chrmention": "旗帜"}
+{"rid": "P41", "chrmention": "旗幟圖像"}
+{"rid": "P1621", "chrmention": "詳細地圖"}
+{"rid": "P590", "chrmention": "GNIS ID"}
+{"rid": "P1304", "chrmention": "中央銀行"}
+{"rid": "P1024", "chrmention": "no chinese label"}
+{"rid": "P1198", "chrmention": "失業率"}
+{"rid": "P242", "chrmention": "位置图图像"}
+{"rid": "P1023", "chrmention": "no chinese label"}
+{"rid": "P1022", "chrmention": "no chinese label"}
+{"rid": "P1021", "chrmention": "no chinese label"}
+{"rid": "P919", "chrmention": "no chinese label"}
+{"rid": "P417", "chrmention": "主保圣人"}
+{"rid": "P867", "chrmention": "ROME職業編號（v3）"}
+{"rid": "P918", "chrmention": "no chinese label"}
+{"rid": "P952", "chrmention": "ISCO职业代码"}
+{"rid": "P1171", "chrmention": "近似演算法"}
+{"rid": "P829", "chrmention": "OEIS ID"}
+{"rid": "P1181", "chrmention": "數值"}
+{"rid": "P1247", "chrmention": "壓縮比"}
+{"rid": "P1210", "chrmention": "增壓器"}
+{"rid": "P1211", "chrmention": "燃料系統"}
+{"rid": "P1100", "chrmention": "气缸数"}
+{"rid": "P618", "chrmention": "能量来源"}
+{"rid": "P588", "chrmention": "冷却剂"}
+{"rid": "P2374", "chrmention": "丰度"}
+{"rid": "P816", "chrmention": "衰变为"}
+{"rid": "P1360", "chrmention": "no chinese label"}
+{"rid": "P1126", "chrmention": "no chinese label"}
+{"rid": "P1122", "chrmention": "自旋量子数"}
+{"rid": "P1148", "chrmention": "中子數"}
+{"rid": "P1086", "chrmention": "原子序数"}
+{"rid": "P567", "chrmention": "no chinese label"}
+{"rid": "P517", "chrmention": "no chinese label"}
+{"rid": "P568", "chrmention": "no chinese label"}
+{"rid": "P524", "chrmention": "灭绝地质年代"}
+{"rid": "P1193", "chrmention": "感染率"}
+{"rid": "P1748", "chrmention": "no chinese label"}
+{"rid": "P514", "chrmention": "no chinese label"}
+{"rid": "P523", "chrmention": "初现地质年代"}
+{"rid": "P1060", "chrmention": "no chinese label"}
+{"rid": "P1050", "chrmention": "医疗状况"}
+{"rid": "P924", "chrmention": "疗法"}
+{"rid": "P923", "chrmention": "no chinese label"}
+{"rid": "P780", "chrmention": "症状"}
+{"rid": "P769", "chrmention": "no chinese label"}
+{"rid": "P828", "chrmention": "起因"}
+{"rid": "P699", "chrmention": "no chinese label"}
+{"rid": "P698", "chrmention": "no chinese label"}
+{"rid": "P689", "chrmention": "no chinese label"}
+{"rid": "P696", "chrmention": "no chinese label"}
+{"rid": "P673", "chrmention": "no chinese label"}
+{"rid": "P672", "chrmention": "no chinese label"}
+{"rid": "P667", "chrmention": "no chinese label"}
+{"rid": "P668", "chrmention": "no chinese label"}
+{"rid": "P663", "chrmention": "no chinese label"}
+{"rid": "P653", "chrmention": "no chinese label"}
+{"rid": "P636", "chrmention": "no chinese label"}
+{"rid": "P604", "chrmention": "no chinese label"}
+{"rid": "P563", "chrmention": "no chinese label"}
+{"rid": "P557", "chrmention": "DiseasesDB"}
+{"rid": "P492", "chrmention": "OMIM ID"}
+{"rid": "P494", "chrmention": "no chinese label"}
+{"rid": "P493", "chrmention": "no chinese label"}
+{"rid": "P486", "chrmention": "no chinese label"}
+{"rid": "P1338", "chrmention": "no chinese label"}
+{"rid": "P714", "chrmention": "戴纳矿物分类(第8版)"}
+{"rid": "P713", "chrmention": "no chinese label"}
+{"rid": "P711", "chrmention": "no chinese label"}
+{"rid": "P712", "chrmention": "no chinese label"}
+{"rid": "P690", "chrmention": "no chinese label"}
+{"rid": "P589", "chrmention": "no chinese label"}
+{"rid": "P565", "chrmention": "no chinese label"}
+{"rid": "P538", "chrmention": "no chinese label"}
+{"rid": "P579", "chrmention": "no chinese label"}
+{"rid": "P537", "chrmention": "no chinese label"}
+{"rid": "P534", "chrmention": "no chinese label"}
+{"rid": "P1956", "chrmention": "no chinese label"}
+{"rid": "P1637", "chrmention": "no chinese label"}
+{"rid": "P1192", "chrmention": "服務路線"}
+{"rid": "P1221", "chrmention": "壓縮機類型"}
+{"rid": "P606", "chrmention": "首航日期"}
+{"rid": "P484", "chrmention": "no chinese label"}
+{"rid": "P520", "chrmention": "武器"}
+{"rid": "P516", "chrmention": "发动机"}
+{"rid": "P707", "chrmention": "no chinese label"}
+{"rid": "P720", "chrmention": "no chinese label"}
+{"rid": "P716", "chrmention": "no chinese label"}
+{"rid": "P426", "chrmention": "航空器注册编号"}
+{"rid": "P717", "chrmention": "no chinese label"}
+{"rid": "P522", "chrmention": "no chinese label"}
+{"rid": "P1427", "chrmention": "行程起点"}
+{"rid": "P377", "chrmention": "SCN"}
+{"rid": "P375", "chrmention": "发射手段"}
+{"rid": "P247", "chrmention": "COSPAR ID"}
+{"rid": "P587", "chrmention": "no chinese label"}
+{"rid": "P2261", "chrmention": "no chinese label"}
+{"rid": "P2262", "chrmention": "no chinese label"}
+{"rid": "P617", "chrmention": "no chinese label"}
+{"rid": "P1099", "chrmention": "no chinese label"}
+{"rid": "P532", "chrmention": "船舶注册港"}
+{"rid": "P504", "chrmention": "no chinese label"}
+{"rid": "P289", "chrmention": "舰级"}
+{"rid": "P3095", "chrmention": "no chinese label"}
+{"rid": "P408", "chrmention": "软件引擎"}
+{"rid": "P458", "chrmention": "IMO船隻字元"}
+{"rid": "P600", "chrmention": "Wine AppDB-ID"}
+{"rid": "P425", "chrmention": "专业领域"}
+{"rid": "P404", "chrmention": "游戏模式"}
+{"rid": "P348", "chrmention": "软件版本"}
+{"rid": "P287", "chrmention": "设计者"}
+{"rid": "P400", "chrmention": "平台"}
+{"rid": "P306", "chrmention": "操作系统"}
+{"rid": "P277", "chrmention": "编程语言"}
+{"rid": "P176", "chrmention": "生产商"}
+{"rid": "P178", "chrmention": "开发者"}
+{"rid": "P3823", "chrmention": "Ethnologue语言状态"}
+{"rid": "P2590", "chrmention": "BPS语言代码"}
+{"rid": "P2192", "chrmention": "no chinese label"}
+{"rid": "P1999", "chrmention": "UNESCO语言状态"}
+{"rid": "P1627", "chrmention": "Ethnologue.com代码"}
+{"rid": "P1467", "chrmention": "no chinese label"}
+{"rid": "P2161", "chrmention": "no chinese label"}
+{"rid": "P1468", "chrmention": "WALS语系码"}
+{"rid": "P1396", "chrmention": "Linguasphere 代碼"}
+{"rid": "P1098", "chrmention": "语言使用者人数"}
+{"rid": "P278", "chrmention": "GOST 7.75-97代码"}
+{"rid": "P1018", "chrmention": "语言管理机构"}
+{"rid": "P424", "chrmention": "维基媒体语言代码"}
+{"rid": "P282", "chrmention": "書寫系統"}
+{"rid": "P506", "chrmention": "ISO 15924 4字母代碼"}
+{"rid": "P305", "chrmention": "IETF语言标签"}
+{"rid": "P221", "chrmention": "ISO 639-6代码"}
+{"rid": "P1798", "chrmention": "ISO 639-5代码"}
+{"rid": "P220", "chrmention": "ISO 639-3代码"}
+{"rid": "P111", "chrmention": "物理量"}
+{"rid": "P219", "chrmention": "ISO 639-2代码"}
+{"rid": "P1121", "chrmention": "氧化态"}
+{"rid": "P1108", "chrmention": "電負性"}
+{"rid": "P218", "chrmention": "ISO 639-1代码"}
+{"rid": "P134", "chrmention": "方言"}
+{"rid": "P1295", "chrmention": "no chinese label"}
+{"rid": "P873", "chrmention": "no chinese label"}
+{"rid": "P728", "chrmention": "no chinese label"}
+{"rid": "P874", "chrmention": "no chinese label"}
+{"rid": "P940", "chrmention": "no chinese label"}
+{"rid": "P876", "chrmention": "no chinese label"}
+{"rid": "P875", "chrmention": "no chinese label"}
+{"rid": "P715", "chrmention": "no chinese label"}
+{"rid": "P700", "chrmention": "Kemler編號"}
+{"rid": "P695", "chrmention": "no chinese label"}
+{"rid": "P679", "chrmention": "no chinese label"}
+{"rid": "P683", "chrmention": "ChEBI ID"}
+{"rid": "P628", "chrmention": "no chinese label"}
+{"rid": "P661", "chrmention": "ChemSpider ID"}
+{"rid": "P657", "chrmention": "no chinese label"}
+{"rid": "P662", "chrmention": "PubChem"}
+{"rid": "P652", "chrmention": "no chinese label"}
+{"rid": "P459", "chrmention": "断定方法"}
+{"rid": "P556", "chrmention": "no chinese label"}
+{"rid": "P515", "chrmention": "no chinese label"}
+{"rid": "P274", "chrmention": "化学式"}
+{"rid": "P267", "chrmention": "ATC分類"}
+{"rid": "P246", "chrmention": "元素符号"}
+{"rid": "P235", "chrmention": "InChIKey"}
+{"rid": "P234", "chrmention": "国际化合物标识"}
+{"rid": "P233", "chrmention": "典范SMILES"}
+{"rid": "P232", "chrmention": "EC号"}
+{"rid": "P303", "chrmention": "EE品种编码"}
+{"rid": "P231", "chrmention": "CAS号"}
+{"rid": "P117", "chrmention": "化學結構"}
+{"rid": "P1057", "chrmention": "染色体"}
+{"rid": "P1349", "chrmention": "染色體倍性"}
+{"rid": "P705", "chrmention": "no chinese label"}
+{"rid": "P704", "chrmention": "no chinese label"}
+{"rid": "P702", "chrmention": "編碼基因"}
+{"rid": "P692", "chrmention": "no chinese label"}
+{"rid": "P682", "chrmention": "no chinese label"}
+{"rid": "P684", "chrmention": "no chinese label"}
+{"rid": "P688", "chrmention": "no chinese label"}
+{"rid": "P686", "chrmention": "基因本體ID"}
+{"rid": "P681", "chrmention": "no chinese label"}
+{"rid": "P680", "chrmention": "no chinese label"}
+{"rid": "P665", "chrmention": "KEGG"}
+{"rid": "P660", "chrmention": "no chinese label"}
+{"rid": "P659", "chrmention": "no chinese label"}
+{"rid": "P594", "chrmention": "no chinese label"}
+{"rid": "P593", "chrmention": "no chinese label"}
+{"rid": "P595", "chrmention": "no chinese label"}
+{"rid": "P592", "chrmention": "no chinese label"}
+{"rid": "P591", "chrmention": "EC编号"}
+{"rid": "P354", "chrmention": "no chinese label"}
+{"rid": "P353", "chrmention": "no chinese label"}
+{"rid": "P352", "chrmention": "UniProt ID"}
+{"rid": "P1746", "chrmention": "no chinese label"}
+{"rid": "P2371", "chrmention": "no chinese label"}
+{"rid": "P351", "chrmention": "Entrez基因编码"}
+{"rid": "P1747", "chrmention": "中国植物志ID"}
+{"rid": "P1745", "chrmention": "no chinese label"}
+{"rid": "P1744", "chrmention": "no chinese label"}
+{"rid": "P1743", "chrmention": "no chinese label"}
+{"rid": "P970", "chrmention": "no chinese label"}
+{"rid": "P1353", "chrmention": "原拼法"}
+{"rid": "P1348", "chrmention": "AlgaeBase網址"}
+{"rid": "P1294", "chrmention": "no chinese label"}
+{"rid": "P1727", "chrmention": "no chinese label"}
+{"rid": "P1199", "chrmention": "遺傳模式"}
+{"rid": "P944", "chrmention": "命名法规"}
+{"rid": "P850", "chrmention": "世界海洋物种目录编号"}
+{"rid": "P846", "chrmention": "全球生物多样性信息机构ID"}
+{"rid": "P627", "chrmention": "IUCN编号"}
+{"rid": "P815", "chrmention": "ITIS TSN"}
+{"rid": "P842", "chrmention": "Fossilworks编号"}
+{"rid": "P685", "chrmention": "NCBI生物分类编号"}
+{"rid": "P687", "chrmention": "生物多樣性文獻圖書館頁碼"}
+{"rid": "P697", "chrmention": "前物种记载者"}
+{"rid": "P694", "chrmention": "no chinese label"}
+{"rid": "P678", "chrmention": "地位未定"}
+{"rid": "P566", "chrmention": "原学名"}
+{"rid": "P428", "chrmention": "命名人缩写"}
+{"rid": "P183", "chrmention": "原产于"}
+{"rid": "P129", "chrmention": "相互作用"}
+{"rid": "P181", "chrmention": "分佈地圖"}
+{"rid": "P427", "chrmention": "模式分类"}
+{"rid": "P141", "chrmention": "IUCN保護現狀"}
+{"rid": "P128", "chrmention": "调控（分子生物学）"}
+{"rid": "P105", "chrmention": "分类级别"}
+{"rid": "P171", "chrmention": "父系分類單元"}
+{"rid": "P405", "chrmention": "物种记载者"}
+{"rid": "P489", "chrmention": "货币符号"}
+{"rid": "P498", "chrmention": "ISO 4217代码"}
+{"rid": "P1933", "chrmention": "MobyGames ID"}
+{"rid": "P1733", "chrmention": "蒸汽应用标识符"}
+{"rid": "P916", "chrmention": "GSRR评级"}
+{"rid": "P914", "chrmention": "USK评级"}
+{"rid": "P908", "chrmention": "PEGI评级"}
+{"rid": "P853", "chrmention": "CERO评级"}
+{"rid": "P852", "chrmention": "ESRB评级"}
+{"rid": "P1592", "chrmention": "檢察官"}
+{"rid": "P1593", "chrmention": "no chinese label"}
+{"rid": "P225", "chrmention": "学名"}
+{"rid": "P1594", "chrmention": "法官"}
+{"rid": "P1596", "chrmention": "刑罰"}
+{"rid": "P1437", "chrmention": "辩解"}
+{"rid": "P1595", "chrmention": "控罪"}
+{"rid": "P1591", "chrmention": "被告人"}
+{"rid": "P1620", "chrmention": "no chinese label"}
+{"rid": "P1031", "chrmention": "案件號碼"}
+{"rid": "P467", "chrmention": "立法者"}
+{"rid": "P415", "chrmention": "廣播節目類型"}
+{"rid": "P2629", "chrmention": "BBFC评级"}
+{"rid": "P464", "chrmention": "NOR编码"}
+{"rid": "P2758", "chrmention": "no chinese label"}
+{"rid": "P2747", "chrmention": "no chinese label"}
+{"rid": "P2756", "chrmention": "影倫電影分級"}
+{"rid": "P1657", "chrmention": "no chinese label"}
+{"rid": "P1981", "chrmention": "FSK 電影評級"}
+{"rid": "P3129", "chrmention": "no chinese label"}
+{"rid": "P3110", "chrmention": "no chinese label"}
+{"rid": "P3128", "chrmention": "no chinese label"}
+{"rid": "P3107", "chrmention": "no chinese label"}
+{"rid": "P3077", "chrmention": "no chinese label"}
+{"rid": "P3135", "chrmention": "no chinese label"}
+{"rid": "P2970", "chrmention": "no chinese label"}
+{"rid": "P2897", "chrmention": "no chinese label"}
+{"rid": "P2883", "chrmention": "香港影庫電影編號"}
+{"rid": "P2826", "chrmention": "no chinese label"}
+{"rid": "P2725", "chrmention": "no chinese label"}
+{"rid": "P2678", "chrmention": "no chinese label"}
+{"rid": "P2704", "chrmention": "no chinese label"}
+{"rid": "P2703", "chrmention": "no chinese label"}
+{"rid": "P2636", "chrmention": "no chinese label"}
+{"rid": "P2631", "chrmention": "no chinese label"}
+{"rid": "P2529", "chrmention": "no chinese label"}
+{"rid": "P2509", "chrmention": "no chinese label"}
+{"rid": "P2400", "chrmention": "no chinese label"}
+{"rid": "P2508", "chrmention": "KINENOTE電影編號"}
+{"rid": "P2465", "chrmention": "no chinese label"}
+{"rid": "P2518", "chrmention": "no chinese label"}
+{"rid": "P2346", "chrmention": "no chinese label"}
+{"rid": "P2603", "chrmention": "no chinese label"}
+{"rid": "P2334", "chrmention": "no chinese label"}
+{"rid": "P1985", "chrmention": "ANN动画ID"}
+{"rid": "P1970", "chrmention": "MovieMeter電影編號"}
+{"rid": "P1934", "chrmention": "no chinese label"}
+{"rid": "P1562", "chrmention": "AllMovie标识符"}
+{"rid": "P1265", "chrmention": "AlloCiné電影編號"}
+{"rid": "P1804", "chrmention": "no chinese label"}
+{"rid": "P1237", "chrmention": "Box Office Mojo 電影名稱索引碼"}
+{"rid": "P2061", "chrmention": "长宽比"}
+{"rid": "P905", "chrmention": "端口鑑別碼"}
+{"rid": "P406", "chrmention": "配樂專輯"}
+{"rid": "P942", "chrmention": "no chinese label"}
+{"rid": "P480", "chrmention": "Filmaffinity标识"}
+{"rid": "P915", "chrmention": "拍摄地点"}
+{"rid": "P725", "chrmention": "配音演员"}
+{"rid": "P272", "chrmention": "製作商"}
+{"rid": "P1810", "chrmention": "命名为"}
+{"rid": "P2554", "chrmention": "美術指導"}
+{"rid": "P344", "chrmention": "摄影指导"}
+{"rid": "P2515", "chrmention": "服裝設計"}
+{"rid": "P3092", "chrmention": "电影摄制组成员"}
+{"rid": "P1431", "chrmention": "執行製作人"}
+{"rid": "P1040", "chrmention": "電影剪輯"}
+{"rid": "P161", "chrmention": "演员"}
+{"rid": "P58", "chrmention": "編劇"}
+{"rid": "P1432", "chrmention": "唱片B面"}
+{"rid": "P57", "chrmention": "导演"}
+{"rid": "P839", "chrmention": "IMSLP编码"}
+{"rid": "P1236", "chrmention": "帕爾森記錄代碼"}
+{"rid": "P676", "chrmention": "作词者"}
+{"rid": "P658", "chrmention": "no chinese label"}
+{"rid": "P826", "chrmention": "音調"}
+{"rid": "P435", "chrmention": "MusicBrainz作品編號"}
+{"rid": "P436", "chrmention": "MusicBrainz發行組編號"}
+{"rid": "P358", "chrmention": "作品目录"}
+{"rid": "P87", "chrmention": "劇作者"}
+{"rid": "P162", "chrmention": "制作人"}
+{"rid": "P264", "chrmention": "唱片厂商"}
+{"rid": "P86", "chrmention": "作曲家"}
+{"rid": "P434", "chrmention": "MusicBrainz音乐家编号"}
+{"rid": "P175", "chrmention": "表演者/音乐艺术家"}
+{"rid": "P2034", "chrmention": "古腾堡计划电子书编号"}
+{"rid": "P1191", "chrmention": "首演日期"}
+{"rid": "P1242", "chrmention": "Theatricalia劇作索引碼"}
+{"rid": "P1085", "chrmention": "no chinese label"}
+{"rid": "P1441", "chrmention": "出场作品"}
+{"rid": "P1104", "chrmention": "总页数"}
+{"rid": "P577", "chrmention": "出版日期"}
+{"rid": "P1190", "chrmention": "通用十进制图书分类法"}
+{"rid": "P356", "chrmention": "数字对象识别号"}
+{"rid": "P243", "chrmention": "OCLC"}
+{"rid": "P1144", "chrmention": "no chinese label"}
+{"rid": "P957", "chrmention": "ISBN-10"}
+{"rid": "P123", "chrmention": "出版社"}
+{"rid": "P212", "chrmention": "ISBN-13"}
+{"rid": "P236", "chrmention": "ISSN"}
+{"rid": "P291", "chrmention": "出版地"}
+{"rid": "P393", "chrmention": "版次"}
+{"rid": "P2680", "chrmention": "后跋作者"}
+{"rid": "P2679", "chrmention": "序言作者"}
+{"rid": "P98", "chrmention": "編輯者"}
+{"rid": "P655", "chrmention": "译者"}
+{"rid": "P110", "chrmention": "插画家"}
+{"rid": "P2242", "chrmention": "no chinese label"}
+{"rid": "P50", "chrmention": "作者"}
+{"rid": "P2081", "chrmention": "no chinese label"}
+{"rid": "P1822", "chrmention": "no chinese label"}
+{"rid": "P1726", "chrmention": "no chinese label"}
+{"rid": "P1708", "chrmention": "no chinese label"}
+{"rid": "P1300", "chrmention": "bibcode"}
+{"rid": "P1700", "chrmention": "no chinese label"}
+{"rid": "P1428", "chrmention": "no chinese label"}
+{"rid": "P1551", "chrmention": "no chinese label"}
+{"rid": "P1483", "chrmention": "kulturnoe-nasledie.ru"}
+{"rid": "P1257", "chrmention": "no chinese label"}
+{"rid": "P1212", "chrmention": "Atlas索引號"}
+{"rid": "P1230", "chrmention": "JSTOR期刊編號"}
+{"rid": "P1133", "chrmention": "no chinese label"}
+{"rid": "P845", "chrmention": "no chinese label"}
+{"rid": "P763", "chrmention": "no chinese label"}
+{"rid": "P808", "chrmention": "no chinese label"}
+{"rid": "P759", "chrmention": "no chinese label"}
+{"rid": "P758", "chrmention": "no chinese label"}
+{"rid": "P757", "chrmention": "世界遗产识别码"}
+{"rid": "P632", "chrmention": "no chinese label"}
+{"rid": "P633", "chrmention": "no chinese label"}
+{"rid": "P477", "chrmention": "no chinese label"}
+{"rid": "P381", "chrmention": "no chinese label"}
+{"rid": "P359", "chrmention": "Rijksmonument标识符"}
+{"rid": "P380", "chrmention": "no chinese label"}
+{"rid": "P347", "chrmention": "Joconde编码"}
+{"rid": "P350", "chrmention": "RKD图片"}
+{"rid": "P1780", "chrmention": "属于学派"}
+{"rid": "P1779", "chrmention": "no chinese label"}
+{"rid": "P1778", "chrmention": "no chinese label"}
+{"rid": "P1777", "chrmention": "no chinese label"}
+{"rid": "P1776", "chrmention": "no chinese label"}
+{"rid": "P1775", "chrmention": "no chinese label"}
+{"rid": "P1774", "chrmention": "no chinese label"}
+{"rid": "P1773", "chrmention": "no chinese label"}
+{"rid": "P1639", "chrmention": "no chinese label"}
+{"rid": "P1189", "chrmention": "中國圖書分類碼"}
+{"rid": "P1684", "chrmention": "铭文"}
+{"rid": "P217", "chrmention": "登记号码"}
+{"rid": "P195", "chrmention": "收藏于"}
+{"rid": "P186", "chrmention": "材料"}
+{"rid": "P149", "chrmention": "建築風格"}
+{"rid": "P180", "chrmention": "描绘内容"}
+{"rid": "P189", "chrmention": "发现地点"}
+{"rid": "P88", "chrmention": "委托人"}
+{"rid": "P466", "chrmention": "居住者/使用者"}
+{"rid": "P84", "chrmention": "建筑师"}
+{"rid": "P170", "chrmention": "创作者"}
+{"rid": "P1932", "chrmention": "表述为"}
+{"rid": "P1874", "chrmention": "no chinese label"}
+{"rid": "P1809", "chrmention": "no chinese label"}
+{"rid": "P1811", "chrmention": "剧集列表"}
+{"rid": "P1638", "chrmention": "no chinese label"}
+{"rid": "P1712", "chrmention": "no chinese label"}
+{"rid": "P1557", "chrmention": "表现概念"}
+{"rid": "P1462", "chrmention": "标准组织"}
+{"rid": "P1436", "chrmention": "收藏大小"}
+{"rid": "P528", "chrmention": "目錄編號"}
+{"rid": "P1240", "chrmention": "丹麥書目研究指標等級"}
+{"rid": "P1316", "chrmention": "SMDB编码"}
+{"rid": "P825", "chrmention": "纪念"}
+{"rid": "P1299", "chrmention": "描述于"}
+{"rid": "P750", "chrmention": "發行商"}
+{"rid": "P767", "chrmention": "作品协作者"}
+{"rid": "P747", "chrmention": "版本"}
+{"rid": "P736", "chrmention": "封面图片"}
+{"rid": "P495", "chrmention": "原產國"}
+{"rid": "P449", "chrmention": "首播电视台"}
+{"rid": "P674", "chrmention": "人物"}
+{"rid": "P447", "chrmention": "评分者"}
+{"rid": "P453", "chrmention": "角色"}
+{"rid": "P444", "chrmention": "評論得分"}
+{"rid": "P407", "chrmention": "作品或名稱語言"}
+{"rid": "P437", "chrmention": "发行方式"}
+{"rid": "P371", "chrmention": "主持人"}
+{"rid": "P840", "chrmention": "内容发生在"}
+{"rid": "P1476", "chrmention": "标题"}
+{"rid": "P179", "chrmention": "系列"}
+{"rid": "P275", "chrmention": "许可协议"}
+{"rid": "P135", "chrmention": "文化运动"}
+{"rid": "P136", "chrmention": "艺术流派（类型）"}
+{"rid": "P144", "chrmention": "改編自"}
+{"rid": "P1831", "chrmention": "选民数"}
+{"rid": "P2319", "chrmention": "no chinese label"}
+{"rid": "P1867", "chrmention": "合資格選民數"}
+{"rid": "P1111", "chrmention": "得票数"}
+{"rid": "P1697", "chrmention": "有效票數"}
+{"rid": "P991", "chrmention": "当选者"}
+{"rid": "P541", "chrmention": "競逐之職位"}
+{"rid": "P726", "chrmention": "候選人"}
+{"rid": "P1537", "chrmention": "是该对象的影响因素"}
+{"rid": "P1536", "chrmention": "直接导致自"}
+{"rid": "P2257", "chrmention": "no chinese label"}
+{"rid": "P1535", "chrmention": "使用者"}
+{"rid": "P1534", "chrmention": "結束原因"}
+{"rid": "P1479", "chrmention": "影响因素"}
+{"rid": "P1478", "chrmention": "直接原因"}
+{"rid": "P1446", "chrmention": "失踪人数"}
+{"rid": "P1346", "chrmention": "獲勝者"}
+{"rid": "P710", "chrmention": "參與者"}
+{"rid": "P832", "chrmention": "公立假日"}
+{"rid": "P1454", "chrmention": "法律形式"}
+{"rid": "P276", "chrmention": "位置"}
+{"rid": "P664", "chrmention": "主辦者"}
+{"rid": "P1110", "chrmention": "出席人数"}
+{"rid": "P1320", "chrmention": "OpenCorporates编码"}
+{"rid": "P414", "chrmention": "证券交易所"}
+{"rid": "P249", "chrmention": "股票代号"}
+{"rid": "P1308", "chrmention": "任职者"}
+{"rid": "P1268", "chrmention": "代表的团体或个人"}
+{"rid": "P2139", "chrmention": "營業額"}
+{"rid": "P1278", "chrmention": "no chinese label"}
+{"rid": "P1128", "chrmention": "员工人数"}
+{"rid": "P355", "chrmention": "子公司"}
+{"rid": "P199", "chrmention": "业务部门"}
+{"rid": "P488", "chrmention": "主席"}
+{"rid": "P169", "chrmention": "首席執行長"}
+{"rid": "P822", "chrmention": "吉祥物"}
+{"rid": "P505", "chrmention": "总经理"}
+{"rid": "P634", "chrmention": "隊長"}
+{"rid": "P286", "chrmention": "主教练"}
+{"rid": "P118", "chrmention": "所属联盟"}
+{"rid": "P432", "chrmention": "呼号"}
+{"rid": "P115", "chrmention": "主场"}
+{"rid": "P230", "chrmention": "ICAO航空公司代码"}
+{"rid": "P229", "chrmention": "IATA航空公司代码"}
+{"rid": "P121", "chrmention": "營運"}
+{"rid": "P114", "chrmention": "航空聯盟"}
+{"rid": "P113", "chrmention": "樞紐機場"}
+{"rid": "P1313", "chrmention": "政府首脑职位"}
+{"rid": "P1410", "chrmention": "所佔席次"}
+{"rid": "P1408", "chrmention": "廣播地區"}
+{"rid": "P1387", "chrmention": "政治立場"}
+{"rid": "P1342", "chrmention": "席次"}
+{"rid": "P740", "chrmention": "成立地點"}
+{"rid": "P112", "chrmention": "創辦者"}
+{"rid": "P576", "chrmention": "解散或廢除時間"}
+{"rid": "P571", "chrmention": "成立或創建時間"}
+{"rid": "P856", "chrmention": "官方网站"}
+{"rid": "P1056", "chrmention": "产品"}
+{"rid": "P457", "chrmention": "成立文书"}
+{"rid": "P807", "chrmention": "分离自"}
+{"rid": "P452", "chrmention": "产业"}
+{"rid": "P159", "chrmention": "总部位置"}
+{"rid": "P154", "chrmention": "标志图像"}
+{"rid": "P607", "chrmention": "军事冲突"}
+{"rid": "P410", "chrmention": "军衔"}
+{"rid": "P241", "chrmention": "軍種或部隊"}
+{"rid": "P598", "chrmention": "no chinese label"}
+{"rid": "P2639", "chrmention": "no chinese label"}
+{"rid": "P2638", "chrmention": "no chinese label"}
+{"rid": "P2626", "chrmention": "no chinese label"}
+{"rid": "P2605", "chrmention": "no chinese label"}
+{"rid": "P2604", "chrmention": "no chinese label"}
+{"rid": "P2519", "chrmention": "no chinese label"}
+{"rid": "P2168", "chrmention": "no chinese label"}
+{"rid": "P2435", "chrmention": "no chinese label"}
+{"rid": "P2019", "chrmention": "no chinese label"}
+{"rid": "P2387", "chrmention": "no chinese label"}
+{"rid": "P1982", "chrmention": "ANN人物ID"}
+{"rid": "P1969", "chrmention": "MovieMeter導演編號"}
+{"rid": "P1649", "chrmention": "no chinese label"}
+{"rid": "P1266", "chrmention": "no chinese label"}
+{"rid": "P2323", "chrmention": "no chinese label"}
+{"rid": "P1258", "chrmention": "烂番茄编号"}
+{"rid": "P1532", "chrmention": "代表国家/地区"}
+{"rid": "P1352", "chrmention": "排名"}
+{"rid": "P555", "chrmention": "no chinese label"}
+{"rid": "P564", "chrmention": "no chinese label"}
+{"rid": "P345", "chrmention": "IMDb 編號"}
+{"rid": "P413", "chrmention": "队中位置"}
+{"rid": "P2332", "chrmention": "no chinese label"}
+{"rid": "P54", "chrmention": "所屬運動隊"}
+{"rid": "P1290", "chrmention": "教父母"}
+{"rid": "P1971", "chrmention": "子女數目"}
+{"rid": "P1038", "chrmention": "亲属"}
+{"rid": "P3448", "chrmention": "繼父母"}
+{"rid": "P40", "chrmention": "子女"}
+{"rid": "P451", "chrmention": "情侶"}
+{"rid": "P26", "chrmention": "配偶"}
+{"rid": "P3373", "chrmention": "兄弟姊妹"}
+{"rid": "P25", "chrmention": "母亲"}
+{"rid": "P1938", "chrmention": "古腾堡计划作者ID"}
+{"rid": "P22", "chrmention": "父亲"}
+{"rid": "P1429", "chrmention": "寵物"}
+{"rid": "P1472", "chrmention": "共享资源作者页面"}
+{"rid": "P1416", "chrmention": "归属"}
+{"rid": "P1340", "chrmention": "眼睛顏色"}
+{"rid": "P1412", "chrmention": "口头、书面或签名语言"}
+{"rid": "P1399", "chrmention": "所犯罪名"}
+{"rid": "P1344", "chrmention": "参与"}
+{"rid": "P1303", "chrmention": "樂器"}
+{"rid": "P1283", "chrmention": "影片集锦"}
+{"rid": "P990", "chrmention": "话语录音"}
+{"rid": "P841", "chrmention": "圣人纪念日"}
+{"rid": "P742", "chrmention": "化名"}
+{"rid": "P734", "chrmention": "姓氏"}
+{"rid": "P1037", "chrmention": "主管"}
+{"rid": "P735", "chrmention": "名字"}
+{"rid": "P1035", "chrmention": "no chinese label"}
+{"rid": "P553", "chrmention": "开设账户网站"}
+{"rid": "P552", "chrmention": "利手"}
+{"rid": "P512", "chrmention": "学位"}
+{"rid": "P511", "chrmention": "头衔"}
+{"rid": "P97", "chrmention": "貴族頭銜"}
+{"rid": "P53", "chrmention": "所屬望族"}
+{"rid": "P468", "chrmention": "段位/级数"}
+{"rid": "P470", "chrmention": "旗籍"}
+{"rid": "P423", "chrmention": "no chinese label"}
+{"rid": "P450", "chrmention": "航天任务"}
+{"rid": "P412", "chrmention": "聲域"}
+{"rid": "P411", "chrmention": "no chinese label"}
+{"rid": "P802", "chrmention": "學生"}
+{"rid": "P1066", "chrmention": "老師"}
+{"rid": "P185", "chrmention": "教授的博士生"}
+{"rid": "P109", "chrmention": "签名"}
+{"rid": "P237", "chrmention": "纹章"}
+{"rid": "P94", "chrmention": "纹章图像"}
+{"rid": "P184", "chrmention": "博士生导师"}
+{"rid": "P91", "chrmention": "性取向"}
+{"rid": "P140", "chrmention": "信仰"}
+{"rid": "P263", "chrmention": "官邸"}
+{"rid": "P551", "chrmention": "居住地"}
+{"rid": "P166", "chrmention": "獎項"}
+{"rid": "P39", "chrmention": "官職"}
+{"rid": "P102", "chrmention": "所属政党"}
+{"rid": "P108", "chrmention": "雇主"}
+{"rid": "P101", "chrmention": "領域"}
+{"rid": "P106", "chrmention": "职业"}
+{"rid": "P69", "chrmention": "就读学校"}
+{"rid": "P103", "chrmention": "母语"}
+{"rid": "P27", "chrmention": "國籍"}
+{"rid": "P172", "chrmention": "族群"}
+{"rid": "P463", "chrmention": "所属组织"}
+{"rid": "P66", "chrmention": "籍贯"}
+{"rid": "P1559", "chrmention": "母语人名"}
+{"rid": "P157", "chrmention": "殺害者"}
+{"rid": "P1196", "chrmention": "死亡方式"}
+{"rid": "P1442", "chrmention": "墓碑图片"}
+{"rid": "P119", "chrmention": "墓地"}
+{"rid": "P509", "chrmention": "死因"}
+{"rid": "P20", "chrmention": "死亡地"}
+{"rid": "P800", "chrmention": "主要作品"}
+{"rid": "P570", "chrmention": "死亡日期"}
+{"rid": "P1477", "chrmention": "出生姓名"}
+{"rid": "P3150", "chrmention": "生日"}
+{"rid": "P569", "chrmention": "出生日期"}
+{"rid": "P21", "chrmention": "性別"}
+{"rid": "P625", "chrmention": "地理坐标"}
+{"rid": "P1264", "chrmention": "有效期间"}
+{"rid": "P585", "chrmention": "日期"}
+{"rid": "P675", "chrmention": "Google圖書認別碼"}
+{"rid": "P580", "chrmention": "始于"}
+{"rid": "P989", "chrmention": "口语音频文件"}
+{"rid": "P996", "chrmention": "檢視檔案"}
+{"rid": "P443", "chrmention": "读音 (音频文件)"}
+{"rid": "P373", "chrmention": "共享资源分类"}
+{"rid": "P10", "chrmention": "视频"}
+{"rid": "P51", "chrmention": "音频"}
+{"rid": "P1803", "chrmention": "no chinese label"}
+{"rid": "P1749", "chrmention": "no chinese label"}
+{"rid": "P18", "chrmention": "圖像"}
+{"rid": "P1307", "chrmention": "瑞士议会识别码"}
+{"rid": "P1331", "chrmention": "PACE成员代码"}
+{"rid": "P1291", "chrmention": "瑞士作者协会ID"}
+{"rid": "P19", "chrmention": "出生地"}
+{"rid": "P582", "chrmention": "终于"}
+{"rid": "P1254", "chrmention": "no chinese label"}
+{"rid": "P1601", "chrmention": "no chinese label"}
+{"rid": "P1461", "chrmention": "Patientplus编码"}
+{"rid": "P1453", "chrmention": "catholic.ru编码"}
+{"rid": "P1439", "chrmention": "no chinese label"}
+{"rid": "P1447", "chrmention": "Sports Reference ID代码"}
+{"rid": "P1438", "chrmention": "no chinese label"}
+{"rid": "P1415", "chrmention": "牛津國家人物傳記大辭典編號"}
+{"rid": "P1395", "chrmention": "NCI 索引碼"}
+{"rid": "P1400", "chrmention": "美國家通訊委員會設施編號"}
+{"rid": "P1394", "chrmention": "Glottolog 代碼"}
+{"rid": "P1392", "chrmention": "ComicBookDB 索引碼"}
+{"rid": "P1391", "chrmention": "Index Fungorum 索引碼"}
+{"rid": "P1263", "chrmention": "NNDB标识符"}
+{"rid": "P1310", "chrmention": "声明争议"}
+{"rid": "P1309", "chrmention": "no chinese label"}
+{"rid": "P1466", "chrmention": "no chinese label"}
+{"rid": "P1297", "chrmention": "no chinese label"}
+{"rid": "P1296", "chrmention": "no chinese label"}
+{"rid": "P1292", "chrmention": "DNB版本"}
+{"rid": "P1293", "chrmention": "no chinese label"}
+{"rid": "P1289", "chrmention": "no chinese label"}
+{"rid": "P1288", "chrmention": "no chinese label"}
+{"rid": "P1386", "chrmention": "no chinese label"}
+{"rid": "P1287", "chrmention": "no chinese label"}
+{"rid": "P1286", "chrmention": "no chinese label"}
+{"rid": "P1285", "chrmention": "no chinese label"}
+{"rid": "P1058", "chrmention": "ERA日记编号"}
+{"rid": "P1054", "chrmention": "NDL版本"}
+{"rid": "P1375", "chrmention": "NSK索引碼"}
+{"rid": "P1385", "chrmention": "no chinese label"}
+{"rid": "P1053", "chrmention": "ResearcherID"}
+{"rid": "P1052", "chrmention": "no chinese label"}
+{"rid": "P1051", "chrmention": "no chinese label"}
+{"rid": "P1043", "chrmention": "IDEO工作编号"}
+{"rid": "P1017", "chrmention": "BAV（梵蒂冈图书馆）编码"}
+{"rid": "P1005", "chrmention": "PTBNP编号"}
+{"rid": "P947", "chrmention": "RSL編碼"}
+{"rid": "P1006", "chrmention": "NTA识别码（荷兰）"}
+{"rid": "P648", "chrmention": "Open Library编号"}
+{"rid": "P760", "chrmention": "no chinese label"}
+{"rid": "P791", "chrmention": "ISIL代码"}
+{"rid": "P745", "chrmention": "no chinese label"}
+{"rid": "P723", "chrmention": "DBNL編碼"}
+{"rid": "P727", "chrmention": "no chinese label"}
+{"rid": "P724", "chrmention": "互聯網檔案館編號"}
+{"rid": "P718", "chrmention": "no chinese label"}
+{"rid": "P709", "chrmention": "no chinese label"}
+{"rid": "P691", "chrmention": "NKC识别码"}
+{"rid": "P640", "chrmention": "Léonore编号"}
+{"rid": "P646", "chrmention": "Freebase ID"}
+{"rid": "P508", "chrmention": "BNCF词库"}
+{"rid": "P497", "chrmention": "中国历代人物传记资料库编号"}
+{"rid": "P503", "chrmention": "ISO标准"}
+{"rid": "P496", "chrmention": "ORCID"}
+{"rid": "P502", "chrmention": "HURDAT识别码"}
+{"rid": "P409", "chrmention": "NLA編號"}
+{"rid": "P396", "chrmention": "SBN编号"}
+{"rid": "P349", "chrmention": "NDL编号"}
+{"rid": "P271", "chrmention": "CINII作者識別碼"}
+{"rid": "P270", "chrmention": "中国高等教育文献保障系统"}
+{"rid": "P269", "chrmention": "法国大学论文资料库"}
+{"rid": "P268", "chrmention": "BnF编号"}
+{"rid": "P245", "chrmention": "藝術家名稱合衆目錄"}
+{"rid": "P214", "chrmention": "VIAF标识符"}
+{"rid": "P244", "chrmention": "LCNAF编号"}
+{"rid": "P213", "chrmention": "国际标准名称标识符"}
+{"rid": "P1814", "chrmention": "日语假名"}
+{"rid": "P1889", "chrmention": "相異物"}
+{"rid": "P1419", "chrmention": "形状"}
+{"rid": "P1480", "chrmention": "信息的準確性"}
+{"rid": "P227", "chrmention": "GND编号"}
+{"rid": "P1343", "chrmention": "記載於"}
+{"rid": "P1318", "chrmention": "证明者"}
+{"rid": "P1269", "chrmention": "父话题"}
+{"rid": "P1246", "chrmention": "專利號"}
+{"rid": "P575", "chrmention": "发现日期"}
+{"rid": "P366", "chrmention": "用途"}
+{"rid": "P518", "chrmention": "適用部分"}
+{"rid": "P487", "chrmention": "Unicode字符"}
+{"rid": "P485", "chrmention": "存檔于"}
+{"rid": "P465", "chrmention": "sRGB HEX色值"}
+{"rid": "P462", "chrmention": "颜色"}
+{"rid": "P416", "chrmention": "量符号"}
+{"rid": "P460", "chrmention": "据称相同词"}
+{"rid": "P461", "chrmention": "相对概念"}
+{"rid": "P155", "chrmention": "上一项"}
+{"rid": "P156", "chrmention": "下一项"}
+{"rid": "P360", "chrmention": "列表主題"}
+{"rid": "P61", "chrmention": "發現者或發明者"}
+{"rid": "P910", "chrmention": "话题主分类"}
+{"rid": "P790", "chrmention": "獲准自"}
+{"rid": "P127", "chrmention": "擁有者"}
+{"rid": "P301", "chrmention": "分類主條目"}
+{"rid": "P138", "chrmention": "得名自"}
+{"rid": "P527", "chrmention": "可分為"}
+{"rid": "P279", "chrmention": "上級分類"}
+{"rid": "P361", "chrmention": "属于"}
+{"rid": "P31", "chrmention": "性質"}
