@@ -6,7 +6,7 @@
 ```
 .
 ├── MyCrawler      // scrapy爬虫项目路径(已爬好)
-│   └── MyCrawler
+│   └── MyCrawler 
 │       ├── __pycache__
 │       ├── data
 │       └── spiders
