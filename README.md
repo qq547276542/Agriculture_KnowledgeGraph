@@ -6,7 +6,7 @@
 ```
 .
 ├── MyCrawler      // scrapy爬虫项目路径(已爬好)
-│   └── MyCrawler 
+│   └── MyCrawler
 │       ├── __pycache__
 │       ├── data
 │       └── spiders
@@ -78,7 +78,7 @@ ASSERT c.title IS UNIQUE
 2. 进入demo目录，然后输入：
 
    ```
-   sudo manage.py runserver
+   sudo python3 manage.py runserver 0.0.0.0:8000
    ```
 
    这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
