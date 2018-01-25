@@ -1,0 +1,204 @@
+2018-01-25 19:54:32 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: MyCrawler)
+2018-01-25 19:54:32 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'MyCrawler', 'CONCURRENT_REQUESTS': 128, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 15, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'MyCrawler.spiders', 'REDIRECT_ENABLED': False, 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['MyCrawler.spiders']}
+2018-01-25 19:54:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-25 19:54:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-25 19:54:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-25 19:54:32 [py.warnings] WARNING: /Users/chenyuanzhe/iCollections/Project/GraphKnowledge/MyCrawler/MyCrawler/pipelines.py:12: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2018-01-25 19:54:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['MyCrawler.pipelines.HudongPipeline']
+2018-01-25 19:54:32 [scrapy.core.engine] INFO: Spider opened
+2018-01-25 19:54:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-25 19:55:02 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2018-01-25 19:55:02 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-01-25 19:55:06 [scrapy.crawler] INFO: Received SIG_UNBLOCK twice, forcing unclean shutdown
+2018-01-25 19:55:35 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: MyCrawler)
+2018-01-25 19:55:35 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'MyCrawler', 'CONCURRENT_REQUESTS': 128, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 15, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'MyCrawler.spiders', 'REDIRECT_ENABLED': False, 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['MyCrawler.spiders']}
+2018-01-25 19:55:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-25 19:55:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-25 19:55:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-25 19:55:35 [py.warnings] WARNING: /Users/chenyuanzhe/iCollections/Project/GraphKnowledge/MyCrawler/MyCrawler/pipelines.py:12: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2018-01-25 19:55:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['MyCrawler.pipelines.HudongPipeline']
+2018-01-25 19:55:35 [scrapy.core.engine] INFO: Spider opened
+2018-01-25 19:55:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-25 19:56:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%BA%A2%E7%91%9E>: HTTP status code is not handled or not allowed
+2018-01-25 19:56:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%A4%A7%E9%BB%84%E6%A2%A8>: HTTP status code is not handled or not allowed
+2018-01-25 19:56:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%BB%91%E6%A2%A8>: HTTP status code is not handled or not allowed
+2018-01-25 19:56:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%8B%B9%E9%A6%99%E6%A2%A8>: HTTP status code is not handled or not allowed
+2018-01-25 19:56:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%BA%BD%E8%8D%B7%E5%B0%94%E8%84%90>: HTTP status code is not handled or not allowed
+2018-01-25 19:56:35 [scrapy.extensions.logstats] INFO: Crawled 2025 pages (at 2025 pages/min), scraped 2014 items (at 2014 items/min)
+2018-01-25 19:56:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%BE%9F%E5%9F%BA%E8%8B%AF%E7%94%B2%E9%85%B8%E7%94%B2%E9%85%AF>: HTTP status code is not handled or not allowed
+2018-01-25 19:57:35 [scrapy.extensions.logstats] INFO: Crawled 3818 pages (at 1793 pages/min), scraped 3809 items (at 1795 items/min)
+2018-01-25 19:58:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%8C%B6%E9%85%92>: HTTP status code is not handled or not allowed
+2018-01-25 19:58:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%A1%82%E8%8A%B1%E9%BE%99%E4%BA%95>: HTTP status code is not handled or not allowed
+2018-01-25 19:58:35 [scrapy.extensions.logstats] INFO: Crawled 5516 pages (at 1698 pages/min), scraped 5504 items (at 1695 items/min)
+2018-01-25 19:58:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%99%B6%E8%8C%B6%E5%85%B7>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%83%98%E9%9D%92>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%85%B1%E8%8C%B6>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8D%8E%E7%A5%A5%E8%8B%91>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%9A%87%E5%85%B8>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%9D%96%E4%BF%8A%E9%93%81%E8%A7%82%E9%9F%B3>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD%E9%97%BD%E5%BC%98%E6%B3%B0>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%BF%B7%E4%BD%A0%E6%B2%B1>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:35 [scrapy.extensions.logstats] INFO: Crawled 7375 pages (at 1859 pages/min), scraped 7353 items (at 1849 items/min)
+2018-01-25 19:59:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%BA%91%E5%8D%97%E5%88%99%E9%81%93%E8%8C%B6%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%B4%9E%E5%BA%AD%E7%A2%A7%E8%9E%BA>: HTTP status code is not handled or not allowed
+2018-01-25 19:59:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%B7%9E%E4%B8%BE%E5%B2%A9>: HTTP status code is not handled or not allowed
+2018-01-25 20:00:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%86%BB%E9%A1%B6%E4%B9%8C%E9%BE%99>: HTTP status code is not handled or not allowed
+2018-01-25 20:00:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%94%B2%E9%85%B8%E8%8A%B3%E6%A8%9F%E9%85%AF>: HTTP status code is not handled or not allowed
+2018-01-25 20:00:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%8C%89%E8%8E%89%E9%85%AE%E9%85%B8%E7%94%B2%E9%85%AF>: HTTP status code is not handled or not allowed
+2018-01-25 20:00:35 [scrapy.extensions.logstats] INFO: Crawled 9072 pages (at 1697 pages/min), scraped 9045 items (at 1692 items/min)
+2018-01-25 20:00:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8F%AF%E9%A2%82>: HTTP status code is not handled or not allowed
+2018-01-25 20:01:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%B9%E9%BA%A6%E8%93%9D%E7%BD%90>: HTTP status code is not handled or not allowed
+2018-01-25 20:01:35 [scrapy.extensions.logstats] INFO: Crawled 10735 pages (at 1663 pages/min), scraped 10707 items (at 1662 items/min)
+2018-01-25 20:02:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%A4%A9%E4%BC%98330>: HTTP status code is not handled or not allowed
+2018-01-25 20:02:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD83-4>: HTTP status code is not handled or not allowed
+2018-01-25 20:02:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%9D%82%E4%BA%A4%E6%B0%B4%E7%A8%BB%E4%B9%8B%E7%88%B6>: HTTP status code is not handled or not allowed
+2018-01-25 20:02:35 [scrapy.extensions.logstats] INFO: Crawled 12557 pages (at 1822 pages/min), scraped 12523 items (at 1816 items/min)
+2018-01-25 20:02:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8F%89%E5%B0%BE%E9%AE%B0>: HTTP status code is not handled or not allowed
+2018-01-25 20:03:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%99%BD%E8%80%B3%E9%BB%84%E9%B8%A1>: HTTP status code is not handled or not allowed
+2018-01-25 20:03:35 [scrapy.extensions.logstats] INFO: Crawled 14344 pages (at 1787 pages/min), scraped 14310 items (at 1787 items/min)
+2018-01-25 20:03:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%85%BB%E6%AE%96%E5%B7%B4%E5%B7%B4>: HTTP status code is not handled or not allowed
+2018-01-25 20:04:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%A5%B2%E6%96%99%E9%85%8D%E6%96%B9>: HTTP status code is not handled or not allowed
+2018-01-25 20:04:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 http://www.baike.com/wiki/%E5%B7%A6%E6%97%8B%E8%82%89%E7%A2%B1%E9%A5%B2%E6%96%99%E7%BA%A750%>: HTTP status code is not handled or not allowed
+2018-01-25 20:04:35 [scrapy.extensions.logstats] INFO: Crawled 16117 pages (at 1773 pages/min), scraped 16080 items (at 1770 items/min)
+2018-01-25 20:04:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%B2%92%E5%89%82>: HTTP status code is not handled or not allowed
+2018-01-25 20:05:35 [scrapy.extensions.logstats] INFO: Crawled 18085 pages (at 1968 pages/min), scraped 18047 items (at 1967 items/min)
+2018-01-25 20:06:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD%E5%9B%BD%E5%86%9C%E6%B0%91%E8%B0%83%E6%9F%A5>: HTTP status code is not handled or not allowed
+2018-01-25 20:06:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%B4%AA%E5%85%A8>: HTTP status code is not handled or not allowed
+2018-01-25 20:06:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%B4%AA%E7%A7%80>: HTTP status code is not handled or not allowed
+2018-01-25 20:06:35 [scrapy.extensions.logstats] INFO: Crawled 19706 pages (at 1621 pages/min), scraped 19664 items (at 1617 items/min)
+2018-01-25 20:06:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8C%BB%E8%8D%AF%E7%94%9F%E7%89%A9>: HTTP status code is not handled or not allowed
+2018-01-25 20:07:35 [scrapy.extensions.logstats] INFO: Crawled 21196 pages (at 1490 pages/min), scraped 21155 items (at 1491 items/min)
+2018-01-25 20:07:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%98%8C%E5%B9%B3%E4%B8%AD%E5%BF%83%E5%85%AC%E5%9B%AD>: HTTP status code is not handled or not allowed
+2018-01-25 20:07:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%BE%99%E8%8A%B1%E5%9B%AD>: HTTP status code is not handled or not allowed
+2018-01-25 20:08:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%91%A1%E8%90%84%E9%85%92%E5%BA%84%E5%9B%AD>: HTTP status code is not handled or not allowed
+2018-01-25 20:08:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%BD%A9%E7%8E%89%E7%9F%B3>: HTTP status code is not handled or not allowed
+2018-01-25 20:08:35 [scrapy.extensions.logstats] INFO: Crawled 23187 pages (at 1991 pages/min), scraped 23144 items (at 1989 items/min)
+2018-01-25 20:08:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%86%9C%E4%B8%9A%E6%B0%94%E5%80%99%E5%8C%BA>: HTTP status code is not handled or not allowed
+2018-01-25 20:08:38 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8F%B6%E9%9D%A2%E7%A7%AF>: HTTP status code is not handled or not allowed
+2018-01-25 20:09:33 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9C%9F%E5%9C%B0%E5%A4%8D%E5%9E%A6>: HTTP status code is not handled or not allowed
+2018-01-25 20:09:34 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9C%9F%E5%9C%B0%E7%AE%A1%E7%90%86>: HTTP status code is not handled or not allowed
+2018-01-25 20:09:34 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9F%8E%E9%95%87%E5%9B%BD%E6%9C%89>: HTTP status code is not handled or not allowed
+2018-01-25 20:09:34 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%8B%9B%E6%A0%87%E6%8B%8D%E5%8D%96%E6%8C%82%E7%89%8C%E5%87%BA%E8%AE%A9%E5%9B%BD%E6%9C%89%E5%9C%9F>: HTTP status code is not handled or not allowed
+2018-01-25 20:09:35 [scrapy.extensions.logstats] INFO: Crawled 24984 pages (at 1797 pages/min), scraped 24933 items (at 1789 items/min)
+2018-01-25 20:10:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B9%A1%E6%9D%91%E6%95%99%E8%82%B2>: HTTP status code is not handled or not allowed
+2018-01-25 20:10:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%8B%AF%E8%83%BA%E7%81%B5>: HTTP status code is not handled or not allowed
+2018-01-25 20:10:21 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%97%85%E5%AE%B3>: HTTP status code is not handled or not allowed
+2018-01-25 20:10:35 [scrapy.extensions.logstats] INFO: Crawled 26266 pages (at 1282 pages/min), scraped 26213 items (at 1280 items/min)
+2018-01-25 20:11:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%8E%9B%E5%A5%87%E6%9C%B5>: HTTP status code is not handled or not allowed
+2018-01-25 20:11:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%8E%9B%E7%90%AA%E9%9B%85%E6%9C%B5>: HTTP status code is not handled or not allowed
+2018-01-25 20:11:34 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%96%9C%E9%B9%8A%E5%92%96%E5%95%A1>: HTTP status code is not handled or not allowed
+2018-01-25 20:11:35 [scrapy.extensions.logstats] INFO: Crawled 27939 pages (at 1673 pages/min), scraped 27880 items (at 1667 items/min)
+2018-01-25 20:12:35 [scrapy.extensions.logstats] INFO: Crawled 29276 pages (at 1337 pages/min), scraped 29217 items (at 1337 items/min)
+2018-01-25 20:12:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%B3%B0%E5%95%A4>: HTTP status code is not handled or not allowed
+2018-01-25 20:12:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%89%B9%E8%8B%A6%E5%95%A4%E9%85%92>: HTTP status code is not handled or not allowed
+2018-01-25 20:13:35 [scrapy.extensions.logstats] INFO: Crawled 31067 pages (at 1791 pages/min), scraped 31006 items (at 1789 items/min)
+2018-01-25 20:13:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%A6%81%E7%BA%A2%E9%85%92>: HTTP status code is not handled or not allowed
+2018-01-25 20:14:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%81%E8%8D%89>: HTTP status code is not handled or not allowed
+2018-01-25 20:14:35 [scrapy.extensions.logstats] INFO: Crawled 32531 pages (at 1464 pages/min), scraped 32471 items (at 1465 items/min)
+2018-01-25 20:15:36 [scrapy.extensions.logstats] INFO: Crawled 34125 pages (at 1594 pages/min), scraped 34060 items (at 1589 items/min)
+2018-01-25 20:15:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E4%B8%87%E5%A4%9A%E7%A6%8F>: HTTP status code is not handled or not allowed
+2018-01-25 20:15:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%B9%B2%E5%93%A5%E4%BF%A9>: HTTP status code is not handled or not allowed
+2018-01-25 20:15:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%85%92%E5%9F%8E>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%9C%9C%E8%8F%93>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%91%9E%E9%9B%80>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%9C%9C%E8%9C%82%E5%A0%82>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%9C%9C%E7%88%B1%E8%9C%9C>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%B0%AD%E6%B0%8F>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%98%BF%E8%83%B6%E7%BA%A2%E7%B3%96>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%B4%A1%E5%BA%9C%E5%A0%82>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E8%B4%A1%E7%A6%A7%E5%A0%82>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8F%A4%E8%83%B6>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:20 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%BD%9D%E4%B9%A1%E4%BA%BA>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:22 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%AE%81%E5%A4%8F%E4%B8%AD%E5%AE%81%E6%9E%B8%E6%9D%9E>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%B1%89%E6%B3%A2>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%AF%8F%E4%BC%B4>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:35 [scrapy.extensions.logstats] INFO: Crawled 35916 pages (at 1791 pages/min), scraped 35842 items (at 1782 items/min)
+2018-01-25 20:16:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%99%BD%E5%8F%B6>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8C%85%E9%94%98>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:38 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%88%9D%E6%A6%A8%E6%A9%84%E6%A6%84%E6%B2%B9>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E9%87%91%E7%A6%8F%E5%80%8D>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E7%8E%9B%E8%92%82%E5%A8%9C>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%8A%AA%E7%8E%9B>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%BE%B7%E8%8F%B2>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%A9%9A%E5%BA%86%E7%BD%91>: HTTP status code is not handled or not allowed
+2018-01-25 20:16:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%A9%9A%E5%BA%86%E4%BA%A7%E4%B8%9A>: HTTP status code is not handled or not allowed
+2018-01-25 20:17:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E6%8D%A7%E8%8A%B1>: HTTP status code is not handled or not allowed
+2018-01-25 20:17:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%96%B7%E5%BD%A9>: HTTP status code is not handled or not allowed
+2018-01-25 20:17:16 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <302 http://www.baike.com/wiki/%E5%85%BB%E6%AE%96%E7%BD%91>: HTTP status code is not handled or not allowed
+2018-01-25 20:17:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-01-25 20:17:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 14,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 14,
+ 'downloader/request_bytes': 9653543,
+ 'downloader/request_count': 37000,
+ 'downloader/request_method_count/GET': 37000,
+ 'downloader/response_bytes': 444632790,
+ 'downloader/response_count': 36986,
+ 'downloader/response_status_count/200': 36893,
+ 'downloader/response_status_count/302': 84,
+ 'downloader/response_status_count/400': 1,
+ 'downloader/response_status_count/502': 8,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 1, 25, 12, 17, 17, 193525),
+ 'httperror/response_ignored_count': 85,
+ 'httperror/response_ignored_status_count/302': 84,
+ 'httperror/response_ignored_status_count/400': 1,
+ 'item_scraped_count': 36892,
+ 'log_count/INFO': 113,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 142876672,
+ 'memusage/startup': 62898176,
+ 'response_received_count': 36978,
+ 'retry/count': 22,
+ 'retry/reason_count/502 Bad Gateway': 8,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 14,
+ 'scheduler/dequeued': 36999,
+ 'scheduler/dequeued/memory': 36999,
+ 'scheduler/enqueued': 36999,
+ 'scheduler/enqueued/memory': 36999,
+ 'start_time': datetime.datetime(2018, 1, 25, 11, 55, 35, 908567)}
+2018-01-25 20:17:17 [scrapy.core.engine] INFO: Spider closed (finished)

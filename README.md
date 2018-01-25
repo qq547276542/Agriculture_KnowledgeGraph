@@ -75,13 +75,6 @@ ASSERT c.title IS UNIQUE
 
 以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
 
-接下来还需要修改下登陆neo4j的用户名密码：
-
-``` 
-修改demo/Model/neo_models.py文件
-将connectDB(self)中的username和password改成你自己的
-```
-
 2. 进入demo目录，然后输入：
 
    ```

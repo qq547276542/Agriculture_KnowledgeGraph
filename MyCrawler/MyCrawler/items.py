@@ -24,4 +24,3 @@ class HudongItem(scrapy.Item):
     baseInfoKeyList = scrapy.Field()  #基本信息key列表
     baseInfoValueList = scrapy.Field()  #基本信息value列表
     
-    

@@ -13,7 +13,7 @@ def create_predict(HudongItem_csv):
 	classifier.load_trainSet(data_set)
 	classifier.set_parameter(weight=[1.0, 3.0, 0.2, 4.0, 0],k=10)
 	predict_List = readCSVbyColumn(HudongItem_csv, 'title')
-	file_object = open('predict_labels.txt','a')
+	file_object = open('predict_labels2.txt','a')
 	
 	count = 0
 	vis = set()
@@ -34,5 +34,5 @@ def create_predict(HudongItem_csv):
 		
 	file_object.close()
 	
-create_predict('hudong_pedia.csv')
+create_predict('hudong_pedia2.csv')
 	

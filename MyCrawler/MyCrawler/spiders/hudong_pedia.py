@@ -8,7 +8,8 @@ class HudongSpider(scrapy.Spider):
 	name = "hudong"   #爬虫启动命令：scrapy crawl hudong
 	allowed_domains = ["http://www.baike.com"]    #声明地址域
 	
-	file_object = open('merge_table3.txt','r').read()
+#	file_object = open('merge_table3.txt','r').read()
+	file_object = open('crawled_leaf_list.txt','r').read()
 	wordList = file_object.split()  # 获取词表
 	
 	start_urls = []
