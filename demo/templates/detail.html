@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block mainbody %}
+
 <title>详细资料</title>
 
 <div class="container">
@@ -16,36 +17,56 @@
                     </ol>
                 </div>
             </div>
+            {% autoescape off %}
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="panel panel-default">
 
-            <div class="panel panel-default">
-                {% autoescape off %}
-                <!--代表将html标签文本转义成标签显示-->
-                <div class="panel-body">
-                    <div class="page-header">
-                        <h1>{{ title }}</h1>
-                        {{ openTypeList }}
-                    </div>
-                    <hr class="my-4" />
-                    <div class="row">
-                        <div class="col-xs-6 col-md-3">
-                            <a href="#" class="thumbnail">
+                        <!--代表将html标签文本转义成标签显示-->
+                        <div class="panel-body">
+                            <div class="page-header">
+                                <h1>{{ title }}</h1>
+                                {{ openTypeList }}
+                            </div>
+                            <hr class="my-4" />
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#" class="thumbnail">
                                 {{ image }}
                              </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ detail }}</p>
+                                </div>
+                            </div>
+                            <br /> {{ baseInfoTable }}
                         </div>
-                        <div class="col-md-8">
-                            <p class="card-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ detail }}</p>
-                        </div>
+
+
+
                     </div>
-                    <br /> {{ baseInfoTable }}
                 </div>
 
-
-                {% endautoescape %}
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <!--代表将html标签文本转义成标签显示-->
+                        <div class="panel-body">
+                            <h4>相关实体：</h4>
+                            <!-- begin -->
+                            <div class="tagcloud">
+                                <!-- class="tagcloud" - 用途js.css -->
+                                {{ tagcloud }}
+                            </div>
+                            <!-- end -->
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            {% endautoescape %}
         </div>
-        <div class="col-sm-1"></div>
     </div>
 </div>
+<script>
+</script>
 
 {% endblock %}

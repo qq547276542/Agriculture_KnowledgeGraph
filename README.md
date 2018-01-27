@@ -33,15 +33,14 @@
 │   │       └── webp
 │   ├── templates   // html页面
 │   └── toolkit   // 工具库，包括预加载，命名实体识别
-│       
-└── predict\ label   // KNN算法预测标签
+│   └── KNN_predict   // KNN算法预测标签
 ```
 
 ## 可复用资源
 
 - hudong_pedia.csv : 已经爬好的农业实体的百科页面的结构化csv文件
 - labels.txt： 5000多个手工标注的实体类别
-- predict_labels.txt:  KNN算法预测的10W多个实体的类别
+- predict_labels.txt:  KNN算法预测的13W多个实体的类别
 
 ## 项目配置
 
@@ -53,7 +52,7 @@
 - thulac      ---分词、词性标注
 - py2neo    ---python连接neo4j的工具
 - pyfasttext    ---facebook开源的词向量计算框架
-- 预训练好的词向量模型wiki.zh.bin    ---下载链接请看predict label目录中的README.md
+- 预训练好的词向量模型wiki.zh.bin    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
 
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
@@ -65,8 +64,8 @@
 ```
 LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia.csv" AS line  
 CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,baseInfoValueList:line.baseInfoValueList})  
-
 ```
+**新增了hudong_pedia2.csv，重复上述操作(放入import目录，控制台导入)**
 
 ```
 CREATE CONSTRAINT ON (c:HudongItem)
@@ -75,27 +74,31 @@ ASSERT c.title IS UNIQUE
 
 以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
 
-2. 进入demo目录，然后输入：
+2. 下载词向量模型和词向量：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
+  将wiki.zh.bin放入 KNN_predict 目录
 
-   ```
-   sudo python3 manage.py runserver 0.0.0.0:8000
-   ```
+  https://pan.baidu.com/s/1eUdD9Vc
 
-   这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
+  将vector.txt放入 demo/toolkit 目录
 
-   ​
+3. 进入demo目录，然后运行脚本：
 
-   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/2.png)
+```
+sudo sh django_server_start.sh
+```
 
-   ​
+这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
 
-   点击实体的超链接，可以跳转到词条页面：
 
-   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/2.png)
 
-   **彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+点击实体的超链接，可以跳转到词条页面：
 
-   ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+
+**彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
 ## 思路
 
@@ -157,4 +160,3 @@ ASSERT c.title IS UNIQUE
 | 14    | Agricultural implements（农机具，一般指机械或物理设施）  | “收割机”，“渔网”                               |
 | 15    | Technology(农业相关术语，技术和措施)                 | “延后栽培"，“卫生防疫”，“扦插”                       |
 | 16    | other（除上面类别之外的其它名词实体，可以与农业无关但必须是实体）      | “加速度"，“cpu”，“计算机”，“爱鸟周”，“人民币”，“《本草纲目》”，“花岗岩” |
-

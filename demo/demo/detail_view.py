@@ -6,6 +6,7 @@ import thulac
 import sys
 sys.path.append("..")
 from toolkit.pre_load import neo_con
+from toolkit.pre_load import wv_model
 
 
 # 接收GET请求数据
@@ -66,6 +67,14 @@ def showdetail(request):
 		if answer['baseInfoKeyList'].strip() == '':
 			text = ''
 		ctx['baseInfoTable'] = text 
+		
+		tagcloud = ""
+		taglist = wv_model.get_simi_top(answer['title'], 10)
+		for tag in taglist:
+			tagcloud += '<a href= "./detail.html?title=' + str(tag) + '"> '
+			tagcloud += str(tag) + "</a>"
+			print(tag)
+		ctx['tagcloud'] = tagcloud
 				
 	return render(request, "detail.html", ctx)
 	

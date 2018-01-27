@@ -42,6 +42,9 @@
     <link href="/static/css/style-responsive.css" rel="stylesheet" />
     <link href="/static/css/xcharts.min.css" rel=" stylesheet">
     <link href="/static/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+    <link href="/static/css/tagcloud.css" rel="stylesheet">
+
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -171,6 +174,7 @@
     <!--  <script src="/static/js/form-component.js"></script> -->
     <!--custome script for all page-->
     <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/tagcloud.min.js"></script>
 
     <script>
         //knob
@@ -216,6 +220,17 @@
                     el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
                 }
             });
+        });
+
+        tagcloud({ //开启词云
+            //参数名: 默认值
+            selector: ".tagcloud", //元素选择器
+            fontsize: 16, //基本字体大小
+            radius: 60, //滚动半径
+            mspeed: "slow", //滚动最大速度
+            ispeed: "slow", //滚动初速度
+            direction: 135, //初始滚动方向
+            keep: true //鼠标移出组件后是否继续随鼠标滚动
         });
     </script>
 </body>
