@@ -74,8 +74,10 @@ ASSERT c.title IS UNIQUE
 
 以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
 
-2. 下载词向量模型和词向量：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
+2. 下载词向量模型：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
   将wiki.zh.bin放入 KNN_predict 目录
+
+  下载词向量文件：https://pan.baidu.com/s/1mkpCMJQ
 
   将vector.txt放入 demo/toolkit 目录
 
