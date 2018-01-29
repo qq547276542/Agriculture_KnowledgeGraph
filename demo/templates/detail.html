@@ -12,7 +12,7 @@
                     <h3 class="page-header"><i class="fa fa-indent"></i> 实体百科 </h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="\">Home</a></li>
-                        <li><i class="fa fa-search"></i><a href="javascript:history.go(-1);">命名实体识别</a></li>
+                        <li><i class="fa fa-search"></i><a href="../">命名实体识别</a></li>
                         <li><i class="fa fa-indent"></i>实体百科</li>
                     </ol>
                 </div>
@@ -49,9 +49,9 @@
 
                 <div class="col-md-3">
                     <div class="panel panel-default">
-                        <!--代表将html标签文本转义成标签显示-->
+                        <!--词云面板-->
                         <div class="panel-body">
-                            <h4>相关实体：</h4>
+                            <h4>相关概念：</h4>
                             <!-- begin -->
                             <div class="tagcloud">
                                 <!-- class="tagcloud" - 用途js.css -->
@@ -60,6 +60,28 @@
                             <!-- end -->
                         </div>
                     </div>
+                    <div class="panel panel-default">
+                        <!--农业类型：-->
+                        <div class="panel-body">
+                            <h4>农业类型：</h4>
+                            <!-- begin -->
+                            {{ agri_type }}
+
+                            <!-- end -->
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <!--农业类型：-->
+                        <div class="panel-body">
+                            <h4>实体类型：</h4>
+                            <!-- begin -->
+
+                            {{ entity_type }}
+                            <!-- end -->
+                        </div>
+                    </div>
+
                 </div>
             </div>
             {% endautoescape %}

@@ -77,8 +77,6 @@ ASSERT c.title IS UNIQUE
 2. 下载词向量模型和词向量：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
   将wiki.zh.bin放入 KNN_predict 目录
 
-  https://pan.baidu.com/s/1eUdD9Vc
-
   将vector.txt放入 demo/toolkit 目录
 
 3. 进入demo目录，然后运行脚本：

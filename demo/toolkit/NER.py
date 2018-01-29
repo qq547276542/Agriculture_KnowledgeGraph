@@ -31,6 +31,116 @@ def temporaryok(s):  # 一些暂时确定是名词短语的（数据库中可以
 		return True
 	return False
 
+
+def get_explain(s):
+	if s == 1:
+		return '人物'
+	if s == 2:
+		return '地点'
+	if s == 3:
+		return r'机构'
+	if s == 4:
+		return '政治经济名词'
+	if s == 5:
+		return '动物学名词'
+	if s == 6:
+		return '植物学名词'
+	if s == 7:
+		return '化学名词'	
+	if s == 8:
+		return '季节气候'
+	if s == 9:
+		return '动植物产品'
+	if s == 10:
+		return '动植物疾病'
+	if s == 11:
+		return '自然灾害'
+	if s == 12:
+		return '营养成分'
+	if s == 13:
+		return '生物学名词'
+	if s == 14:
+		return '农机具'
+	if s == 15:
+		return '农业技术术语'	
+	if s == 16:
+		return '其它实体'	
+	
+	if s == 'np':
+		return '人物'
+	if s == 'ns':
+		return '地点'	
+	if s == 'ni':
+		return '机构'
+	if s == 'nz':
+		return '专业名词'
+	if s == 'i' or s == 'id':
+		return '习语'
+	if s == 'j':
+		return '简称'
+	if s == 'x':
+		return '其它'
+	if s == 't':
+		return '时间日期'
+		
+	return '非实体'		
+
+
+def get_detail_explain(s):
+	if s == 1:
+		return '包括人名，职位'
+	if s == 2:
+		return '包括地名，区域，行政区等'
+	if s == 3:
+		return '包括机构名，会议名，期刊名等'
+	if s == 4:
+		return '包括政府政策，政治术语，经济学术语'
+	if s == 5:
+		return '包括动物名称，动物类别，动物学相关术语'
+	if s == 6:
+		return '包括植物名称，植物类别，植物学相关术语'
+	if s == 7:
+		return '包括化肥，农药，杀菌剂，其它化学品，以及一些化学术语'	
+	if s == 8:
+		return '包括天气气候，季节，节气'
+	if s == 9:
+		return '包括肉制品，蔬菜制品，水果制品，豆制品等以动植物为原料的食品，以及一些非食物制品'
+	if s == 10:
+		return '包括传染病，原发性疾病，遗传病等'
+	if s == 11:
+		return '包括一些大型灾害，环境污染，或其它造成经济损失的自然现象'
+	if s == 12:
+		return '包括脂肪，矿物质，维生素，碳水化合物，无机盐等'
+	if s == 13:
+		return '包括人体部位，组织器官，基因相关，微生物，以及一些生物学术语'
+	if s == 14:
+		return '包括用于农业生产的自动化机械，手工工具'
+	if s == 15:
+		return '包括农学名词，农业技术措施'	
+	if s == 16:
+		return '与农业领域没有特别直接的关系，但是也是实体'	
+		
+	
+	if s == 'np':
+		return '包括人名，职位'
+	if s == 'ns':
+		return '包括地名，区域，行政区等'	
+	if s == 'ni':
+		return '包括机构名，会议名，期刊名等'
+	if s == 'nz':
+		return ' '
+	if s == 'i' or s == 'id':
+		return ' '
+	if s == 'j':
+		return ' '
+	if s == 'x':
+		return ' '
+	if s == 't':
+		return ' '
+		
+	return '非实体'	
+
+
 # 前两个参数为thulac预加载好的模型，和已连接的neo4j
 # text为文本，根据文本返回实体列表
 # 返回二维数组 [N][2]，代表一句话分为若干的词（词组），以及该词组是否是命名实体
@@ -78,8 +188,7 @@ def get_NE(text):
 		i += 1
 		
 	return answerList
-			
-
+		
 	
 #from toolkit.pre_load import pre_load_thu,neo_con
 #print(get_NE(pre_load_thu, neo_con, '美利坚大香蕉习近平的橘子 hhhhhh'))

@@ -6,8 +6,8 @@ import thulac
 import sys
 sys.path.append("..")
 from toolkit.pre_load import neo_con
-from toolkit.pre_load import wv_model
-
+from toolkit.pre_load import wv_model, tree ,predict_labels
+from toolkit.NER import get_explain,get_detail_explain
 
 # 接收GET请求数据
 def showdetail(request):
@@ -75,7 +75,31 @@ def showdetail(request):
 			tagcloud += str(tag) + "</a>"
 			print(tag)
 		ctx['tagcloud'] = tagcloud
+		
+		agri_type = ""
+		ansList = tree.get_path(answer['title'], True)
+		for List in ansList:
+			agri_type += '<p >'
+			flag = 1
+			for p in List:
+				if flag == 1:
+					flag = 0
+				else:
+					agri_type += ' / '
+				agri_type += str(p)
 				
+			agri_type += '</p>'	
+		if len(ansList) == 0:
+			agri_type = '<p > 暂无农业类型</p>'
+		ctx['agri_type'] = agri_type	
+		
+		entity_type = ""
+		explain = get_explain(predict_labels[answer['title']])
+		detail_explain = get_detail_explain(predict_labels[answer['title']])
+		entity_type += '<p > [' + explain + "]: "
+		entity_type += detail_explain + "</p>"
+		ctx['entity_type'] = entity_type	
+			
 	return render(request, "detail.html", ctx)
 	
 #	

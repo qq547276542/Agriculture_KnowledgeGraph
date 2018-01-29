@@ -5,6 +5,7 @@ import sys
 sys.path.append("..")
 from Model.neo_models import Neo4j 
 from toolkit.vec_API import word_vector_model
+from toolkit.tree_API import TREE
 	
 pre_load_thu = thulac.thulac()  #默认模式
 print('thulac open!')
@@ -24,3 +25,16 @@ print('predicted labels load over!')
 wv_model = word_vector_model()
 #wv_model.read_vec('toolkit/curvector.txt') # 测试用，节约读取时间
 wv_model.read_vec('toolkit/vector.txt')	 
+
+# 读取农业层次树
+tree = TREE()
+tree.read_edge('toolkit/micropedia_tree.txt')
+tree.read_leaf('toolkit/leaf_list.txt')
+		
+print('level tree load over~~~')
+
+		
+		
+		
+		
+		
