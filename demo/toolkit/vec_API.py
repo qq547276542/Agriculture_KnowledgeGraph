@@ -54,7 +54,7 @@ class word_vector_model :
 		for key,value in self.wv.items():
 			if len(key) > 12:
 				continue 
-			if random.randint(0,100) < 98:  #留百分10数据
+			if random.randint(0,100) < 93:  #留百分8数据
 				continue 
 			if key == word:
 				continue

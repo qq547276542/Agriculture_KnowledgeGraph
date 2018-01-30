@@ -24,7 +24,8 @@ print('predicted labels load over!')
 # 读取word vector
 wv_model = word_vector_model()
 #wv_model.read_vec('toolkit/curvector.txt') # 测试用，节约读取时间
-wv_model.read_vec('toolkit/vector.txt')	 
+#wv_model.read_vec('toolkit/vector.txt')	 
+wv_model.read_vec('toolkit/vector_15.txt') # 降到15维了	   
 
 # 读取农业层次树
 tree = TREE()
