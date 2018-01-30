@@ -1,0 +1,88 @@
+{% extends "base.html" %} {% block mainbody %}
+
+<title>详细资料</title>
+
+<div class="container">
+    <div class="row">
+        <!--overview start-->
+
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header"><i class="fa fa-sitemap" aria-hidden="true"></i> 农业知识概览 </h3>
+                    <ol class="breadcrumb">
+                        <li><i class="fa fa-home"></i><a href="\">Home</a></li>
+                        <li><i class="fa fa-sitemap" aria-hidden="true"></i>农业知识概览</li>
+                    </ol>
+                </div>
+            </div>
+            {% autoescape off %}
+            <div class="row">
+                <!-- 树形图导航 -->
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h1>{{ node }}</h1>
+                            <hr/> {{ leaf }}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 实体列表 -->
+                <div class="col-md-3">
+                    <!-- 模态框 -->
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>分类导航：</h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">显示</button>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>上级分类：</h4>
+
+                            {{ father }}
+
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>下级分类：</h4>
+                            {{ branch }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endautoescape %}
+        </div>
+    </div>
+</div>
+{% autoescape off %}
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"> 农业分类树 </h4>
+            </div>
+            <div class="modal-body">
+                <div class="tree well">
+
+                    {{ level_tree }}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endautoescape %}
+<script>
+</script>
+
+{% endblock %}

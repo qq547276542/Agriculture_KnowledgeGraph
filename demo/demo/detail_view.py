@@ -18,6 +18,9 @@ def showdetail(request):
 		
 		title = request.GET['title']
 		answer = db.matchHudongItembyTitle(title)
+		if answer == None:
+			return render(request, "404.html", ctx) 
+			
 		ctx['detail'] = answer['detail']
 		ctx['title'] = answer['title']
 		image = answer['image']
@@ -99,6 +102,9 @@ def showdetail(request):
 		entity_type += '<p > [' + explain + "]: "
 		entity_type += detail_explain + "</p>"
 		ctx['entity_type'] = entity_type	
+			
+	else:
+		return render(request, "404.html", ctx) 		
 			
 	return render(request, "detail.html", ctx)
 	

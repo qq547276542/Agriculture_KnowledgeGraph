@@ -43,6 +43,8 @@
     <link href="/static/css/xcharts.min.css" rel=" stylesheet">
     <link href="/static/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
     <link href="/static/css/tagcloud.css" rel="stylesheet">
+    <link href="/static/css/tree_style.css" rel="stylesheet">
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
@@ -58,8 +60,8 @@
     <section id="container" class="">
         <header class="header dark-bg">
             <div class="toggle-nav">
-                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom">
-                    &nbsp;&nbsp;&nbsp;
+                <div class="icon-reorder tooltips" data-original-title="隐藏/显示侧栏" data-placement="bottom">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
 
@@ -100,9 +102,9 @@
                         </a>
                     </li>
                     <li>
-                        <a class="" href="404">
+                        <a class="" href="overview?node=农业">
                             <i class="icon_piechart"></i>
-                            <span>图谱概览</span>
+                            <span>农业知识概览</span>
                         </a>
                     </li>
 
@@ -176,6 +178,7 @@
     <script src="/static/js/scripts.js"></script>
     <script src="/static/js/tagcloud.min.js"></script>
 
+    <!-- 词云脚本 -->
     <script>
         //knob
         $(function() {
@@ -231,6 +234,24 @@
             ispeed: "slow", //滚动初速度
             direction: 135, //初始滚动方向
             keep: true //鼠标移出组件后是否继续随鼠标滚动
+        });
+    </script>
+
+    <!-- 分类树脚本 -->
+    <script>
+        $(function() {
+            $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+            $('.tree li.parent_li > span').on('click', function(e) {
+                var children = $(this).parent('li.parent_li').find(' > ul > li');
+                if (children.is(":visible")) {
+                    children.hide('fast');
+                    $(this).attr('title', 'Expand this branch').find(' > i').addClass('fa-plus-square').removeClass('fa-minus-square');
+                } else {
+                    children.show('fast');
+                    $(this).attr('title', 'Collapse this branch').find(' > i').addClass('fa-minus-square').removeClass('fa-plus-square');
+                }
+                e.stopPropagation();
+            });
         });
     </script>
 </body>
