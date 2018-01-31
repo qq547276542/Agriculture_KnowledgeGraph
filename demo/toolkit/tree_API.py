@@ -11,7 +11,7 @@ class TREE :
 	def read_edge(self, src):
 		self.edge = {}  # 层次树邻接表
 		vis = set()  # 去重
-		with open(src,'r') as f:
+		with open(src,'r',encoding="utf-8") as f:
 			for line in f.readlines():
 				if line in vis:
 					continue
@@ -26,7 +26,7 @@ class TREE :
 	def read_leaf(self, src):
 		self.leaf = {}  # 记录叶子节点
 		vis = set()   # 去重
-		with open(src,'r') as f:
+		with open(src,'r',encoding="utf-8") as f:
 			for line in f.readlines():
 				if line in vis:
 					continue

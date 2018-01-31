@@ -32,7 +32,7 @@ class word_vector_model :
 	wv = None
 	def read_vec(self, vec_src):
 		self.wv = {}
-		with open(vec_src,'r') as f:
+		with open(vec_src,'r',encoding="utf-8") as f:
 			count = 0
 			for line in f.readlines():
 				count += 1
@@ -54,7 +54,7 @@ class word_vector_model :
 		for key,value in self.wv.items():
 			if len(key) > 12:
 				continue 
-			if random.randint(0,100) < 93:  #留百分8数据
+			if random.randint(0,100) < 70:  #留百分8数据
 				continue 
 			if key == word:
 				continue

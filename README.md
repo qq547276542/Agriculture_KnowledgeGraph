@@ -1,5 +1,7 @@
 # Agriculture_KnowledgeGraph
 
+demo：http://39.108.100.170:8000
+
 
 ## 目录结构：
 
@@ -52,7 +54,8 @@
 - thulac      ---分词、词性标注
 - py2neo    ---python连接neo4j的工具
 - pyfasttext    ---facebook开源的词向量计算框架
-- 预训练好的词向量模型wiki.zh.bin    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
+- pinyin  ---获取中文首字母小工具
+- 预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
 
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
@@ -74,8 +77,10 @@ ASSERT c.title IS UNIQUE
 
 以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
 
-2. 下载词向量模型：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip  （如果只是为了运行项目，这步可以不做，预测结果已经离线处理好了）
-  将wiki.zh.bin放入 KNN_predict 目录   
+（如果导入的时候出现neo4j jvm内存溢出，可以在导入前，先把neo4j下的conf/neo4j.conf中的dbms.memory.heap.initial_size 和dbms.memory.heap.max_size调大点。导入完成后再把值改回去）
+
+2. 下载词向量模型：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip  
+  将wiki.zh.bin放入 KNN_predict 目录 。 （如果只是为了运行项目，步骤2可以不做，预测结果已经离线处理好了）
 3. 进入demo目录，然后运行脚本：
 
 ```
@@ -90,6 +95,14 @@ sudo sh django_server_start.sh
 点击实体的超链接，可以跳转到词条页面：
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+
+农业知识概览部分，我们能够列出某一农业分类下的词条列表，这些概念以树形结构组织在一起：
+
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/6.png)
+
+农业分类的树形图：
+
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/5.png)
 
 **彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
 

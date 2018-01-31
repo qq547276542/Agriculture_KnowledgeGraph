@@ -37,7 +37,9 @@ def show_overview(request):
 					break
 			alpha_table[chr(alpha)].append(p)
 		
-		for k,v in alpha_table.items():
+		for kk in range(ord('A'),ord('Z')+1):
+			k = chr(kk)
+			v = alpha_table[k]
 			if len(v)==0:
 				continue
 			add_num = rownum - len(v)%rownum # 填充的数量

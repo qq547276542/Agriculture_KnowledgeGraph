@@ -76,7 +76,7 @@ def showdetail(request):
 		for tag in taglist:
 			tagcloud += '<a href= "./detail.html?title=' + str(tag) + '"> '
 			tagcloud += str(tag) + "</a>"
-			print(tag)
+#			print(tag)
 		ctx['tagcloud'] = tagcloud
 		
 		agri_type = ""
