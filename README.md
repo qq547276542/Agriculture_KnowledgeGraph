@@ -1,6 +1,6 @@
 # Agriculture_KnowledgeGraph
 
-demo：http://39.108.100.170:8000
+demo：http://39.108.100.170:8000  （阿里云的单核cpu，2G内存，跑起来有点吃力）
 
 
 ## 目录结构：
