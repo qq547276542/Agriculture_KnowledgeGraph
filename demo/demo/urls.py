@@ -12,6 +12,6 @@ urlpatterns = [
     url(r'^tagging-get', tagging_data_writefile_view.tagging_push),
     url(r'^overview', overview_view.show_overview),
     url(r'^404',_404_view._404_), 
-    url(r'^relation',relation_view.get_relation)
+    url(r'^search_relation',relation_view.search_relation)
     
 ]

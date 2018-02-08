@@ -16,3 +16,9 @@ class Neo4j():
 	def matchHudongItembyTitle(self,value):
 		answer = self.graph.find_one(label="HudongItem",property_key="title",property_value=value)
 		return answer
+
+	# 根据entity的名称返回关系
+	def getEntityRelationbyEntity(self,value):
+		#TODO 
+		answer = self.graph.data("MATCH (entity1) - [rel] -> (entity2)  WHERE entity1.title = \"" +value +"\" RETURN rel,entity2")
+		return answer

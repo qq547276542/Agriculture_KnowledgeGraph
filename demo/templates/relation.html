@@ -1,10 +1,36 @@
 {% extends "base.html" %} {% block mainbody %}
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/echarts.common.min.js"></script>   
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+</head>
 <title>关系</title>
 <div class="container">
     <div class="row">
+    <!--head start-->
+    <div class="col-md-12">
+        <h3 class="page-header"><i class="fa fa-search"></i> 实体关系 </h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="\">Home</a></li>
+                <li><i class="fa fa-search"></i>实体关系</li>
+            </ol>
+    </div>
+    <!--搜索框-->
+    <form action="/search_relation" method = "get">
+    <div class="col-md-12">
+    <div class="input-group">
+        <input type="text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
+        <span class="btn btn-primary input-group-addon" style="background-color:#4592fe ; padding:6px 38px" id="basic-addon1" type="submit" >查询</span>
+    </div>
+    </div>
+    </form>
+    {{entityRelationDict}}
     <!--relation start-->
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div>实体关系图</div>
     <div id="graph" style="width: 1000px;height:600px;"></div>
 </div>
 </div>
