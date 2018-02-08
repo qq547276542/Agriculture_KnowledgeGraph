@@ -12,9 +12,7 @@ def search_relation(request):
 			ctx['title'] = '<h1>数据库中暂未添加该实体</h1>'
 			return render(request,"relation.html",ctx)
 		else:
-			entityRelationDict = dict(entityRelation)
-			print(entityRelationDict)
-			print(entityRelation)
+			#TODO 返回查询结果
 			return render(request,"relation.html",entityRelationDict)
 
 	return render(request,"relation.html")
