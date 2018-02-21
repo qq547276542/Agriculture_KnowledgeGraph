@@ -91,7 +91,7 @@ MATCH (entity1:HudongItem{title:line.HudongItem}) , (entity2:NewNode{title:line.
 CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 
 LOAD CSV  WITH HEADERS FROM "file:///wikidata_relation.csv" AS line
-MATCH (entity1:HudongItem{title:line.HudongItem}) , (entity2:HudongItem{title:line.NewNode})
+MATCH (entity1:HudongItem{title:line.HudongItem}) , (entity2:HudongItem{title:line.HudongItem})
 CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 ```
 
