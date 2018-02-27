@@ -20,15 +20,21 @@
             </ol>
     </div>
     <!--搜索框-->
-    <form action="/search_relation" method = "get">
+    <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
     <div class="col-md-12">
     <div class="input-group">
-        <input type="text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
-        <span class="btn btn-primary input-group-addon" style="background-color:#4592fe ; padding:6px 38px" id="basic-addon1" type="submit" >查询</span>
+        <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
+        <span class="btn btn-primary input-group-addon" type="submit" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchRelationForm').submit();">查询</span>
     </div>
     </div>
     </form>
-    {{entityRelationDict}}
+    <div style="width: 1000px;height:600px;">
+        <p>
+            {% if ctx %}
+            <h2>数据库中暂未添加该实体</h2>
+            {% endif %}
+        </p>
+    </div>
     <!--relation start-->
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="graph" style="width: 1000px;height:600px;"></div>
@@ -36,205 +42,135 @@
 </div>
 
 <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('graph'));
+        // 返回和处理查询结果
+        // var data  =[{
+        //         name: '小明',
+        //         draggable: true,
+        //     }, {
+        //         name: '小刚',
+        //         draggable: true,
+        //         category : 1    
+        //     }
+        //    ]
+        // 将后端的查询结果使用echarts展示
+        var ctx = [ {{ ctx|safe }} ] ;
+        var entityRelation = [ {{ entityRelation|safe }} ] ;
 
+        var data = [] ;
+        var links = [] ;
+        if(ctx.length == 0){
+            var node = {} ;
+            var url = decodeURI(location.search) ;
+            var str = "";
+            if(url.indexOf("?") != -1){
+                str = url.split("=")[1]
+            }
+            node['name'] = str;
+            //alert(document.getElementById('user_text').value)
+            node['draggable'] = true ;
+            data.push(node)
+            for( var i = 0 ;i < entityRelation[0].length ; i++ ){
+                node = {} ;
+                node['name'] = entityRelation[0][i]['entity2']['title'] ;
+                node['draggable'] = true ;
+                node['category'] = 1 ;
+                data.push(node)
+            }
 
-option = {
-    title: {
-        text: ''
-    },
-    tooltip: {},
-    animationDurationUpdate: 1500,
-    animationEasingUpdate: 'quinticInOut',
-    label: {
-        normal: {
-            show: true,
-            textStyle: {
-                fontSize: 12
-            },
-        }
-    },
-    legend: {
-        x: "center",
-        show: false,
-        data: ["朋友", "战友", '亲戚']
-    },
-    series: [
-
-        {
-            type: 'graph',
-            layout: 'force',
-            symbolSize: 45,
-            focusNodeAdjacency: true,
-            roam: true,
-            categories: [{
-                name: '朋友',
-                itemStyle: {
-                    normal: {
-                        color: "#009800",
-                    }
-                }
-            }, {
-                name: '战友',
-                itemStyle: {
-                    normal: {
-                        color: "#4592FF",
-                    }
-                }
-            }, {
-                name: '亲戚',
-                itemStyle: {
-                    normal: {
-                        color: "#3592F",
-                    }
-                }
-            }],
-            label: {
-                normal: {
-                    show: true,
-                    textStyle: {
-                        fontSize: 12
-                    },
-                }
-            },
-            force: {
-                repulsion: 1000
-            },
-            edgeSymbolSize: [4, 50],
-            edgeLabel: {
-                normal: {
-                    show: true,
-                    textStyle: {
-                        fontSize: 10
-                    },
-                    formatter: "{c}"
-                }
-            },
-            data: [{
-                name: '徐贱云',
-                draggable: true,
-            }, {
-                name: '冯可梁',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '邓志荣',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '李荣庆',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '郑志勇',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '赵英杰',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '王承军',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '陈卫东',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '邹劲松',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '赵成',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '陈现忠',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '陶泳',
-                category: 1,
-                draggable: true,
-            }, {
-                name: '王德福',
-                category: 1,
-                draggable: true,
-            }],
-            links: [{
-                source: 0,
-                target: 1,
-                category: 0,
-                value: '朋友'
-            }, {
-                source: 0,
-                target: 2,
-                value: '战友'
-            }, {
-                source: 0,
-                target: 3,
-                value: '房东'
-            }, {
-                source: 0,
-                target: 4,
-                value: '朋友'
-            }, {
-                source: 1,
-                target: 2,
-                value: '表亲'
-            }, {
-                source: 0,
-                target: 5,
-                value: '朋友'
-            }, {
-                source: 4,
-                target: 5,
-                value: '姑姑'
-            }, {
-                source: 2,
-                target: 8,
-                value: '叔叔'
-            }, {
-                source: 0,
-                target: 12,
-                value: '朋友'
-            }, {
-                source: 6,
-                target: 11,
-                value: '爱人'
-            }, {
-                source: 6,
-                target: 3,
-                value: '朋友'
-            }, {
-                source: 7,
-                target: 5,
-                value: '朋友'
-            }, {
-                source: 9,
-                target: 10,
-                value: '朋友'
-            }, {
-                source: 3,
-                target: 10,
-                value: '朋友'
-            }, {
-                source: 2,
-                target: 11,
-                value: '同学'
-            }],
-            lineStyle: {
-                normal: {
-                    opacity: 0.9,
-                    width: 1,
-                    curveness: 0
-                }
+            for(var i = 0 ;i<entityRelation[0].length ; i++){
+                relation = {} ;
+                relation['source'] =  0 ;
+                relation['target'] = i+1 ;
+                relation['category'] = 0 ;
+                relation['value'] = entityRelation[0][i]['rel']['type'];
+                links.push(relation)
             }
         }
-    ]
-};
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('graph'));
+        
+        option = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        animationDurationUpdate: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        label: {
+            normal: {
+                show: true,
+                textStyle: {
+                    fontSize: 12
+                },
+            }
+        },
+        legend: {
+            x: "center",
+            show: false
+        },
+        series: [
+
+            {
+                type: 'graph',
+                layout: 'force',
+                symbolSize: 45,
+                focusNodeAdjacency: true,
+                roam: true,
+                categories: [{
+                    name: '查询实体',
+                    itemStyle: {
+                        normal: {
+                            color: "#009800",
+                        }
+                    }
+                }, {
+                    name: '与查询实体有之间关系的实体',
+                    itemStyle: {
+                        normal: {
+                            color: "#4592FF",
+                        }
+                    }
+                }, {
+                    name: '到查询实体路径长度为2的实体',
+                    itemStyle: {
+                        normal: {
+                            color: "#3592F",
+                        }
+                    }
+                }],
+                label: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 12
+                        },
+                    }
+                },
+                force: {
+                    repulsion: 1000
+                },
+                edgeSymbolSize: [4, 50],
+                edgeLabel: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 10
+                        },
+                        formatter: "{c}"
+                    }
+                },
+                data: data,
+                links: links,
+                lineStyle: {
+                    normal: {
+                        opacity: 0.9,
+                        width: 1,
+                        curveness: 0
+                    }
+                }
+            }
+        ]
+    };
 
 // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);

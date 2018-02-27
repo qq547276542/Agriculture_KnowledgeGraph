@@ -15,7 +15,7 @@ class loadDatatoNeo4j(object):
 		with open("new_node.csv",'w') as fw:
 			fw.write("title,lable"+'\n')
 		with open("wikidata_relation.csv","w") as fw:
-			fw.write("HudongItem,relation,HudongItem"+'\n')
+			fw.write("HudongItem1,relation,HudongItem2"+'\n')
 		with open("wikidata_relation2.csv","w") as fw:
 			fw.write("HudongItem,relation,NewNode"+'\n')
 		with open("../wikidataRelation/entityRelation.json","r") as fr:
