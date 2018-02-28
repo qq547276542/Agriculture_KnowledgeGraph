@@ -19,29 +19,44 @@
                 <li><i class="fa fa-search"></i>实体关系</li>
             </ol>
     </div>
-    <!--搜索框-->
-    <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
-    <div class="col-md-12">
-    <div class="input-group">
-        <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
-        <span class="btn btn-primary input-group-addon" type="submit" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchRelationForm').submit();">查询</span>
+    <div class="panel panel-default">
+        <div class = "panel-body">
+            <!--搜索框-->
+            <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
+                        <span class="btn btn-primary input-group-addon" type="submit" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchRelationForm').submit();">查询</span>
+                     </div>
+                </div>
+            </form>
+        </div>
     </div>
-    </div>
-    </form>
-    <div>
-        <p>
-            {% if ctx %}
-            <h2>数据库中暂未添加该实体</h2>
-            {% endif %}
-
-        </p>
-    </div>
-    <!--relation start-->
+    <p>
+        {% if ctx %}
+            <div class="panel panel-default">
+                <div class = "panel-body">
+                    <h2>数据库中暂未添加该实体</h2>
+                </div>
+            </div>
+        {% endif %}
+    </p>
+<!--relation start-->
+{% if entityRelation %}
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="graph" style="width: 1000px;height:600px;"></div>
+    <div class="panel panel-default">
+        <div class = "panel-body">
+            <div id="graph" style="width: 1000px;height:600px;"></div>
+        </div>
+    </div>
+{% endif %}
 </div>
 {% if entityRelation %}
-<table class = "table" data-paging =  "true" data-sorting="true"></table>
+<div class="panel panel-default">
+    <div class = "panel-body">
+        <table class = "table" data-paging =  "true" data-sorting="true"></table>
+    </div>
+</div>
 {% endif %}
 </div>
 <script src="/static/js/jquery.min.js"></script>
