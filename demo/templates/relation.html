@@ -40,19 +40,12 @@
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="graph" style="width: 1000px;height:600px;"></div>
 </div>
+{% if entityRelation %}
+<table class = "table" data-paging =  "true" data-sorting="true"></table>
+{% endif %}
 </div>
-
+<script src="/static/js/jquery.min.js"></script>
 <script type="text/javascript">
-        // 返回和处理查询结果
-        // var data  =[{
-        //         name: '小明',
-        //         draggable: true,
-        //     }, {
-        //         name: '小刚',
-        //         draggable: true,
-        //         category : 1    
-        //     }
-        //    ]
         // 将后端的查询结果使用echarts展示
         var ctx = [ {{ ctx|safe }} ] ;
         var entityRelation = [ {{ entityRelation|safe }} ] ;
@@ -70,7 +63,7 @@
             //alert(document.getElementById('user_text').value)
             node['draggable'] = true ;
             node['id'] = 0 ;
-            data.push(node)
+            data.push(node) ;
             for( var i = 0 ;i < Math.min(15,entityRelation[0].length) ; i++ ){
                 node = {} ;
                 node['name'] = entityRelation[0][i]['entity2']['title'] ;
@@ -82,17 +75,36 @@
                     node['category'] = 2 ;
                 }
                 node['id'] = i + 1;
-                data.push(node)
+                data.push(node) ;
             }
-
+            //最多展示16个节点
             for(var i = 0 ;i<Math.min(15,entityRelation[0].length) ; i++){
                 relation = {} ;
                 relation['source'] =  0 ;
                 relation['target'] = i+1 ;
                 relation['category'] = 0 ;
                 relation['value'] = entityRelation[0][i]['rel']['type'];
-                links.push(relation)
+                links.push(relation) ;
             }
+
+            //用表格列出所有的关系
+            tableData = []
+            for (var i = 0 ; i < entityRelation[0].length ; i++){
+                relationData = {} ;
+                relationData['entity1'] = str ;
+                relationData['relation'] = entityRelation[0][i]['rel']['type'] ;
+                relationData['entity2'] = entityRelation[0][i]['entity2']['title'] ;
+                tableData.push(relationData) ;
+            }
+            jQuery(function(){
+                $('.table').footable({
+                "columns": [{"name":"entity1",title:"Entity1"} ,
+                          {"name":"relation",title:"Relation"},
+                          {"name":"entity2",title:"Entity2"}],
+                "rows": tableData
+                });
+            });
+
         }
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('graph'));

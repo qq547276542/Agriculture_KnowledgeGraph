@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from toolkit.pre_load import neo_con
 from django.http import JsonResponse
+import os
 
 import json
 def search_relation(request):
@@ -18,6 +19,24 @@ def search_relation(request):
 			return render(request,'relation.html',{'ctx':json.dumps(ctx)})
 		else:
 			#返回查询结果
+			#将查询结果按照"关系出现次数"的统计结果进行排序
+			relationCountDict = {}
+			filePath = os.path.abspath(os.path.join(os.getcwd(),"."))
+			with open(filePath+"/toolkit/relationStaticResult.txt","r") as fr:
+				for line in fr:
+					relationNameCount = line.split(",")
+					relationName = relationNameCount[0][2:-1]
+					relationCount = relationNameCount[1][1:-2]
+					relationCountDict[relationName] = int(relationCount)
+			for i in range( len(entityRelation) ):
+				relationName = entityRelation[i]['rel']['type']
+				relationCount = relationCountDict.get(relationName)
+				if(relationCount is None ):
+					relationCount = 0
+				entityRelation[i]['relationCount'] = relationCount
+
+			entityRelation = sorted(entityRelation,key = lambda item:item['relationCount'],reverse = True)
+			
 			return render(request,'relation.html',{'entityRelation':json.dumps(entityRelation)})
 
 	return render(request,"relation.html",{'ctx':ctx})
