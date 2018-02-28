@@ -1,4 +1,4 @@
-HudongItem,relation,HudongItem
+HudongItem1,relation,HudongItem2
 菊糖,instance of,化合物
 菊糖,instance of,多糖
 草药,instance of,俗名
@@ -756,6 +756,7 @@ Japan,marriageable age,女性
 铁牛,country,中华人民共和国
 Walk,country of origin,美国
 塔兰特,measured physical quantity,质量
+毛果绣线菊,parent taxon,绣线菊属
 佳人,genre,唐诗
 Walk,original language of work,英语
 利玛窦,sex or gender,男性
@@ -1430,6 +1431,7 @@ Medicine,instance of,科学期刊
 石城,instance of,诗
 苏叶,sex or gender,女性
 石城,genre,唐诗
+帕拉伊巴,contains administrative territorial entity,帕图斯
 Medicine,language of work or name,英语
 石城,country of origin,唐朝
 魏伯阳,sex or gender,男性
@@ -2857,6 +2859,7 @@ Angelica,parent taxon,伞形科
 荚蒾,parent taxon,荚蒾属
 高血糖,opposite of,低血糖
 脑室,part of,脑
+绣线菊,parent taxon,绣线菊属
 石磨,instance of,机械
 博尼塔,instance of,市镇
 波导管,subclass of,结构
@@ -3059,6 +3062,7 @@ Glc,found in taxon,黑腹果蝇
 比利时,official language,法语
 比利时,continent,欧洲
 比利时,country,比利时
+宾县,contains administrative territorial entity,民和乡
 管子,instance of,图书
 富营养化,subclass of,环境问题
 苏区,country,中华人民共和国
@@ -3511,6 +3515,7 @@ Diu,country,印度
 拜占庭帝国,demonym,masculine
 Wound,country of origin,奥地利
 两耳草,taxon rank,种
+粉花绣线梅,parent taxon,绣线梅属
 马耳他,diplomatic relation,葡萄牙
 腐胺,instance of,化合物
 幽州,country,中华人民共和国
@@ -4238,6 +4243,7 @@ Evan,said to be the same as,Jan
 爱丁堡,sister city,塞哥维亚
 马齿笕,taxon rank,种
 浅草,country,日本
+Snoopy,owned by,查理·布朗
 莫,said to be the same as,Mo
 世纪,subclass of,年
 AH,country,土耳其
@@ -4270,6 +4276,7 @@ Aphis,taxon rank,属
 三岛市,country,日本
 张公权,sex or gender,男性
 Braun,writing system,拉丁文字
+苏打饼干,subclass of,曲奇
 AH,located on terrain feature,亚洲
 爱丁堡,official website,英语
 Crop,instance of,基因
@@ -5370,6 +5377,7 @@ ESR,educated at,宾夕法尼亚大学
 曼尼托巴,shares border with,西北地区
 ESR,residence,宾夕法尼亚州
 吉布斯,educated at,海德堡大学
+Santa,shares border with,美岸
 1261年,instance of,年
 曼尼托巴,official symbol,镍
 胡椒碱,instance of,化合物
@@ -6576,6 +6584,7 @@ Rain,country,德国
 刚竹属,taxon rank,属
 蜂胶,use,软膏剂
 生存者,country of origin,美国
+Ruan,shares border with,瓦松
 钴,time-weighted average exposure limit,美国
 蜂胶,has part,花粉
 蜂胶,has part,蜡
@@ -7184,6 +7193,7 @@ Curling,instance of,姓氏
 苦苣,taxon rank,种
 蚤状蚤,taxon rank,种
 李升,family name,李
+长春市,sister city,温莎
 房间,color,彩色
 陆均松属,taxon rank,属
 Curling,different from,Curling
@@ -7662,6 +7672,7 @@ apple,pronunciation audio,法语
 绣球绣线菊,taxon rank,种
 小屋,country,美国
 湖南省,contains administrative territorial entity,永州市
+绣球绣线菊,parent taxon,绣线菊属
 普拉斯,manner of death,一氧化碳中毒
 exo,ortholog,智人
 apple,pronunciation audio,葡萄牙语
@@ -7996,6 +8007,7 @@ Fishing,depicts,女人
 赞比亚,member of,英联邦
 胰岛素,biological process,IMP
 Fishing,depicts,儿童
+赞比亚,member of,联合国粮食及农业组织
 联合国,founded by,英国
 联合国,founded by,法国
 Fishing,depicts,花
@@ -8476,6 +8488,7 @@ Bailey,different from,Bailey
 三色牵牛,taxon rank,种
 达磨,country of citizenship,吐蕃
 Desiree,writing system,拉丁文字
+农安县,contains administrative territorial entity,万金塔乡
 青花菜,instance of,蔬菜
 托木尔峰,continent,亚洲
 夏至,subclass of,minimum
@@ -10646,6 +10659,7 @@ RL,instance of,基因
 三合土,material used,水
 海胆纲,taxon rank,纲
 1753年,followed by,1754年
+造船厂,industry,造船
 麻核桃,parent taxon,胡桃
 关键词,subclass of,概念
 梵语,instance of,语言
@@ -10737,6 +10751,7 @@ Green,instance of,姓氏
 普通翠鸟,taxon rank,种
 Student,country of citizenship,英国
 紫堇科,instance of,罂粟科
+课程,instance of,学习
 苍耳,has fruit type,胞果
 Green,language of work or name,英语
 Student,given name,威廉
@@ -11610,6 +11625,7 @@ Method,country of origin,西班牙
 过硫酸铵,has part,氮
 神经生物学,part of,生物学
 南沙群岛,territory claimed by,中华人民共和国
+金丝桃叶绣线菊,parent taxon,绣线菊属
 Method,country of origin,意大利
 浮萍,taxon rank,种
 五桠果,taxon rank,种
@@ -12942,6 +12958,7 @@ Min,sex or gender,男性
 格雷戈里,instance of,城市
 304年,instance of,年
 硫酸铯,has part,硫
+蒙特利尔,named after,皇家山
 玩具,used by,教师
 塞内加尔,diplomatic relation,澳大利亚
 Race,Kijkwijzer rating,12
@@ -13674,6 +13691,7 @@ Clapper,MPAA film rating,R
 葛洪,country of citizenship,中国
 木糖醇,instance of,糖类
 胡胡伊省,country,阿根廷
+红河县,contains administrative territorial entity,垤玛乡
 6,instance of,1
 柳兰,parent taxon,柳叶菜属
 刺蛾科,taxon rank,科
@@ -13725,6 +13743,7 @@ Berger,instance of,姓氏
 Berger,named after,牧人
 石柱县,country,中华人民共和国
 连线,field of work,企业
+考文垂,sister city,温莎
 1775年,instance of,年
 Newman,instance of,姓氏
 Byte,instance of,期刊
@@ -14027,6 +14046,7 @@ Adams,writing system,拉丁文字
 Adams,different from,亚当斯
 芍药,parent taxon,芍药属
 山梨县,official symbol,樱花
+山梨县,official symbol,羽扇槭
 俄罗斯,diplomatic relation,尼泊尔
 Adams,said to be the same as,Adam
 双氧水,has part,氧
@@ -14433,6 +14453,7 @@ Stem,country,美国
 敌敌畏,has part,碳
 甲状旁腺素,cell component,IBA
 利比亚,diplomatic relation,巴西
+萧县,contains administrative territorial entity,丁里镇
 利比亚,diplomatic relation,德国
 利比亚,diplomatic relation,白俄罗斯
 利比亚,diplomatic relation,摩洛哥
@@ -15303,6 +15324,7 @@ toxin,studied by,毒理学
 赵佗,country of citizenship,秦朝
 巴尼特,country,保加利亚
 倒根蓼,taxon rank,种
+拙政园,part of,苏州园林
 米碎花,parent taxon,柃属
 赵佗,country of citizenship,南越国
 庄周,native language,汉语
@@ -15602,6 +15624,7 @@ Hela,sex or gender,女性
 虹彩病毒科,parent taxon,病毒
 北洛河,country,中华人民共和国
 蜀葵,taxon rank,种
+讲话,part of,演讲
 rRNA,has part,氧
 北洛河,coordinate location,河口
 rRNA,has part,碳
@@ -16358,6 +16381,7 @@ Cycadaceae,taxon rank,科
 利器,language of work or name,英语
 单核细胞,followed by,巨噬细胞
 古生代,followed by,中生代
+理查德,occupation,伯爵
 三角椰子,taxon rank,种
 Cycadaceae,parent taxon,苏铁目
 金边,country,柬埔寨
@@ -17061,6 +17085,7 @@ Carolina,language used,英语
 洪道,country,匈牙利
 残雪,sex or gender,女性
 岩羊,taxon rank,种
+辣椒油,subclass of,辣酱
 树形结构,manifestation of,树
 甘霖,sex or gender,男性
 日光冷杉,taxon rank,种
@@ -18501,6 +18526,7 @@ WHO,official language,英语
 Canadian,country,美国
 triton,instance of,阳离子
 1671年,followed by,1672年
+绣线梅,parent taxon,绣线梅属
 珍珠梅,has fruit type,蓇葖果
 719年,instance of,年
 贺兰山,instance of,山脉
@@ -18833,6 +18859,7 @@ Marian,different from,Marian
 机枪,subclass of,火器
 草龙,taxon rank,种
 Price,instance of,姓氏
+青霉素,subclass of,次级代谢产物
 鸦科,taxon rank,科
 石蒜科,taxon rank,科
 豪斯,instance of,市镇
@@ -19193,6 +19220,7 @@ Fur,instance of,语言
 背角无齿蚌,taxon rank,种
 白甲鱼,taxon rank,种
 青梅属,parent taxon,龙脑香科
+毛叶绣线梅,parent taxon,绣线梅属
 突厥蔷薇,parent taxon,蔷薇属
 捷克斯洛伐克,continent,欧洲
 墨菲,instance of,城市
@@ -19216,6 +19244,7 @@ Fur,country,乍得
 黄金树,parent taxon,梓木
 Candida,parent taxon,科
 墨菲,shares border with,帕克
+南麻,contains administrative territorial entity,悦庄镇
 微山县,instance of,县
 黄冈县,country,中华人民共和国
 紫蝴蝶,country of origin,中华人民共和国
@@ -19844,6 +19873,7 @@ Bangladesh,diplomatic relation,纳米比亚
 野扇花,taxon rank,种
 雷公藤,taxon rank,种
 俄勒冈州,capital,塞勒姆
+泌阳县,contains administrative territorial entity,羊册镇
 hp,unit symbol,俄语
 狐臭,use,predator
 帕斯卡尔,different from,Pascal
@@ -20399,6 +20429,7 @@ Henry,part of,Henry
 睢宁县,country,中华人民共和国
 乌克兰,shares border with,波兰
 仪征县,instance of,县
+尸僵,instance of,分解作用
 Henry,language of work or name,英语
 公历,inception,英格兰
 睢宁县,located in the administrative territorial entity,徐州市
@@ -20727,6 +20758,7 @@ Levant,country,以色列
 Levant,country,约旦
 氯化钠,solubility,水
 叙利亚,diplomatic relation,以色列
+Levant,located on terrain feature,新月沃土
 氯化钠,found in taxon,智人
 Community,country of origin,美国
 叙利亚,diplomatic relation,中华人民共和国
@@ -20813,6 +20845,7 @@ ABO,ortholog,褐鼠
 勃兰登堡,shares border with,柏林
 叙利亚,diplomatic relation,丹麦
 NPP,molecular function,IMP
+底特律,shares border with,温莎
 叙利亚,diplomatic relation,马来西亚
 NPP,molecular function,IMP
 叙利亚,diplomatic relation,巴基斯坦
@@ -20979,6 +21012,7 @@ NPP,biological process,IBA
 归州,country,中华人民共和国
 鲜水河,origin of the watercourse,青藏高原
 安哥拉,instance of,国家
+扎兰屯市,contains administrative territorial entity,扎兰屯马场
 腺苷三磷酸,has part,碳
 四唑,instance of,化合物
 鲜水河,mouth of the watercourse,雅砻江
@@ -21156,6 +21190,7 @@ Little,different from,Little
 春潮,language of work or name,俄语
 埃里温,sister city,上海市
 安哥拉,diplomatic relation,纳米比亚
+拉普拉斯,noble title,伯爵
 安哥拉,diplomatic relation,法国
 安哥拉,diplomatic relation,苏联
 安哥拉,diplomatic relation,古巴
@@ -21318,6 +21353,7 @@ plasma,part of,血液
 Bud,different from,Bud
 kun,country,朝鲜民主主义人民共和国
 山本,said to be the same as,Yamamoto
+小麦,natural product of taxon,斯佩耳特小麦
 榆树,award received,奥地利
 E2,subclass of,雌激素
 plasma,has part,水
@@ -21439,6 +21475,7 @@ KE,legal form,股份有限公司
 钛酸钡,has part,氧
 肝素,subclass of,聚合物
 海韭菜,taxon rank,种
+肖竹芋,parent taxon,肖竹芋属
 晴日,instance of,诗
 衣原体,taxon rank,门
 Les,writing system,拉丁文字
@@ -22166,6 +22203,7 @@ SRT,languages spoken written or signed,英语
 埃塞俄比亚,demonym,masculine
 Station,color,彩色
 SRT,position held,成员
+民丰县,contains administrative territorial entity,安迪尔牧场
 埃塞俄比亚,demonym,众数
 埃塞俄比亚,demonym,masculine
 CH,diplomatic relation,美国
@@ -23413,6 +23451,7 @@ NG,shares border with,贝宁
 tea,has part,水
 tea,has part,咖啡因
 NG,shares border with,尼日尔
+tea,different from,草本茶
 NG,shares border with,乍得
 七洲洋,country,中华人民共和国
 黑茶,subclass of,茶
@@ -24791,6 +24830,8 @@ air,has part,氩
 Smith,said to be the same as,Schmidt
 黍属,has fruit type,颖果
 自然科学,has part,地球科学
+丝氨酸,encoded by,UCC
+Dela,noble title,伯爵
 自然科学,has part,物理学
 自然科学,has part,生物学
 丝氨酸,encoded by,UCU
@@ -25344,6 +25385,7 @@ Bulgaria,diplomatic relation,希腊
 Evolution,instance of,科学期刊
 永定河,instance of,河流
 多山,sex or gender,男性
+沧浪亭,part of,苏州园林
 王安石,sex or gender,男性
 原点,country of origin,新加坡
 永定河,mouth of the watercourse,海河
@@ -26662,6 +26704,7 @@ Michigan,official symbol,野味
 Michigan,official symbol,爬行动物
 SE,public holiday,元旦
 Argentina,diplomatic relation,白俄罗斯
+Michigan,official symbol,北美乔松
 Argentina,diplomatic relation,乌克兰
 Michigan,official symbol,树
 希腊,diplomatic relation,英国
@@ -26758,6 +26801,7 @@ SCU,located in the administrative territorial entity,加利福尼亚州
 普陀区,located in the administrative territorial entity,上海市
 马其顿人,religion,伊斯兰教
 圆,subclass of,轨迹
+Tuber,this taxon is source of,松露
 希腊,diplomatic relation,法国
 希腊,diplomatic relation,阿根廷
 圆,part of,球面
@@ -27330,6 +27374,7 @@ Antwerp,country,比利时
 Beal,educated at,芝加哥大学
 夷坚志,instance of,文学作品
 IOC,instance of,国际组织
+公学,subclass of,私立学校
 款冬花,taxon rank,种
 华盛顿州,country,美国
 西沙群岛,located in the administrative territorial entity,海南省
@@ -28143,6 +28188,7 @@ Janus,sex or gender,男性
 有机物,has parts of the class,脂肪
 筒箭毒碱,physically interacts with,受体拮抗剂
 Janus,sibling,Felix
+番木鳖碱,material used,吕宋果
 圣维南,occupation,数学家
 有机物,has parts of the class,酚
 乌拉圭,diplomatic relation,智利
@@ -28220,6 +28266,7 @@ Cuba,official language,西班牙语
 Cuba,continent,中美洲
 乌拉圭,diplomatic relation,黎巴嫩
 以色列,part of,亚洲
+澧县,contains administrative territorial entity,复兴厂镇
 乒乓球,item operated,桌子
 中指,anatomical location,手
 阿姆斯特丹,named after,路基
@@ -28442,6 +28489,7 @@ Lacepede,field of work,鱼类学
 雅典,sister city,那不勒斯
 以色列,diplomatic relation,中华人民共和国
 范德华,employer,阿姆斯特丹大学
+Lacepede,noble title,伯爵
 以色列,diplomatic relation,埃及
 雅典,sister city,里约热内卢
 以色列,diplomatic relation,伊朗
@@ -29134,6 +29182,7 @@ Small,family name,Small
 Raffaele,family name identical to this given name,Raffaele
 北达科他州,country,美国
 Raffaele,different from,Raffaele
+格兰比,sister city,温莎
 Hunter,said to be the same as,Hunt
 格兰比,sister city,考文垂
 北达科他州,located in the administrative territorial entity,美国
@@ -29164,6 +29213,7 @@ Andrews,language of work or name,英语
 编辑,instance of,专业
 Andrews,writing system,拉丁文字
 氯化铝,has part,铝
+笑靥花,parent taxon,绣线菊属
 第三世界科学院,country,意大利
 线柏,taxon rank,栽培品种
 李椿年,sex or gender,男性
@@ -29795,6 +29845,7 @@ James,canonization status,圣人
 碳酸钠,has part,氧
 田间,sex or gender,男性
 哌嗪,instance of,化合物
+私塾,subclass of,私立学校
 钻地风,taxon rank,种
 剪刀股,taxon rank,种
 经济法,part of,法律
@@ -30610,6 +30661,7 @@ Germany,member of,联合国
 岗松属,taxon rank,属
 卫河,continent,亚洲
 槟榔屿,located in or next to body of water,马六甲海峡
+Germany,member of,联合国粮食及农业组织
 音乐,subclass of,声音
 袁宏道,family name,袁
 卫河,country,中华人民共和国
@@ -31785,6 +31837,7 @@ Ts,subclass of,卤素
 南酸枣属,taxon rank,属
 4,instance of,3
 格里,sex or gender,男性
+鸡蛋果,instance of,百香果
 哥廷根,instance of,城市
 鸭儿芹,parent taxon,鸭儿芹属
 Ts,named after,田纳西州
@@ -32411,6 +32464,7 @@ furrow,subclass of,谷地
 万里长城,located in the administrative territorial entity,山东省
 泰国,official symbol,动物
 万里长城,located in the administrative territorial entity,河南省
+泰国,official symbol,阿勃勒
 万里长城,located in the administrative territorial entity,湖北省
 泰国,official symbol,花
 万里长城,located in the administrative territorial entity,湖南省
@@ -32776,6 +32830,7 @@ quercetin,instance of,化合物
 by,diplomatic relation,乌克兰
 中华民国,diplomatic relation,土耳其
 土木工程,subclass of,工程学
+quercetin,instance of,次级代谢产物
 地壳,part of,地质学
 朗州,country,中华人民共和国
 新斯科舍,official language,英语
@@ -34322,6 +34377,7 @@ sb,diplomatic relation,日本
 氨,conjugate acid,铵
 sb,member of,联合国
 氨,has part,氮
+遂川县,contains administrative territorial entity,新江乡
 sb,member of,英联邦
 官僚,instance of,专业
 纳克,instance of,市镇
@@ -34534,6 +34590,7 @@ trout,instance of,俗名
 1626年,instance of,年
 子公司,subclass of,企业
 腹外斜肌,instance of,肌肉
+粉花绣线菊,parent taxon,绣线菊属
 色氨酸,subclass of,氨基酸
 救生艇,subclass of,艇
 治,language of work or name,日语
@@ -35033,6 +35090,7 @@ era,facet of,事件
 醌,subclass of,化合物
 朝鲜民主主义人民共和国,member of,联合国
 FORTRAN语言,developer,IBM
+朝鲜民主主义人民共和国,member of,联合国粮食及农业组织
 南美洲,located in or next to body of water,大西洋
 南美洲,located in or next to body of water,太平洋
 醌,time-weighted average exposure limit,美国
@@ -35739,6 +35797,7 @@ GMV,feed URL,西班牙语
 theory,subclass of,概念
 藻类学,subclass of,植物学
 天师栗,taxon rank,种
+珍珠绣线菊,parent taxon,绣线菊属
 TK,country,土耳其
 落基山,postal code,美国
 GMV,Twitter username,英语
@@ -37797,6 +37856,7 @@ Christ,relative,祖先
 矾,subclass of,化学物质
 胂,median lethal dose,兔
 Canada,diplomatic relation,俄罗斯
+网师园,part of,苏州园林
 S3,instance of,基因
 子宫内膜炎,instance of,疾病
 是,instance of,姓氏
@@ -37914,6 +37974,7 @@ Canada,diplomatic relation,芬兰
 Canada,diplomatic relation,埃塞俄比亚
 Jacobs,said to be the same as,James
 N,part of,M
+道孚县,contains administrative territorial entity,红顶乡
 N,part of,O
 Canada,diplomatic relation,埃及
 N,part of,M
@@ -37943,6 +38004,7 @@ Analysis,language of work or name,英语
 湘西土家族苗族自治州,located in the administrative territorial entity,湖南省
 圣约翰大学,country,美国
 1902年,follows,1901年
+道孚县,contains administrative territorial entity,维它乡
 克雷洛夫,given name,伊凡
 卡拉布里亚,located in the administrative territorial entity,意大利
 微孢子虫,Code of nomenclature,国际动物命名法规
@@ -38387,9 +38449,11 @@ CK,ortholog,黑腹果蝇
 Canada,ethnic group,加拿大人
 秦仁昌,place of death,北京市
 奥林比亚,inscription,日期
+安丘县,contains administrative territorial entity,辉渠镇
 奥林比亚,inscription,下
 秦仁昌,field of work,植物学
 奥林比亚,inscription,左
+安丘县,contains administrative territorial entity,金冢子镇
 秦仁昌,educated at,南京大学
 suture,instance of,suture
 伊泰普水电站,instance of,水电站
@@ -38818,6 +38882,7 @@ George,sex or gender,男性
 UNESCO,instance of,国际组织
 习水县,located in the administrative territorial entity,遵义市
 断肠花,parent taxon,清明花属
+中华绣线梅,parent taxon,绣线梅属
 代号,subclass of,名称
 硬水,instance of,物理性质
 建筑师,instance of,专业
@@ -43076,6 +43141,7 @@ Acker,instance of,姓氏
 獐,taxon rank,种
 汉景帝,country of citizenship,中华人民共和国
 梅契尼科夫,occupation,发明家
+意大利,member of,联合国粮食及农业组织
 1780年,instance of,闰年
 Acker,different from,Acker
 焦距,subclass of,长度
@@ -44269,6 +44335,7 @@ Yi,said to be the same as,I
 Sharp,occupation,医生
 汽车,has part,化油器
 Sharp,field of work,昆虫学
+Corn,shares border with,康贝
 Gauss,languages spoken written or signed,拉丁语
 汽车,has part,座位
 femur,connects with,髋骨
@@ -46340,6 +46407,7 @@ Brazil,shares border with,乌拉圭
 Brazil,shares border with,哥伦比亚
 Brazil,shares border with,法国
 Brazil,pronunciation audio,法语
+MX,member of,联合国粮食及农业组织
 Brazil,pronunciation audio,西班牙语
 Brazil,IPA transcription,俄语
 比萨,instance of,城市
@@ -46898,6 +46966,7 @@ Pride,distributor,匈牙利
 肉类食物,pronunciation audio,俄语
 抚顺市,sister city,阿拉德
 Erik,different from,Erik
+桂皮,natural product of taxon,锡兰肉桂
 坚果,pronunciation audio,法语
 Pride,color,彩色
 桂皮,natural product of taxon,树皮
@@ -48268,6 +48337,7 @@ House,voice actor,法语
 德意志民主共和国,diplomatic relation,德国
 德意志民主共和国,diplomatic relation,苏联
 德意志民主共和国,diplomatic relation,巴基斯坦
+佛得角,member of,联合国粮食及农业组织
 德意志民主共和国,member of,联合国
 House,narrative location,新泽西州
 佛得角,member of,联合国
@@ -49875,6 +49945,7 @@ Pseudo,taxon rank,属
 台北市,population,户籍
 环磷酸鸟苷,instance of,化合物
 函数方程,subclass of,方程
+自然光,instance of,比尔森啤酒
 1758年,instance of,年
 领事,instance of,大使
 Holm,different from,Holm
@@ -50478,6 +50549,7 @@ GA,deepest point,大西洋
 1332年,instance of,年
 直角,part of,矩形
 鸭茅属,taxonomic type,鸭茅
+光州,contains administrative territorial entity,黄湖农场
 台北市,sister city,维尔纽斯
 麻蝇,taxon rank,科
 鸭茅属,has fruit type,颖果
@@ -50755,6 +50827,7 @@ DK,head of state,王
 权力,different from,权威
 坦桑尼亚,member of,英联邦
 DK,head of state,王
+临桂县,contains administrative territorial entity,五通镇
 DK,head of state,王
 Silk,narrative location,日本
 Silk,filming location,日本
@@ -51638,6 +51711,7 @@ United,sport,足球
 Mx,measured physical quantity,磁通量
 Marc,family name,Marc
 格拉茨,country,奥地利
+猫,subclass of,新月沃土
 Marc,place of birth,慕尼黑
 永州市,contains administrative territorial entity,道县
 Orange,located in the administrative territorial entity,沃克吕兹省
@@ -52117,6 +52191,7 @@ Hu,contains administrative territorial entity,普陀区
 EROS,country of origin,以色列
 1848年,instance of,闰年
 画眉草属,taxon rank,属
+左宗棠,position held,曾国荃
 Hu,contains administrative territorial entity,闵行区
 Zaire,deepest point,大西洋
 山阳县,instance of,县
@@ -52969,6 +53044,7 @@ Monsanto,location of formation,圣路易斯
 李鸿章,ancestral home,合肥市
 李鸿章,occupation,Mandarin
 贝伦,sister city,新奥尔良
+李鸿章,position held,曾国藩
 GP55,ortholog,褐鼠
 无极,color,彩色
 东京,different from,东京市
@@ -53164,6 +53240,7 @@ OCF,country,美国
 汉人,native language,汉语
 促性腺激素,subclass of,激素
 春行,language of work or name,文言文
+麻叶绣线菊,parent taxon,绣线菊属
 豆薯属,taxon rank,属
 OCF,located in the administrative territorial entity,佛罗里达州
 连山区,instance of,区
@@ -54230,6 +54307,7 @@ scrapie,instance of,疾病
 大蚊,taxon rank,科
 爱琴海,part of,地中海
 黑核桃,parent taxon,胡桃
+豆干,has part,五香粉
 阻抗,has part,电阻
 爱琴海,basin country,希腊
 哥伦比亚,diplomatic relation,法国
@@ -54725,6 +54803,7 @@ MLD,instance of,基因
 尿嘧啶,found in taxon,智人
 山榄科,taxon rank,科
 MLD,found in taxon,智人
+pearl,material used,珍珠母
 女神,sex or gender,女性
 尿嘧啶,has part,氮
 pearl,streak color,白色
@@ -55600,6 +55679,7 @@ Queen,instrument,钢琴
 GD,instance of,企业
 香兰素,instance of,化合物
 郑和,sex or gender,男性
+GD,industry,造船
 起源中心,facet of,食物
 硫酸铅,instance of,化合物
 甘孜州,instance of,自治州
@@ -56196,6 +56276,7 @@ Aa,taxon rank,属
 榛果,subclass of,食物
 五大湖,country,美国
 高雄市,sister city,布兰太尔
+Netherlands,member of,联合国粮食及农业组织
 臭蒿,taxon rank,种
 1912年,instance of,闰年
 Cheyenne,instance of,县城
@@ -57499,6 +57580,7 @@ HS,subclass of,中学
 硫辛酸,instance of,羧酸
 PVS,found in taxon,智人
 population,subclass of,生物系统
+Dudgeon,industry,造船
 西藏,country,西藏自治区
 盐穗木,taxon rank,种
 苦刺,taxon rank,种
@@ -57749,6 +57831,7 @@ TPP,depositor,西班牙
 碳,part of,核糖醇
 卢森堡,demonym,众数
 卢森堡,demonym,masculine
+碳,part of,乙基香兰素
 卢森堡,official language,法语
 卢森堡,continent,欧洲
 卢森堡,country,卢森堡
@@ -57944,6 +58027,7 @@ Maria,language of work or name,西班牙语
 袁隆平,sex or gender,男性
 玫瑰,parent taxon,蔷薇属
 1761年,followed by,1762年
+园林,subclass of,土地使用
 袁隆平,country of citizenship,中华人民共和国
 袁隆平,family name,袁
 皮炎,drug used for treatment,乳酸
@@ -58351,6 +58435,7 @@ Mason,headquarters location,美国
 澳洲,diplomatic relation,塞尔维亚
 澳洲,diplomatic relation,新加坡
 碳,part of,纤维二糖
+碳,part of,百里酚
 澳洲,diplomatic relation,南非
 澳洲,diplomatic relation,西班牙
 碳,part of,钙调蛋白
@@ -58402,6 +58487,7 @@ Mason,headquarters location,美国
 碳,part of,丙酸钙
 碳,part of,玫瑰醚
 碳,part of,尿激酶
+澳洲,member of,联合国粮食及农业组织
 碳,part of,芥子酸
 碳,part of,苝
 澳洲,public holiday,元旦
@@ -58647,6 +58733,7 @@ More,original language of work,英语
 Maxim,different from,Maxim
 Cromwell,cause of death,疟疾
 碳,part of,香菇多糖
+Maxim,said to be the same as,马克西姆
 碳,part of,激素原
 臭豆腐,country of origin,中华人民共和国
 臭豆腐,has part,豆腐
@@ -60444,6 +60531,7 @@ Hamilton,located in the administrative territorial entity,安大略
 小白花,has fruit type,胞果
 洛杉矶,sister city,蒙特利尔
 林登,shares border with,Clark
+秋田县,official symbol,蜂斗菜
 林登,shares border with,爱迪生
 秋田县,official symbol,日本柳杉
 VA,shares border with,北卡罗来纳州
@@ -60512,6 +60600,7 @@ Hamilton,sister city,匹兹堡
 核酮糖,found in taxon,智人
 方平,country of citizenship,中华人民共和国
 钱学森,place of birth,杭州市
+美索不达米亚,located on terrain feature,新月沃土
 Dow,place of death,莱顿
 Hamilton,headquarters location,哈密尔顿
 红细胞生成素,subclass of,蛋白质
@@ -60624,6 +60713,7 @@ Microcosm,country,瑞士
 长大成人,country of origin,中华人民共和国
 米拉,country,法国
 隔壁,part of,基层政权
+Microcosm,located in the administrative territorial entity,梅兰
 巴布尔,place of death,莫卧儿帝国
 异形,original language of work,英语
 洛杉矶,postal code,美国
@@ -61471,6 +61561,7 @@ LDV,country,英国
 人文科学,studies,艺术
 Nikko,instance of,姓氏
 马先蒿,taxon rank,种
+扁舵鲣,parent taxon,扁花鲣
 人文科学,studies,历史
 升麻,taxon rank,种
 笈多王朝,instance of,帝国
@@ -61993,6 +62084,7 @@ Royal,parent taxon,灰蝶科
 门格尔,country of citizenship,奥匈帝国
 Nicholas,different from,Nicholas
 苯,short-term exposure limit,波兰
+绒叶肖竹芋,parent taxon,肖竹芋属
 猎鹰,country of citizenship,美国
 门格尔,given name,Carl
 苯,short-term exposure limit,俄罗斯
@@ -62162,6 +62254,7 @@ lr,diplomatic relation,中华人民共和国
 太湖,instance of,保护区
 糯稻,subclass of,稻
 Charlotte,country,美国
+川康绣线梅,parent taxon,绣线梅属
 针鼹,Code of nomenclature,国际动物命名法规
 苯,median lethal dose,豚鼠
 Accipitridae,taxon rank,科
@@ -62732,6 +62825,7 @@ Clement,family name identical to this given name,Clement
 Tomato,country,美国
 卷尾科,parent taxon,雀形目
 萨都剌,place of death,杭州市
+Clement,different from,克莱门特
 陆地棉,this taxon is source of,棉花
 石竹科,has fruit type,蒴果
 tissue,has part,细胞
@@ -64182,6 +64276,7 @@ Cotoneaster,parent taxon,苹果亚科
 法尤姆,country,埃及
 刘鹗,country of citizenship,中华人民共和国
 Rho,capital,Rho
+茂汶绣线菊,parent taxon,绣线菊属
 萨尔瓦多,continent,北美洲
 刘鹗,family name,刘
 根菜,pronunciation audio,法语
@@ -64210,6 +64305,7 @@ PI,ortholog,褐鼠
 色木槭,taxon rank,种
 厄立特里亚,instance of,共和制
 萨尔瓦多,member of,联合国
+生物降解,subclass of,分解作用
 甲二醇,instance of,化合物
 金陵大学,country,中华人民共和国
 TC,instance of,基因
@@ -64785,6 +64881,7 @@ Snyder,place of death,安特卫普
 玛丽亚,sibling,彼得大帝
 唐明宗,place of burial,孟津县
 3,instance of,2
+唐明宗,father,李霓
 3,instance of,4
 Virus,country of origin,美国
 第比利斯,sister city,克拉科夫
@@ -65652,6 +65749,7 @@ Elton,family name identical to this given name,Elton
 大平原,located in the administrative territorial entity,美国
 氯酸钾,instance of,化合物
 郡治,subclass of,镇
+条件反射,subclass of,学习
 175,instance of,年
 Beer,country of citizenship,奥地利
 PFA,country,阿根廷
@@ -65680,6 +65778,7 @@ Oneida,country,美国
 大花藤,taxon rank,种
 宝应县,located in the administrative territorial entity,扬州市
 氯酸钾,has part,氯
+条件反射,use,学习
 真菌,subclass of,生物
 Caro,country,法国
 宝应县,replaces,宝应县

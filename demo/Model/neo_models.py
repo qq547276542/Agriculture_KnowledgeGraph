@@ -19,6 +19,5 @@ class Neo4j():
 
 	# 根据entity的名称返回关系
 	def getEntityRelationbyEntity(self,value):
-		#TODO 
 		answer = self.graph.data("MATCH (entity1) - [rel] -> (entity2)  WHERE entity1.title = \"" +value +"\" RETURN rel,entity2")
 		return answer

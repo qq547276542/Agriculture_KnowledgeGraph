@@ -33,6 +33,7 @@
             {% if ctx %}
             <h2>数据库中暂未添加该实体</h2>
             {% endif %}
+
         </p>
     </div>
     <!--relation start-->
@@ -68,16 +69,23 @@
             node['name'] = str;
             //alert(document.getElementById('user_text').value)
             node['draggable'] = true ;
+            node['id'] = 0 ;
             data.push(node)
-            for( var i = 0 ;i < entityRelation[0].length ; i++ ){
+            for( var i = 0 ;i < Math.min(15,entityRelation[0].length) ; i++ ){
                 node = {} ;
                 node['name'] = entityRelation[0][i]['entity2']['title'] ;
                 node['draggable'] = true ;
-                node['category'] = 1 ;
+                if('url' in entityRelation[0][i]['entity2']){
+                    node['category'] = 1 ;
+                }
+                else{
+                    node['category'] = 2 ;
+                }
+                node['id'] = i + 1;
                 data.push(node)
             }
 
-            for(var i = 0 ;i<entityRelation[0].length ; i++){
+            for(var i = 0 ;i<Math.min(15,entityRelation[0].length) ; i++){
                 relation = {} ;
                 relation['source'] =  0 ;
                 relation['target'] = i+1 ;
@@ -124,17 +132,17 @@
                         }
                     }
                 }, {
-                    name: '与查询实体有之间关系的实体',
+                    name: 'HudongItem',
                     itemStyle: {
                         normal: {
                             color: "#4592FF",
                         }
                     }
                 }, {
-                    name: '到查询实体路径长度为2的实体',
+                    name: 'NewNode',
                     itemStyle: {
                         normal: {
-                            color: "#3592F",
+                            color: "#C71585",
                         }
                     }
                 }],

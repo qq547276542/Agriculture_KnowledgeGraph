@@ -85,6 +85,10 @@ ASSERT c.title IS UNIQUE
 LOAD CSV WITH HEADERS FROM "file:///new_node.csv" AS line
 CREATE (:NewNode { title: line.title })
 
+//添加索引
+CREATE CONSTRAINT ON (c:NewNode)
+ASSERT c.title IS UNIQUE
+
 //导入hudongItem和新加入节点之间的关系
 LOAD CSV  WITH HEADERS FROM "file:///wikidata_relation2.csv" AS line
 MATCH (entity1:HudongItem{title:line.HudongItem}) , (entity2:NewNode{title:line.NewNode})
