@@ -33,13 +33,15 @@
         
     </div>
     <p>
-        {% if ctx %}
-            <div class="panel panel-default">
-                <div class = "panel-body">
-                    <h2>数据库中暂未添加该实体</h2>
+        <div class = "col-md-12">
+            {% if ctx %}
+                <div class="panel panel-default">
+                    <div class = "panel-body">
+                        <h2>数据库中暂未添加该实体</h2>
+                    </div>
                 </div>
-            </div>
-        {% endif %}
+            {% endif %}
+        </div>
     </p>
 <!--relation start-->
 {% if entityRelation %}
