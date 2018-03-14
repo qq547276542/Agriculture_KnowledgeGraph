@@ -118,18 +118,23 @@ CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 sudo sh django_server_start.sh
 ```
 
-这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
+这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）
+
+### 农业实体识别+实体分类
 
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/2.png)
 
-点击实体的超链接，可以跳转到词条页面：
+点击实体的超链接，可以跳转到词条页面（词云采用了词向量技术）：
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+
+### 关系查询
 
 关系查询部分，我们能够搜索出与某一实体相关的实体，以及它们之间的关系：
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/7.png)
 
+### 知识的树形结构
 
 农业知识概览部分，我们能够列出某一农业分类下的词条列表，这些概念以树形结构组织在一起：
 
@@ -139,7 +144,11 @@ sudo sh django_server_start.sh
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/5.png)
 
-**彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+### 训练集标注
+
+我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+
+我们将这部分做成了小工具，可复用：https://github.com/qq547276542/LabelMarker
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
@@ -147,7 +156,7 @@ sudo sh django_server_start.sh
 
 ## 思路
 
-#### 图谱实体获取：
+### 图谱实体获取：
 
 1.根据19000条农业网词条，按照筛法提取名词（分批进行，每2000条1批，每批维护一个不可重集合）
 
@@ -159,20 +168,31 @@ sudo sh django_server_start.sh
 
 5.最后获取每个词条的所属类别，同时能够剔除不属于农业的无关词条
 
-##  HudongItem
+### 命名实体识别:
+
+使用thulac工具进行分词，词性标注，命名实体识别（仅人名，地名，机构名） 
+为了识别农业领域特定实体，我们需要： 
+
+1. 分词，词性标注，命名实体识别 
+2. 以识别为命名实体（person，location，organzation）的，若实体库没有，可以标注出来 
+3. 对于非命名实体部分，采用一定的词组合和词性规则，在O(n)时间扫描所有分词，过滤掉不可能为农业实体的部分（例如动词肯定不是农业实体） 
+4. 对于剩余词及词组合，匹配知识库中以分好类的实体。如果没有匹配到实体，或者匹配到的实体属于0类（即非实体），则将其过滤掉。 
+5. 实体的分类算法见下文。
+
+###  HudongItem
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/1.png)
 
 
 
-## 页面分类
+### 页面分类
 
-### 分类器：KNN算法
+#### 分类器：KNN算法
 
 - 无需表示成向量，比较相似度即可
 - K值通过网格搜索得到
 
-### 定义两个页面的相似度sim(p1,p2)：
+#### 定义两个页面的相似度sim(p1,p2)：
 
 - 
   title之间的词向量的余弦相似度(利用fasttext计算的词向量能够避免out of vocabulary)
