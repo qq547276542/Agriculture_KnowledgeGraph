@@ -9,40 +9,36 @@ demo：http://39.108.100.170:8000  （阿里云的单核cpu，2G内存，跑起�
 .
 ├── MyCrawler      // scrapy爬虫项目路径(已爬好)
 │   └── MyCrawler
-│       ├── __pycache__
 │       ├── data
 │       └── spiders
-│           
 ├── data\ processing    // 数据清洗(已无用)
 │   └── data
 ├── demo     // django项目路径
 │   ├── Model  // 模型层，用于封装Item类，以及neo4j和csv的读取
-│   │   
 │   ├── demo   // 用于写页面的逻辑(View)
-│   │   
 │   ├── label_data    // 标注训练集页面的保存路径
 │   │   └── handwork
 │   ├── static    // 静态资源
 │   │   ├── css
 │   │   ├── js
 │   │   └── open-iconic
-│   │       ├── font
-│   │       │   ├── css
-│   │       │   └── fonts
-│   │       ├── png
-│   │       ├── sprite
-│   │       ├── svg
-│   │       └── webp
 │   ├── templates   // html页面
 │   └── toolkit   // 工具库，包括预加载，命名实体识别
-│   └── KNN_predict   // KNN算法预测标签
+│   └── KNN_predict   
+├── KNN_predict    // KNN算法预测标签
+├── dfs_tree_crawler     // 爬取互动百科农业实体树形结构的爬虫
+└── wikidataSpider    //  爬取wiki中的关系
 ```
+
+
 
 ## 可复用资源
 
 - hudong_pedia.csv : 已经爬好的农业实体的百科页面的结构化csv文件
 - labels.txt： 5000多个手工标注的实体类别
 - predict_labels.txt:  KNN算法预测的13W多个实体的类别
+
+
 
 ## 项目配置
 
@@ -60,24 +56,32 @@ demo：http://39.108.100.170:8000  （阿里云的单核cpu，2G内存，跑起�
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
 
+
+
 **项目部署：**
 
 1. 将hudong_pedia.csv导入neo4j：开启neo4j，进入neo4j控制台。将hudong_pedia.csv放入neo4j安装目录下的/import目录。在控制台依次输入：
 
 ```
+// 将hudong_pedia.csv 导入
 LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia.csv" AS line  
 CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,baseInfoValueList:line.baseInfoValueList})  
-```
-**新增了hudong_pedia2.csv，重复上述操作(放入import目录，控制台导入)**
 
+// 新增了hudong_pedia2.csv
+LOAD CSV WITH HEADERS  FROM "file:///hudong_pedia2.csv" AS line  
+CREATE (p:HudongItem{title:line.title,image:line.image,detail:line.detail,url:line.url,openTypeList:line.openTypeList,baseInfoKeyList:line.baseInfoKeyList,baseInfoValueList:line.baseInfoValueList})  
 ```
+```
+// 创建索引
 CREATE CONSTRAINT ON (c:HudongItem)
 ASSERT c.title IS UNIQUE
 ```
 
 以上两步的意思是，将hudong_pedia.csv导入neo4j作为结点，然后对titile属性添加UNIQUE（唯一约束/索引）
 
-（如果导入的时候出现neo4j jvm内存溢出，可以在导入前，先把neo4j下的conf/neo4j.conf中的dbms.memory.heap.initial_size 和dbms.memory.heap.max_size调大点。导入完成后再把值改回去）
+*（如果导入的时候出现neo4j jvm内存溢出，可以在导入前，先把neo4j下的conf/neo4j.conf中的dbms.memory.heap.initial_size 和dbms.memory.heap.max_size调大点。导入完成后再把值改回去）*
+
+
 
 进入/wikidataSpider/wikidataProcessing中，将new_node.csv,wikidata_relation.csv,wikidata_relation2.csv三个文件放入neo4j的import文件夹中（运行relationDataProcessing.py可以得到这3个文件），然后分别运行
 ```
@@ -99,22 +103,38 @@ MATCH (entity1:HudongItem{title:line.HudongItem1}) , (entity2:HudongItem{title:l
 CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 ```
 
+以上步骤是导入爬取到的关系
+
+
+
 2. 下载词向量模型：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip  
   将wiki.zh.bin放入 KNN_predict 目录 。 （如果只是为了运行项目，步骤2可以不做，预测结果已经离线处理好了）
+
+
+
 3. 进入demo目录，然后运行脚本：
 
 ```
 sudo sh django_server_start.sh
 ```
 
-这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）：
+这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）
+
+### 农业实体识别+实体分类
 
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/2.png)
 
-点击实体的超链接，可以跳转到词条页面：
+点击实体的超链接，可以跳转到词条页面（词云采用了词向量技术）：
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
+
+### 关系查询
+
+关系查询部分，我们能够搜索出与某一实体相关的实体，以及它们之间的关系：
+![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/7.png)
+
+### 知识的树形结构
 
 农业知识概览部分，我们能够列出某一农业分类下的词条列表，这些概念以树形结构组织在一起：
 
@@ -124,13 +144,19 @@ sudo sh django_server_start.sh
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/5.png)
 
-**彩蛋**：我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+### 训练集标注
+
+我们还制作了训练集的手动标注页面，每次会随机的跳出一个未标注过的词条。链接：http://localhost:8000/tagging-get , 手动标注的结果会追加到/label_data/labels.txt文件末尾：
+
+我们将这部分做成了小工具，可复用：https://github.com/qq547276542/LabelMarker
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
+
+
 ## 思路
 
-#### 图谱实体获取：
+### 图谱实体获取：
 
 1.根据19000条农业网词条，按照筛法提取名词（分批进行，每2000条1批，每批维护一个不可重集合）
 
@@ -142,20 +168,31 @@ sudo sh django_server_start.sh
 
 5.最后获取每个词条的所属类别，同时能够剔除不属于农业的无关词条
 
-##  HudongItem
+### 命名实体识别:
+
+使用thulac工具进行分词，词性标注，命名实体识别（仅人名，地名，机构名） 
+为了识别农业领域特定实体，我们需要： 
+
+1. 分词，词性标注，命名实体识别 
+2. 以识别为命名实体（person，location，organzation）的，若实体库没有，可以标注出来 
+3. 对于非命名实体部分，采用一定的词组合和词性规则，在O(n)时间扫描所有分词，过滤掉不可能为农业实体的部分（例如动词肯定不是农业实体） 
+4. 对于剩余词及词组合，匹配知识库中以分好类的实体。如果没有匹配到实体，或者匹配到的实体属于0类（即非实体），则将其过滤掉。 
+5. 实体的分类算法见下文。
+
+###  HudongItem
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/1.png)
 
 
 
-## 页面分类
+### 页面分类
 
-### 分类器：KNN算法
+#### 分类器：KNN算法
 
 - 无需表示成向量，比较相似度即可
 - K值通过网格搜索得到
 
-### 定义两个页面的相似度sim(p1,p2)：
+#### 定义两个页面的相似度sim(p1,p2)：
 
 - 
   title之间的词向量的余弦相似度(利用fasttext计算的词向量能够避免out of vocabulary)
