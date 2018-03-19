@@ -13,10 +13,20 @@ class entityRelationSpider(scrapy.spiders.Spider):
 	]
 
 	def parse(self, response):
+		
+
 		#读取relation及对应的中文名
 		entityRelationItem = WikidatarelationItem()
 		relationName = dict()
 		filePath = os.path.abspath(os.path.join(os.getcwd(),".."))
+		#获取已经爬取的数据(避免重复爬)
+		alreadyGet = []
+		if(os.path.exists(os.path.join(filePath,"entity1_entity2.json"))):
+			#读取文件
+			with open(os.path.join(filePath,"entity1_entity2.json"),'r') as fr:
+				for line in fr:
+					entityIds = json.loads(line)
+					alreadyGet.append(entityIds['entity1']+entityIds['relatedEntityId'])
 		with open(filePath+"/wikidataRelation/relationResult.json", "r") as fr:
 			for line in fr.readlines():
 				relationJson = json.loads(line)
@@ -34,6 +44,7 @@ class entityRelationSpider(scrapy.spiders.Spider):
 				entity = scrapy.Request(link,callback=self.parseEntity)
 				entity.meta['entityName'] = entityName
 				entity.meta['link'] = link
+				entity.meta['alreadyGet'] = alreadyGet
 				yield entity
 
 
@@ -41,6 +52,7 @@ class entityRelationSpider(scrapy.spiders.Spider):
 		print("=======================")
 
 		entity1 = response.meta['entityName']
+		alreadyGet = response.meta['alreadyGet']
 		entityRelation = WikidatarelationItem()
 		headers = {
 			"user-agent" : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36",
@@ -66,7 +78,12 @@ class entityRelationSpider(scrapy.spiders.Spider):
 							if(len(entityId) == 0):
 								continue
 							else:
-								relatedEntityId = entityId[0]							 
+								relatedEntityId = entityId[0]
+								entityIdRelatedEntityId = entity1 + relatedEntityId
+								if entityIdRelatedEntityId in alreadyGet:
+									print(entityIdRelatedEntityId)
+									continue
+
 								httpRequest = requests.session()
 								httpRequest.mount('https://', HTTPAdapter(max_retries=30)) 
 								httpRequest.mount('http://',HTTPAdapter(max_retries=30))
@@ -83,6 +100,7 @@ class entityRelationSpider(scrapy.spiders.Spider):
 								entityRelation['entity1'] = entity1
 								entityRelation['relation'] = relationName 
 								entityRelation['entity2'] = entity2
+								entityRelation['relatedEntityId'] = relatedEntityId
 								yield entityRelation
 
 
