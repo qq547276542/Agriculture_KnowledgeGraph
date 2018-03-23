@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block mainbody %}
+<title>详细资料</title>
+
+<div class="container">
+
+</div>
+<script src="/static/js/jquery.min.js"></script>
+{% autoescape off %} {{ next }} {% endautoescape %}
+<script type='text/javascript'>
+    $(document).ready(function() {
+        var next_title = document.getElementById("next").value;
+        window.location.href = "tagging_data?title=" + next_title;
+    });
+</script>
+{% endblock %}

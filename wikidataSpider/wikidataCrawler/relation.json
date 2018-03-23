@@ -1,0 +1,943 @@
+{"rid": "P31", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P31", "rmention": "instance of "}
+{"rid": "P279", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P279", "rmention": "subclass of "}
+{"rid": "P361", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P361", "rmention": "part of "}
+{"rid": "P527", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P527", "rmention": "has part "}
+{"rid": "P138", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P138", "rmention": "named after "}
+{"rid": "P127", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P127", "rmention": "owned by "}
+{"rid": "P790", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P790", "rmention": "approved by "}
+{"rid": "P301", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P301", "rmention": "categorys main topic "}
+{"rid": "P910", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P910", "rmention": "topics main category "}
+{"rid": "P61", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P61", "rmention": "discoverer or inventor "}
+{"rid": "P360", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P360", "rmention": "is a list of "}
+{"rid": "P155", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P155", "rmention": "follows "}
+{"rid": "P156", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P156", "rmention": "followed by "}
+{"rid": "P416", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P416", "rmention": "quantity symbol "}
+{"rid": "P461", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P461", "rmention": "opposite of "}
+{"rid": "P460", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P460", "rmention": "said to be the same as "}
+{"rid": "P462", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P462", "rmention": "color "}
+{"rid": "P465", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P465", "rmention": "sRGB color hex triplet "}
+{"rid": "P485", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P485", "rmention": "archives at "}
+{"rid": "P487", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P487", "rmention": "Unicode character "}
+{"rid": "P518", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P518", "rmention": "applies to part "}
+{"rid": "P366", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P366", "rmention": "use "}
+{"rid": "P575", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P575", "rmention": "time of discovery "}
+{"rid": "P1246", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1246", "rmention": "patent number "}
+{"rid": "P1269", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1269", "rmention": "facet of "}
+{"rid": "P1318", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1318", "rmention": "proved by "}
+{"rid": "P1343", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1343", "rmention": "described by source "}
+{"rid": "P1419", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1419", "rmention": "shape "}
+{"rid": "P1480", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1480", "rmention": "sourcing circumstances "}
+{"rid": "P1814", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1814", "rmention": "name in kana "}
+{"rid": "P1889", "rtype": "Generic", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1889", "rmention": "different from "}
+{"rid": "P227", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P227", "rmention": "GND ID "}
+{"rid": "P213", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P213", "rmention": "ISNI "}
+{"rid": "P244", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P244", "rmention": "Library of Congress authority ID "}
+{"rid": "P245", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P245", "rmention": "ULAN ID "}
+{"rid": "P214", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P214", "rmention": "VIAF ID "}
+{"rid": "P268", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P268", "rmention": "BnF ID "}
+{"rid": "P269", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P269", "rmention": "SUDOC authorities "}
+{"rid": "P270", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P270", "rmention": "CALIS ID "}
+{"rid": "P271", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P271", "rmention": "CiNii author ID "}
+{"rid": "P349", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P349", "rmention": "NDL Auth ID "}
+{"rid": "P396", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P396", "rmention": "SBN ID "}
+{"rid": "P409", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P409", "rmention": "NLA Australia ID "}
+{"rid": "P502", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P502", "rmention": "HURDAT identifier "}
+{"rid": "P503", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P503", "rmention": "ISO standard "}
+{"rid": "P496", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P496", "rmention": "ORCID iD "}
+{"rid": "P497", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P497", "rmention": "CBDB ID "}
+{"rid": "P508", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P508", "rmention": "BNCF Thesaurus "}
+{"rid": "P640", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P640", "rmention": "Lonore ID "}
+{"rid": "P646", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P646", "rmention": "Freebase ID "}
+{"rid": "P691", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P691", "rmention": "NKCR AUT ID "}
+{"rid": "P709", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P709", "rmention": "Historic Scotland ID "}
+{"rid": "P718", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P718", "rmention": "Canmore ID "}
+{"rid": "P723", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P723", "rmention": "DBNL author ID "}
+{"rid": "P724", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P724", "rmention": "Internet Archive ID "}
+{"rid": "P727", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P727", "rmention": "Europeana ID "}
+{"rid": "P745", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P745", "rmention": "Low German Bibliography and Biography ID "}
+{"rid": "P760", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P760", "rmention": "DPLA ID "}
+{"rid": "P791", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P791", "rmention": "International Standard Identifier for Libraries "}
+{"rid": "P648", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P648", "rmention": "Open Library ID "}
+{"rid": "P947", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P947", "rmention": "RSL ID person "}
+{"rid": "P1005", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1005", "rmention": "PTBNP ID "}
+{"rid": "P1006", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1006", "rmention": "National Thesaurus for Author Names ID "}
+{"rid": "P1017", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1017", "rmention": "BAV ID "}
+{"rid": "P1043", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1043", "rmention": "IDEO Job ID "}
+{"rid": "P1051", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1051", "rmention": "PSH ID "}
+{"rid": "P1052", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1052", "rmention": "Portuguese Job Code CPP2010 "}
+{"rid": "P1053", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1053", "rmention": "ResearcherID "}
+{"rid": "P1054", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1054", "rmention": "NDL bib ID "}
+{"rid": "P1058", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1058", "rmention": "ERA Journal ID "}
+{"rid": "P1187", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1187", "rmention": "Dharma Drum Buddhist College person ID "}
+{"rid": "P1188", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1188", "rmention": "Dharma Drum Buddhist College place ID "}
+{"rid": "P1208", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1208", "rmention": "ISMN "}
+{"rid": "P1209", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1209", "rmention": "CN "}
+{"rid": "P1216", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1216", "rmention": "National Heritage List for England number "}
+{"rid": "P1217", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1217", "rmention": "Internet Broadway Database venue ID "}
+{"rid": "P1218", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1218", "rmention": "Internet Broadway Database production ID "}
+{"rid": "P1219", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1219", "rmention": "Internet Broadway Database show ID "}
+{"rid": "P1220", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1220", "rmention": "Internet Broadway Database person ID "}
+{"rid": "P1232", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1232", "rmention": "Linguist list code "}
+{"rid": "P1233", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1233", "rmention": "ISFDB author ID "}
+{"rid": "P1234", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1234", "rmention": "ISFDB publication ID "}
+{"rid": "P1235", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1235", "rmention": "ISFDB series ID "}
+{"rid": "P1238", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1238", "rmention": "Swedish Football Association ID "}
+{"rid": "P1239", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1239", "rmention": "ISFDB publisher ID "}
+{"rid": "P1243", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1243", "rmention": "International Standard Recording Code "}
+{"rid": "P1245", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1245", "rmention": "OmegaWiki Defined Meaning "}
+{"rid": "P1250", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1250", "rmention": "Danish Bibliometric Research Indicator BFI SNOCNO "}
+{"rid": "P1251", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1251", "rmention": "ABS ASCL code "}
+{"rid": "P1252", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1252", "rmention": "AUSTLANG code "}
+{"rid": "P1253", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1253", "rmention": "BCU Ecrivainsvd "}
+{"rid": "P1255", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1255", "rmention": "Helveticarchives ID "}
+{"rid": "P1270", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1270", "rmention": "Norwegian Register journal ID "}
+{"rid": "P1271", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1271", "rmention": "Norway Database for Statistics on Higher education publisher ID "}
+{"rid": "P1272", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1272", "rmention": "Norway Import Service and Registration Authority periodical code "}
+{"rid": "P1273", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1273", "rmention": "CANTICID "}
+{"rid": "P1274", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1274", "rmention": "ISFDB title ID "}
+{"rid": "P1275", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1275", "rmention": "Norway Import Service and Registration Authority publisher code "}
+{"rid": "P1277", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1277", "rmention": "Jufo ID "}
+{"rid": "P1280", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1280", "rmention": "CONOR ID "}
+{"rid": "P1281", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1281", "rmention": "WOEID "}
+{"rid": "P1284", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1284", "rmention": "Munzinger IBA "}
+{"rid": "P1285", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1285", "rmention": "Munzinger Sport number "}
+{"rid": "P1286", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1286", "rmention": "Munzinger Pop ID "}
+{"rid": "P1287", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1287", "rmention": "KDG Komponisten der Gegenwart "}
+{"rid": "P1288", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1288", "rmention": "KLG Kritisches Lexikon der Gegenwartsliteratur "}
+{"rid": "P1289", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1289", "rmention": "KLfG Critical Dictionary of foreign contemporary literature "}
+{"rid": "P1292", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1292", "rmention": "DNB editions "}
+{"rid": "P1293", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1293", "rmention": "Royal Aero Club Aviators Certificate ID "}
+{"rid": "P1296", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1296", "rmention": "Gran Enciclopdia Catalana ID "}
+{"rid": "P1297", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1297", "rmention": "IRS Employer Identification Number "}
+{"rid": "P1309", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1309", "rmention": "EGAXA ID "}
+{"rid": "P1310", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1310", "rmention": "statement disputed by "}
+{"rid": "P1375", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1375", "rmention": "NSK ID "}
+{"rid": "P1385", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1385", "rmention": "Enciclopdia Aoriana ID "}
+{"rid": "P1386", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1386", "rmention": "Japanese High School Code "}
+{"rid": "P1391", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1391", "rmention": "Index Fungorum ID "}
+{"rid": "P1392", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1392", "rmention": "ComicBookDB ID "}
+{"rid": "P1394", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1394", "rmention": "Glottolog code "}
+{"rid": "P1395", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1395", "rmention": "National Cancer Institute ID "}
+{"rid": "P1400", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1400", "rmention": "FCC Facility ID "}
+{"rid": "P1415", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1415", "rmention": "Oxford Dictionary of National Biography ID "}
+{"rid": "P1438", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1438", "rmention": "Jewish Encyclopedia ID Russian "}
+{"rid": "P1439", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1439", "rmention": "Norsk filmografi ID "}
+{"rid": "P1447", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1447", "rmention": "SportsReferencecom Olympic athlete ID "}
+{"rid": "P1453", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1453", "rmention": "catholicru ID "}
+{"rid": "P1461", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1461", "rmention": "Patientplus ID "}
+{"rid": "P1466", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1466", "rmention": "WALS lect code "}
+{"rid": "P1601", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1601", "rmention": "Esperantist ID "}
+{"rid": "P1254", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1254", "rmention": "Slovenska biografija ID "}
+{"rid": "P1263", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1263", "rmention": "NNDB people ID "}
+{"rid": "P1291", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1291", "rmention": "Association Authors of Switzerland ID "}
+{"rid": "P1307", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1307", "rmention": "Swiss parliament ID "}
+{"rid": "P1331", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1331", "rmention": "PACE member ID "}
+{"rid": "P1749", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1749", "rmention": "Parlement  Politiek ID "}
+{"rid": "P1803", "rtype": "Generic", "rsubtype": "Authority control", "link": "https://www.wikidata.org/wiki/Property:P1803", "rmention": "Masaryk University person ID "}
+{"rid": "P18", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P18", "rmention": "image "}
+{"rid": "P51", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P51", "rmention": "audio "}
+{"rid": "P10", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P10", "rmention": "video "}
+{"rid": "P373", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P373", "rmention": "Commons category "}
+{"rid": "P443", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P443", "rmention": "pronunciation audio "}
+{"rid": "P989", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P989", "rmention": "spoken text audio "}
+{"rid": "P996", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P996", "rmention": "scanned file on Wikimedia Commons "}
+{"rid": "P675", "rtype": "Generic", "rsubtype": "Media", "link": "https://www.wikidata.org/wiki/Property:P675", "rmention": "Google Books ID "}
+{"rid": "P580", "rtype": "Generic", "rsubtype": "Dates", "link": "https://www.wikidata.org/wiki/Property:P580", "rmention": "start time "}
+{"rid": "P582", "rtype": "Generic", "rsubtype": "Dates", "link": "https://www.wikidata.org/wiki/Property:P582", "rmention": "end time "}
+{"rid": "P585", "rtype": "Generic", "rsubtype": "Dates", "link": "https://www.wikidata.org/wiki/Property:P585", "rmention": "point in time "}
+{"rid": "P1264", "rtype": "Generic", "rsubtype": "Dates", "link": "https://www.wikidata.org/wiki/Property:P1264", "rmention": "valid in period "}
+{"rid": "P625", "rtype": "Generic", "rsubtype": "Coordinates", "link": "https://www.wikidata.org/wiki/Property:P625", "rmention": "coordinate location "}
+{"rid": "P21", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P21", "rmention": "sex or gender "}
+{"rid": "P569", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P569", "rmention": "date of birth "}
+{"rid": "P3150", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P3150", "rmention": "birthday "}
+{"rid": "P19", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P19", "rmention": "place of birth "}
+{"rid": "P1477", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1477", "rmention": "birth name "}
+{"rid": "P570", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P570", "rmention": "date of death "}
+{"rid": "P20", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P20", "rmention": "place of death "}
+{"rid": "P509", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P509", "rmention": "cause of death "}
+{"rid": "P1196", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1196", "rmention": "manner of death "}
+{"rid": "P157", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P157", "rmention": "killed by "}
+{"rid": "P119", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P119", "rmention": "place of interment "}
+{"rid": "P1442", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1442", "rmention": "image of grave "}
+{"rid": "P1559", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1559", "rmention": "name in native language "}
+{"rid": "P66", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P66", "rmention": "ancestral home "}
+{"rid": "P463", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P463", "rmention": "member of "}
+{"rid": "P172", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P172", "rmention": "ethnic group "}
+{"rid": "P103", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P103", "rmention": "native language "}
+{"rid": "P27", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P27", "rmention": "country of citizenship "}
+{"rid": "P69", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P69", "rmention": "educated at "}
+{"rid": "P106", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P106", "rmention": "occupation "}
+{"rid": "P101", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P101", "rmention": "field of work "}
+{"rid": "P800", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P800", "rmention": "notable work "}
+{"rid": "P108", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P108", "rmention": "employer "}
+{"rid": "P166", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P166", "rmention": "award received "}
+{"rid": "P39", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P39", "rmention": "position held "}
+{"rid": "P102", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P102", "rmention": "member of political party "}
+{"rid": "P551", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P551", "rmention": "residence "}
+{"rid": "P263", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P263", "rmention": "official residence "}
+{"rid": "P140", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P140", "rmention": "religion "}
+{"rid": "P91", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P91", "rmention": "sexual orientation "}
+{"rid": "P94", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P94", "rmention": "coat of arms image "}
+{"rid": "P237", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P237", "rmention": "coat of arms "}
+{"rid": "P109", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P109", "rmention": "signature "}
+{"rid": "P184", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P184", "rmention": "doctoral advisor "}
+{"rid": "P185", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P185", "rmention": "doctoral student "}
+{"rid": "P1066", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1066", "rmention": "student of "}
+{"rid": "P802", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P802", "rmention": "student "}
+{"rid": "P411", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P411", "rmention": "canonization status "}
+{"rid": "P412", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P412", "rmention": "voice type "}
+{"rid": "P423", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P423", "rmention": "shooting handedness "}
+{"rid": "P450", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P450", "rmention": "astronaut mission "}
+{"rid": "P468", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P468", "rmention": "dankyu rank "}
+{"rid": "P470", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P470", "rmention": "Eight Banner register "}
+{"rid": "P53", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P53", "rmention": "family "}
+{"rid": "P97", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P97", "rmention": "noble title "}
+{"rid": "P511", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P511", "rmention": "honorific prefix "}
+{"rid": "P512", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P512", "rmention": "academic degree "}
+{"rid": "P552", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P552", "rmention": "handedness "}
+{"rid": "P553", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P553", "rmention": "website account on "}
+{"rid": "P1035", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1035", "rmention": "honorific suffix "}
+{"rid": "P734", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P734", "rmention": "family name "}
+{"rid": "P735", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P735", "rmention": "given name "}
+{"rid": "P742", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P742", "rmention": "pseudonym "}
+{"rid": "P841", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P841", "rmention": "feast day "}
+{"rid": "P990", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P990", "rmention": "audio recording of the subjects spoken voice "}
+{"rid": "P1037", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1037", "rmention": "managerdirector "}
+{"rid": "P1283", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1283", "rmention": "filmography "}
+{"rid": "P1303", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1303", "rmention": "instrument "}
+{"rid": "P1340", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1340", "rmention": "eye color "}
+{"rid": "P1344", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1344", "rmention": "participant of "}
+{"rid": "P1399", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1399", "rmention": "convicted of "}
+{"rid": "P1412", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1412", "rmention": "languages spoken written or signed "}
+{"rid": "P1416", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1416", "rmention": "affiliation "}
+{"rid": "P1429", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1429", "rmention": "has pet "}
+{"rid": "P1472", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1472", "rmention": "Commons Creator page "}
+{"rid": "P1938", "rtype": "Person", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1938", "rmention": "Project Gutenberg author ID "}
+{"rid": "P22", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P22", "rmention": "father "}
+{"rid": "P25", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P25", "rmention": "mother "}
+{"rid": "P3373", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P3373", "rmention": "sibling "}
+{"rid": "P26", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P26", "rmention": "spouse "}
+{"rid": "P451", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P451", "rmention": "partner "}
+{"rid": "P40", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P40", "rmention": "child "}
+{"rid": "P3448", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P3448", "rmention": "stepparent "}
+{"rid": "P1038", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P1038", "rmention": "relative "}
+{"rid": "P1290", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P1290", "rmention": "godparent "}
+{"rid": "P1971", "rtype": "Person", "rsubtype": "Relationship", "link": "https://www.wikidata.org/wiki/Property:P1971", "rmention": "number of children "}
+{"rid": "P2332", "rtype": "Person", "rsubtype": "Artists", "link": "https://www.wikidata.org/wiki/Property:P2332", "rmention": "Dictionary of Art Historians ID "}
+{"rid": "P54", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P54", "rmention": "member of sports team "}
+{"rid": "P413", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P413", "rmention": "position played on team  speciality "}
+{"rid": "P555", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P555", "rmention": "doubles record "}
+{"rid": "P564", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P564", "rmention": "singles record "}
+{"rid": "P1352", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P1352", "rmention": "ranking "}
+{"rid": "P1532", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P1532", "rmention": "country for sport "}
+{"rid": "P2323", "rtype": "Person", "rsubtype": "Sportspeople", "link": "https://www.wikidata.org/wiki/Property:P2323", "rmention": "Swedish Olympic Committee athlete ID "}
+{"rid": "P345", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P345", "rmention": "IMDb ID "}
+{"rid": "P1258", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P1258", "rmention": "Rotten Tomatoes ID "}
+{"rid": "P1266", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P1266", "rmention": "AlloCin person ID "}
+{"rid": "P1649", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P1649", "rmention": "KMDb person ID "}
+{"rid": "P1969", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P1969", "rmention": "MovieMeter director ID "}
+{"rid": "P1982", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P1982", "rmention": "Anime News Network person ID "}
+{"rid": "P2019", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2019", "rmention": "AllMovie artist ID "}
+{"rid": "P2168", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2168", "rmention": "SFDb person ID "}
+{"rid": "P2387", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2387", "rmention": "Elonet person ID "}
+{"rid": "P2435", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2435", "rmention": "PORT person ID "}
+{"rid": "P2519", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2519", "rmention": "Scopedk person ID "}
+{"rid": "P2604", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2604", "rmention": "Kinopoisk person ID "}
+{"rid": "P2605", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2605", "rmention": "SFD person ID "}
+{"rid": "P2626", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2626", "rmention": "DNF person ID "}
+{"rid": "P2638", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2638", "rmention": "TVcom ID "}
+{"rid": "P2639", "rtype": "Person", "rsubtype": "Film", "link": "https://www.wikidata.org/wiki/Property:P2639", "rmention": "Filmportal ID "}
+{"rid": "P241", "rtype": "Person", "rsubtype": "Military", "link": "https://www.wikidata.org/wiki/Property:P241", "rmention": "military branch "}
+{"rid": "P410", "rtype": "Person", "rsubtype": "Military", "link": "https://www.wikidata.org/wiki/Property:P410", "rmention": "military rank "}
+{"rid": "P598", "rtype": "Person", "rsubtype": "Military", "link": "https://www.wikidata.org/wiki/Property:P598", "rmention": "commander of "}
+{"rid": "P607", "rtype": "Person", "rsubtype": "Military", "link": "https://www.wikidata.org/wiki/Property:P607", "rmention": "conflict "}
+{"rid": "P94", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P94", "rmention": "coat of arms image "}
+{"rid": "P237", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P237", "rmention": "coat of arms "}
+{"rid": "P154", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P154", "rmention": "logo image "}
+{"rid": "P159", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P159", "rmention": "headquarters location "}
+{"rid": "P452", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P452", "rmention": "industry "}
+{"rid": "P807", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P807", "rmention": "separated from "}
+{"rid": "P1056", "rtype": "Organization", "rsubtype": "Generic characteristics", "link": "https://www.wikidata.org/wiki/Property:P1056", "rmention": "product or material produced "}
+{"rid": "P18", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P18", "rmention": "image "}
+{"rid": "P31", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P31", "rmention": "instance of "}
+{"rid": "P457", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P457", "rmention": "foundational text "}
+{"rid": "P571", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P571", "rmention": "inception "}
+{"rid": "P856", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P856", "rmention": "official website "}
+{"rid": "P576", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P576", "rmention": "dissolved abolished or demolished "}
+{"rid": "P112", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P112", "rmention": "founded by "}
+{"rid": "P740", "rtype": "Organization", "rsubtype": "Organizational lifecycle", "link": "https://www.wikidata.org/wiki/Property:P740", "rmention": "location of formation "}
+{"rid": "P1342", "rtype": "Organization", "rsubtype": "Specific organizations", "link": "https://www.wikidata.org/wiki/Property:P1342", "rmention": "number of seats "}
+{"rid": "P1387", "rtype": "Organization", "rsubtype": "Specific organizations", "link": "https://www.wikidata.org/wiki/Property:P1387", "rmention": "political alignment "}
+{"rid": "P1408", "rtype": "Organization", "rsubtype": "Specific organizations", "link": "https://www.wikidata.org/wiki/Property:P1408", "rmention": "licensed to broadcast to "}
+{"rid": "P1410", "rtype": "Organization", "rsubtype": "Specific organizations", "link": "https://www.wikidata.org/wiki/Property:P1410", "rmention": "number of representatives in an organizationlegislature "}
+{"rid": "P1313", "rtype": "Organization", "rsubtype": "Specific organizations", "link": "https://www.wikidata.org/wiki/Property:P1313", "rmention": "office held by head of government "}
+{"rid": "P113", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P113", "rmention": "airline hub "}
+{"rid": "P114", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P114", "rmention": "airline alliance "}
+{"rid": "P121", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P121", "rmention": "item operated "}
+{"rid": "P229", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P229", "rmention": "IATA airline designator "}
+{"rid": "P230", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P230", "rmention": "ICAO airline designator "}
+{"rid": "P432", "rtype": "Organization", "rsubtype": "Airline", "link": "https://www.wikidata.org/wiki/Property:P432", "rmention": "callsign of airline "}
+{"rid": "P115", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P115", "rmention": "home venue "}
+{"rid": "P118", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P118", "rmention": "league "}
+{"rid": "P286", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P286", "rmention": "head coach "}
+{"rid": "P505", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P505", "rmention": "general manager "}
+{"rid": "P634", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P634", "rmention": "captain "}
+{"rid": "P822", "rtype": "Organization", "rsubtype": "Sports club", "link": "https://www.wikidata.org/wiki/Property:P822", "rmention": "mascot "}
+{"rid": "P241", "rtype": "Organization", "rsubtype": "Military", "link": "https://www.wikidata.org/wiki/Property:P241", "rmention": "military branch "}
+{"rid": "P169", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P169", "rmention": "chief executive officer "}
+{"rid": "P488", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P488", "rmention": "leader "}
+{"rid": "P199", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P199", "rmention": "business division "}
+{"rid": "P355", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P355", "rmention": "subsidiary "}
+{"rid": "P1268", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P1268", "rmention": "represents "}
+{"rid": "P1278", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P1278", "rmention": "Legal Entity ID "}
+{"rid": "P1308", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P1308", "rmention": "officeholder "}
+{"rid": "P1128", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P1128", "rmention": "employees "}
+{"rid": "P2139", "rtype": "Organization", "rsubtype": "Corporate data", "link": "https://www.wikidata.org/wiki/Property:P2139", "rmention": "total revenue "}
+{"rid": "P249", "rtype": "Organization", "rsubtype": "Listed companies", "link": "https://www.wikidata.org/wiki/Property:P249", "rmention": "ticker symbol "}
+{"rid": "P414", "rtype": "Organization", "rsubtype": "Listed companies", "link": "https://www.wikidata.org/wiki/Property:P414", "rmention": "stock exchange "}
+{"rid": "P1320", "rtype": "Organization", "rsubtype": "Listed companies", "link": "https://www.wikidata.org/wiki/Property:P1320", "rmention": "OpenCorporates ID "}
+{"rid": "P1454", "rtype": "Organization", "rsubtype": "Listed companies", "link": "https://www.wikidata.org/wiki/Property:P1454", "rmention": "legal form "}
+{"rid": "P276", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P276", "rmention": "location "}
+{"rid": "P664", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P664", "rmention": "organizer "}
+{"rid": "P710", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P710", "rmention": "participant "}
+{"rid": "P832", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P832", "rmention": "public holiday "}
+{"rid": "P1110", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1110", "rmention": "attendance "}
+{"rid": "P1346", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1346", "rmention": "winner "}
+{"rid": "P1446", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1446", "rmention": "number of missing "}
+{"rid": "P1478", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1478", "rmention": "has immediate cause "}
+{"rid": "P1479", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1479", "rmention": "has contributing factor "}
+{"rid": "P1534", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1534", "rmention": "end cause "}
+{"rid": "P1535", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1535", "rmention": "used by "}
+{"rid": "P1536", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1536", "rmention": "immediate cause of "}
+{"rid": "P1537", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1537", "rmention": "contributing factor of "}
+{"rid": "P2257", "rtype": "Events", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P2257", "rmention": "frequency of event "}
+{"rid": "P726", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P726", "rmention": "candidate "}
+{"rid": "P991", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P991", "rmention": "successful candidate "}
+{"rid": "P1111", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P1111", "rmention": "votes received "}
+{"rid": "P541", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P541", "rmention": "office contested "}
+{"rid": "P1697", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P1697", "rmention": "total valid votes "}
+{"rid": "P1867", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P1867", "rmention": "eligible voters "}
+{"rid": "P2319", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P2319", "rmention": "elector "}
+{"rid": "P1831", "rtype": "Events", "rsubtype": "Elections", "link": "https://www.wikidata.org/wiki/Property:P1831", "rmention": "electorate "}
+{"rid": "P144", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P144", "rmention": "based on "}
+{"rid": "P136", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P136", "rmention": "genre "}
+{"rid": "P135", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P135", "rmention": "movement "}
+{"rid": "P179", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P179", "rmention": "series "}
+{"rid": "P840", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P840", "rmention": "narrative location "}
+{"rid": "P275", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P275", "rmention": "license "}
+{"rid": "P1476", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1476", "rmention": "title "}
+{"rid": "P371", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P371", "rmention": "presenter "}
+{"rid": "P407", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P407", "rmention": "language of work or name "}
+{"rid": "P437", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P437", "rmention": "distribution "}
+{"rid": "P444", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P444", "rmention": "review score "}
+{"rid": "P447", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P447", "rmention": "score by "}
+{"rid": "P449", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P449", "rmention": "original network "}
+{"rid": "P453", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P453", "rmention": "character role "}
+{"rid": "P495", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P495", "rmention": "country of origin "}
+{"rid": "P674", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P674", "rmention": "characters "}
+{"rid": "P736", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P736", "rmention": "cover artist "}
+{"rid": "P767", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P767", "rmention": "contributors to the creative work "}
+{"rid": "P747", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P747", "rmention": "edition "}
+{"rid": "P750", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P750", "rmention": "distributor "}
+{"rid": "P825", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P825", "rmention": "dedicated to "}
+{"rid": "P1240", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1240", "rmention": "Danish Bibliometric Research Indicator level "}
+{"rid": "P1299", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1299", "rmention": "depicted by "}
+{"rid": "P1316", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1316", "rmention": "SMDB ID "}
+{"rid": "P528", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P528", "rmention": "catalog code "}
+{"rid": "P1436", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1436", "rmention": "collection or exhibition size "}
+{"rid": "P1462", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1462", "rmention": "standards body "}
+{"rid": "P1557", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1557", "rmention": "manifestation of "}
+{"rid": "P1638", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1638", "rmention": "codename "}
+{"rid": "P1712", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1712", "rmention": "Metacritic ID "}
+{"rid": "P1809", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1809", "rmention": "choreographer "}
+{"rid": "P1811", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1811", "rmention": "list of episodes "}
+{"rid": "P1874", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1874", "rmention": "Netflix ID "}
+{"rid": "P1932", "rtype": "Works", "rsubtype": "Generic", "link": "https://www.wikidata.org/wiki/Property:P1932", "rmention": "stated as "}
+{"rid": "P170", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P170", "rmention": "creator "}
+{"rid": "P84", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P84", "rmention": "architect "}
+{"rid": "P466", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P466", "rmention": "occupant "}
+{"rid": "P88", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P88", "rmention": "commissioned by "}
+{"rid": "P149", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P149", "rmention": "architectural style "}
+{"rid": "P180", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P180", "rmention": "depicts "}
+{"rid": "P186", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P186", "rmention": "material used "}
+{"rid": "P189", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P189", "rmention": "location of discovery "}
+{"rid": "P195", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P195", "rmention": "collection "}
+{"rid": "P217", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P217", "rmention": "inventory number "}
+{"rid": "P276", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P276", "rmention": "location "}
+{"rid": "P1684", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1684", "rmention": "inscription "}
+{"rid": "P1189", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1189", "rmention": "Chinese Library Classification "}
+{"rid": "P1639", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1639", "rmention": "pendant of "}
+{"rid": "P1773", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1773", "rmention": "attributed to "}
+{"rid": "P1774", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1774", "rmention": "workshop of "}
+{"rid": "P1775", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1775", "rmention": "follower of "}
+{"rid": "P1776", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1776", "rmention": "circle of "}
+{"rid": "P1777", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1777", "rmention": "manner of "}
+{"rid": "P1778", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1778", "rmention": "forgery after "}
+{"rid": "P1779", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1779", "rmention": "possible creator "}
+{"rid": "P1780", "rtype": "Works", "rsubtype": "Art  architecture", "link": "https://www.wikidata.org/wiki/Property:P1780", "rmention": "school of "}
+{"rid": "P347", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P347", "rmention": "Joconde ID "}
+{"rid": "P350", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P350", "rmention": "RKDimages "}
+{"rid": "P359", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P359", "rmention": "Rijksmonument ID "}
+{"rid": "P380", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P380", "rmention": "Mrime ID "}
+{"rid": "P381", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P381", "rmention": "PCP reference number "}
+{"rid": "P477", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P477", "rmention": "Canadian Register of Historic Places ID "}
+{"rid": "P632", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P632", "rmention": "cultural properties of Belarus reference number "}
+{"rid": "P633", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P633", "rmention": "Quebec cultural heritage directory ID "}
+{"rid": "P757", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P757", "rmention": "World Heritage Site ID "}
+{"rid": "P758", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P758", "rmention": "Kulturminne ID "}
+{"rid": "P759", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P759", "rmention": "Alberta Register of Historic Places ID "}
+{"rid": "P763", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P763", "rmention": "PEI Register of Historic Places ID "}
+{"rid": "P808", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P808", "rmention": "code Bien de Inters Cultural "}
+{"rid": "P845", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P845", "rmention": "Saskatchewan Register of Heritage Property ID "}
+{"rid": "P1133", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1133", "rmention": "DGO4 identifier "}
+{"rid": "P1212", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1212", "rmention": "Atlas ID "}
+{"rid": "P1230", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1230", "rmention": "JSTOR journal code "}
+{"rid": "P1257", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1257", "rmention": "depicts Iconclass notation "}
+{"rid": "P1300", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1300", "rmention": "bibcode "}
+{"rid": "P1428", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1428", "rmention": "Lost ArtID "}
+{"rid": "P1483", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1483", "rmention": "kulturnoenasledieru ID "}
+{"rid": "P1551", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1551", "rmention": "Exceptional heritage of Wallonia ID "}
+{"rid": "P1700", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1700", "rmention": "SIPA ID "}
+{"rid": "P1708", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1708", "rmention": "LfDS object ID "}
+{"rid": "P1726", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1726", "rmention": "Florentine musea Inventario 1890 ID "}
+{"rid": "P1822", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P1822", "rmention": "DSH object ID "}
+{"rid": "P2081", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P2081", "rmention": "BLDAM object ID "}
+{"rid": "P2242", "rtype": "Works", "rsubtype": "Specialized properties", "link": "https://www.wikidata.org/wiki/Property:P2242", "rmention": "Florentine musea catalogue ID "}
+{"rid": "P50", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P50", "rmention": "author "}
+{"rid": "P655", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P655", "rmention": "translator "}
+{"rid": "P98", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P98", "rmention": "editor "}
+{"rid": "P110", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P110", "rmention": "illustrator "}
+{"rid": "P2679", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P2679", "rmention": "author of foreword "}
+{"rid": "P2680", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P2680", "rmention": "author of afterword "}
+{"rid": "P393", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P393", "rmention": "edition number "}
+{"rid": "P291", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P291", "rmention": "place of publication "}
+{"rid": "P123", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P123", "rmention": "publisher "}
+{"rid": "P957", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P957", "rmention": "ISBN10 "}
+{"rid": "P212", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P212", "rmention": "ISBN13 "}
+{"rid": "P236", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P236", "rmention": "ISSN "}
+{"rid": "P1144", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1144", "rmention": "LCOC LCCN bibliographic "}
+{"rid": "P243", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P243", "rmention": "OCLC control number "}
+{"rid": "P356", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P356", "rmention": "DOI "}
+{"rid": "P577", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P577", "rmention": "publication date "}
+{"rid": "P648", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P648", "rmention": "Open Library ID "}
+{"rid": "P1104", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1104", "rmention": "number of pages "}
+{"rid": "P1189", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1189", "rmention": "Chinese Library Classification "}
+{"rid": "P1190", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1190", "rmention": "Universal Decimal Classification "}
+{"rid": "P1085", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1085", "rmention": "LibraryThing work ID "}
+{"rid": "P1242", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1242", "rmention": "Theatricalia play ID "}
+{"rid": "P1441", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1441", "rmention": "present in work "}
+{"rid": "P1191", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P1191", "rmention": "date of first performance "}
+{"rid": "P2034", "rtype": "Works", "rsubtype": "Literature", "link": "https://www.wikidata.org/wiki/Property:P2034", "rmention": "Project Gutenberg ebook ID "}
+{"rid": "P175", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P175", "rmention": "performer "}
+{"rid": "P86", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P86", "rmention": "composer "}
+{"rid": "P87", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P87", "rmention": "librettist "}
+{"rid": "P162", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P162", "rmention": "producer "}
+{"rid": "P264", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P264", "rmention": "record label "}
+{"rid": "P358", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P358", "rmention": "discography "}
+{"rid": "P434", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P434", "rmention": "MusicBrainz artist ID "}
+{"rid": "P436", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P436", "rmention": "MusicBrainz release group ID "}
+{"rid": "P435", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P435", "rmention": "MusicBrainz work ID "}
+{"rid": "P658", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P658", "rmention": "tracklist "}
+{"rid": "P676", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P676", "rmention": "lyrics by "}
+{"rid": "P826", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P826", "rmention": "tonality "}
+{"rid": "P839", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P839", "rmention": "IMSLP ID "}
+{"rid": "P1236", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P1236", "rmention": "Parsons code "}
+{"rid": "P1432", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P1432", "rmention": "Bside "}
+{"rid": "P1191", "rtype": "Works", "rsubtype": "Music", "link": "https://www.wikidata.org/wiki/Property:P1191", "rmention": "date of first performance "}
+{"rid": "P57", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P57", "rmention": "director "}
+{"rid": "P58", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P58", "rmention": "screenwriter "}
+{"rid": "P162", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P162", "rmention": "producer "}
+{"rid": "P1431", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P1431", "rmention": "executive producer "}
+{"rid": "P344", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P344", "rmention": "director of photography "}
+{"rid": "P1040", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P1040", "rmention": "film editor "}
+{"rid": "P86", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P86", "rmention": "composer "}
+{"rid": "P161", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P161", "rmention": "cast member "}
+{"rid": "P2515", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P2515", "rmention": "costume designer "}
+{"rid": "P2554", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P2554", "rmention": "production designer "}
+{"rid": "P3092", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P3092", "rmention": "film crew member "}
+{"rid": "P1810", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P1810", "rmention": "named as "}
+{"rid": "P725", "rtype": "Works", "rsubtype": "Crew", "link": "https://www.wikidata.org/wiki/Property:P725", "rmention": "voice actor "}
+{"rid": "P179", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P179", "rmention": "series "}
+{"rid": "P272", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P272", "rmention": "production company "}
+{"rid": "P840", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P840", "rmention": "narrative location "}
+{"rid": "P915", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P915", "rmention": "filming location "}
+{"rid": "P406", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P406", "rmention": "soundtrack album "}
+{"rid": "P942", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P942", "rmention": "theme music "}
+{"rid": "P2061", "rtype": "Works", "rsubtype": "Additional information", "link": "https://www.wikidata.org/wiki/Property:P2061", "rmention": "aspect ratio "}
+{"rid": "P345", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P345", "rmention": "IMDb ID "}
+{"rid": "P480", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P480", "rmention": "FilmAffinity ID "}
+{"rid": "P905", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P905", "rmention": "PORT film ID "}
+{"rid": "P1237", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1237", "rmention": "Box Office Mojo film ID "}
+{"rid": "P1258", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1258", "rmention": "Rotten Tomatoes ID "}
+{"rid": "P1265", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1265", "rmention": "AlloCin film ID "}
+{"rid": "P1439", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1439", "rmention": "Norsk filmografi ID "}
+{"rid": "P1562", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1562", "rmention": "AllMovie movie ID "}
+{"rid": "P1804", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1804", "rmention": "DNF film ID "}
+{"rid": "P1934", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1934", "rmention": "Animatorru film ID "}
+{"rid": "P1970", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1970", "rmention": "MovieMeter Movie ID "}
+{"rid": "P1985", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P1985", "rmention": "Anime News Network anime ID "}
+{"rid": "P2334", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2334", "rmention": "Swedish Film Database film ID "}
+{"rid": "P2346", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2346", "rmention": "Elonet movie ID "}
+{"rid": "P2400", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2400", "rmention": "JMDb film ID "}
+{"rid": "P2465", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2465", "rmention": "Allcinema film ID "}
+{"rid": "P2508", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2508", "rmention": "KINENOTE film ID "}
+{"rid": "P2509", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2509", "rmention": "Movie Walker ID "}
+{"rid": "P2518", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2518", "rmention": "Scopedk film ID "}
+{"rid": "P2529", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2529", "rmention": "SFD film ID "}
+{"rid": "P2603", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2603", "rmention": "Kinopoisk film ID "}
+{"rid": "P2631", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2631", "rmention": "Turner Classic Movies film ID "}
+{"rid": "P2636", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2636", "rmention": "Minkultury film ID "}
+{"rid": "P2638", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2638", "rmention": "TVcom ID "}
+{"rid": "P2639", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2639", "rmention": "Filmportal ID "}
+{"rid": "P2678", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2678", "rmention": "Russiancinemaru film ID "}
+{"rid": "P2703", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2703", "rmention": "BFI work ID "}
+{"rid": "P2704", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2704", "rmention": "EIDR identifier "}
+{"rid": "P2725", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2725", "rmention": "GOG application ID "}
+{"rid": "P2826", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2826", "rmention": "Megogo ID "}
+{"rid": "P2883", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2883", "rmention": "HKMDb film ID "}
+{"rid": "P2897", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2897", "rmention": "Eldoblaje Movie ID "}
+{"rid": "P2970", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P2970", "rmention": "Kinopolis film ID "}
+{"rid": "P3077", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3077", "rmention": "Cineplex film ID "}
+{"rid": "P3107", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3107", "rmention": "LdiF ID "}
+{"rid": "P3110", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3110", "rmention": "ISzDb film ID "}
+{"rid": "P3128", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3128", "rmention": "CiNetMag film ID "}
+{"rid": "P3129", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3129", "rmention": "cinegr film ID "}
+{"rid": "P3135", "rtype": "Works", "rsubtype": "Film IDs for movie databases", "link": "https://www.wikidata.org/wiki/Property:P3135", "rmention": "elCinema film ID "}
+{"rid": "P1657", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P1657", "rmention": "MPAA film rating "}
+{"rid": "P1981", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P1981", "rmention": "FSK film rating "}
+{"rid": "P2629", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P2629", "rmention": "BBFC rating "}
+{"rid": "P2747", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P2747", "rmention": "Filmiroda rating "}
+{"rid": "P2756", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P2756", "rmention": "EIRIN film rating "}
+{"rid": "P2758", "rtype": "Works", "rsubtype": "Film rating", "link": "https://www.wikidata.org/wiki/Property:P2758", "rmention": "CNC film rating France "}
+{"rid": "P415", "rtype": "Works", "rsubtype": "Radio", "link": "https://www.wikidata.org/wiki/Property:P415", "rmention": "radio format "}
+{"rid": "P464", "rtype": "Works", "rsubtype": "Law legislation", "link": "https://www.wikidata.org/wiki/Property:P464", "rmention": "NOR "}
+{"rid": "P467", "rtype": "Works", "rsubtype": "Law legislation", "link": "https://www.wikidata.org/wiki/Property:P467", "rmention": "legislated by "}
+{"rid": "P1031", "rtype": "Works", "rsubtype": "Law legislation", "link": "https://www.wikidata.org/wiki/Property:P1031", "rmention": "legal citation of this text "}
+{"rid": "P1031", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1031", "rmention": "legal citation of this text "}
+{"rid": "P1620", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1620", "rmention": "plaintiff "}
+{"rid": "P1591", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1591", "rmention": "defendant "}
+{"rid": "P1595", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1595", "rmention": "charge "}
+{"rid": "P1437", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1437", "rmention": "plea "}
+{"rid": "P1596", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1596", "rmention": "penalty "}
+{"rid": "P1594", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1594", "rmention": "judge "}
+{"rid": "P1593", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1593", "rmention": "defender "}
+{"rid": "P1592", "rtype": "Works", "rsubtype": "Law court cases", "link": "https://www.wikidata.org/wiki/Property:P1592", "rmention": "prosecutor "}
+{"rid": "P852", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P852", "rmention": "ESRB rating "}
+{"rid": "P853", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P853", "rmention": "CERO rating "}
+{"rid": "P908", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P908", "rmention": "PEGI rating "}
+{"rid": "P914", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P914", "rmention": "USK rating "}
+{"rid": "P916", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P916", "rmention": "GSRR rating "}
+{"rid": "P1733", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P1733", "rmention": "Steam Application ID "}
+{"rid": "P1933", "rtype": "Works", "rsubtype": "Video games", "link": "https://www.wikidata.org/wiki/Property:P1933", "rmention": "MobyGames ID "}
+{"rid": "P489", "rtype": "Terms", "rsubtype": "Currency", "link": "https://www.wikidata.org/wiki/Property:P489", "rmention": "currency symbol description "}
+{"rid": "P498", "rtype": "Terms", "rsubtype": "Currency", "link": "https://www.wikidata.org/wiki/Property:P498", "rmention": "ISO 4217 code "}
+{"rid": "P405", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P405", "rmention": "taxon author "}
+{"rid": "P225", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P225", "rmention": "taxon name "}
+{"rid": "P171", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P171", "rmention": "parent taxon "}
+{"rid": "P105", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P105", "rmention": "taxon rank "}
+{"rid": "P141", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P141", "rmention": "IUCN conservation status "}
+{"rid": "P128", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P128", "rmention": "regulates molecular biology "}
+{"rid": "P129", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P129", "rmention": "physically interacts with "}
+{"rid": "P181", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P181", "rmention": "taxon range map image "}
+{"rid": "P183", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P183", "rmention": "endemic to "}
+{"rid": "P427", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P427", "rmention": "taxonomic type "}
+{"rid": "P428", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P428", "rmention": "botanist author abbreviation "}
+{"rid": "P566", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P566", "rmention": "basionym "}
+{"rid": "P678", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P678", "rmention": "incertae sedis "}
+{"rid": "P694", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P694", "rmention": "replaced synonym for nom nov "}
+{"rid": "P697", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P697", "rmention": "ex taxon author "}
+{"rid": "P687", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P687", "rmention": "BHL Page ID "}
+{"rid": "P815", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P815", "rmention": "ITIS TSN "}
+{"rid": "P627", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P627", "rmention": "IUCN ID "}
+{"rid": "P685", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P685", "rmention": "NCBI Taxonomy ID "}
+{"rid": "P842", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P842", "rmention": "Fossilworks ID "}
+{"rid": "P846", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P846", "rmention": "Global Biodiversity Information Facility ID "}
+{"rid": "P850", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P850", "rmention": "WoRMSID "}
+{"rid": "P944", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P944", "rmention": "Code of nomenclature "}
+{"rid": "P970", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P970", "rmention": "neurological function "}
+{"rid": "P1199", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1199", "rmention": "mode of inheritance "}
+{"rid": "P1294", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1294", "rmention": "WWF ecoregion code "}
+{"rid": "P1348", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1348", "rmention": "AlgaeBase URL "}
+{"rid": "P1353", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1353", "rmention": "original spelling "}
+{"rid": "P1727", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1727", "rmention": "Flora of North America taxon ID "}
+{"rid": "P1743", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1743", "rmention": "Bradley and Fletcher checklist number "}
+{"rid": "P1744", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1744", "rmention": "Agassiz checklist number "}
+{"rid": "P1745", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1745", "rmention": "VASCAN ID "}
+{"rid": "P1746", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1746", "rmention": "ZooBank nomenclatural act "}
+{"rid": "P1747", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P1747", "rmention": "Flora of China ID "}
+{"rid": "P2371", "rtype": "Terms", "rsubtype": "Biology", "link": "https://www.wikidata.org/wiki/Property:P2371", "rmention": "FAO risk status "}
+{"rid": "P351", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P351", "rmention": "Entrez Gene ID "}
+{"rid": "P352", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P352", "rmention": "UniProt protein ID "}
+{"rid": "P353", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P353", "rmention": "HGNC gene symbol "}
+{"rid": "P354", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P354", "rmention": "HGNC ID "}
+{"rid": "P591", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P591", "rmention": "EC number "}
+{"rid": "P592", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P592", "rmention": "ChEMBL ID "}
+{"rid": "P593", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P593", "rmention": "HomoloGene ID "}
+{"rid": "P594", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P594", "rmention": "Ensembl Gene ID "}
+{"rid": "P595", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P595", "rmention": "Guide to Pharmacology Ligand ID "}
+{"rid": "P659", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P659", "rmention": "genomic assembly "}
+{"rid": "P660", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P660", "rmention": "EC classification "}
+{"rid": "P665", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P665", "rmention": "KEGG ID "}
+{"rid": "P680", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P680", "rmention": "molecular function "}
+{"rid": "P681", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P681", "rmention": "cell component "}
+{"rid": "P682", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P682", "rmention": "biological process "}
+{"rid": "P684", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P684", "rmention": "ortholog "}
+{"rid": "P685", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P685", "rmention": "NCBI Taxonomy ID "}
+{"rid": "P686", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P686", "rmention": "Gene Ontology ID "}
+{"rid": "P688", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P688", "rmention": "encodes "}
+{"rid": "P692", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P692", "rmention": "Gene Atlas Image "}
+{"rid": "P702", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P702", "rmention": "encoded by "}
+{"rid": "P704", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P704", "rmention": "Ensembl Transcript ID "}
+{"rid": "P705", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P705", "rmention": "Ensembl Protein ID "}
+{"rid": "P1057", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P1057", "rmention": "chromosome "}
+{"rid": "P1349", "rtype": "Terms", "rsubtype": "Molecular biology", "link": "https://www.wikidata.org/wiki/Property:P1349", "rmention": "ploidy "}
+{"rid": "P303", "rtype": "Terms", "rsubtype": "Animal breeds", "link": "https://www.wikidata.org/wiki/Property:P303", "rmention": "EE breed number "}
+{"rid": "P117", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P117", "rmention": "chemical structure "}
+{"rid": "P231", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P231", "rmention": "CAS Registry Number "}
+{"rid": "P232", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P232", "rmention": "EC no "}
+{"rid": "P233", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P233", "rmention": "canonical SMILES "}
+{"rid": "P234", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P234", "rmention": "InChI "}
+{"rid": "P235", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P235", "rmention": "InChIKey "}
+{"rid": "P246", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P246", "rmention": "element symbol "}
+{"rid": "P267", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P267", "rmention": "ATC code "}
+{"rid": "P274", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P274", "rmention": "chemical formula "}
+{"rid": "P515", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P515", "rmention": "phase of matter "}
+{"rid": "P459", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P459", "rmention": "determination method "}
+{"rid": "P556", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P556", "rmention": "crystal system "}
+{"rid": "P628", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P628", "rmention": "E number "}
+{"rid": "P652", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P652", "rmention": "UNII "}
+{"rid": "P657", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P657", "rmention": "RTECS number "}
+{"rid": "P661", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P661", "rmention": "ChemSpider ID "}
+{"rid": "P662", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P662", "rmention": "PubChem CID "}
+{"rid": "P679", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P679", "rmention": "ZVG number "}
+{"rid": "P683", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P683", "rmention": "ChEBI ID "}
+{"rid": "P695", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P695", "rmention": "UN number "}
+{"rid": "P874", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P874", "rmention": "UN class "}
+{"rid": "P875", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P875", "rmention": "UN code classification "}
+{"rid": "P876", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P876", "rmention": "UN packaging group "}
+{"rid": "P700", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P700", "rmention": "Kemler code "}
+{"rid": "P715", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P715", "rmention": "Drugbank ID "}
+{"rid": "P728", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P728", "rmention": "GHS hazard statement "}
+{"rid": "P940", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P940", "rmention": "GHS precautionary statements "}
+{"rid": "P873", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P873", "rmention": "phase point "}
+{"rid": "P1295", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P1295", "rmention": "emissivity "}
+{"rid": "P1108", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P1108", "rmention": "electronegativity "}
+{"rid": "P1121", "rtype": "Terms", "rsubtype": "Chemistry", "link": "https://www.wikidata.org/wiki/Property:P1121", "rmention": "oxidation state "}
+{"rid": "P111", "rtype": "Terms", "rsubtype": "Unit", "link": "https://www.wikidata.org/wiki/Property:P111", "rmention": "measured physical quantity "}
+{"rid": "P134", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P134", "rmention": "has dialect "}
+{"rid": "P218", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P218", "rmention": "ISO 6391 code "}
+{"rid": "P219", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P219", "rmention": "ISO 6392 code "}
+{"rid": "P220", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P220", "rmention": "ISO 6393 code "}
+{"rid": "P1798", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1798", "rmention": "ISO 6395 code "}
+{"rid": "P221", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P221", "rmention": "ISO 6396 code "}
+{"rid": "P506", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P506", "rmention": "ISO 15924 alpha4 code "}
+{"rid": "P278", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P278", "rmention": "GOST 77597 code "}
+{"rid": "P305", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P305", "rmention": "IETF language tag "}
+{"rid": "P282", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P282", "rmention": "writing system "}
+{"rid": "P424", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P424", "rmention": "Wikimedia language code "}
+{"rid": "P1018", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1018", "rmention": "language regulatory body "}
+{"rid": "P1098", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1098", "rmention": "number of speakers "}
+{"rid": "P1232", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1232", "rmention": "Linguist list code "}
+{"rid": "P1251", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1251", "rmention": "ABS ASCL code "}
+{"rid": "P1252", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1252", "rmention": "AUSTLANG code "}
+{"rid": "P1394", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1394", "rmention": "Glottolog code "}
+{"rid": "P1396", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1396", "rmention": "Linguasphere code "}
+{"rid": "P1466", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1466", "rmention": "WALS lect code "}
+{"rid": "P1467", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1467", "rmention": "WALS genus code "}
+{"rid": "P1468", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1468", "rmention": "WALS family code "}
+{"rid": "P1627", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1627", "rmention": "Ethnologuecom code "}
+{"rid": "P1999", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P1999", "rmention": "UNESCO language status "}
+{"rid": "P2161", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P2161", "rmention": "Guthrie code "}
+{"rid": "P2192", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P2192", "rmention": "endangeredlanguagescom ID "}
+{"rid": "P2590", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P2590", "rmention": "BPS language code "}
+{"rid": "P3823", "rtype": "Terms", "rsubtype": "Languages", "link": "https://www.wikidata.org/wiki/Property:P3823", "rmention": "Ethnologue language status "}
+{"rid": "P176", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P176", "rmention": "manufacturer "}
+{"rid": "P178", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P178", "rmention": "developer "}
+{"rid": "P154", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P154", "rmention": "logo image "}
+{"rid": "P277", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P277", "rmention": "programming language "}
+{"rid": "P287", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P287", "rmention": "designed by "}
+{"rid": "P306", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P306", "rmention": "operating system "}
+{"rid": "P348", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P348", "rmention": "software version "}
+{"rid": "P400", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P400", "rmention": "platform "}
+{"rid": "P404", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P404", "rmention": "game mode "}
+{"rid": "P425", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P425", "rmention": "field of this occupation "}
+{"rid": "P3095", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P3095", "rmention": "practiced by "}
+{"rid": "P408", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P408", "rmention": "software engine "}
+{"rid": "P600", "rtype": "Terms", "rsubtype": "Products and services incl software products", "link": "https://www.wikidata.org/wiki/Property:P600", "rmention": "Wine AppDBID "}
+{"rid": "P458", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P458", "rmention": "IMO ship number "}
+{"rid": "P94", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P94", "rmention": "coat of arms image "}
+{"rid": "P237", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P237", "rmention": "coat of arms "}
+{"rid": "P289", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P289", "rmention": "vessel class "}
+{"rid": "P504", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P504", "rmention": "home port "}
+{"rid": "P532", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P532", "rmention": "port of registry "}
+{"rid": "P617", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P617", "rmention": "yard number "}
+{"rid": "P587", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P587", "rmention": "MMSI "}
+{"rid": "P1099", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P1099", "rmention": "number of masts "}
+{"rid": "P2261", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P2261", "rmention": "beam "}
+{"rid": "P2262", "rtype": "Terms", "rsubtype": "Ship", "link": "https://www.wikidata.org/wiki/Property:P2262", "rmention": "draft "}
+{"rid": "P375", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P375", "rmention": "space launch vehicle "}
+{"rid": "P247", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P247", "rmention": "COSPAR ID "}
+{"rid": "P377", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P377", "rmention": "SCN "}
+{"rid": "P1427", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P1427", "rmention": "start point "}
+{"rid": "P522", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P522", "rmention": "type of orbit "}
+{"rid": "P707", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P707", "rmention": "satellite bus "}
+{"rid": "P716", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P716", "rmention": "JPL SmallBody Database ID "}
+{"rid": "P717", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P717", "rmention": "Minor Planet Center observatory code "}
+{"rid": "P720", "rtype": "Terms", "rsubtype": "Space", "link": "https://www.wikidata.org/wiki/Property:P720", "rmention": "asteroid spectral type "}
+{"rid": "P426", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P426", "rmention": "aircraft registration "}
+{"rid": "P516", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P516", "rmention": "powerplant "}
+{"rid": "P520", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P520", "rmention": "armament "}
+{"rid": "P606", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P606", "rmention": "first flight "}
+{"rid": "P1221", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P1221", "rmention": "compressor type "}
+{"rid": "P1637", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P1637", "rmention": "undercarriage "}
+{"rid": "P1956", "rtype": "Terms", "rsubtype": "Aircraft", "link": "https://www.wikidata.org/wiki/Property:P1956", "rmention": "takeoff and landing capability "}
+{"rid": "P1192", "rtype": "Terms", "rsubtype": "Train", "link": "https://www.wikidata.org/wiki/Property:P1192", "rmention": "connecting service "}
+{"rid": "P484", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P484", "rmention": "IMA Number broad sense "}
+{"rid": "P534", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P534", "rmention": "streak color "}
+{"rid": "P537", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P537", "rmention": "twinning "}
+{"rid": "P538", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P538", "rmention": "fracturing "}
+{"rid": "P565", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P565", "rmention": "crystal habit "}
+{"rid": "P579", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P579", "rmention": "IMA status andor rank "}
+{"rid": "P589", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P589", "rmention": "point group "}
+{"rid": "P690", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P690", "rmention": "space group "}
+{"rid": "P711", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P711", "rmention": "Strunz 8th edition series ID updated "}
+{"rid": "P712", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P712", "rmention": "NickelStrunz 9th edition updated 2009 "}
+{"rid": "P713", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P713", "rmention": "NickelStrunz 10th pending edition "}
+{"rid": "P714", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P714", "rmention": "Dana 8th edition "}
+{"rid": "P1338", "rtype": "Terms", "rsubtype": "Mineralogy", "link": "https://www.wikidata.org/wiki/Property:P1338", "rmention": "EPSG ID "}
+{"rid": "P486", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P486", "rmention": "MeSH ID "}
+{"rid": "P492", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P492", "rmention": "OMIM ID "}
+{"rid": "P493", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P493", "rmention": "ICD9 "}
+{"rid": "P494", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P494", "rmention": "ICD10 "}
+{"rid": "P509", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P509", "rmention": "cause of death "}
+{"rid": "P557", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P557", "rmention": "DiseasesDB "}
+{"rid": "P563", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P563", "rmention": "ICDO "}
+{"rid": "P604", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P604", "rmention": "MedlinePlus ID "}
+{"rid": "P636", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P636", "rmention": "route of administration "}
+{"rid": "P653", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P653", "rmention": "PubMed Health "}
+{"rid": "P663", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P663", "rmention": "DSMIV "}
+{"rid": "P667", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P667", "rmention": "ICPC 2 ID "}
+{"rid": "P668", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P668", "rmention": "GeneReviews ID "}
+{"rid": "P672", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P672", "rmention": "MeSH Code "}
+{"rid": "P673", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P673", "rmention": "eMedicine "}
+{"rid": "P689", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P689", "rmention": "afflicts "}
+{"rid": "P696", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P696", "rmention": "Neurolex ID "}
+{"rid": "P698", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P698", "rmention": "PubMed ID "}
+{"rid": "P699", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P699", "rmention": "Disease Ontology ID "}
+{"rid": "P769", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P769", "rmention": "significant drug interaction "}
+{"rid": "P780", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P780", "rmention": "symptoms "}
+{"rid": "P828", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P828", "rmention": "has cause "}
+{"rid": "P923", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P923", "rmention": "medical examinations "}
+{"rid": "P924", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P924", "rmention": "medical treatment "}
+{"rid": "P1050", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P1050", "rmention": "medical condition "}
+{"rid": "P1060", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P1060", "rmention": "pathogen transmission process "}
+{"rid": "P1193", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P1193", "rmention": "prevalence "}
+{"rid": "P1748", "rtype": "Terms", "rsubtype": "Medicine", "link": "https://www.wikidata.org/wiki/Property:P1748", "rmention": "NCI Thesaurus ID "}
+{"rid": "P514", "rtype": "Terms", "rsubtype": "Stratigraphy", "link": "https://www.wikidata.org/wiki/Property:P514", "rmention": "interleaves with "}
+{"rid": "P523", "rtype": "Terms", "rsubtype": "Stratigraphy", "link": "https://www.wikidata.org/wiki/Property:P523", "rmention": "temporal range start "}
+{"rid": "P524", "rtype": "Terms", "rsubtype": "Stratigraphy", "link": "https://www.wikidata.org/wiki/Property:P524", "rmention": "temporal range end "}
+{"rid": "P567", "rtype": "Terms", "rsubtype": "Stratigraphy", "link": "https://www.wikidata.org/wiki/Property:P567", "rmention": "underlies "}
+{"rid": "P568", "rtype": "Terms", "rsubtype": "Stratigraphy", "link": "https://www.wikidata.org/wiki/Property:P568", "rmention": "overlies "}
+{"rid": "P517", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P517", "rmention": "interaction "}
+{"rid": "P1122", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P1122", "rmention": "spin quantum number "}
+{"rid": "P1126", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P1126", "rmention": "isospin quantum number "}
+{"rid": "P1086", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P1086", "rmention": "atomic number "}
+{"rid": "P1148", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P1148", "rmention": "neutron number "}
+{"rid": "P816", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P816", "rmention": "decays to "}
+{"rid": "P1360", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P1360", "rmention": "Monte Carlo Particle Number "}
+{"rid": "P2374", "rtype": "Terms", "rsubtype": "Physics", "link": "https://www.wikidata.org/wiki/Property:P2374", "rmention": "natural abundance "}
+{"rid": "P588", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P588", "rmention": "coolant "}
+{"rid": "P618", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P618", "rmention": "source of energy "}
+{"rid": "P1100", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P1100", "rmention": "number of cylinders "}
+{"rid": "P1210", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P1210", "rmention": "supercharger "}
+{"rid": "P1211", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P1211", "rmention": "fuel system "}
+{"rid": "P1247", "rtype": "Terms", "rsubtype": "Technical", "link": "https://www.wikidata.org/wiki/Property:P1247", "rmention": "compression ratio "}
+{"rid": "P829", "rtype": "Terms", "rsubtype": "Mathematics", "link": "https://www.wikidata.org/wiki/Property:P829", "rmention": "OEIS ID "}
+{"rid": "P1171", "rtype": "Terms", "rsubtype": "Mathematics", "link": "https://www.wikidata.org/wiki/Property:P1171", "rmention": "approximation algorithm "}
+{"rid": "P1181", "rtype": "Terms", "rsubtype": "Mathematics", "link": "https://www.wikidata.org/wiki/Property:P1181", "rmention": "numeric value "}
+{"rid": "P952", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P952", "rmention": "ISCO occupation code "}
+{"rid": "P918", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P918", "rmention": "NOC Occupation Code "}
+{"rid": "P867", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P867", "rmention": "ROME Occupation Code v3 "}
+{"rid": "P417", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P417", "rmention": "patron saint "}
+{"rid": "P425", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P425", "rmention": "field of this occupation "}
+{"rid": "P919", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P919", "rmention": "SOC Code 2010 "}
+{"rid": "P1021", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P1021", "rmention": "KldB2010 occupation code "}
+{"rid": "P1022", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P1022", "rmention": "CNO11 occupation code "}
+{"rid": "P1023", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P1023", "rmention": "SBC2010 occupation code "}
+{"rid": "P1024", "rtype": "Terms", "rsubtype": "Occupations and professions", "link": "https://www.wikidata.org/wiki/Property:P1024", "rmention": "SBFI occupation code "}
+{"rid": "P1198", "rtype": "Terms", "rsubtype": "Economics", "link": "https://www.wikidata.org/wiki/Property:P1198", "rmention": "unemployment rate "}
+{"rid": "P1304", "rtype": "Terms", "rsubtype": "Economics", "link": "https://www.wikidata.org/wiki/Property:P1304", "rmention": "central bank "}
+{"rid": "P242", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P242", "rmention": "locator map image "}
+{"rid": "P1621", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1621", "rmention": "detail map "}
+{"rid": "P41", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P41", "rmention": "flag image "}
+{"rid": "P163", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P163", "rmention": "flag "}
+{"rid": "P94", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P94", "rmention": "coat of arms image "}
+{"rid": "P237", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P237", "rmention": "coat of arms "}
+{"rid": "P158", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P158", "rmention": "seal image "}
+{"rid": "P418", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P418", "rmention": "seal description "}
+{"rid": "P948", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P948", "rmention": "page banner "}
+{"rid": "P417", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P417", "rmention": "patron saint "}
+{"rid": "P1249", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1249", "rmention": "time of earliest written record "}
+{"rid": "P1740", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1740", "rmention": "category for films shot at this location "}
+{"rid": "P402", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P402", "rmention": "OpenStreetMap Relation identifier "}
+{"rid": "P590", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P590", "rmention": "GNIS ID "}
+{"rid": "P804", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P804", "rmention": "GNIS Antarctica ID "}
+{"rid": "P1397", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1397", "rmention": "State Catalogue of Geographical Names Russia ID "}
+{"rid": "P1464", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1464", "rmention": "category for people born here "}
+{"rid": "P1465", "rtype": "Geographicalfeature", "rsubtype": "General", "link": "https://www.wikidata.org/wiki/Property:P1465", "rmention": "category for people who died here "}
+{"rid": "P30", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P30", "rmention": "continent "}
+{"rid": "P17", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P17", "rmention": "country "}
+{"rid": "P131", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P131", "rmention": "located in the administrative territorial entity "}
+{"rid": "P1082", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1082", "rmention": "population "}
+{"rid": "P421", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P421", "rmention": "located in time zone "}
+{"rid": "P654", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P654", "rmention": "direction relative to location "}
+{"rid": "P706", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P706", "rmention": "located on terrain feature "}
+{"rid": "P669", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P669", "rmention": "located on street "}
+{"rid": "P1332", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1332", "rmention": "coordinate of northernmost point "}
+{"rid": "P1333", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1333", "rmention": "coordinate of southernmost point "}
+{"rid": "P1334", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1334", "rmention": "coordinate of easternmost point "}
+{"rid": "P1335", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1335", "rmention": "coordinate of westernmost point "}
+{"rid": "P1766", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1766", "rmention": "place name sign "}
+{"rid": "P1879", "rtype": "Geographicalfeature", "rsubtype": "Location", "link": "https://www.wikidata.org/wiki/Property:P1879", "rmention": "income classification Philippines "}
+{"rid": "P36", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P36", "rmention": "capital "}
+{"rid": "P38", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P38", "rmention": "currency "}
+{"rid": "P37", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P37", "rmention": "official language "}
+{"rid": "P85", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P85", "rmention": "anthem "}
+{"rid": "P122", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P122", "rmention": "basic form of government "}
+{"rid": "P35", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P35", "rmention": "head of state "}
+{"rid": "P78", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P78", "rmention": "toplevel internet domain "}
+{"rid": "P194", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P194", "rmention": "legislative body "}
+{"rid": "P150", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P150", "rmention": "contains administrative territorial entity "}
+{"rid": "P1383", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P1383", "rmention": "contains settlement "}
+{"rid": "P131", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P131", "rmention": "located in the administrative territorial entity "}
+{"rid": "P1001", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P1001", "rmention": "applies to jurisdiction "}
+{"rid": "P6", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P6", "rmention": "head of government "}
+{"rid": "P1336", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P1336", "rmention": "territory claimed by "}
+{"rid": "P210", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P210", "rmention": "party chief representative "}
+{"rid": "P47", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P47", "rmention": "shares border with "}
+{"rid": "P500", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P500", "rmention": "exclave of "}
+{"rid": "P501", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P501", "rmention": "enclave within "}
+{"rid": "P190", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity", "link": "https://www.wikidata.org/wiki/Property:P190", "rmention": "sister city "}
+{"rid": "P297", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P297", "rmention": "ISO 31661 alpha2 code "}
+{"rid": "P298", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P298", "rmention": "ISO 31661 alpha3 code "}
+{"rid": "P299", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P299", "rmention": "ISO 31661 numeric code "}
+{"rid": "P474", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P474", "rmention": "country calling code "}
+{"rid": "P984", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P984", "rmention": "IOC country code "}
+{"rid": "P473", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P473", "rmention": "local dialing code "}
+{"rid": "P281", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P281", "rmention": "postal code "}
+{"rid": "P395", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P395", "rmention": "licence plate code "}
+{"rid": "P300", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P300", "rmention": "ISO 31662 code "}
+{"rid": "P605", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P605", "rmention": "NUTS code "}
+{"rid": "P374", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P374", "rmention": "INSEE municipality code "}
+{"rid": "P901", "rtype": "Geographicalfeature", "rsubtype": "Administrative territorial entity identifier", "link": "https://www.wikidata.org/wiki/Property:P901", "rmention": "FIPS 104 countries and regions "}
+{"rid": "P84", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P84", "rmention": "architect "}
+{"rid": "P631", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P631", "rmention": "structural engineer "}
+{"rid": "P167", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P167", "rmention": "structure replaced by "}
+{"rid": "P186", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P186", "rmention": "material used "}
+{"rid": "P193", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P193", "rmention": "main building contractor "}
+{"rid": "P454", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P454", "rmention": "Structurae ID structure "}
+{"rid": "P455", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P455", "rmention": "Emporis building ID "}
+{"rid": "P580", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P580", "rmention": "start time "}
+{"rid": "P582", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P582", "rmention": "end time "}
+{"rid": "P585", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P585", "rmention": "point in time "}
+{"rid": "P762", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P762", "rmention": "Czech cultural heritage ID "}
+{"rid": "P1101", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P1101", "rmention": "floors above ground "}
+{"rid": "P1139", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P1139", "rmention": "floors below ground "}
+{"rid": "P1301", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P1301", "rmention": "number of elevators "}
+{"rid": "P1369", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P1369", "rmention": "Iranian National Heritage registration number "}
+{"rid": "P1483", "rtype": "Geographicalfeature", "rsubtype": "Building or structure", "link": "https://www.wikidata.org/wiki/Property:P1483", "rmention": "kulturnoenasledieru ID "}
+{"rid": "P14", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P14", "rmention": "graphic symbol of thoroughfare "}
+{"rid": "P15", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P15", "rmention": "route map "}
+{"rid": "P16", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P16", "rmention": "highway system "}
+{"rid": "P126", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P126", "rmention": "maintained by "}
+{"rid": "P127", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P127", "rmention": "owned by "}
+{"rid": "P833", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P833", "rmention": "interchange station "}
+{"rid": "P1302", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P1302", "rmention": "primary destinations "}
+{"rid": "P1382", "rtype": "Geographicalfeature", "rsubtype": "Road", "link": "https://www.wikidata.org/wiki/Property:P1382", "rmention": "partially coincident with "}
+{"rid": "P177", "rtype": "Geographicalfeature", "rsubtype": "Bridge", "link": "https://www.wikidata.org/wiki/Property:P177", "rmention": "crosses "}
+{"rid": "P1311", "rtype": "Geographicalfeature", "rsubtype": "Bridge", "link": "https://www.wikidata.org/wiki/Property:P1311", "rmention": "lostbridgesorg ID "}
+{"rid": "P1314", "rtype": "Geographicalfeature", "rsubtype": "Bridge", "link": "https://www.wikidata.org/wiki/Property:P1314", "rmention": "number of spans "}
+{"rid": "P2505", "rtype": "Geographicalfeature", "rsubtype": "Bridge", "link": "https://www.wikidata.org/wiki/Property:P2505", "rmention": "allows the passage of "}
+{"rid": "P238", "rtype": "Geographicalfeature", "rsubtype": "Airport", "link": "https://www.wikidata.org/wiki/Property:P238", "rmention": "IATA airport code "}
+{"rid": "P239", "rtype": "Geographicalfeature", "rsubtype": "Airport", "link": "https://www.wikidata.org/wiki/Property:P239", "rmention": "ICAO airport code "}
+{"rid": "P240", "rtype": "Geographicalfeature", "rsubtype": "Airport", "link": "https://www.wikidata.org/wiki/Property:P240", "rmention": "FAA airport code "}
+{"rid": "P529", "rtype": "Geographicalfeature", "rsubtype": "Airport", "link": "https://www.wikidata.org/wiki/Property:P529", "rmention": "runway "}
+{"rid": "P81", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P81", "rmention": "connecting line "}
+{"rid": "P137", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P137", "rmention": "operator "}
+{"rid": "P197", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P197", "rmention": "adjacent station "}
+{"rid": "P296", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P296", "rmention": "station code "}
+{"rid": "P1103", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P1103", "rmention": "number of platform tracks "}
+{"rid": "P1192", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P1192", "rmention": "connecting service "}
+{"rid": "P1064", "rtype": "Geographicalfeature", "rsubtype": "Railway", "link": "https://www.wikidata.org/wiki/Property:P1064", "rmention": "track gauge "}
+{"rid": "P403", "rtype": "Geographicalfeature", "rsubtype": "River", "link": "https://www.wikidata.org/wiki/Property:P403", "rmention": "mouth of the watercourse "}
+{"rid": "P469", "rtype": "Geographicalfeature", "rsubtype": "River", "link": "https://www.wikidata.org/wiki/Property:P469", "rmention": "lakes on river "}
+{"rid": "P1200", "rtype": "Geographicalfeature", "rsubtype": "River", "link": "https://www.wikidata.org/wiki/Property:P1200", "rmention": "bodies of water basin category "}
+{"rid": "P2053", "rtype": "Geographicalfeature", "rsubtype": "River", "link": "https://www.wikidata.org/wiki/Property:P2053", "rmention": "watershed area "}
+{"rid": "P200", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P200", "rmention": "lake inflows "}
+{"rid": "P201", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P201", "rmention": "lake outflow "}
+{"rid": "P205", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P205", "rmention": "basin country "}
+{"rid": "P206", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P206", "rmention": "located in or next to body of water "}
+{"rid": "P207", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P207", "rmention": "bathymetry image "}
+{"rid": "P761", "rtype": "Geographicalfeature", "rsubtype": "Lake", "link": "https://www.wikidata.org/wiki/Property:P761", "rmention": "Lake ID Sweden "}
+{"rid": "P1404", "rtype": "Geographicalfeature", "rsubtype": "Glacier", "link": "https://www.wikidata.org/wiki/Property:P1404", "rmention": "World Glacier Inventory ID "}
+{"rid": "P59", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P59", "rmention": "constellation "}
+{"rid": "P65", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P65", "rmention": "site of astronomical discovery "}
+{"rid": "P196", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P196", "rmention": "minor planet group "}
+{"rid": "P215", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P215", "rmention": "spectral class "}
+{"rid": "P223", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P223", "rmention": "galaxy morphological type "}
+{"rid": "P367", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P367", "rmention": "astronomic symbol image "}
+{"rid": "P376", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P376", "rmention": "located on astronomical body "}
+{"rid": "P397", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P397", "rmention": "parent astronomical body "}
+{"rid": "P398", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P398", "rmention": "child astronomical body "}
+{"rid": "P399", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P399", "rmention": "companion of "}
+{"rid": "P490", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P490", "rmention": "provisional designation "}
+{"rid": "P491", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P491", "rmention": "orbit diagram "}
+{"rid": "P528", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P528", "rmention": "catalog code "}
+{"rid": "P1016", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P1016", "rmention": "asteroid taxonomy "}
+{"rid": "P1046", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P1046", "rmention": "discovery method "}
+{"rid": "P1170", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P1170", "rmention": "transmitted signal type "}
+{"rid": "P1194", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P1194", "rmention": "received signal type "}
+{"rid": "P1418", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P1418", "rmention": "orbits completed "}
+{"rid": "P2045", "rtype": "Geographicalfeature", "rsubtype": "Astronomy", "link": "https://www.wikidata.org/wiki/Property:P2045", "rmention": "orbital inclination "}
+{"rid": "P143", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P143", "rmention": "imported from "}
+{"rid": "P248", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P248", "rmention": "stated in "}
+{"rid": "P92", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P92", "rmention": "main regulatory text "}
+{"rid": "P304", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P304", "rmention": "pages "}
+{"rid": "P792", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P792", "rmention": "chapter "}
+{"rid": "P433", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P433", "rmention": "issue "}
+{"rid": "P478", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P478", "rmention": "volume "}
+{"rid": "P476", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P476", "rmention": "CELEX number "}
+{"rid": "P818", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P818", "rmention": "arXiv ID "}
+{"rid": "P820", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P820", "rmention": "arXiv classification "}
+{"rid": "P819", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P819", "rmention": "ADS bibcode "}
+{"rid": "P886", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P886", "rmention": "LIR "}
+{"rid": "P887", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P887", "rmention": "based on heuristic "}
+{"rid": "P888", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P888", "rmention": "JSTOR article ID "}
+{"rid": "P889", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P889", "rmention": "Mathematical Reviews ID "}
+{"rid": "P892", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P892", "rmention": "RfC ID "}
+{"rid": "P893", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P893", "rmention": "Social Science Research Network ID "}
+{"rid": "P894", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P894", "rmention": "zbMATH work ID "}
+{"rid": "P1276", "rtype": "Others", "rsubtype": "Source properties", "link": "https://www.wikidata.org/wiki/Property:P1276", "rmention": "Dictionnaire du Jura ID "}
+{"rid": "P611", "rtype": "Others", "rsubtype": "Religion properties", "link": "https://www.wikidata.org/wiki/Property:P611", "rmention": "religious order "}
+{"rid": "P708", "rtype": "Others", "rsubtype": "Religion properties", "link": "https://www.wikidata.org/wiki/Property:P708", "rmention": "diocese "}
+{"rid": "P1049", "rtype": "Others", "rsubtype": "Religion properties", "link": "https://www.wikidata.org/wiki/Property:P1049", "rmention": "worshipped by "}
+{"rid": "P1350", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P1350", "rmention": "number of matches played "}
+{"rid": "P1351", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P1351", "rmention": "number of pointsgoalsset scored "}
+{"rid": "P1750", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P1750", "rmention": "name day "}
+{"rid": "P2103", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P2103", "rmention": "size of team at start "}
+{"rid": "P2105", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P2105", "rmention": "size of team at finish "}
+{"rid": "P2121", "rtype": "Others", "rsubtype": "Other", "link": "https://www.wikidata.org/wiki/Property:P2121", "rmention": "prize money "}
+{"rid": "P368", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P368", "rmention": "SandboxCommonsMediaFile "}
+{"rid": "P369", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P369", "rmention": "SandboxItem "}
+{"rid": "P370", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P370", "rmention": "SandboxString "}
+{"rid": "P578", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P578", "rmention": "SandboxTimeValue "}
+{"rid": "P626", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P626", "rmention": "SandboxGeoCoordinateValue "}
+{"rid": "P855", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P855", "rmention": "SandboxURL "}
+{"rid": "P1106", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P1106", "rmention": "SandboxQuantity "}
+{"rid": "P1450", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P1450", "rmention": "Sandbox Monolingual text "}
+{"rid": "P2368", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/wiki/Property:P2368", "rmention": "SandboxProperty "}
+{"rid": "P", "rtype": "Others", "rsubtype": "Sandbox properties", "link": "https://www.wikidata.org/w/index.php?title=Property:P&action=edit&redlink=1", "rmention": "invalid ID "}
+{"rid": "P208", "rtype": "Others", "rsubtype": "Added without discussion or proposal", "link": "https://www.wikidata.org/wiki/Property:P208", "rmention": "executive body "}
+{"rid": "P209", "rtype": "Others", "rsubtype": "Added without discussion or proposal", "link": "https://www.wikidata.org/wiki/Property:P209", "rmention": "highest judicial authority "}
+{"rid": "P278", "rtype": "Others", "rsubtype": "Added without discussion or proposal", "link": "https://www.wikidata.org/wiki/Property:P278", "rmention": "GOST 77597 code "}
+{"rid": "P403", "rtype": "Others", "rsubtype": "Added without discussion or proposal", "link": "https://www.wikidata.org/wiki/Property:P403", "rmention": "mouth of the watercourse "}

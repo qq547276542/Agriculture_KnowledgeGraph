@@ -1,0 +1,227 @@
+{% extends "base.html" %} {% block mainbody %}
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/echarts.common.min.js"></script>   
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+</head>
+<title>关系</title>
+<div class="container">
+    <div class="row">
+    <!--head start-->
+    <div class="col-md-12">
+        <h3 class="page-header"><i class="fa fa-share-alt" aria-hidden="true"></i> 关系查询 </h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="\">Home</a></li>
+                <li><i class="fa fa-share-alt" aria-hidden="true"></i>关系查询</li>
+            </ol>
+    </div>
+    <div class = "col-md-12">
+        
+            <!--搜索框-->
+            <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
+                <div >
+                    <div class="input-group">
+                        <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
+                        <span class="btn btn-primary input-group-addon" type="submit" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchRelationForm').submit();">查询</span>
+                     </div>
+                </div>
+            </form>
+        
+    </div>
+    <p>
+        <div class = "col-md-12">
+            {% if ctx %}
+                <div class="panel panel-default">
+                    <div class = "panel-body">
+                        <h2>数据库中暂未添加该实体</h2>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </p>
+<!--relation start-->
+{% if entityRelation %}
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class = "col-md-12">
+        <div class="panel panel-default ">
+        <header class="panel-heading">
+            关系图 :
+        </header>
+            <div class = "panel-body ">
+                <div id="graph" style="width: 100%;height:600px;"></div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% if entityRelation %}
+<div class = "col-md-12">
+    <div class="panel panel-default">
+    <header class="panel-heading">
+        关系列表 :
+    </header>
+        <div class = "panel-body">
+            <table class = "table" data-paging =  "true" data-sorting="true"></table>
+        </div>
+    </div>
+</div>
+{% endif %}
+</div>
+</div>
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+        // 将后端的查询结果使用echarts展示
+        var ctx = [ {{ ctx|safe }} ] ;
+        var entityRelation = [ {{ entityRelation|safe }} ] ;
+
+        var data = [] ;
+        var links = [] ;
+        if(ctx.length == 0){
+            var node = {} ;
+            var url = decodeURI(location.search) ;
+            var str = "";
+            if(url.indexOf("?") != -1){
+                str = url.split("=")[1]
+            }
+            node['name'] = str;
+            //alert(document.getElementById('user_text').value)
+            node['draggable'] = true ;
+            node['id'] = 0 ;
+            data.push(node) ;
+            for( var i = 0 ;i < Math.min(15,entityRelation[0].length) ; i++ ){
+                node = {} ;
+                node['name'] = entityRelation[0][i]['entity2']['title'] ;
+                node['draggable'] = true ;
+                if('url' in entityRelation[0][i]['entity2']){
+                    node['category'] = 1 ;
+                }
+                else{
+                    node['category'] = 2 ;
+                }
+                node['id'] = i + 1;
+                data.push(node) ;
+            }
+            //最多展示16个节点
+            for(var i = 0 ;i<Math.min(15,entityRelation[0].length) ; i++){
+                relation = {} ;
+                relation['source'] =  0 ;
+                relation['target'] = i+1 ;
+                relation['category'] = 0 ;
+                relation['value'] = entityRelation[0][i]['rel']['type'];
+                links.push(relation) ;
+            }
+
+            //用表格列出所有的关系
+            tableData = []
+            for (var i = 0 ; i < entityRelation[0].length ; i++){
+                relationData = {} ;
+                relationData['entity1'] = str ;
+                relationData['relation'] = entityRelation[0][i]['rel']['type'] ;
+                relationData['entity2'] = entityRelation[0][i]['entity2']['title'] ;
+                tableData.push(relationData) ;
+            }
+            jQuery(function(){
+                $('.table').footable({
+                "columns": [{"name":"entity1",title:"Entity1"} ,
+                          {"name":"relation",title:"Relation"},
+                          {"name":"entity2",title:"Entity2"}],
+                "rows": tableData
+                });
+            });
+
+        }
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('graph'));
+        
+        option = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        animationDurationUpdate: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        label: {
+            normal: {
+                show: true,
+                textStyle: {
+                    fontSize: 12
+                },
+            }
+        },
+        legend: {
+            x: "center",
+            show: false
+        },
+        series: [
+
+            {
+                type: 'graph',
+                layout: 'force',
+                symbolSize: 45,
+                focusNodeAdjacency: true,
+                roam: true,
+                categories: [{
+                    name: '查询实体',
+                    itemStyle: {
+                        normal: {
+                            color: "#009800",
+                        }
+                    }
+                }, {
+                    name: 'HudongItem',
+                    itemStyle: {
+                        normal: {
+                            color: "#4592FF",
+                        }
+                    }
+                }, {
+                    name: 'NewNode',
+                    itemStyle: {
+                        normal: {
+                            color: "#C71585",
+                        }
+                    }
+                }],
+                label: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 12
+                        },
+                    }
+                },
+                force: {
+                    repulsion: 1000
+                },
+                edgeSymbolSize: [4, 50],
+                edgeLabel: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 10
+                        },
+                        formatter: "{c}"
+                    }
+                },
+                data: data,
+                links: links,
+                lineStyle: {
+                    normal: {
+                        opacity: 0.9,
+                        width: 1,
+                        curveness: 0
+                    }
+                }
+            }
+        ]
+    };
+
+// 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+{% endblock %}
