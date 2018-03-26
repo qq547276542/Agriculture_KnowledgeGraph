@@ -12,14 +12,14 @@ from toolkit.pre_load import pre_load_thu
 def tagging_push(request):
 	ctx = {}
 	# 先将已有的labels存入字典中
-	file_object = open('label_data/labels.txt','r')
+	file_object = open('label_data/labels.txt','r',encoding='utf-8')
 	s = set()
 	for f in file_object:
 		pair = f.split()
 		s.add(pair[0].strip())
 	file_object.close()
 	
-	file_object = open('label_data/word_list.txt','r')
+	file_object = open('label_data/word_list.txt','r',encoding='utf-8')
 	all_list = []
 	for f in file_object:
 		all_list.append(f.strip())
@@ -30,7 +30,7 @@ def tagging_push(request):
 		title = request.GET['title'].strip()
 		label = request.GET['label'].strip()
 		if label != None:
-			file_object = open('label_data/labels.txt','a')
+			file_object = open('label_data/labels.txt','a',encoding='utf-8')
 			if title in s:
 				print("该title已存在，冲突！")
 			else:

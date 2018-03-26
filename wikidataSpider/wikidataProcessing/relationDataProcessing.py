@@ -2,13 +2,21 @@ import json
 from py2neo import Node, Relationship ,Graph
 from langconv import *
 import re
+import configparser
+
 class loadDatatoNeo4j(object):
 	graph = None
 	def __init__(self):
 		print("start load data ...")
 	def connectDB(self):
-		self.graph = Graph("http://localhost:7474",username = "neo4j" , password = "8313178")
-		print("connect neo4j success!")
+		conf = configparser.ConfigParser()
+		conf.read('demo/neo4jconfig')
+		url = conf.get("neo4jdb", "url")
+		username = conf.get("neo4jdb", "username")
+		password = conf.get("neo4jdb", "password")
+		self.graph = Graph(url, username=username, password=password)
+		# self.graph = Graph("http://localhost:7474",username = "neo4j" , password = "abc123")
+		print("connect neo4j success! username:" +username)
 
 	def readData(self):
 		count = 0
