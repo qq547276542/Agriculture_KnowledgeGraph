@@ -112,7 +112,8 @@ CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 
 
 
-3. 进入demo目录，然后运行脚本：
+3. 进入demo/Model/neo_models.py,修改第9行的neo4j账号密码，改成你自己的
+4. 进入demo目录，然后运行脚本：
 
 ```
 sudo sh django_server_start.sh
