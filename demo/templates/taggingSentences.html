@@ -1,0 +1,257 @@
+{% extends "base.html" %} {% block mainbody %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-9">
+            <br/>
+            <div class="panel panel-default">
+
+                <!--代表将html标签文本转义成标签显示-->
+                <div class="panel-body">
+                    <p class="card-title">
+                        <h1>Statement</h1>
+                        <hr/>
+                    </p>
+                    <h3 id="statement"><span style="color: red"></span>{{result.Statement}}<span style="color: red"></span></h3>
+                    <h4><span style="color: green"><strong>Entity1: <span id="entity1">{{ result.Entity1 }}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: orange"><strong>Relation: <span id="relation">{{result.Relation}}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: green"><strong>Entity2: <span id="entity2">{{ result.Entity2 }}</span></strong></span></h4>
+                </div>
+            </div>
+
+            <div class="col-sm-13">
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <p class="card-title">
+                    <h1>Choose Label:</h1>
+                    <hr/>
+                </p>
+                    <form class="form-inline">
+
+
+                        <!-- Button trigger modal -->
+	                        <!-- <div>
+	                            <a href="#" data-toggle="modal" data-target="#exampleModal">
+
+	                            </a>
+	                        </div> -->
+                    
+
+	                     <!-- relation is true -->
+                        <a type="button" id="tagging-true-btn" class="btn btn-success btn-lg">&nbsp&nbsp<strong>True</strong>&nbsp&nbsp</a>&nbsp&nbsp&nbsp&nbsp
+
+                        <!--Change One-->
+                        <a type="button" id="tagging-chg-btn" class="btn btn-warning btn-lg">&nbsp&nbsp<strong>Change One</strong>&nbsp&nbsp</a>&nbsp&nbsp&nbsp&nbsp
+
+                    	</br></br></br>
+                   		<!--if relation is false , choose one or enter another relation-->
+
+	                        <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Instance of" id="Instanceof" checked>
+								    	<span><strong> Instance of </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Country" id="Country" >
+								    	<span><strong> Country </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Taxon rank" id="Taxonrank" >
+								    	<span><strong> Taxon rank </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Subclass of" id="Subclassof" >
+								    	<span><strong> Subclass of </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Has part" id="Haspart" >
+								    	<span><strong> Has part </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Parent taxon" id="Parenttaxon" >
+								    	<span><strong> Parent Taxon </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Part of" id="Sexorgender" >
+								    	<span><strong> Sex or gender </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Part of" id="Partof" >
+								    	<span><strong> Part of </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" name="optionsRadios" value="Different from" id="Differentfrom" >
+								    	<span><strong> Different from </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" value="Found in taxon" name="optionsRadios" id="Foundintaxon">
+								    	<span><strong> Found in taxon </strong> </span> </h4>
+								  </label>
+							</div>
+							</br>
+
+							 <div class="radio">							  
+								  <label>
+								  		<h4><input type="radio" value="Other relation" name="optionsRadios" id="Otherrelation">
+								    	<span><strong> 其他关系 </strong> </span> </h4>
+								  </label>
+							</div>
+	
+							<div>
+	                       	　 	<input type="text" class="form-control" placeholder="其他关系" disabled>
+                    		</div>
+                    		</br>
+							<button id="tagging-false-btn" class="btn float-right btn-success btn-lg">&nbsp&nbsp<strong>Submit</strong>&nbsp&nbsp</button>
+
+
+                        
+                </form>
+
+            </div>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Marked data count</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            				<span aria-hidden="true">&times;</span>
+          					</button>
+
+         				</div>
+				        <div class="modal-body">
+				            already 
+				        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	let statement = document.querySelector('#statement');
+	let entity1 = document.querySelector('#entity1').innerText;
+	let entity2 = document.querySelector('#entity2').innerText;
+	let statementContext = statement.innerText;
+	let execEntity1 = new RegExp(entity1, 'g');
+	let execEntity2 = new RegExp(entity2, 'g');
+	statementContext = statementContext.replace(execEntity1, `<span style="color: red">${entity1}</span>`);
+	statementContext = statementContext.replace(execEntity2, `<span style="color: red">${entity2}</span>`);
+	statement.innerHTML = statementContext;
+
+	let other = document.querySelector('#Otherrelation');
+	let otherContext = document.getElementsByClassName('form-control')[0];
+	if (other) {
+		other.addEventListener('click', (e) => {
+			otherContext.removeAttribute('disabled');
+		})
+	}
+
+	let taggingTrueBtn = document.querySelector('#tagging-true-btn');
+	taggingTrueBtn.addEventListener('click', submitTagTrue);
+
+	let relation = document.querySelector('#relation');
+
+
+	
+
+
+	function submitTagTrue() {
+		fetch('', {
+			method: 'POST',
+			body: JSON.stringify({
+				statement: statement.innerText,
+				entity1,
+				relation,
+				entity2
+			}),
+			credentials: "same-origin"
+		}).then((res) => {
+			return res.json();
+		}).then((res) => {
+			if (res && res.code === 200) {
+				location.reload()
+			}
+		})
+	}
+
+	let taggerFalseBtn = document.querySelector('#tagging-false-btn');
+	taggerFalseBtn.addEventListener('click', submitTagFalse);
+
+	function submitTagFalse(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		let relation = document.querySelector('input[name=optionsRadios]:checked').value;
+		if (relation === 'Other relation') {
+			relation = otherContext.value
+		}
+		if (relation === '') {
+			alert('其他关系不可为空');
+			return;
+		}
+		fetch('', {
+			method: 'POST',
+			body: JSON.stringify({
+				statement: statement.innerText,
+				entity1,
+				relation,
+				entity2
+			}),
+			credentials: "same-origin"
+		}).then((res) => {
+			return res.json();
+		}).then((res) => {
+			if (res && res.code === 200) {
+				location.reload()
+			}
+		})
+	}
+
+	let taggingChgBtn = document.querySelector('#tagging-chg-btn');
+	taggingChgBtn.addEventListener('click', submitChgBtn);
+	function submitChgBtn(e) {
+		location.reload()
+
+	}
+</script>
+
+{% endblock %}
