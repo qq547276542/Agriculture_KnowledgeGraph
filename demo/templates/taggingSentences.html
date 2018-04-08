@@ -200,9 +200,9 @@
 			method: 'POST',
 			body: JSON.stringify({
 				statement: statement.innerText,
-				entity1,
-				relation,
-				entity2
+				entity1: entity1,
+				relation: relation.innerText,
+				entity2: entity2
 			}),
 			credentials: "same-origin"
 		}).then((res) => {
@@ -232,9 +232,9 @@
 			method: 'POST',
 			body: JSON.stringify({
 				statement: statement.innerText,
-				entity1,
-				relation,
-				entity2
+				entity1: entity1,
+				relation: relation,
+				entity2: entity2
 			}),
 			credentials: "same-origin"
 		}).then((res) => {

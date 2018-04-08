@@ -21,9 +21,8 @@ def tagging(request):
 		# relation = request.POST.get("relation")
 		# statement = request.POST.get("statement")
 		post = json.loads(request.body)
-		print(post)
 		post_id = testDataCollection.insert_one(post)
-		print(post_id)
+		collection.delete_many( {'Entity1':post.get('entity1') , 'Entity2':post.get('entity2'),'Relation':post.get('relation'),'Statement':post.get('statement')} )
 		return JsonResponse({'code':200})
 	else:
 		while(True):
