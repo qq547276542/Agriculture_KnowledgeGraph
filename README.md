@@ -153,6 +153,20 @@ sudo sh django_server_start.sh
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/4.png)
 
+(update 2018.04.07)  同样的，我们制作了标注关系提取训练集的工具，如下图所示
+
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/tagging.JPG)
+
+如果Statement的标签是对的，点击True按钮；否则选择一个关系，或者输入其它关系。若当前句子无法判断，则点击Change One按钮换一条数据。
+
+说明:　Statement是/wikidataSpider/TrainDataBaseOnWiki/finalData中train_data.txt中的数据，我们将它转化成json,导入到mongoDB中。标注好的数据同样存在MongoDB中另一个Collection中。关于Mongo的使用方法可以参考官方tutorial，或者利用这篇文章简单了解一下[MongoDB](http://crisjk.site/2018/04/04/MongoDB-Tutorial/) 
+
+我们在MongoDB中使用两个Collections，一个是train_data，即未经人工标注的数据；另一个是test_data，即人工标注好的数据。
+
+![](https://raw.githubusercontent.com/CrisJk/crisjk.github.io/master/resource/pictures/Agriculture-KnowledgeGraph-Data-README/mongo.png)
+
+**使用方法**: 启动neo4j,mongodb之后，进入demo目录，启动django服务，进入127.0.0.1:8000/tagging即可使用
+
 
 
 ## 思路
