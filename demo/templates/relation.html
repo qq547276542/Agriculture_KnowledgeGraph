@@ -4,8 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style/style.css">
-    <script src="js/echarts.common.min.js"></script>   
+    <script src="/static/js/echarts.common.min.js"></script>   
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 </head>
 <title>关系</title>
@@ -22,7 +21,7 @@
     <div class = "col-md-12">
         
             <!--搜索框-->
-            <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
+            <form action="/search_relation" method = "get" id = 'searchRelationForm'>
                 <div >
                     <div class="input-group">
                         <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
@@ -71,6 +70,7 @@
 {% endif %}
 </div>
 </div>
+{% if entityRelation %}
 <script src="/static/js/jquery.min.js"></script>
 <script type="text/javascript">
         // 将后端的查询结果使用echarts展示
@@ -222,6 +222,6 @@
 // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-
+{% endif %}
 
 {% endblock %}

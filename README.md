@@ -37,6 +37,7 @@ demo：http://p2052x6533.iok.la:44910
 - hudong_pedia.csv : 已经爬好的农业实体的百科页面的结构化csv文件
 - labels.txt： 5000多个手工标注的实体类别
 - predict_labels.txt:  KNN算法预测的13W多个实体的类别
+- /wikidataSpider/wikidataProcessing/wikidata_relation.csv: predict_labels.txt中实体在wikidata中对应的三元组关系
 
 
 
@@ -52,6 +53,8 @@ demo：http://p2052x6533.iok.la:44910
 - pyfasttext    ---facebook开源的词向量计算框架
 - pinyin  ---获取中文首字母小工具
 - 预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
+- mongoDB  ---存储文档数据
+- pymongo  ---python操作mongoDB的工具
 
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
