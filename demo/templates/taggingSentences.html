@@ -168,6 +168,13 @@
 </div>
 
 <script type="text/javascript">
+	function getCookie(name) {
+    	var matches = document.cookie.match(new RegExp(
+      	"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    	))
+    	return matches ? decodeURIComponent(matches[1]) : undefined
+	}
+
 	let statement = document.querySelector('#statement');
 	let entity1 = document.querySelector('#entity1').innerText;
 	let entity2 = document.querySelector('#entity2').innerText;
@@ -204,6 +211,10 @@
 				relation: relation.innerText,
 				entity2: entity2
 			}),
+			headers: {
+				'content-type': 'application/json',
+      			"X-CSRFToken": getCookie("csrftoken"),
+			},
 			credentials: "same-origin"
 		}).then((res) => {
 			return res.json();
@@ -236,6 +247,10 @@
 				relation: relation,
 				entity2: entity2
 			}),
+			headers: {
+				'content-type': 'application/json',
+      			"X-CSRFToken": getCookie("csrftoken"),
+			},
 			credentials: "same-origin"
 		}).then((res) => {
 			return res.json();
