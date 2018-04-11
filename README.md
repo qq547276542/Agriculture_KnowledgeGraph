@@ -12,11 +12,11 @@
 >
 > 参与成员：
 >
->| Title            | Name        | Homepage                                 |
->| ---------------- | ----------- | ---------------------------------------- |
->| Professor        | GaoMing     | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)  [ https://sites.google.com/site/minggaoshomepage/home](https://sites.google.com/site/minggaoshomepage/home) |
->| Master           | ChenYuanZhe | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Graduate Student | KuangJun    | [https://github.com/CrisJk](https://github.com/CrisJk) |
+>| Title     | Name        | Homepage                                 |
+>| --------- | ----------- | ---------------------------------------- |
+>| Professor | GaoMing     | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)  [ https://sites.google.com/site/minggaoshomepage/home](https://sites.google.com/site/minggaoshomepage/home) |
+>| Master    | ChenYuanZhe | [https://github.com/qq547276542](https://github.com/qq547276542) |
+>| Master    | KuangJun    | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
 
 
