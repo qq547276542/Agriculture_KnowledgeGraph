@@ -56,6 +56,7 @@
 - labels.txt： 5000多个手工标注的实体类别
 - predict_labels.txt:  KNN算法预测的13W多个实体的类别
 - /wikidataSpider/wikidataProcessing/wikidata_relation.csv: predict_labels.txt中实体在wikidata中对应的三元组关系
+- attributes.csv: 部分实体的属性(互动百科页面中直接得到)
 
 
 
