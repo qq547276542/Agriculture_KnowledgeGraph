@@ -125,6 +125,37 @@ MATCH (entity1:HudongItem{title:line.HudongItem1}) , (entity2:HudongItem{title:l
 CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 ```
 
+**导入实体属性(数据来源: 互动百科)**
+
+将attributes.csv放到neo4j的import目录下，然后执行
+
+```cypher
+LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+MATCH (entity1:HudongItem{title:line.Entity}), (entity2:HudongItem{title:line.Attribute})
+CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
+                                                            
+LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+MATCH (entity1:HudongItem{title:line.Entity}), (entity2:NewNode{title:line.Attribute})
+CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
+                                                            
+LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+MATCH (entity1:NewNode{title:line.Entity}), (entity2:NewNode{title:line.Attribute})
+CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
+                                                            
+LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+MATCH (entity1:NewNode{title:line.Entity}), (entity2:HudongItem{title:line.Attribute})
+CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2)  
+
+//我们建索引的时候带了label，因此只有使用label时才会使用索引，这里我们的实体有两个label，所以一共做2*2=4次。当然，可以建立全局索引，即对于不同的label使用同一个索引
+                                                            
+          
+                                                                                                                         
+```
+
+
+
+
+
 以上步骤是导入爬取到的关系
 
 
