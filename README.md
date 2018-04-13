@@ -141,19 +141,19 @@ CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 将attributes.csv放到neo4j的import目录下，然后执行
 
 ```cypher
-LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+LOAD CSV WITH HEADERS FROM "file:///attributes.csv" AS line
 MATCH (entity1:HudongItem{title:line.Entity}), (entity2:HudongItem{title:line.Attribute})
 CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
                                                             
-LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+LOAD CSV WITH HEADERS FROM "file:///attributes.csv" AS line
 MATCH (entity1:HudongItem{title:line.Entity}), (entity2:NewNode{title:line.Attribute})
 CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
                                                             
-LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+LOAD CSV WITH HEADERS FROM "file:///attributes.csv" AS line
 MATCH (entity1:NewNode{title:line.Entity}), (entity2:NewNode{title:line.Attribute})
 CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2);
                                                             
-LOAD CSV WITH HEADRS FROM "file:///attributes.csv" AS line
+LOAD CSV WITH HEADERS FROM "file:///attributes.csv" AS line
 MATCH (entity1:NewNode{title:line.Entity}), (entity2:HudongItem{title:line.Attribute})
 CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2)  
 
