@@ -22,7 +22,7 @@
 >
 >| Title               | Name | Homepage                                 |
 >| ------------------- | ---- | ---------------------------------------- |
->| Associate Professor | 高明   | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy) [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
+>| Associate Professor | 高明   | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)  [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
 >| Master              | 陈远哲  | [https://github.com/qq547276542](https://github.com/qq547276542) |
 >| Masterk             | 匡俊   | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
