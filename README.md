@@ -1,4 +1,4 @@
-# Agriculture_KnowledgeGraph
+# Agricultural Knowledge Graph
 
 项目demo：http://p2052x6533.iok.la:44910
 
@@ -12,12 +12,11 @@
 
 
 
-****
 
 >
 > ### 华东师范大学数据科学与工程学院
 >
-> #### 知识图谱&社交网络项目组
+> #### 情境计算&知识图谱项目组
 > 学院官网：http://dase.ecnu.edu.cn   
 >
 > 项目组Github： https://github.com/ECNUdase
@@ -26,9 +25,9 @@
 >
 >| Title               | Name | Homepage                                 |
 >| ------------------- | ---- | ---------------------------------------- |
->| Associate Professor | 高　明   | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>  [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
+>| Associate Professor | 高　明  | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>[http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
 >| Master              | 陈远哲  | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Master              | 匡　俊   | [https://github.com/CrisJk](https://github.com/CrisJk) |
+>| Master              | 匡　俊  | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
 
 
