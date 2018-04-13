@@ -1,6 +1,14 @@
 # Agriculture_KnowledgeGraph
 
-项目demo：http://p2052x6533.iok.la:44910
+## 项目介绍：
+
+本项目是上海市《农业信息服务平台及农业大数据综合利用研究》子课题《上海农业农村大数据共享服务平台建设和应用》的研究成果。
+
+该课题是由上海市农业委员会信息中心主持，以“致富农民、服务市民、提高行政管理效能”为目标，充分发挥大数据在农业农村发展中的重要功能和巨大潜力，重点建设上海市级农业农村大数据中心，促进信息资源的共建共享和创新应用。
+
+华东师范大学数据科学与工程学院（以下简称华师大数据学院）作为课题主要参与单位以实现智慧农业为目标，探索农业大数据分析、挖掘和综合应用。华师大课题组在前期国家重点研发计划《大数据知识工程基础理论及其应用研究》研究基础上，在本项目中，基于碎片化农业大数据，构建面向智慧农业的知识图谱及其应用系统。
+
+**项目demo：http://p2052x6533.iok.la:44910**
 
 >
 > ### 华东师范大学数据科学与工程学院
@@ -12,12 +20,11 @@
 >
 > 参与成员：
 >
->| Title     | Name        | Homepage                                 |
->| --------- | ----------- | ---------------------------------------- |
->| Professor | GaoMing     | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)  [ https://sites.google.com/site/minggaoshomepage/home](https://sites.google.com/site/minggaoshomepage/home) |
->| Master    | ChenYuanZhe | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Master    | KuangJun    | [https://github.com/CrisJk](https://github.com/CrisJk) |
-
+>| Title               | Name               | Homepage                                 |
+>| ------------------- | ------------------ | ---------------------------------------- |
+>| Associate Professor | 高明 (Ming Gao)      | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy) [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
+>| Master              | 陈远哲 (Yuanzhe Chen) | [https://github.com/qq547276542](https://github.com/qq547276542) |
+>| Masterk             | 匡俊 (Jun Kuang)     | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
 
 
