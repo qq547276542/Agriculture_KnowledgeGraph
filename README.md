@@ -1,6 +1,6 @@
 # Agricultural Knowledge Graph
 
-项目demo：http://p2052x6533.iok.la:44910
+项目demo：http://ecnukg.vicp.io
 
 ## 项目介绍：
 
