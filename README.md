@@ -1,5 +1,7 @@
 # Agriculture_KnowledgeGraph
 
+项目demo：http://p2052x6533.iok.la:44910
+
 ## 项目介绍：
 
 本项目是上海市《农业信息服务平台及农业大数据综合利用研究》子课题《上海农业农村大数据共享服务平台建设和应用》的研究成果。
@@ -8,7 +10,9 @@
 
 华东师范大学数据科学与工程学院（以下简称华师大数据学院）作为课题主要参与单位以实现智慧农业为目标，探索农业大数据分析、挖掘和综合应用。华师大课题组在前期国家重点研发计划《大数据知识工程基础理论及其应用研究》研究基础上，在本项目中，基于碎片化农业大数据，构建面向智慧农业的知识图谱及其应用系统。
 
-**项目demo：http://p2052x6533.iok.la:44910**
+
+
+****
 
 >
 > ### 华东师范大学数据科学与工程学院
@@ -22,9 +26,9 @@
 >
 >| Title               | Name | Homepage                                 |
 >| ------------------- | ---- | ---------------------------------------- |
->| Associate Professor | 高明   | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)  [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
+>| Associate Professor | 高明   | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>  [http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
 >| Master              | 陈远哲  | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Masterk             | 匡俊   | [https://github.com/CrisJk](https://github.com/CrisJk) |
+>| Master              | 匡俊   | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
 
 
