@@ -102,7 +102,7 @@ def showtagging_data(request):
 		
 		
 		# 统计当前标注情况
-		file_object = open('label_data/labels.txt','r')
+		file_object = open('label_data/labels.txt','r',encoding='utf-8')
 		s = []
 		sum = 0
 		for i in range(17):

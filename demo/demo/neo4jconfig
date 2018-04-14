@@ -1,0 +1,4 @@
+[neo4jdb]
+url = http://192.168.1.16:7474
+username = neo4j
+password = abc123

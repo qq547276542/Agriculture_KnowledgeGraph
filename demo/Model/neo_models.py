@@ -1,4 +1,5 @@
 from py2neo import Graph,Node,Relationship
+import configparser
 
 class Neo4j():
 	graph = None
@@ -6,8 +7,12 @@ class Neo4j():
 		print("create neo4j class ...")
 
 	def connectDB(self):
-		self.graph = Graph("http://localhost:7474", username="neo4j", password="123456")
-
+	conf = configparser.ConfigParser()
+		conf.read('demo/neo4jconfig')
+		url = conf.get("neo4jdb", "url")
+		username = conf.get("neo4jdb", "username")
+		password = conf.get("neo4jdb", "password")
+		self.graph = Graph(url, username=username, password=password)
 	def matchItembyTitle(self,value):
 		answer = self.graph.find_one(label="Item",property_key="title",property_value=value)
 		return answer
