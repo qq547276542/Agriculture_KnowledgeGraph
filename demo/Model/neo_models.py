@@ -5,15 +5,14 @@ class Neo4j():
 	graph = None
 	def __init__(self):
 		print("create neo4j class ...")
-		
+
 	def connectDB(self):
-		conf = configparser.ConfigParser()
+	conf = configparser.ConfigParser()
 		conf.read('demo/neo4jconfig')
 		url = conf.get("neo4jdb", "url")
 		username = conf.get("neo4jdb", "username")
 		password = conf.get("neo4jdb", "password")
 		self.graph = Graph(url, username=username, password=password)
-		
 	def matchItembyTitle(self,value):
 		answer = self.graph.find_one(label="Item",property_key="title",property_value=value)
 		return answer

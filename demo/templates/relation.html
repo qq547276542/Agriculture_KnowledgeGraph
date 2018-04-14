@@ -4,8 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style/style.css">
-    <script src="js/echarts.common.min.js"></script>   
+    <script src="/static/js/echarts.common.min.js"></script>   
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 </head>
 <title>关系</title>
@@ -22,7 +21,7 @@
     <div class = "col-md-12">
         
             <!--搜索框-->
-            <form action="/search_relation" method = "get" id = 'searchRelationForm' onsubmit="startSearch()">
+            <form action="/search_relation" method = "get" id = 'searchRelationForm'>
                 <div >
                     <div class="input-group">
                         <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
@@ -71,10 +70,13 @@
 {% endif %}
 </div>
 </div>
+{% if entityRelation %}
 <script src="/static/js/jquery.min.js"></script>
 <script type="text/javascript">
         // 将后端的查询结果使用echarts展示
         var ctx = [ {{ ctx|safe }} ] ;
+
+        //{entity2,rel}
         var entityRelation = [ {{ entityRelation|safe }} ] ;
 
         var data = [] ;
@@ -86,12 +88,17 @@
             if(url.indexOf("?") != -1){
                 str = url.split("=")[1]
             }
+            //实体１
             node['name'] = str;
             //alert(document.getElementById('user_text').value)
             node['draggable'] = true ;
-            node['id'] = 0 ;
+            var id = 0; 
+            node['id'] = id.toString() ;
             data.push(node) ;
-            for( var i = 0 ;i < Math.min(15,entityRelation[0].length) ; i++ ){
+
+            //获取实体２，存储在data中，如果实体2已经存在于data中，则不push
+            var maxDisPlayNode = 15 ;
+            for( var i = 0 ;i < Math.min(maxDisPlayNode,entityRelation[0].length) ; i++ ){
                 node = {} ;
                 node['name'] = entityRelation[0][i]['entity2']['title'] ;
                 node['draggable'] = true ;
@@ -101,17 +108,38 @@
                 else{
                     node['category'] = 2 ;
                 }
-                node['id'] = i + 1;
-                data.push(node) ;
-            }
-            //最多展示16个节点
-            for(var i = 0 ;i<Math.min(15,entityRelation[0].length) ; i++){
-                relation = {} ;
-                relation['source'] =  0 ;
-                relation['target'] = i+1 ;
-                relation['category'] = 0 ;
-                relation['value'] = entityRelation[0][i]['rel']['type'];
-                links.push(relation) ;
+                id = i + 1
+                node['id'] = id.toString();
+                var flag = 1 ;
+                relationTarget = id.toString() ;
+                for(var j = 0 ; j<data.length ;j++){
+                    if(data[j]['name'] === node['name']){
+                        flag = 0 ;
+                        relationTarget = data[j]['id']  ;
+                        break ;
+                    }
+                }
+                relation = {}
+                relation['source'] = 0 ;
+                relation['target'] = relationTarget ;
+                relation['category'] = 0 ;               
+
+                if(flag === 1){
+                    data.push(node) ;
+                    relation['value'] = entityRelation[0][i]['rel']['type'] ;
+                    links.push(relation) ;
+                }
+                else{
+                    maxDisPlayNode += 1 ;
+                    for(var j = 0; j<links.length ;j++){
+                        if(links[j]['target'] === relationTarget){
+                            links[j]['value'] = links[j]['value']+" | "+entityRelation[0][i]['rel']['type'] 
+                            break ;
+                        }
+                    }
+
+                }
+
             }
 
             //用表格列出所有的关系
@@ -189,7 +217,7 @@
                     normal: {
                         show: true,
                         textStyle: {
-                            fontSize: 12
+                            fontSize: 12,
                         },
                     }
                 },
@@ -211,8 +239,9 @@
                 lineStyle: {
                     normal: {
                         opacity: 0.9,
-                        width: 1,
-                        curveness: 0
+                        width: 1.3,
+                        curveness: 0,
+                        color:"#262626"
                     }
                 }
             }
@@ -222,6 +251,6 @@
 // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-
+{% endif %}
 
 {% endblock %}
