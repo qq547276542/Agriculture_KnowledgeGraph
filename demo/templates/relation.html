@@ -294,7 +294,9 @@
 	$(".dropdown-menu li a").click(function(){
 	   var selText = $(this).text();
 	   $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
-	   $("#relation_name_input").val(selText.trim()) ;
+	   if(selText.trim()!="Other"){
+	   	$("#relation_name_input").val(selText.trim()) ;
+	   }
 	   //combobox behavior
 	   if (selText.trim()==="Other") {
 	       $("#relation_name").removeClass("hide");
