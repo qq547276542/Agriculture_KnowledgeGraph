@@ -192,6 +192,7 @@
         }           
         if(flag === 1){
         	relation['value'] = searchResult[i]['rel']['type'] ;
+        	relation['symbolSize'] = 10;
         	links.push(relation) ;
         }
 
@@ -228,6 +229,7 @@
 	            symbolSize: 45,
 	            focusNodeAdjacency: true,
 	            roam: true,
+	            edgeSymbol: ['none', 'arrow'],
 	            categories: [{
 	                name: '查询实体',
 	                itemStyle: {
@@ -278,7 +280,7 @@
 	                    opacity: 0.9,
 	                    width: 1.3,
 	                    curveness: 0,
-	                    color:"#262626"
+	                    color:"#262626",
 	                }
 	            }
 	        }

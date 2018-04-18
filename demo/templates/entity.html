@@ -127,6 +127,7 @@
                 if(flag === 1){
                     data.push(node) ;
                     relation['value'] = entityRelation[0][i]['rel']['type'] ;
+                    relation['symbolSize'] = 10
                     links.push(relation) ;
                 }
                 else{
@@ -165,88 +166,89 @@
         var myChart = echarts.init(document.getElementById('graph'));
         
         option = {
-        title: {
-            text: ''
-        },
-        tooltip: {},
-        animationDurationUpdate: 1500,
-        animationEasingUpdate: 'quinticInOut',
-        label: {
-            normal: {
-                show: true,
-                textStyle: {
-                    fontSize: 12
-                },
-            }
-        },
-        legend: {
-            x: "center",
-            show: false
-        },
-        series: [
+            title: {
+                text: ''
+            },
+            tooltip: {},
+            animationDurationUpdate: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            label: {
+                normal: {
+                    show: true,
+                    textStyle: {
+                        fontSize: 12
+                    },
+                }
+            },
+            legend: {
+                x: "center",
+                show: false
+            },
+            series: [
 
-            {
-                type: 'graph',
-                layout: 'force',
-                symbolSize: 45,
-                focusNodeAdjacency: true,
-                roam: true,
-                categories: [{
-                    name: '查询实体',
-                    itemStyle: {
-                        normal: {
-                            color: "#009800",
+                {
+                    type: 'graph',
+                    layout: 'force',
+                    symbolSize: 45,
+                    focusNodeAdjacency: true,
+                    roam: true,
+                    edgeSymbol: ['none', 'arrow'],
+                    categories: [{
+                        name: '查询实体',
+                        itemStyle: {
+                            normal: {
+                                color: "#009800",
+                            }
                         }
-                    }
-                }, {
-                    name: 'HudongItem',
-                    itemStyle: {
-                        normal: {
-                            color: "#4592FF",
+                    }, {
+                        name: 'HudongItem',
+                        itemStyle: {
+                            normal: {
+                                color: "#4592FF",
+                            }
                         }
-                    }
-                }, {
-                    name: 'NewNode',
-                    itemStyle: {
-                        normal: {
-                            color: "#C71585",
+                    }, {
+                        name: 'NewNode',
+                        itemStyle: {
+                            normal: {
+                                color: "#C71585",
+                            }
                         }
-                    }
-                }],
-                label: {
-                    normal: {
-                        show: true,
-                        textStyle: {
-                            fontSize: 12,
-                        },
-                    }
-                },
-                force: {
-                    repulsion: 1000
-                },
-                edgeSymbolSize: [4, 50],
-                edgeLabel: {
-                    normal: {
-                        show: true,
-                        textStyle: {
-                            fontSize: 10
-                        },
-                        formatter: "{c}"
-                    }
-                },
-                data: data,
-                links: links,
-                lineStyle: {
-                    normal: {
-                        opacity: 0.9,
-                        width: 1.3,
-                        curveness: 0,
-                        color:"#262626"
+                    }],
+                    label: {
+                        normal: {
+                            show: true,
+                            textStyle: {
+                                fontSize: 12,
+                            },
+                        }
+                    },
+                    force: {
+                        repulsion: 1000
+                    },
+                    edgeSymbolSize: [4, 50],
+                    edgeLabel: {
+                        normal: {
+                            show: true,
+                            textStyle: {
+                                fontSize: 10
+                            },
+                            formatter: "{c}"
+                        }
+                    },
+                    data: data,
+                    links: links,
+                    lineStyle: {
+                        normal: {
+                            opacity: 0.9,
+                            width: 1.3,
+                            curveness: 0,
+                            color:"#262626"
+                        }
                     }
                 }
-            }
-        ]
-    };
+            ]
+        };
 
 // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
