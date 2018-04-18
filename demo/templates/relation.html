@@ -20,8 +20,10 @@
     
     <div class = "col-md-12">
     	<div class = "panel panel-default">
-    		<div style="padding: 2%">
-	    		<h4>查询条件：</h4>
+			<header class="panel-heading">
+            查询条件：
+       		</header>
+       		<div class = "panel-body">
 
 			    <form  id ="searchRelationForm" class="form-inline" style="padding-left: 10% ; padding-right: 10%" method="get">
 			    	<div id = "entity1" class="form-group" style="padding: 2%">
@@ -54,15 +56,20 @@
 			        <div class="btn-group" style="padding: 2%">
 			            <button type="button" id="btnSearch" class="btn btn-primary" onclick = "document.getElementById('searchRelationForm').submit();">Search</button>
 			        </div>
-			    </form>
+				</form>
 			</div>
 		</div>
 	</div>
 	{% if ctx %}
 	<div class = "col-md-12">
 		<div class = "panel panel-default">
-			<div style="padding: 2%">
-				<h2>暂未找到相应的匹配</h2>
+			<header class = "panel-heading">
+				查询结果：
+			</header>
+			<div class = "panel-body">
+				<div style="padding: 2%">
+					<h2>暂未找到相应的匹配</h2>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -73,9 +80,9 @@
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div class = "col-md-12">
         <div class="panel panel-default ">
-        <header class="panel-heading">
-            关系图 :
-        </header>
+	        <header class="panel-heading">
+	            关系图 :
+	        </header>
             <div class = "panel-body ">
                 <div id="graph" style="width: 100%;height:600px;"></div>
             </div>

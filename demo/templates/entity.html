@@ -19,25 +19,34 @@
             </ol>
     </div>
     <div class = "col-md-12">
-    
-            <!--搜索框-->
-            <form method = "get" id = 'searchEntityForm'>
-                <div >
-                    <div class="input-group">
-                        <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
-                        <span class="btn btn-primary input-group-addon" type="button" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchEntityForm').submit();">查询</span>
-                     </div>
-                </div>
-            </form>
+        <div class="panel panel-default ">
+            <header class = "panel-heading">
+                查询条件：
+            </header>
+            <div class = "panel-body">
+                <!--搜索框-->
+                <form method = "get" id = 'searchEntityForm'>
+                    <div >
+                        <div class="input-group">
+                            <input type="text" id = "user_text" name = "user_text" class="form-control" placeholder="输入实体名称" aria-describedby="basic-addon1">
+                            <span class="btn btn-primary input-group-addon" type="button" id="relationSearchButton" style="background-color:#4592fe ; padding:6px 38px" onclick="document.getElementById('searchEntityForm').submit();">查询</span>
+                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         
     </div>
     <p>
         <div class = "col-md-12">
             {% if ctx %}
                 <div class="panel panel-default">
-                    <div class = "panel-body">
-                        <h2>数据库中暂未添加该实体</h2>
-                    </div>
+                    <header class ="panel-heading">
+                        <div class = "panel-body">
+                            <h2>数据库中暂未添加该实体</h2>
+                        </div>
+                    </header>
                 </div>
             {% endif %}
         </div>
@@ -47,11 +56,11 @@
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div class = "col-md-12">
         <div class="panel panel-default ">
-        <header class="panel-heading">
-            关系图 :
-        </header>
+            <header class="panel-heading">
+                关系图 :
+            </header>
             <div class = "panel-body ">
-                <div id="graph" style="width: 100%;height:600px;"></div>
+                <div id="graph" style="width: 90%;height:600px;"></div>
             </div>
         </div>
     </div>
