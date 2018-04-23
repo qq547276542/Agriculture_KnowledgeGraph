@@ -12,8 +12,8 @@
                         <h1>Statement</h1>
                         <hr/>
                     </p>
-                    <h3 id="statement"><span style="color: red"></span>{{result.Statement}}<span style="color: red"></span></h3>
-                    <h4><span style="color: green"><strong>Entity1: <span id="entity1">{{ result.Entity1 }}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: orange"><strong>Relation: <span id="relation">{{result.Relation}}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: green"><strong>Entity2: <span id="entity2">{{ result.Entity2 }}</span></strong></span></h4>
+                    <h3 id="statement">{{ result.statement }}</h3>
+                    <h4><span style="color: green"><strong>Entity1: <span id="entity1">{{ result.entity1 }}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: orange"><strong>relation: <span id="relation">{{ result.relation }}</span></strong></span>&nbsp&nbsp&nbsp&nbsp<span style="color: green"><strong>Entity2: <span id="entity2">{{ result.entity2 }}</span></strong></span></h4>
                 </div>
             </div>
 
@@ -187,10 +187,21 @@
 	let entity1 = document.querySelector('#entity1').innerText;
 	let entity2 = document.querySelector('#entity2').innerText;
 	let statementContext = statement.innerText;
-	let execEntity1 = new RegExp(entity1, 'g');
-	let execEntity2 = new RegExp(entity2, 'g');
-	statementContext = statementContext.replace(execEntity1, `<span style="color: red">${entity1}</span>`);
-	statementContext = statementContext.replace(execEntity2, `<span style="color: red">${entity2}</span>`);
+	let entity1Pos = parseInt( {{ result.entity1Pos|safe }} ) ;
+	let entity2Pos = parseInt( {{ result.entity2Pos|safe }} ) ;
+	if(entity1Pos > entity2Pos){
+		let tmp  = entity1Pos ;
+		entity1Pos = entity2Pos ;
+		entity2Pos = tmp ;
+		tmp = entity1 ;
+		entity1  =entity2 ;
+		entity2 = tmp ;
+	}
+
+	// 从１到len-1，去掉双引号
+	statementContext = statementContext.substring(1,entity1Pos+1)+'<span style="color: red">'+entity1+'</span>'+statementContext.substring(entity1Pos+entity1.length+1,entity2Pos+1)+'<span style="color: red">'+entity2+'</span>'+statementContext.substring(entity2Pos+entity2.length+1,statementContext.length-1)	;
+	// statementContext = statementContext.replace(execEntity1, `<span style="color: red">${entity1}</span>`);
+	// statementContext = statementContext.replace(execEntity2, `<span style="color: red">${entity2}</span>`);
 	statement.innerHTML = statementContext;
 
 	let other = document.querySelector('#Otherrelation');

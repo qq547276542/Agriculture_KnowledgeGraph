@@ -22,7 +22,7 @@ class Neo4j():
 		answer = self.graph.data("MATCH (entity1) - [rel] -> (entity2)  WHERE entity1.title = \"" +value +"\" RETURN rel,entity2")
 		return answer
 
-	#查找entity1及其对应的关系（与findRelationBetweentEntities的差别就是返回值不一样）
+	#查找entity1及其对应的关系（与getEntityRelationbyEntity的差别就是返回值不一样）
 	def findRelationByEntity(self,entity1):
 		answer = self.graph.data("MATCH (n1:HudongItem {title:\""+entity1+"\"})- [rel] -> (n2) RETURN n1,rel,n2" )
 		if(len(answer) == 0):
