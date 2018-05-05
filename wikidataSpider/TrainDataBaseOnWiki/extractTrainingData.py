@@ -34,11 +34,10 @@ with open("fileReaded.txt","r") as fileReaded:
 		fileReadedList.append(line.strip())
 		print(line.strip())
 #递归遍历语料库文件夹
-with open("train_data6.txt",'w') as fw:
+with open("train_data4.txt",'w') as fw:
 	with open("fileReaded.txt","a") as filereaded:
-		fw.write('entity1\tentity2\tstatement\trelation\n')
-		#存储已经搜索过的实体，避免重复查询
-		entityRelationDict = {}
+		fw.write('entity1Pos\tentity1\tentity2Pos\tentity2\tstatement\trelation\n')
+	
 		for root,dirs,files in os.walk(corpusPath):			
 			for file in files:
 				filePath = os.path.join(root,file)
@@ -60,18 +59,26 @@ with open("train_data6.txt",'w') as fw:
 								#分词
 								cutResult = get_NE(statement.strip())
 								#得到每句话的实体列表后，两两匹配查询是否具有某种关系,如果有的话就写到文件中
+								#entityList 存储实体列表和实体出现的位置,entity1存储实体名称，entity1Index存储实体位置
 								entityList = []
+								nowIndex = -1
 								for word in cutResult:
 									if(word[1]!=0 and not temporaryok(word[1])):
-										entityList.append(word[0])
+										entity1Index = statement.index(word[0],nowIndex+1)
+										entityList.append({'entity1':word[0],'entity1Index':entity1Index})
+										nowIndex = entity1Index+len(word[0])-1
+
 								entityNumber = len(entityList)
 								for i in range(entityNumber):
 									answer = None
-									answer = entityRelationDict.get(entityList[i])
-									if(entityRelationDict.get(entityList[i]) is None):
-										answer = db.findRelationBetweenEntities(entityList[i])
-										entityRelationDict[entityList[i]] = answer
+									#answer = entityRelationDict.get(entityList[i].get('entity1'))
+									#if(entityRelationDict.get(entityList[i].get('entity1')) is None):
+									answer = db.findRelationBetweenEntities(entityList[i].get('entity1'))
+										#entityRelationDict[entityList[i].get('entity1')] = answer
 									for relation in answer:
+										#对neo4j的返回值进行处理，原来的返回值中包含一些没用的字符，最终得到的关系是rel,实体是entity2
+										if(len(str(relation['rel']).split("\"")) < 2):
+											continue
 										rel = str(relation['rel']).split("\"")[1]
 										n2 = str(relation['n2'])
 										index = n2.find('title')
@@ -86,8 +93,10 @@ with open("train_data6.txt",'w') as fw:
 												entity2 = entity2+n2[index]
 											index += 1
 										#与entity1相关联的实体也出现在同一句话中，则可以制造一条训练样本
-										if(entity2 in entityList):
-											fw.write(entityList[i]+'\t'+entity2+'\t'+statement.strip()+'\t'+rel+'\n')
+										nowIndex = -1 ;
+										for item in entityList:
+											if(entity2 == item.get('entity1') and item.get('entity1Index') != entityList[i].get('entity1Index')):
+												fw.write(str(entityList[i].get('entity1Index'))+'\t'+entityList[i].get('entity1')+'\t'+str(item.get('entity1Index') )+'\t'+entity2+'\t'+statement.strip()+'\t'+rel+'\n')
 
 					filereaded.write(filePath+'\n')
 									

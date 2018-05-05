@@ -74,7 +74,7 @@ class DataScrubbing(object):
 				os.remove(readFilePath)
 				os.rename(writeFilePath,readFilePath)
     #选择和农业有关的训练集,选择关系"instance of" "taxon rank" "subclass of" "parent taxon"
-	def selectAgricultureData(self):
+	def selectAgricultureData(self,filename):
 		#预加载实体列表(挑选出如下类别的实体: 5:Animal,6:Plant,7:Chemicals,9:Food items,10:Diseases,12:Nutrients,13:Biochemistry.14:Agricultural implements,15:Technology )
 		entityFilePath = os.path.abspath(os.path.join(self.pythonFilePath,"../wikientities/predict_labels.txt"))
 		entitySet = set()
@@ -97,48 +97,74 @@ class DataScrubbing(object):
 					or entityNumber == "14" or entityNumber == "15"):
 					entitySet.add(entity)
 
+		# 对当前目录下的所有文件进行操作
+		# for root,dirs,files in os.walk(self.pythonFilePath):
+		# 	for file in files:
+		# 		if(file[-3:]!="txt" or file == "fileReaded.txt" or file == "entityrelation.txt" or file =="entitySet.txt"):
+		# 			continue
+		# 		count = 0
+		# 		#print(file)
+		# 		readFilePath = os.path.abspath(os.path.join(self.pythonFilePath,file))
+		# 		writeFilePath = os.path.abspath(os.path.join(self.pythonFilePath,file+"(2)"))
+		# 		with open(readFilePath,'r') as fr:
+		# 			with open(writeFilePath,'w') as fw:
+		# 				for line in fr:
+		# 					count+=1
+		# 					# if(count%1000):
+		# 					# 	print(count)
+		# 					triplet = line.strip().split('\t')
+		# 					if(len(triplet) == 4):
+		# 						entity1 = triplet[0]
+		# 						entity2 = triplet[1]
+		# 						statement = triplet[2]
+		# 						relation = triplet[3]
+		# 						if((relation == "instance of" or relation == "taxon rank" or relation == "subclass of" or relation =="parent taxon" ) and ((entity1 in entitySet) or \
+		# 						 (entity2 in entitySet))):
+		# 							fw.write(entity1+'\t'+entity2+'\t'+statement+'\t'+relation+'\n')
+		# 		os.remove(readFilePath)
+		# 		os.rename(writeFilePath,readFilePath)
 
-		for root,dirs,files in os.walk(self.pythonFilePath):
-			for file in files:
-				if(file[-3:]!="txt" or file == "fileReaded.txt" or file == "entityrelation.txt" or file =="entitySet.txt"):
-					continue
-				count = 0
-				#print(file)
-				readFilePath = os.path.abspath(os.path.join(self.pythonFilePath,file))
-				writeFilePath = os.path.abspath(os.path.join(self.pythonFilePath,file+"(2)"))
-				with open(readFilePath,'r') as fr:
-					with open(writeFilePath,'w') as fw:
-						for line in fr:
-							count+=1
-							# if(count%1000):
-							# 	print(count)
-							triplet = line.strip().split('\t')
-							if(len(triplet) == 4):
-								entity1 = triplet[0]
-								entity2 = triplet[1]
-								statement = triplet[2]
-								relation = triplet[3]
-								if((relation == "instance of" or relation == "taxon rank" or relation == "subclass of" or relation =="parent taxon" ) and ((entity1 in entitySet) or \
-								 (entity2 in entitySet))):
-									fw.write(entity1+'\t'+entity2+'\t'+statement+'\t'+relation+'\n')
-				os.remove(readFilePath)
-				os.rename(writeFilePath,readFilePath)
+		#对指定的文件进行操作
+		readFilePath = os.path.abspath(os.path.join(self.pythonFilePath,filename))
+		writeFilePath = os.path.abspath(os.path.join(self.pythonFilePath,filename+"(2)"))
+		count = 0 
+		with open(readFilePath,'r') as fr:
+			with open(writeFilePath,'w') as fw:
+				for line in fr:
+					count += 1
+					triplet = line.strip().split('\t') 
+					if(len(triplet) == 6):
+						entity1Pos = triplet[0]
+						entity1 = triplet[1]
+						entity2Pos = triplet[2]
+						entity2 = triplet[3] 
+						statement = triplet[4]
+						relation = triplet[5]
+						if( (relation == "instance of" or relation == "taxon rank" or relation == "subclass of" or relation == "parent taxon") and ((entity1 in entitySet) or \
+							(entity2 in entitySet)) ):
+							fw.write(entity1Pos+"\t"+entity1+"\t"+entity2Pos+"\t"+entity2+"\t"+"\""+statement+"\""+"\t"+relation+"\n")
 
 if __name__ == "__main__":
 	if(len(sys.argv) == 1):
 		print("Missing parameters:  ")
-		print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData\" to selecgt agricultural data ")
-	elif(len(sys.argv) > 2):
+		print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData filename\" to select agricultural data ")
+	elif(len(sys.argv) > 3):
 		print("Too many parameters: ")
-		print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData\" to selecgt agricultural data ")
+		print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData filename\" to select agricultural data ")
 	else:
 		dataScrubbing = DataScrubbing()
-		if(sys.argv[1] == "handleError"):
+		if(sys.argv[1] == "handleError" and len(sys.argv)>2):
+			print("parameter error!")
+			print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData filename\" to select agricultural data ")
+		elif(sys.argv[1] == "handleError"):
 			dataScrubbing.handleError()
+		elif(sys.argv[1] == "selectAgriculturalData" and len(sys.argv)<3):
+			print("parameter error!")
+			print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData filename\" to select agricultural data ")
 		elif(sys.argv[1] == "selectAgriculturalData"):
-			dataScrubbing.selectAgricultureData()
+			dataScrubbing.selectAgricultureData(sys.argv[2])
 		else:
 			print("Parameter error: no such parameter")
-			print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData\" to selecgt agricultural data ")
+			print("Please use \"python dataScrubbing.py handleError\" to solve error or use \"python dataScrubbing.py selectAgriculturalData\" to select agricultural data ")
 
 

@@ -193,10 +193,31 @@ sudo sh django_server_start.sh
 
 ![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/3.png)
 
+### 实体查询
+
+实体查询部分，我们能够搜索出与某一实体相关的实体，以及它们之间的关系：
+![image](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/entitySearch.png)
+
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/entitySearch2.png)
+
 ### 关系查询
 
-关系查询部分，我们能够搜索出与某一实体相关的实体，以及它们之间的关系：
-![image](https://raw.githubusercontent.com/qq547276542/blog_image/master/agri/7.png)
+关系查询即查询三元组关系entity1-[relation]->entity2 , 分为如下几种情况:
+
+* 指定第一个实体entity1
+* 指定第二个实体entity2
+* 指定第一个实体entity1和关系relation
+* 指定关系relation和第二个实体entity2
+* 指定第一个实体entity1和第二个实体entity2
+* 指定第一个实体entity1和第二个实体entity2以及关系relation
+
+下图所示，是指定关系relation和第二个实体entity2的查询结果
+
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/relationSearch.png)
+
+
+
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/relationSearch2.png)
 
 ### 知识的树形结构
 
