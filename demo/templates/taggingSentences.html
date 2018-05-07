@@ -58,6 +58,7 @@
 							 		<span><strong> None </strong></span> </h4>
 							 	</label>
 							 </div>
+							 <br>
 							 <div class="radio">							  
 								  <label>
 								  		<h4><input type="radio" name="optionsRadios" value="Country" id="Country" >
@@ -227,8 +228,11 @@
 			body: JSON.stringify({
 				statement: statement.innerText,
 				entity1: entity1,
+				entity1Pos: entity1Pos,
 				relation: relation.innerText,
-				entity2: entity2
+				entity2: entity2,
+				entity2Pos: entity2Pos
+
 			}),
 			headers: {
 				'content-type': 'application/json',
@@ -263,8 +267,11 @@
 			body: JSON.stringify({
 				statement: statement.innerText,
 				entity1: entity1,
+				entity1Pos: entity1Pos,
 				relation: relation,
-				entity2: entity2
+				entity2: entity2,
+				entity2Pos: entity2Pos
+
 			}),
 			headers: {
 				'content-type': 'application/json',
