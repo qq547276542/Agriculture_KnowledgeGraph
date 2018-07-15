@@ -1,4 +1,5 @@
 # coding: utf-8
+import configparser
 
 from py2neo import Graph,Node,Relationship
 from hudong_class import HudongItem
@@ -9,7 +10,13 @@ class Neo4j():
 		print("create neo4j class ...")
 		
 	def connectDB(self):
-		self.graph = Graph("http://localhost:7474", username="neo4j", password="8313178")
+		conf = configparser.ConfigParser()
+		conf.read('demo/neo4jconfig')
+		url = conf.get("neo4jdb", "url")
+		username = conf.get("neo4jdb", "username")
+		password = conf.get("neo4jdb", "password")
+		self.graph = Graph(url, username=username, password=password)
+		# self.graph = Graph("http://localhost:7474", username="neo4j", password="abc123")
 		print('connect successed')
 		
 	def matchItembyTitle(self,value):
