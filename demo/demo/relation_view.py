@@ -58,7 +58,6 @@ def search_relation(request):
 		#若只输入entity1,则输出与entity1有直接关系的实体和关系
 		if(len(entity1) != 0 and len(relation) == 0 and len(entity2) == 0):
 			searchResult = db.findRelationByEntity(entity1)
-			print(searchResult)
 			searchResult = sortDict(searchResult)
 			if(len(searchResult)>0):
 				return render(request,'relation.html',{'searchResult':json.dumps(searchResult,ensure_ascii=False)})
@@ -85,6 +84,7 @@ def search_relation(request):
 		if(len(entity1) !=0 and len(relation) == 0 and len(entity2)!=0):
 			searchResult = db.findRelationByEntities(entity1,entity2)
 			if(len(searchResult)>0):
+				print(searchResult)
 				searchResult = sortDict(searchResult)
 				return render(request,'relation.html',{'searchResult':json.dumps(searchResult,ensure_ascii=False)})
 		#若输入entity1,entity2和relation,则输出entity1、entity2是否具有相应的关系
