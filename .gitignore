@@ -92,3 +92,12 @@ A*/
 #train data
 
 wikidataSpider/TrainDataBaseOnWiki/train_data*.txt
+
+
+# json
+
+*.json
+
+**/sgns.wiki.bigram-char
+*.bz2
+relationExtraction/**/*.txt
