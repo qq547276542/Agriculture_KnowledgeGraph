@@ -64,7 +64,7 @@
 
 - hudong_pedia.csv : 已经爬好的农业实体的百科页面的结构化csv文件
 - labels.txt： 5000多个手工标注的实体类别
-- predict_labels.txt:  KNN算法预测的13W多个实体的类别
+- predict_labels.txt:  KNN算法预测的15W多个实体的类别
 - /wikidataSpider/wikidataProcessing/wikidata_relation.csv: predict_labels.txt中实体在wikidata中对应的三元组关系
 - attributes.csv: 部分实体的属性(互动百科页面中直接得到)
 
@@ -78,11 +78,11 @@
 - django     ---web框架
 - neo4j       ---图数据库
 - thulac      ---分词、词性标注
-- py2neo    ---python连接neo4j的工具
+- py2neo==4.1.0    ---python连接neo4j的工具 (注意不兼容旧版本)
 - pyfasttext    ---facebook开源的词向量计算框架
 - pinyin  ---获取中文首字母小工具
 - 预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
-- mongoDB  ---存储文档数据
+- mongoDB  ---存储文档数据 (仅部署网站的话不需要安装)
 - pymongo  ---python操作mongoDB的工具
 
 
@@ -183,6 +183,12 @@ sudo sh django_server_start.sh
 ```
 
 这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）
+
+----------------------
+
+###  (update 2018.10.26) 
+- 修改部分配置信息
+- 关系查询中，添加了2个实体间的最短路查询
 
 ### 农业实体识别+实体分类
 

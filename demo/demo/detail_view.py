@@ -20,7 +20,13 @@ def showdetail(request):
 		answer = db.matchHudongItembyTitle(title)
 		if answer == None:
 			return render(request, "404.html", ctx) 
-			
+
+		if len(answer) > 0:
+			answer = answer[0]['n']
+		else:
+			ctx['title'] = '实体条目出现未知错误'
+			return
+
 		ctx['detail'] = answer['detail']
 		ctx['title'] = answer['title']
 		image = answer['image']

@@ -1,4 +1,4 @@
-from py2neo import Graph,Node,Relationship,cypher,Path,data
+from py2neo import Graph, Node, Relationship, cypher, Path
 import neo4j
 class Neo4j():
 	graph = None
@@ -9,12 +9,14 @@ class Neo4j():
 		self.graph = Graph("http://localhost:7474", username="neo4j", password="123456")
 
 	def matchItembyTitle(self,value):
-		answer = self.graph.find_one(label="Item",property_key="title",property_value=value)
+		sql = "MATCH (n:Item { title: '" + str(value) + "' }) return n;"
+		answer = self.graph.run(sql).data()
 		return answer
 
 	# 根据title值返回互动百科item
 	def matchHudongItembyTitle(self,value):
-		answer = self.graph.find_one(label="HudongItem",property_key="title",property_value=value)
+		sql = "MATCH (n:HudongItem { title: '" + str(value) + "' }) return n;"
+		answer = self.graph.run(sql).data()
 		return answer
 
 	# 根据entity的名称返回关系
