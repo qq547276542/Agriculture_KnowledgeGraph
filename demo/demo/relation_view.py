@@ -81,19 +81,14 @@ def search_relation(request):
 			searchResult = sortDict(searchResult)
 			if(len(searchResult)>0):
 				return render(request,'relation.html',{'searchResult':json.dumps(searchResult,ensure_ascii=False)})
-		#若输入entity1和entity2,则输出entity1和entity2之间的关系
+		#若输入entity1和entity2,则输出entity1和entity2之间的最短路径
 		if(len(entity1) !=0 and len(relation) == 0 and len(entity2)!=0):
 			searchResult = db.findRelationByEntities(entity1,entity2)
-			for x in searchResult:
-				print(x['n1']['title'])
-				print(x['n2']['title'])
-				print(x['rel'])
-			searchResult = sortDict(searchResult)
 			if(len(searchResult)>0):
+				searchResult = sortDict(searchResult)
 				return render(request,'relation.html',{'searchResult':json.dumps(searchResult,ensure_ascii=False)})
 		#若输入entity1,entity2和relation,则输出entity1、entity2是否具有相应的关系
 		if(len(entity1)!=0 and len(entity2)!=0 and len(relation)!=0):
-			print(relation)
 			searchResult = db.findEntityRelation(entity1,relation,entity2)
 			searchResult = sortDict(searchResult)
 			if(len(searchResult)>0):

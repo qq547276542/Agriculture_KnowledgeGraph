@@ -73,14 +73,15 @@ class Neo4j():
 		#if(answer is None):
 		#	answer = self.graph.data("MATCH (n1:NewNode {title:\"" + entity1 + "\"})- [rel] -> (n2:NewNode{title:\""+entity2+"\"}) RETURN n1,rel,n2" )
 		relationDict = []
-		for x in answer:
-			tmp = {}
-			start_node = x.start_node
-			end_node = x.end_node
-			tmp['n1'] = start_node
-			tmp['n2'] = end_node
-			tmp['rel'] = x
-			relationDict.append(tmp)		
+		if(answer is not None):
+			for x in answer:
+				tmp = {}
+				start_node = x.start_node
+				end_node = x.end_node
+				tmp['n1'] = start_node
+				tmp['n2'] = end_node
+				tmp['rel'] = x
+				relationDict.append(tmp)		
 		return relationDict
 
 	#查询数据库中是否有对应的实体-关系匹配
