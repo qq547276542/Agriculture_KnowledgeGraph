@@ -130,8 +130,8 @@
 
     //构造展示的数据
     var maxDisPlayNode = 15 ;
-    var id = 0 ; 
-    for( var i = 0 ;id < Math.min(maxDisPlayNode,searchResult.length) && i<searchResult.length ; i++ ){
+    var id = 0 ;
+    for( var i = 0 ;id < maxDisPlayNode&& i<searchResult.length ; i++ ){
         //获取node1
         node1 = {} ;
         node1['name'] = searchResult[i]['n1']['title'] ;
@@ -183,12 +183,11 @@
         	id++ ;
         	data.push(node2) ;
         }
-
         //获取relation
         relation = {}
         relation['source'] = node1['id'];
         relation['target'] = node2['id'] ;
-        relation['category'] = 0 ;  
+        relation['category'] = 0 ;
         flag = 1;  
         for(var j = 0 ;j<links.length;j++){
         	if(links[j]['source'] == relation['source'] && links[j]['target'] == relation['target']){
