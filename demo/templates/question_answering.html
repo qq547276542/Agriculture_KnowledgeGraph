@@ -1,0 +1,75 @@
+{% extends "base.html" %} {% block mainbody %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!--overview start-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header"><i class="icon_chat_alt"></i> 农知问答 </h3>
+                    <ol class="breadcrumb">
+                        <li><i class="fa fa-home"></i><a href="\">Home</a></li>
+                        <li><i class="icon_chat_alt"></i>农知问答</li>
+                    </ol>
+                </div>
+            </div>
+
+            <section class="panel panel-default">
+                <header class="panel-heading">
+                    输入问题 :
+                </header>
+                <div class="panel-body">
+                    <form class="form-inline" action="/ER-post" method="post">
+                        <div class="form-row">
+                            <div class="form-group col-md-10">
+                                <input type="text" id="question" class="form-control" placeholder="Enter text" >  </input>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <button type="submit" class="btn btn-primary btn-block"> 提交 </button>
+                            </div>
+                        </div>
+                        <br/><br/>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                            <p>
+                                热门搜索： <a href="#" onclick="$('#question').attr('value','崇明岛六月份适合种什么？')"> 崇明岛六月份适合种什么？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','葡萄含有哪些营养元素？')"> 葡萄含有哪些营养元素？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','中国的首都的气候类型是什么？')"> 中国的首都的气候类型是什么？</a> &nbsp;&nbsp;
+                            </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <section class="panel panel-default">
+                        <header class="panel-heading">
+                            答案：
+                        </header>
+                        <div class="panel-body">
+                            dsa
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-8">
+                     <section class="panel panel-default">
+                        <header class="panel-heading">
+                            推理过程：
+                        </header>
+                        <div class="panel-body">
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
