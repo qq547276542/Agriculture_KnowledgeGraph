@@ -190,5 +190,5 @@ def get_NE(text):
 	return answerList
 		
 	
-#from toolkit.pre_load import pre_load_thu,neo_con
-#print(get_NE(pre_load_thu, neo_con, '美利坚大香蕉习近平的橘子 hhhhhh'))
+# from toolkit.pre_load import pre_load_thu,neo_con
+# print(get_NE(pre_load_thu, neo_con, '美利坚大香蕉习近平的橘子 hhhhhh'))
