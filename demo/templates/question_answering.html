@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% block mainbody %}
-
+<script src="/static/js/echarts.common.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -33,9 +34,10 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                             <p>
-                                热门搜索： <a href="#" onclick="$('#question').attr('value','崇明岛六月份适合种什么？')"> 崇明岛六月份适合种什么？</a> &nbsp;&nbsp;
+                                热门搜索： <a href="#" onclick="$('#question').attr('value','崇明县适合种什么植物？')"> 崇明县适合种什么植物？</a> &nbsp;&nbsp;
                                 <a href="#" onclick="$('#question').attr('value','葡萄含有哪些营养元素？')"> 葡萄含有哪些营养元素？</a> &nbsp;&nbsp;
                                 <a href="#" onclick="$('#question').attr('value','中国的首都的气候类型是什么？')"> 中国的首都的气候类型是什么？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','什么化学药剂能够防治白菜褐腐病？')"> 什么化学药剂能够防治白菜褐腐病？</a> &nbsp;&nbsp;
                             </p>
                             </div>
                         </div>
@@ -44,23 +46,55 @@
             </section>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <section class="panel panel-default">
                         <header class="panel-heading">
                             答案：
                         </header>
                         <div class="panel-body">
-                            dsa
+                            <table class="table table-condensed table-bordered table-striped">
+                                <tr>
+                                    <td><a href="detail.html?title=无花果">金瓜</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=无花果">白扁豆</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=无花果">无花果</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=葡萄">葡萄</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=柚子">柚子</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=甘蔗">甘蔗</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=莲雾">莲雾</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=杨桃">杨桃</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=樱桃">樱桃</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="detail.html?title=草莓">草莓</a></td>
+                                </tr>
+
+                            </table>
                         </div>
                     </section>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                      <section class="panel panel-default">
                         <header class="panel-heading">
-                            推理过程：
+                            图谱演示：
                         </header>
                         <div class="panel-body">
-
+                            <div id="graph" style="width: 100%;height:350px;"></div>
                         </div>
                     </section>
                 </div>
@@ -71,5 +105,231 @@
 
     </div>
 </div>
+<script src="/static/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('graph'));
+
+    option = {
+	    title: {
+	        text: ''
+	    },
+	    tooltip: {},
+	    animationDurationUpdate: 1500,
+	    animationEasingUpdate: 'quinticInOut',
+	    label: {
+	        normal: {
+	            show: true,
+	            textStyle: {
+	                fontSize: 12
+	            },
+	        }
+	    },
+	    legend: {
+	        x: "center",
+	        show: false
+	    },
+	    series: [
+
+	        {
+	            type: 'graph',
+	            layout: 'force',
+	            symbolSize: 45,
+	            focusNodeAdjacency: true,
+	            roam: true,
+	            edgeSymbol: ['none', 'arrow'],
+	            categories: [{
+	                name: '查询实体',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#009800",
+	                    }
+	                }
+	            }, {
+	                name: 'HudongItem',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#4592FF",
+	                    }
+	                }
+	            }, {
+	                name: 'NewNode',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#C71585",
+	                    }
+	                }
+	            }, {
+	                name: 'AnsNode',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#73C453",
+	                    }
+	                }
+	            }],
+	            label: {
+	                normal: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: 12,
+	                    },
+	                }
+	            },
+	            force: {
+	                repulsion: 1000
+	            },
+	            edgeSymbolSize: [4, 50],
+	            edgeLabel: {
+	                normal: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: 10
+	                    },
+	                    formatter: "{c}"
+	                }
+	            },
+	            data: [
+	                {
+                        name: '亚热带季风气候',
+                        value: 'dsa',
+                        draggable: true,
+                        category: 1
+                    }
+                    ,{
+                        name: '崇明县',
+                        draggable: true,
+                        category: 1
+                    },{
+                        name: '无花果',
+                        draggable: true,
+                        category: 3
+                    },{
+                        name: '葡萄',
+                        draggable: true,
+                        category: 3
+                    },{
+                        name: '柚子',
+                        draggable: true,
+                        category: 3
+                    }
+                    ,{
+                        name: '甘蔗',
+                        draggable: true,
+                        category: 3
+                    }
+                    ,{
+                        name: '莲雾',
+                        draggable: true,
+                        category: 3
+                    }
+                    ,{
+                        name: '杨桃',
+                        draggable: true,
+                        category: 3
+                    }
+                    ,{
+                        name: '樱桃',
+                        draggable: true,
+                        category: 3
+                    }
+                    ,{
+                        name: '草莓',
+                        draggable: true,
+                        category: 3
+                    },{
+                        name: '金瓜',
+                        draggable: true,
+                        category: 3
+                    },{
+                        name: '白扁豆',
+                        draggable: true,
+                        category: 3
+                    }
+
+                ],
+	            links: [
+                    {
+                        source: 1,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '气候类型'
+                    },{
+	                    source: 2,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 3,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 4,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 5,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 6,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 7,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 8,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 9,
+                        target: 0,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '生长气候'
+                    },{
+	                    source: 1,
+                        target: 10,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '特产'
+                    },{
+	                    source: 1,
+                        target: 11,
+                        category: 0,
+                        symbolSize: 10,
+                        value: '特产'
+                    }
+
+                ],
+	            lineStyle: {
+	                normal: {
+	                    opacity: 0.9,
+	                    width: 1.3,
+	                    curveness: 0,
+	                    color:"#262626",
+	                }
+	            }
+	        }
+	    ]
+	};
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+</script>
 
 {% endblock %}

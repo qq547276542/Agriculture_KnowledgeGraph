@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71989670-ae16-4d29-8253-1e12aba81766" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/relationExtraction/data/dosomething.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relationExtraction/data/preprocessing.py" afterDir="false" />
+    <list default="true" id="71989670-ae16-4d29-8253-1e12aba81766" name="Default" comment="update">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Agriculture_KnowledgeGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Agriculture_KnowledgeGraph.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/Model/neo_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/Model/neo_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/relation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/relation_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/templates/decisions_making.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/templates/decisions_making.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/templates/question_answering.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/templates/question_answering.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$static.coverage" NAME="static Coverage Results" MODIFIED="1540188620607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/relationExtraction" />
-    <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$exist_relation.coverage" NAME="exist_relation Coverage Results" MODIFIED="1540193623330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/relationExtraction" />
+    <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$exist_relation.coverage" NAME="exist_relation Coverage Results" MODIFIED="1541126990381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/relationExtraction" />
     <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$stackoverflow_spider.coverage" NAME="stackoverflow_spider Coverage Results" MODIFIED="1513993431908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data processing" />
+    <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$static.coverage" NAME="static Coverage Results" MODIFIED="1540188620607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/relationExtraction" />
     <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1540188557874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/relationExtraction" />
+    <SUITE FILE_PATH="coverage/Agriculture_KnowledgeGraph$NER.coverage" NAME="NER Coverage Results" MODIFIED="1541127037342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo/toolkit" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1132213663">
@@ -67,68 +67,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/dosomething.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="312">
+              <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="relation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/templates/relation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="789">
+              <caret line="200" column="32" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="32" />
               <folding>
-                <element signature="e#23#34#0" expanded="true" />
-                <marker date="1540435096051" expanded="true" signature="765:766" ph="..." />
-                <marker date="1540435096051" expanded="true" signature="1707:1755" ph="..." />
-                <marker date="1540435096051" expanded="true" signature="2594:2890" ph="..." />
-                <marker date="1540435096051" expanded="true" signature="2920:2922" ph="..." />
-                <marker date="1540435096051" expanded="true" signature="4059:4064" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/preprocessing.py">
+      <file leaf-file-name="detail_view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/demo/detail_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+            <state relative-caret-position="1373">
+              <caret line="110" selection-start-line="15" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question_answering.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/templates/question_answering.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="86" column="36" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="86" selection-end-column="36" />
               <folding>
-                <element signature="e#40#51#0" expanded="true" />
+                <element signature="e#1642#1648#0#HTML" expanded="true" />
+                <element signature="e#1648#1654#0#HTML" expanded="true" />
+                <element signature="e#1763#1769#0#HTML" expanded="true" />
+                <element signature="e#1775#1781#0#HTML" expanded="true" />
+                <element signature="e#1902#1908#0#HTML" expanded="true" />
+                <element signature="e#1908#1914#0#HTML" expanded="true" />
+                <element signature="e#2034#2040#0#HTML" expanded="true" />
+                <element signature="e#2040#2046#0#HTML" expanded="true" />
+                <element signature="e#3981#4014#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/filter_train_data_all_deduplication.txt">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-37119">
-              <caret line="2958" column="79" selection-start-line="2958" selection-start-column="68" selection-end-line="2958" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/rel2id.json">
+      <file leaf-file-name="decisions_making.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/templates/decisions_making.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="46" selection-start-column="46" selection-end-column="46" />
+            <state relative-caret-position="469">
+              <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relationExtraction/data/entities.txt">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+            <state relative-caret-position="803">
+              <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="69" column="31" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="69" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NER.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/toolkit/NER.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decisions_making.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/demo/decisions_making.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/demo/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +183,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -147,10 +192,29 @@
       <find>水稻</find>
       <find>植物</find>
       <find>replaced by</find>
+      <find>far</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -164,6 +228,16 @@
         <option value="$PROJECT_DIR$/relationExtraction/data/country-code.json" />
         <option value="$PROJECT_DIR$/relationExtraction/data/preprocessing.py" />
         <option value="$PROJECT_DIR$/relationExtraction/data/dosomething.py" />
+        <option value="$PROJECT_DIR$/demo/demo/QA.py" />
+        <option value="$PROJECT_DIR$/demo/toolkit/NER.py" />
+        <option value="$PROJECT_DIR$/demo/demo/question_answering.py" />
+        <option value="$PROJECT_DIR$/demo/demo/urls.py" />
+        <option value="$PROJECT_DIR$/demo/demo/decisions_making.py" />
+        <option value="$PROJECT_DIR$/demo/templates/base.html" />
+        <option value="$PROJECT_DIR$/demo/templates/relation.html" />
+        <option value="$PROJECT_DIR$/demo/templates/question_answering.html" />
+        <option value="$PROJECT_DIR$/demo/templates/decisions_making.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -173,10 +247,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="832" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1200" />
+    <option name="y" value="-242" />
+    <option name="width" value="1200" />
+    <option name="height" value="1274" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,6 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -241,7 +320,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exist_relation">
+  <component name="RunManager" selected="Python.NER">
+    <configuration name="NER" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Agriculture_KnowledgeGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo/toolkit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/toolkit/NER.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="exist_relation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Agriculture_KnowledgeGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,9 +358,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Agriculture_KnowledgeGraph" />
@@ -282,9 +377,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="stackoverflow_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Agriculture_KnowledgeGraph" />
@@ -304,9 +396,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="static" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Agriculture_KnowledgeGraph" />
@@ -326,9 +415,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
@@ -337,7 +423,6 @@
       <tasks />
       <arguments />
       <envs />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="Agriculture_KnowledgeGraph" />
@@ -352,16 +437,17 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.stackoverflow_spider" />
       <item itemvalue="Python.exist_relation" />
       <item itemvalue="Python.preprocessing" />
       <item itemvalue="Python.static" />
+      <item itemvalue="Python.NER" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NER" />
         <item itemvalue="Python.exist_relation" />
         <item itemvalue="Python.static" />
         <item itemvalue="Python.preprocessing" />
@@ -380,34 +466,42 @@
       <option name="presentableId" value="Default" />
       <updated>1513672392494</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1541149165343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541149165343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="832" extended-state="1" />
+    <frame x="-1200" y="-242" width="1200" height="1274" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22603719" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23253012" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50083333" side_tool="true" visible="true" weight="0.2325" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49916667" visible="true" weight="0.2325" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21916667" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +510,44 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/dosomething.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="e#40#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data processing/stackoverflow_spider.py.ipynb" />
     <entry file="file://$PROJECT_DIR$/data processing/test.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -454,42 +585,45 @@
     <entry file="file://$PROJECT_DIR$/MyCrawler/MyCrawler/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/dataset.json">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1815">
-          <caret column="176" lean-forward="true" selection-start-column="176" selection-end-column="176" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/dataset.json" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/filter_train_data_all_deduplication.txt" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/rel2id.json" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/word2vec.json" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/filtered_data.txt" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/entities.txt" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/country-code.json" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/entity2id.json" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/dosomething.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/filter_train_data_all_deduplication.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-37119">
-          <caret line="2958" column="79" selection-start-line="2958" selection-start-column="68" selection-end-line="2958" selection-end-column="79" />
+    <entry file="file://$PROJECT_DIR$/demo/demo/_404_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#62#97#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/rel2id.json">
+    <entry file="file://$PROJECT_DIR$/demo/demo/relation_view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/word2vec.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="793">
-          <caret column="14496" selection-start-column="14496" selection-end-column="14496" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/demo/demo/overview_view.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/data/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,44 +635,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/filtered_data.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="300">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+    <entry file="file://$PROJECT_DIR$/relationExtraction/data/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/entities.txt">
+    <entry file="file://$PROJECT_DIR$/demo/toolkit/pre_load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/country-code.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="960" column="2" selection-start-line="960" selection-start-column="2" selection-end-line="960" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/entity2id.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relationExtraction/data/dosomething.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="e#23#34#0" expanded="true" />
-            <marker date="1540435096051" expanded="true" signature="765:766" ph="..." />
-            <marker date="1540435096051" expanded="true" signature="1707:1755" ph="..." />
-            <marker date="1540435096051" expanded="true" signature="2594:2890" ph="..." />
-            <marker date="1540435096051" expanded="true" signature="2920:2922" ph="..." />
-            <marker date="1540435096051" expanded="true" signature="4059:4064" ph="..." />
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/tagging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-end-line="34" selection-end-column="81" />
+          <folding>
+            <element signature="e#25#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/question_answering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" lean-forward="true" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/index_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#62#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/relation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="200" column="32" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/decisions_making.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/toolkit/NER.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/question_answering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="86" column="36" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="86" selection-end-column="36" />
+          <folding>
+            <element signature="e#1642#1648#0#HTML" expanded="true" />
+            <element signature="e#1648#1654#0#HTML" expanded="true" />
+            <element signature="e#1763#1769#0#HTML" expanded="true" />
+            <element signature="e#1775#1781#0#HTML" expanded="true" />
+            <element signature="e#1902#1908#0#HTML" expanded="true" />
+            <element signature="e#1908#1914#0#HTML" expanded="true" />
+            <element signature="e#2034#2040#0#HTML" expanded="true" />
+            <element signature="e#2040#2046#0#HTML" expanded="true" />
+            <element signature="e#3981#4014#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/detail_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1373">
+          <caret line="110" selection-start-line="15" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="69" column="31" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="69" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/templates/decisions_making.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
         </state>
       </provider>
     </entry>
