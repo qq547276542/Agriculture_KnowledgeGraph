@@ -123,6 +123,7 @@ def get_na_entities():
 
 	#得到没有关系的实体对
 
+	cnt = 0
 	with open('no_relation_pairs.txt','w',encoding='utf8') as fw:
 		for i in range(len(entities_list)):
 			print("%s" %format(1.0*i/len(entities_list),'0.2f'),end='',flush=True)
@@ -130,9 +131,68 @@ def get_na_entities():
 				id1 = entity2id[entities_list[i]]
 				id2 = entity2id[entities_list[j]]
 				if( (id1,id2) not in entities_has_relation ):
-					fw.write(entities_list[i]+"\t"+entities_list[j])
+					cnt += 1
+					entities_has_relation.append((id1,id2))
+					fw.write(entities_list[i]+"\t"+entities_list[j]+'\n')
+				if(cnt%5 ==0):
+					i += 1
+				if(cnt>500000):
+					break
+			if(cnt>500000):
+				break
+#统计同一对实体之间所有关系数量的分布
+def entity_relation_number():
+
+	with open('entity2id.json','r',encoding='utf8') as fr:
+		entity2id = json.load(fr)
+
+	entity_pair_relation = dict()
+	with open('../../wikidataSpider/wikidataProcessing/wikidata_relation.csv', 'r', encoding='utf8') as fr:
+		line = fr.readline()
+		while(True):
+			line = fr.readline()
+			if(not line):
+				break
+			line_s = line.split(',')
+			relation = line_s[1].strip()
+			if(line_s[0].strip() not in entity2id or line_s[2].strip() not in entity2id):
+				continue
+			id1 = entity2id[line_s[0].strip()]
+			id2 = entity2id[line_s[2].strip()]
+			if entity_pair_relation.get((id1,id2)) is None :
+				entity_pair_relation[(id1,id2)] = [relation]
+			elif relation not in entity_pair_relation[(id1,id2)]:
+				entity_pair_relation[(id1,id2)].append(relation)
 
 
+
+	with open('../../wikidataSpider/wikidataProcessing/wikidata_relation2.csv','r',encoding='utf8') as fr:
+		line = fr.readline()
+		while (True):
+			line = fr.readline()
+			if (not line):
+				break
+			line_s = line.split(',')
+			relation = line_s[1].strip()
+			if(line_s[0].strip() not in entity2id or line_s[2].strip() not in entity2id):
+				continue
+			id1 = entity2id[line_s[0].strip()]
+			id2 = entity2id[line_s[2].strip()]
+			if entity_pair_relation.get((id1, id2)) is None:
+				entity_pair_relation[(id1, id2)] = [relation]
+			elif relation not in entity_pair_relation[(id1, id2)]:
+				entity_pair_relation[(id1, id2)].append(relation)
+
+
+	num_dict = {}
+
+	for key in entity_pair_relation:
+		num  =  len(entity_pair_relation[key])
+		if(num_dict.get(num) is None):
+			num_dict[num] = 1
+		else:
+			num_dict[num] += 1
+	print(num_dict)
 
 
 

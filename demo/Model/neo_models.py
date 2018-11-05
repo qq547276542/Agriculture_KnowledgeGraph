@@ -87,12 +87,12 @@ class Neo4j():
 
 	#查询数据库中是否有对应的实体-关系匹配
 	def findEntityRelation(self,entity1,relation,entity2):
-		answer = self.graph.data("MATCH (n1:HudongItem {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:HudongItem{title:\""+entity2+"\"}) RETURN n1,rel,n2" )
+		answer = self.graph.run("MATCH (n1:HudongItem {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:HudongItem{title:\""+entity2+"\"}) RETURN n1,rel,n2" ).data()
 		if(answer is None):
-			answer = self.graph.data("MATCH (n1:HudongItem {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:NewNode{title:\""+entity2+"\"}) RETURN n1,rel,n2" )
+			answer = self.graph.run("MATCH (n1:HudongItem {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:NewNode{title:\""+entity2+"\"}) RETURN n1,rel,n2" ).data()
 		if(answer is None):
-			answer = self.graph.data("MATCH (n1:NewNode {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:HudongItem{title:\""+entity2+"\"}) RETURN n1,rel,n2" )
+			answer = self.graph.run("MATCH (n1:NewNode {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:HudongItem{title:\""+entity2+"\"}) RETURN n1,rel,n2" ).data()
 		if(answer is None):
-			answer = self.graph.data("MATCH (n1:NewNode {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:NewNode{title:\""+entity2+"\"}) RETURN n1,rel,n2" )
+			answer = self.graph.run("MATCH (n1:NewNode {title:\"" + entity1 + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2:NewNode{title:\""+entity2+"\"}) RETURN n1,rel,n2" ).data()
 
 		return answer
