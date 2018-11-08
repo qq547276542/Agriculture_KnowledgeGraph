@@ -26,7 +26,8 @@ def get_city_weather():
             city_list.append(line.strip()[0:-1])
 
     data = pd.read_csv('../wikidataAnalyse/hudong_pedia.csv')
-    with open('city_weather.txt','w',encoding='utf8') as fw:
+    with open('city_weather.csv','w',encoding='utf8') as fw:
+        fw.write('city,relation,weather\n')
         vis = []
         weather = []
         for i in range(len(data)):
@@ -46,19 +47,20 @@ def get_city_weather():
                             title+='市'
                         if(title not in vis):
                             vis.append(title)
-                            if(info_value_list[cnt].strip().split('、')>1):
+                            if(len(info_value_list[cnt].strip().split('、'))>1):
                                 for x in info_value_list[cnt].strip().split('、'):
                                     if(x not in weather):
                                         weather.append(x)
-                                    fw.write(title + "\t" + x + '\n')
+                                    fw.write(title + ",气候," + x + '\n')
 
                             else:
                                 if(info_value_list[cnt].strip() not in weather):
                                     weather.append(info_value_list[cnt].strip())
-                                fw.write(title+"\t"+info_value_list[cnt].strip()+'\n')
+                                fw.write(title+",气候,"+info_value_list[cnt].strip()+'\n')
                     cnt += 1
 
-    with open('static_weather_list.txt','w',encoding='utf8') as fw:
+    with open('static_weather_list.csv','w',encoding='utf8') as fw:
+        fw.write('title\n')
         for item in weather:
             fw.write(item+'\n')
 

@@ -134,8 +134,9 @@ def get_na_entities():
 					cnt += 1
 					entities_has_relation.append((id1,id2))
 					fw.write(entities_list[i]+"\t"+entities_list[j]+'\n')
-				if(cnt%5 ==0):
+				if(cnt%20 ==0):
 					i += 1
+					break
 				if(cnt>500000):
 					break
 			if(cnt>500000):

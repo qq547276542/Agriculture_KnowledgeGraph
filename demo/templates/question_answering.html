@@ -21,10 +21,10 @@
                     输入问题 :
                 </header>
                 <div class="panel-body">
-                    <form class="form-inline" action="/ER-post" method="post">
+                    <form class="form-inline" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-10">
-                                <input type="text" id="question" class="form-control" placeholder="Enter text" >  </input>
+                                <input type="text" name="question" id="question" class="form-control" placeholder="Enter text" >  </input>
                             </div>
                             <div class="form-group col-md-2">
                                 <button type="submit" class="btn btn-primary btn-block"> 提交 </button>
@@ -46,58 +46,39 @@
             </section>
 
             <div class="row">
-                <div class="col-md-3">
+                {% if ctx %}
+                <div class = "col-md-12">
+                    <div class="panel panel-default">
+                        <header class ="panel-heading">
+                            <div class = "panel-body">
+                                <h2>暂未找到答案</h2>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                {% endif %}
+                {% if ret %}
+                <div class="col-md-4">
                     <section class="panel panel-default">
                         <header class="panel-heading">
                             答案：
                         </header>
                         <div class="panel-body">
-                            <table class="table table-condensed table-bordered table-striped">
-                                <tr>
-                                    <td><a href="detail.html?title=无花果">金瓜</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=无花果">白扁豆</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=无花果">无花果</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=葡萄">葡萄</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=柚子">柚子</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=甘蔗">甘蔗</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=莲雾">莲雾</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=杨桃">杨桃</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=樱桃">樱桃</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="detail.html?title=草莓">草莓</a></td>
-                                </tr>
-
-                            </table>
+                            <table class="table" data-paging="true" data-sorting = "true" data-paging-size="10"></table>
                         </div>
                     </section>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                      <section class="panel panel-default">
                         <header class="panel-heading">
                             图谱演示：
                         </header>
                         <div class="panel-body">
-                            <div id="graph" style="width: 100%;height:350px;"></div>
+                            <div id="graph" style="width: 100%;height:600px;"></div>
                         </div>
                     </section>
                 </div>
+                {% endif %}
             </div>
 
 
@@ -106,7 +87,121 @@
     </div>
 </div>
 <script src="/static/js/jquery-1.8.3.min.js"></script>
+
+{% if ret %}
 <script type="text/javascript">
+    var ret_dict = {{ret|safe}} ;
+    //将所有的答案列在tableData中
+    tableData = [];
+    for(var i = 0 ;i< ret_dict['answer'].length;i++){
+        answer = {};
+        answer['answer'] = ret_dict['answer'][i];
+        tableData.push(answer)
+    }
+
+    jQuery(function () {
+        $('.table').footable({
+            "columns":[{"name":"answer",title:"答案"}],
+            "rows": tableData
+        });
+
+    });
+
+    // echarts 数据
+    var data = [];
+    var links = [];
+
+    //构造数据
+    var id = 0
+    for (var i = 0 ;i<ret_dict['list'].length;i++){
+        node1 = {};
+        node1['name'] = ret_dict['list'][i]['entity1'];
+        node1['draggable'] = true;
+
+        if(ret_dict['list'][i]['entity1_type'] === '地点'){
+            node1['category'] = 0;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '气候'){
+            node1['category'] = 1;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '植物科'){
+            node1['category'] = 2;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '植物'){
+            node1['category'] = 3;
+        }
+
+        nodeId = id.toString();
+
+        var flag = 1;
+        for(var j  =0 ;j<data.length ; j++){
+            if(data[j]['name'] === node1['name']){
+                flag = 0 ;
+                nodeId = data[j]['id'] ;
+                break ;
+            }
+        }
+
+        node1['id'] = nodeId;
+        if(flag === 1){
+            id++ ;
+            data.push(node1)
+        }
+
+
+        node2={};
+        node2['name'] = ret_dict['list'][i]['entity2'];
+        node2['draggable'] = true
+        if(ret_dict['list'][i]['entity2_type'] === '地点'){
+            node2['category'] = 0
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '气候'){
+            node2['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '植物科'){
+            node2['category'] = 2
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '植物'){
+            node2['category'] = 3
+        }
+        nodeId = id.toString();
+
+        var flag  =1;
+        for(var j=0;j<data.length;j++){
+            if(data[j]['name'] === node2['name']){
+                flag = 0;
+                nodeId = data[j]['id'] ;
+                break ;
+            }
+        }
+
+        node2['id'] = nodeId;
+        if(flag === 1){
+            id++ ;
+            data.push(node2) ;
+        }
+
+        //  relation
+        relation = {};
+        relation['source'] = node1['id'];
+        relation['target'] = node2['id'];
+        relation['category'] = 0;
+
+        var flag = 1;
+        for(var j = 0 ;j<links.length ;j++){
+            if(links[j]['source'] === relation['source'] && links[j]['target'] === relation['target']){
+                flag = 0 ;
+                break ;
+            }
+        }
+        if(flag === 1){
+            relation['value'] = ret_dict['list'][i]['rel'] ;
+            relation['symbolSize'] = 10 ;
+            links.push(relation)  ;
+        }
+
+    }
+
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('graph'));
 
@@ -139,28 +234,28 @@
 	            roam: true,
 	            edgeSymbol: ['none', 'arrow'],
 	            categories: [{
-	                name: '查询实体',
+	                name: '地点',
 	                itemStyle: {
 	                    normal: {
-	                        color: "#009800",
+	                        color: "#97980e",
 	                    }
 	                }
 	            }, {
-	                name: 'HudongItem',
+	                name: '气候',
 	                itemStyle: {
 	                    normal: {
 	                        color: "#4592FF",
 	                    }
 	                }
 	            }, {
-	                name: 'NewNode',
+	                name: '植物科',
 	                itemStyle: {
 	                    normal: {
 	                        color: "#C71585",
 	                    }
 	                }
 	            }, {
-	                name: 'AnsNode',
+	                name: '答案',
 	                itemStyle: {
 	                    normal: {
 	                        color: "#73C453",
@@ -188,135 +283,8 @@
 	                    formatter: "{c}"
 	                }
 	            },
-	            data: [
-	                {
-                        name: '亚热带季风气候',
-                        value: 'dsa',
-                        draggable: true,
-                        category: 1
-                    }
-                    ,{
-                        name: '崇明县',
-                        draggable: true,
-                        category: 1
-                    },{
-                        name: '无花果',
-                        draggable: true,
-                        category: 3
-                    },{
-                        name: '葡萄',
-                        draggable: true,
-                        category: 3
-                    },{
-                        name: '柚子',
-                        draggable: true,
-                        category: 3
-                    }
-                    ,{
-                        name: '甘蔗',
-                        draggable: true,
-                        category: 3
-                    }
-                    ,{
-                        name: '莲雾',
-                        draggable: true,
-                        category: 3
-                    }
-                    ,{
-                        name: '杨桃',
-                        draggable: true,
-                        category: 3
-                    }
-                    ,{
-                        name: '樱桃',
-                        draggable: true,
-                        category: 3
-                    }
-                    ,{
-                        name: '草莓',
-                        draggable: true,
-                        category: 3
-                    },{
-                        name: '金瓜',
-                        draggable: true,
-                        category: 3
-                    },{
-                        name: '白扁豆',
-                        draggable: true,
-                        category: 3
-                    }
-
-                ],
-	            links: [
-                    {
-                        source: 1,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '气候类型'
-                    },{
-	                    source: 2,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 3,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 4,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 5,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 6,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 7,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 8,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 9,
-                        target: 0,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '生长气候'
-                    },{
-	                    source: 1,
-                        target: 10,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '特产'
-                    },{
-	                    source: 1,
-                        target: 11,
-                        category: 0,
-                        symbolSize: 10,
-                        value: '特产'
-                    }
-
-                ],
+	            data: data,
+	            links: links,
 	            lineStyle: {
 	                normal: {
 	                    opacity: 0.9,
@@ -331,5 +299,6 @@
 	// 使用刚指定的配置项和数据显示图表。
 	myChart.setOption(option);
 </script>
+{% endif %}
 
 {% endblock %}
