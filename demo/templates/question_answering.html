@@ -35,9 +35,9 @@
                             <div class="form-group col-md-12">
                             <p>
                                 热门搜索： <a href="#" onclick="$('#question').attr('value','崇明县适合种什么植物？')"> 崇明县适合种什么植物？</a> &nbsp;&nbsp;
-                                <a href="#" onclick="$('#question').attr('value','葡萄含有哪些营养元素？')"> 葡萄含有哪些营养元素？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','胡萝卜汁含有哪些营养成分？')"> 胡萝卜汁含有哪些营养成分？</a> &nbsp;&nbsp;
                                 <a href="#" onclick="$('#question').attr('value','中国的首都的气候类型是什么？')"> 中国的首都的气候类型是什么？</a> &nbsp;&nbsp;
-                                <a href="#" onclick="$('#question').attr('value','什么化学药剂能够防治白菜褐腐病？')"> 什么化学药剂能够防治白菜褐腐病？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','大豆的植物学分类')"> 大豆的植物学分类</a> &nbsp;&nbsp;
                             </p>
                             </div>
                         </div>
@@ -130,6 +130,15 @@
         else if(ret_dict['list'][i]['entity1_type'] === '植物'){
             node1['category'] = 3;
         }
+        else if(ret_dict['list'][i]['entity1_type'] === '主语'){
+            node1['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '元素'){
+            node1['category']  = 2
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '类型'){
+            node1['category'] = 1
+        }
 
         nodeId = id.toString();
 
@@ -163,6 +172,15 @@
         }
         else if(ret_dict['list'][i]['entity2_type'] === '植物'){
             node2['category'] = 3
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '主语'){
+            node2['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '元素'){
+            node2['category']  = 2
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '类型'){
+            node2['category'] = 1
         }
         nodeId = id.toString();
 

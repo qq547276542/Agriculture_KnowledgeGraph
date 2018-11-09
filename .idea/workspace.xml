@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/demo/demo/question_answering.py" line="426" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="71989670-ae16-4d29-8253-1e12aba81766" name="Default" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/Model/neo_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/Model/neo_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/demo/question_answering.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/question_answering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/templates/question_answering.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/templates/question_answering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/data/dosomething.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/data/dosomething.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/weatherData/citydata.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/weatherData/citydata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/weatherData/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/weatherData/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/weatherData/weather2weather.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/weatherData/weather2weather.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/weatherData/weatherCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/weatherData/weatherCrawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,16 +55,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="31" />
-          <entry key="html" value="2239" />
-          <entry key="py" value="16645" />
+          <entry key="html" value="2537" />
+          <entry key="py" value="19911" />
           <entry key="txt" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2239" />
+          <entry key="HTML" value="2537" />
           <entry key="PLAIN_TEXT" value="106" />
-          <entry key="Python" value="16645" />
+          <entry key="Python" value="19911" />
         </counts>
       </usages-collector>
     </session>
@@ -79,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/Model/neo_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="313">
               <caret line="43" column="136" selection-start-line="43" selection-start-column="136" selection-end-line="43" selection-end-column="136" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -91,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo/relation_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="986">
               <caret line="66" column="51" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="51" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -100,27 +95,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo/question_answering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2290">
-              <caret line="225" column="148" selection-start-line="225" selection-start-column="148" selection-end-line="225" selection-end-column="148" />
+            <state relative-caret-position="423">
+              <caret line="320" column="42" selection-start-line="320" selection-start-column="42" selection-end-line="320" selection-end-column="42" />
               <folding>
                 <element signature="e#23#58#0" expanded="true" />
-                <marker date="1541682798426" expanded="true" signature="360:361" ph="..." />
-                <marker date="1541682798426" expanded="true" signature="506:889" ph="..." />
-                <marker date="1541682798426" expanded="true" signature="4964:5140" ph="..." />
-                <marker date="1541682798426" expanded="true" signature="5172:5200" ph="..." />
+                <marker date="1541746446064" expanded="true" signature="370:371" ph="..." />
+                <marker date="1541746446064" expanded="true" signature="516:899" ph="..." />
+                <marker date="1541746446064" expanded="true" signature="6367:11418" ph="..." />
+                <marker date="1541746446064" expanded="true" signature="7426:11140" ph="..." />
+                <marker date="1541746446064" expanded="true" signature="11450:11478" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/templates/question_answering.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="66" column="110" selection-start-line="66" selection-start-column="110" selection-end-line="66" selection-end-column="110" />
+            <state relative-caret-position="2439">
+              <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -151,12 +147,16 @@
       <find>method</find>
       <find>rand</find>
       <find>亚热带湿润季风气候</find>
-      <find>findRelationByEntity2</find>
       <find>ER-</find>
-      <find>print</find>
-      <find>ret_dict</find>
       <find>ret_dict['list'].append</find>
       <find>panel-body</find>
+      <find>get_xian_we</find>
+      <find>print</find>
+      <find>enity</find>
+      <find>ke</find>
+      <find>findRelationByEntity2</find>
+      <find>类型</find>
+      <find>ret_dict</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -208,8 +208,8 @@
         <option value="$PROJECT_DIR$/demo/toolkit/pre_load.py" />
         <option value="$PROJECT_DIR$/demo/Model/neo_models.py" />
         <option value="$PROJECT_DIR$/wikidataSpider/weatherData/weather2weather.txt" />
-        <option value="$PROJECT_DIR$/demo/demo/question_answering.py" />
         <option value="$PROJECT_DIR$/demo/templates/question_answering.html" />
+        <option value="$PROJECT_DIR$/demo/demo/question_answering.py" />
       </list>
     </option>
   </component>
@@ -834,16 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/Model/neo_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="43" column="136" selection-start-line="43" selection-start-column="136" selection-end-line="43" selection-end-column="136" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/label_data/weather2weather.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -875,9 +865,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Model/neo_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="43" column="136" selection-start-line="43" selection-start-column="136" selection-end-line="43" selection-end-column="136" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo/relation_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="986">
           <caret line="66" column="51" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="51" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -885,26 +885,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo/question_answering.py">
+    <entry file="file://$PROJECT_DIR$/demo/templates/question_answering.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2290">
-          <caret line="225" column="148" selection-start-line="225" selection-start-column="148" selection-end-line="225" selection-end-column="148" />
+        <state relative-caret-position="2439">
+          <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
           <folding>
-            <element signature="e#23#58#0" expanded="true" />
-            <marker date="1541682798426" expanded="true" signature="360:361" ph="..." />
-            <marker date="1541682798426" expanded="true" signature="506:889" ph="..." />
-            <marker date="1541682798426" expanded="true" signature="4964:5140" ph="..." />
-            <marker date="1541682798426" expanded="true" signature="5172:5200" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/templates/question_answering.html">
+    <entry file="file://$PROJECT_DIR$/demo/demo/question_answering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="66" column="110" selection-start-line="66" selection-start-column="110" selection-end-line="66" selection-end-column="110" />
+        <state relative-caret-position="423">
+          <caret line="320" column="42" selection-start-line="320" selection-start-column="42" selection-end-line="320" selection-end-column="42" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#23#58#0" expanded="true" />
+            <marker date="1541746446064" expanded="true" signature="370:371" ph="..." />
+            <marker date="1541746446064" expanded="true" signature="516:899" ph="..." />
+            <marker date="1541746446064" expanded="true" signature="6367:11418" ph="..." />
+            <marker date="1541746446064" expanded="true" signature="7426:11140" ph="..." />
+            <marker date="1541746446064" expanded="true" signature="11450:11478" ph="..." />
           </folding>
         </state>
       </provider>
