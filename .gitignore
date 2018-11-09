@@ -103,3 +103,4 @@ wikidataSpider/TrainDataBaseOnWiki/train_data*.txt
 relationExtraction/**/*.txt
 demo/.idea/*
 .idea/*
+demo/.idea/*
