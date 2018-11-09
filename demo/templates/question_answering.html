@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% block mainbody %}
-
+<script src="/static/js/echarts.common.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -20,10 +21,10 @@
                     输入问题 :
                 </header>
                 <div class="panel-body">
-                    <form class="form-inline" action="/ER-post" method="post">
+                    <form class="form-inline" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-10">
-                                <input type="text" id="question" class="form-control" placeholder="Enter text" >  </input>
+                                <input type="text" name="question" id="question" class="form-control" placeholder="Enter text" >  </input>
                             </div>
                             <div class="form-group col-md-2">
                                 <button type="submit" class="btn btn-primary btn-block"> 提交 </button>
@@ -33,9 +34,10 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                             <p>
-                                热门搜索： <a href="#" onclick="$('#question').attr('value','崇明岛六月份适合种什么？')"> 崇明岛六月份适合种什么？</a> &nbsp;&nbsp;
-                                <a href="#" onclick="$('#question').attr('value','葡萄含有哪些营养元素？')"> 葡萄含有哪些营养元素？</a> &nbsp;&nbsp;
+                                热门搜索： <a href="#" onclick="$('#question').attr('value','崇明县适合种什么植物？')"> 崇明县适合种什么植物？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','胡萝卜汁含有哪些营养成分？')"> 胡萝卜汁含有哪些营养成分？</a> &nbsp;&nbsp;
                                 <a href="#" onclick="$('#question').attr('value','中国的首都的气候类型是什么？')"> 中国的首都的气候类型是什么？</a> &nbsp;&nbsp;
+                                <a href="#" onclick="$('#question').attr('value','大豆的植物学分类')"> 大豆的植物学分类</a> &nbsp;&nbsp;
                             </p>
                             </div>
                         </div>
@@ -44,26 +46,39 @@
             </section>
 
             <div class="row">
+                {% if ctx %}
+                <div class = "col-md-12">
+                    <div class="panel panel-default">
+                        <header class ="panel-heading">
+                            <div class = "panel-body">
+                                <h2>暂未找到答案</h2>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                {% endif %}
+                {% if ret %}
                 <div class="col-md-4">
                     <section class="panel panel-default">
                         <header class="panel-heading">
                             答案：
                         </header>
                         <div class="panel-body">
-                            dsa
+                            <table class="table" data-paging="true" data-sorting = "true" data-paging-size="10"></table>
                         </div>
                     </section>
                 </div>
                 <div class="col-md-8">
                      <section class="panel panel-default">
                         <header class="panel-heading">
-                            推理过程：
+                            图谱演示：
                         </header>
                         <div class="panel-body">
-
+                            <div id="graph" style="width: 100%;height:600px;"></div>
                         </div>
                     </section>
                 </div>
+                {% endif %}
             </div>
 
 
@@ -71,5 +86,237 @@
 
     </div>
 </div>
+<script src="/static/js/jquery-1.8.3.min.js"></script>
+
+{% if ret %}
+<script type="text/javascript">
+    var ret_dict = {{ret|safe}} ;
+    //将所有的答案列在tableData中
+    tableData = [];
+    for(var i = 0 ;i< ret_dict['answer'].length;i++){
+        answer = {};
+        answer['answer'] = ret_dict['answer'][i];
+        tableData.push(answer)
+    }
+
+    jQuery(function () {
+        $('.table').footable({
+            "columns":[{"name":"answer",title:"答案"}],
+            "rows": tableData
+        });
+
+    });
+
+    // echarts 数据
+    var data = [];
+    var links = [];
+
+    //构造数据
+    var id = 0
+    for (var i = 0 ;i<ret_dict['list'].length;i++){
+        node1 = {};
+        node1['name'] = ret_dict['list'][i]['entity1'];
+        node1['draggable'] = true;
+
+        if(ret_dict['list'][i]['entity1_type'] === '地点'){
+            node1['category'] = 0;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '气候'){
+            node1['category'] = 1;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '植物科'){
+            node1['category'] = 2;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '植物'){
+            node1['category'] = 3;
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '主语'){
+            node1['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '元素'){
+            node1['category']  = 2
+        }
+        else if(ret_dict['list'][i]['entity1_type'] === '类型'){
+            node1['category'] = 1
+        }
+
+        nodeId = id.toString();
+
+        var flag = 1;
+        for(var j  =0 ;j<data.length ; j++){
+            if(data[j]['name'] === node1['name']){
+                flag = 0 ;
+                nodeId = data[j]['id'] ;
+                break ;
+            }
+        }
+
+        node1['id'] = nodeId;
+        if(flag === 1){
+            id++ ;
+            data.push(node1)
+        }
+
+
+        node2={};
+        node2['name'] = ret_dict['list'][i]['entity2'];
+        node2['draggable'] = true
+        if(ret_dict['list'][i]['entity2_type'] === '地点'){
+            node2['category'] = 0
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '气候'){
+            node2['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '植物科'){
+            node2['category'] = 2
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '植物'){
+            node2['category'] = 3
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '主语'){
+            node2['category'] = 1
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '元素'){
+            node2['category']  = 2
+        }
+        else if(ret_dict['list'][i]['entity2_type'] === '类型'){
+            node2['category'] = 1
+        }
+        nodeId = id.toString();
+
+        var flag  =1;
+        for(var j=0;j<data.length;j++){
+            if(data[j]['name'] === node2['name']){
+                flag = 0;
+                nodeId = data[j]['id'] ;
+                break ;
+            }
+        }
+
+        node2['id'] = nodeId;
+        if(flag === 1){
+            id++ ;
+            data.push(node2) ;
+        }
+
+        //  relation
+        relation = {};
+        relation['source'] = node1['id'];
+        relation['target'] = node2['id'];
+        relation['category'] = 0;
+
+        var flag = 1;
+        for(var j = 0 ;j<links.length ;j++){
+            if(links[j]['source'] === relation['source'] && links[j]['target'] === relation['target']){
+                flag = 0 ;
+                break ;
+            }
+        }
+        if(flag === 1){
+            relation['value'] = ret_dict['list'][i]['rel'] ;
+            relation['symbolSize'] = 10 ;
+            links.push(relation)  ;
+        }
+
+    }
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('graph'));
+
+    option = {
+	    title: {
+	        text: ''
+	    },
+	    tooltip: {},
+	    animationDurationUpdate: 1500,
+	    animationEasingUpdate: 'quinticInOut',
+	    label: {
+	        normal: {
+	            show: true,
+	            textStyle: {
+	                fontSize: 12
+	            },
+	        }
+	    },
+	    legend: {
+	        x: "center",
+	        show: false
+	    },
+	    series: [
+
+	        {
+	            type: 'graph',
+	            layout: 'force',
+	            symbolSize: 45,
+	            focusNodeAdjacency: true,
+	            roam: true,
+	            edgeSymbol: ['none', 'arrow'],
+	            categories: [{
+	                name: '地点',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#97980e",
+	                    }
+	                }
+	            }, {
+	                name: '气候',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#4592FF",
+	                    }
+	                }
+	            }, {
+	                name: '植物科',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#C71585",
+	                    }
+	                }
+	            }, {
+	                name: '答案',
+	                itemStyle: {
+	                    normal: {
+	                        color: "#73C453",
+	                    }
+	                }
+	            }],
+	            label: {
+	                normal: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: 12,
+	                    },
+	                }
+	            },
+	            force: {
+	                repulsion: 1000
+	            },
+	            edgeSymbolSize: [4, 50],
+	            edgeLabel: {
+	                normal: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: 10
+	                    },
+	                    formatter: "{c}"
+	                }
+	            },
+	            data: data,
+	            links: links,
+	            lineStyle: {
+	                normal: {
+	                    opacity: 0.9,
+	                    width: 1.3,
+	                    curveness: 0,
+	                    color:"#262626",
+	                }
+	            }
+	        }
+	    ]
+	};
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+</script>
+{% endif %}
 
 {% endblock %}
