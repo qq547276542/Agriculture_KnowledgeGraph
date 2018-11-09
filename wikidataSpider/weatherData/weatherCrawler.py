@@ -36,13 +36,18 @@ if __name__ == '__main__':
                 if(weather2weather.get(left_weather) is None):
                     weather2weather[left_weather] = right_weather
     weather_corpus = []
-    with open('static_weather_list.txt','r',encoding='utf8') as fr:
+    weather_list = []
+    with open('static_weather_list.csv','r',encoding='utf8') as fr:
+        line = fr.readline()
         for line in tqdm(fr.readlines()):
             if(len(line)<2):
                 continue
             line = line.strip()
             if(weather2weather.get(line) is not None):
                 line = weather2weather[line]
+            if(line in weather_list):
+                continue
+            weather_list.append(line)
             html = get_hudong_page(line)
             soup = BeautifulSoup(html,'lxml')
             title_list = []
