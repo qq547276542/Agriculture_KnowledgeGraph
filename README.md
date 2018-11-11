@@ -162,8 +162,41 @@ CREATE (entity1)-[:RELATION { type: line.AttributeName }]->(entity2)
                                                                                                                          
 ```
 
+### (update 2018.11.11)
+将气候名称和适合种植的植物导入到neo4j
 
+**导入气候名称:**
 
+将wikidataSpider/weatherData/static_weather_list.csv放在指定的位置(import文件夹下)
+
+```
+//导入节点
+LOAD CSV WITH HEADERS FROM "file:///static_weather_list.csv" AS line
+MERGE (:Weather { title: line.title })
+
+//添加索引
+CREATE CONSTRAINT ON (c:Weather)
+ASSERT c.title IS UNIQUE
+```
+
+**导入气候与植物的关系**
+
+将wikidataSpider/weatherData/weather_plant.csv放在指定的位置(import文件夹下)
+
+```
+//导入hudongItem和新加入节点之间的关系
+LOAD CSV  WITH HEADERS FROM "file:///weather_plant.csv" AS line
+MATCH (entity1:Weather{title:line.Weather}) , (entity2:HudongItem{title:line.Plant})
+CREATE (entity1)-[:Weather2Plant { type: line.relation }]->(entity2)
+导入城市的气候
+
+将city_weather.csv放在指定的位置(import 文件夹下)
+
+//导入城市对应的气候
+LOAD CSV WITH HEADERS FROM "file:///city_weather.csv" AS line
+MATCH (city{title:line.city}) , (weather{title:line.weather})
+CREATE (city)-[:CityWeather { type: line.relation }]->(weather)
+```
 
 
 以上步骤是导入爬取到的关系
@@ -257,7 +290,12 @@ sudo sh django_server_start.sh
 
 ![](https://raw.githubusercontent.com/CrisJk/crisjk.github.io/master/resource/pictures/Agriculture-KnowledgeGraph-Data-README/mongo.png)
 
+###  (update 2018.11.11)
+添加了农业知识问答
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/1541921074856.jpg)
+
 **使用方法**: 启动neo4j,mongodb之后，进入demo目录，启动django服务，进入127.0.0.1:8000/tagging即可使用
+
 
 
 
