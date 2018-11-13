@@ -72,25 +72,25 @@
 
 ## 项目配置
 
-**系统需要安装：**
+**安装环境：**
 
-- scrapy     ---爬虫框架
-- django     ---web框架
 - neo4j       ---图数据库
-- thulac      ---分词、词性标注
+- scrapy>=1.4.0    ---爬虫框架
+- django>=2.1.2     ---web框架
+- thulac>=0.1.2      ---分词、词性标注
 - py2neo==4.1.0    ---python连接neo4j的工具 (注意不兼容旧版本)
-- pyfasttext    ---facebook开源的词向量计算框架
-- pinyin  ---获取中文首字母小工具
-- 预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
-- mongoDB  ---存储文档数据 (仅部署网站的话不需要安装)
-- pymongo  ---python操作mongoDB的工具
+- pyfasttext>=0.4.5    ---facebook开源的词向量计算框架
+- pinyin>=0.4.0  ---获取中文首字母小工具
+- ~~预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）~~    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
+- ~~mongoDB  ---存储文档数据 (仅部署网站的话不需要安装)~~
+- ~~pymongo  ---python操作mongoDB的工具~~
 
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
 
 
 
-**项目部署：**
+**导入数据：**
 
 1. 将hudong_pedia.csv导入neo4j：开启neo4j，进入neo4j控制台。将hudong_pedia.csv放入neo4j安装目录下的/import目录。在控制台依次输入：
 
@@ -181,9 +181,9 @@ ASSERT c.title IS UNIQUE
 
 **导入气候与植物的关系**
 
-将wikidataSpider/weatherData/weather_plant.csv放在指定的位置(import文件夹下)
-
 ```
+
+将wikidataSpider/weatherData/weather_plant.csv放在指定的位置(import文件夹下)
 //导入hudongItem和新加入节点之间的关系
 LOAD CSV  WITH HEADERS FROM "file:///weather_plant.csv" AS line
 MATCH (entity1:Weather{title:line.Weather}) , (entity2:HudongItem{title:line.Plant})
@@ -191,7 +191,7 @@ CREATE (entity1)-[:Weather2Plant { type: line.relation }]->(entity2)
 导入城市的气候
 
 将city_weather.csv放在指定的位置(import 文件夹下)
-
+(这步大约需要15分钟左右)
 //导入城市对应的气候
 LOAD CSV WITH HEADERS FROM "file:///city_weather.csv" AS line
 MATCH (city{title:line.city}) , (weather{title:line.weather})
@@ -218,6 +218,9 @@ sudo sh django_server_start.sh
 这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）
 
 ----------------------
+###  (update 2018.11.11)
+添加了农业知识问答
+![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/1541921074856.jpg)
 
 ###  (update 2018.10.26) 
 - 修改部分配置信息
@@ -290,9 +293,7 @@ sudo sh django_server_start.sh
 
 ![](https://raw.githubusercontent.com/CrisJk/crisjk.github.io/master/resource/pictures/Agriculture-KnowledgeGraph-Data-README/mongo.png)
 
-###  (update 2018.11.11)
-添加了农业知识问答
-![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/1541921074856.jpg)
+
 
 **使用方法**: 启动neo4j,mongodb之后，进入demo目录，启动django服务，进入127.0.0.1:8000/tagging即可使用
 
