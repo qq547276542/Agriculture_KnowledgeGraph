@@ -1,6 +1,6 @@
 # Agricultural Knowledge Graph
 
-项目demo：http://ecnukg.vicp.io
+项目demo：http://ecnukg.vicp.io  （服务器维护中..）
 
 ## 项目介绍：
 
@@ -67,6 +67,9 @@
 - predict_labels.txt:  KNN算法预测的15W多个实体的类别
 - /wikidataSpider/wikidataProcessing/wikidata_relation.csv: predict_labels.txt中实体在wikidata中对应的三元组关系
 - attributes.csv: 部分实体的属性(互动百科页面中直接得到)
+- wikidataSpider/weatherData/static_weather_list.csv： 气候类型列表
+- wikidataSpider/weatherData/weather_plant.csv：气候与植物的种植关系
+- wikidataSpider/weatherData/city_weather.csv：城市与气候的关系
 
 
 
