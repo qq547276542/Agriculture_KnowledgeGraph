@@ -1,6 +1,6 @@
 # Agricultural Knowledge Graph
 
-项目demo：http://ecnukg.vicp.io  （服务器维护中..）
+项目demo：http://ecnukg.vicp.io  （已可访问，“农业智能决策”正在开发中）
 
 ## 项目介绍：
 
@@ -76,17 +76,21 @@
 ## 项目配置
 
 **安装环境：**
-
+- python 3
 - neo4j       ---图数据库
 - scrapy>=1.4.0    ---爬虫框架
+
+**pip3 依赖**
+
 - django>=2.1.2     ---web框架
 - thulac>=0.1.2      ---分词、词性标注
 - py2neo==4.1.0    ---python连接neo4j的工具 (注意不兼容旧版本)
+- Cython   --- python调用C的接口
 - pyfasttext>=0.4.5    ---facebook开源的词向量计算框架
 - pinyin>=0.4.0  ---获取中文首字母小工具
+- pymongo  ---python操作mongoDB的工具
 - ~~预训练好的词向量模型wiki.zh.bin（仅部署网站的话不需要下载）~~    ---下载链接：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip
 - ~~mongoDB  ---存储文档数据 (仅部署网站的话不需要安装)~~
-- ~~pymongo  ---python操作mongoDB的工具~~
 
 
 （以上部分除了neo4j在官网下，wiki.zh.bin在亚马逊s3下载，其它均可直接用pip3 install 安装）
