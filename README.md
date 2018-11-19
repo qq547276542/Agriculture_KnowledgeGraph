@@ -1,6 +1,6 @@
 # Agricultural Knowledge Graph
 
-项目demo：http://ecnukg.vicp.io  （已可访问，“农业智能决策”正在开发中）
+项目demo：http://ecnukg.vicp.io 
 
 ## 项目介绍：
 
