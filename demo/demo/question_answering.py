@@ -196,7 +196,7 @@ def get_xian_weather(address,ret_dict):
 	upper_address = get_shi_address(address)
 
 	if (upper_address in city_list):
-		ret_dict = get_shi_weathe(upper_address, ret_dict)
+		ret_dict = get_shi_weather(upper_address, ret_dict)
 
 	else:
 		upper_address_chinese_name = get_chinese_name2(upper_address)
@@ -335,7 +335,7 @@ def get_plant_knowledge(obj,ret_dict):
 	return ret_dict
 
 pattern = [[r"适合种什么",r"种什么好"],
-		   [r"气候是什么","气候类型是什么",r"属于哪种气候",r"是哪种气候",r"是什么天气","哪种天气"],
+		   [r"气候是什么","气候类型是什么",r"属于哪种气候",r"是哪种气候",r"是什么天气",r"哪种天气",r"天气[\u4e00-\u9fa5]*"],
 		   [r"有哪些营养",r"有[\u4e00-\u9fa5]+成分",r"含[\u4e00-\u9fa5]+成分",r"含[\u4e00-\u9fa5]+元素",r"有[\u4e00-\u9fa5]+营养",r"有[\u4e00-\u9fa5]+元素"],
 		   [r"[\u4e00-\u9fa5]+植物学",r"[\u4e00-\u9fa5]+知识"]]
 def question_answering(request):  # index页面需要一开始就加载的内容写在这里
@@ -397,8 +397,9 @@ def question_answering(request):  # index页面需要一开始就加载的内容
 				if(xingzhengjibie == "市" or xingzhengjibie == "地级市" or xingzhengjibie =='直辖市'):
 
 					ret_dict  = get_shi_plant(address,ret_dict)
+
 				elif(xingzhengjibie == "县" or xingzhengjibie == "市辖区"):
-					if(len(ret_dict) == 0):
+					if(len(ret_dict) == 0 or ret_dict==0):
 						ret_dict = get_xian_plant(address,ret_dict)
 					if (len(ret_dict) > 0):
 						upper_address = get_shi_address(address)
@@ -406,7 +407,7 @@ def question_answering(request):  # index页面需要一开始就加载的内容
 
 				elif(xingzhengjibie == "镇"):
 					upper_address = get_xian_address(address)
-					if(len(ret_dict) == 0):
+					if(len(ret_dict) == 0 and upper_address!=0):
 						ret_dict = get_xian_plant(upper_address,ret_dict)
 					if(len(ret_dict) >0 ):
 						ret_dict['list'].append({'entity1':address,'rel':'属于','entity2':upper_address,'entity1_type':'地点','entity2_type':'地点'})
@@ -462,9 +463,9 @@ def question_answering(request):  # index页面需要一开始就加载的内容
 
 					ret_dict = get_shi_weather(address, ret_dict)
 				elif (xingzhengjibie == "县" or xingzhengjibie == "市辖区"):
-					if (len(ret_dict) == 0):
+					if (len(ret_dict) == 0 or ret_dict ==0):
 						ret_dict = get_xian_weather(address, ret_dict)
-					if (len(ret_dict) > 0):
+					if (len(ret_dict) > 0 and ret_dict!=0):
 						upper_address = get_shi_address(address)
 						ret_dict['list'].append(
 							{'entity1': address, 'rel': '属于', 'entity2': upper_address, 'entity1_type': '地点',
@@ -472,9 +473,9 @@ def question_answering(request):  # index页面需要一开始就加载的内容
 
 				elif (xingzhengjibie == "镇"):
 					upper_address = get_xian_address(address)
-					if (len(ret_dict) == 0):
+					if (len(ret_dict) == 0 or ret_dict ==0):
 						ret_dict = get_xian_weather(upper_address, ret_dict)
-					if (len(ret_dict) > 0):
+					if (len(ret_dict) > 0 and ret_dict!=0):
 						ret_dict['list'].append(
 							{'entity1': address, 'rel': '属于', 'entity2': upper_address, 'entity1_type': '地点',
 							 'entity2_type': '地点'})
