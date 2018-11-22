@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71989670-ae16-4d29-8253-1e12aba81766" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/filterRelation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/parallel_extract_training.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/algorithm/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/algorithm/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/data/dosomething.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/data/dosomething.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/data/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/data/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/data/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/data/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/extractTrainingData.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/extractTrainingData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/fileReaded.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/fileReaded.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/TrainDataBaseOnWiki/finalData/train_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikidataSpider/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/wikidataSpider/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +25,7 @@
     <session id="-1132213663">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -144,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="459">
+              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -367,37 +356,7 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agriculture" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="nyt" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="module" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="module" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="network" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -646,7 +605,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1695279" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1695279" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -658,11 +617,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50069445" side_tool="true" weight="0.118046135" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.08313253" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.08313253" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49928468" visible="true" weight="0.08313253" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1023,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="459">
+          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
