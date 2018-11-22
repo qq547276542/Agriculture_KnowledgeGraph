@@ -100,7 +100,6 @@ wikidataSpider/TrainDataBaseOnWiki/train_data*.txt
 
 **/sgns.wiki.bigram-char
 *.bz2
-relationExtraction/**/*.txt
+relationExtraction/data/*.txt
 demo/.idea/*
 .idea/*
-demo/.idea/*
