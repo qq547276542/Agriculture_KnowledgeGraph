@@ -34,7 +34,7 @@ with open("fileReaded.txt","r") as fileReaded:
 		fileReadedList.append(line.strip())
 		print(line.strip())
 #递归遍历语料库文件夹
-with open("train_data4.txt",'w') as fw:
+with open("train_data.txt",'w') as fw:
 	with open("fileReaded.txt","a") as filereaded:
 		fw.write('entity1Pos\tentity1\tentity2Pos\tentity2\tstatement\trelation\n')
 	

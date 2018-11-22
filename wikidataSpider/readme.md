@@ -14,7 +14,9 @@ python3、 Scrapy、neo4j(仅对齐时需要)、MongoDB(标注关系数据集时
 
  
 
-### 训练集标注工具(update 2018.04.07)
+### Model&taggingDemo&toolkit训练集标注工具(update 2018.04.07)
+
+
 
 ![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/tagging.JPG)
 
@@ -28,7 +30,7 @@ python3、 Scrapy、neo4j(仅对齐时需要)、MongoDB(标注关系数据集时
 
 ##### 使用方法
 
-启动neo4j,mongodb之后，进入demo目录，启动django服务，进入127.0.0.1:8000/tagging即可使用
+启动neo4j,mongodb之后，进入taggingdemo目录，启动django服务，进入127.0.0.1:8000/tagging即可使用
 
 ### wikidataCrawler
 
@@ -115,30 +117,53 @@ bzcat zhwiki-latest-pages-articles.xml.bz2 | python WikiExtractor.py -b 500K -o 
 
 首先必须将`wikidataProcessing`目录下的csv导入到neo4j中，才能成功运行。运行`extractTrainingData.py`后，可以得到`train_data.txt` ，其内容包含:
 
-entity1	entity2	statement	relation
+entity1pos	entity1	entity2pos	entity2	setence	relation
 
-得到train_data.txt后，使用dataScrubbing.py处理得到的数据,包括:
+(注:该文件夹下的parallelTrainingData.py是后来加的，用来得到NA关系的数据，可以参考这个代码来并行得到train_data.txt)
 
-* 错误处理(not necessary)
+从维基预料中对齐得到的训练集里面有很多属性关系(中文)，甚至还有些关系为空值，把这部分过滤掉，得到**filter_train_data_all.txt**
 
-  **如果数据中有错误，利用该模块处理错误**
-
-  部分句子有换行，把换行去掉
-
-  第一次产生的数据train_data.txt，由于之前程序在切割字符串时出了问题，因此relation这一列不对，这里重新处理一下
-
-* 选择农业相关的数据
-
-  从指定的训练集文件中挑选出与农业有关的数据
-
-运行
 ```shell
-python dataScrubbing.py handleError
+python filterRelation.py
 ```
-执行错误管理模块
 
-运行
-```shell
-python dataScrubbing.py selectAgriculturalData filename
-```
-执行数据选择模块
+有些python文件因为文件名变动可能会报错，修改文件名即可
+
+~~得到train_data.txt后，使用dataScrubbing.py处理得到的数据(参考，由于文件名变动一些代码可能运行不了),包括:~~
+
+* ~~错误处理(not necessary)~~
+
+  ~~**如果数据中有错误，利用该模块处理错误**~~
+
+  ~~部分句子有换行，把换行去掉~~
+
+  ~~第一次产生的数据train_data.txt，由于之前程序在切割字符串时出了问题，因此relation这一列不对，这里重新处理一下~~
+
+* ~~选择农业相关的数据~~
+
+  ~~从指定的train_data.txt中挑选出与农业有关的数据,~~
+
+~~运行~~
+
+~~python dataScrubbing.py handleError~~
+
+~~执行错误管理模块~~
+
+~~运行~~
+
+~~python dataScrubbing.py selectAgriculturalData filename~~
+
+~~执行数据选择模块~~
+
+### wikidataAnalyse
+
+wikidataAnalyse: 得到staticResult.txt,统计各种关系的分布情况
+
+extractEntityAttribute: 获取实体属性得到attributes.csv
+
+getCorpus(弃用): 获得互动百科语料hudongBaikeCorpus.txt
+
+
+### hudongpediaCrawler
+
+包含中国各个城市的各种气候，以及爬取所有气候的互动百科页面

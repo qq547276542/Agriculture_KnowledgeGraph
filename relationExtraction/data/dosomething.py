@@ -59,10 +59,21 @@ def get_relation_sentence():
 				print(line)
 
 
-#过滤得到包含指定关系的样本，除去实体1和实体2相同的样本，把两个实体都是国家的样本去掉
+#过滤得到包含指定关系的样本，除去实体1和实体2相同的样本，把两个实体都是国家的样本去掉，去掉实体类型为0(invalid),16(Other)的样本
 def filter_dataset():
 	country_list  = []
 	relation_list = ['instance of','has part','subclass of','parent taxon','material used','natural product of taxon']
+	entity_type = {}
+	with open('entities.txt','r',encoding='utf8')as fr:
+		for line in fr.readlines():
+			try:
+				word,type = line.split()
+			except:
+				raise IndexError
+			entity_type[word] = str(type)
+
+
+
 	with open('country-code.json','r',encoding = 'utf8') as fr:
 		country_json = json.load(fr)
 		for x in country_json:
@@ -80,21 +91,12 @@ def filter_dataset():
 					#去掉实体一和实体二都是国家的句子
 					if(line_s[1].strip() in country_list and line_s[3].strip() in country_list):
 						continue
+					#去掉实体类型为"0"或"16"的样本
+					if entity_type[line_s[1].strip()] == '0' or entity_type[line_s[3].strip()] =='0' or \
+						entity_type[line_s[1].strip()] == '16' or entity_type[line_s[3].strip()] == '16':
+						continue
 					fw.write(line)
 
-
-#给entity编号:
-def get_entity_id():
-	cnt = 0
-	entity2id = {}
-	with open('entities.txt','r',encoding='utf8') as fr:
-		for line in fr.readlines():
-			line_s = line.split()
-			if(entity2id.get(line_s[0].strip()) is None):
-				entity2id[line_s[0].strip()] = cnt
-				cnt += 1
-	with open('entity2id.json','w',encoding = 'utf8') as fw:
-		json.dump(entity2id,fw)
 
 #得到NA数据
 def get_na_entities():
@@ -194,7 +196,6 @@ def entity_relation_number():
 		else:
 			num_dict[num] += 1
 	print(num_dict)
-
 
 
 
