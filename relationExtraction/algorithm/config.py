@@ -33,8 +33,8 @@ class model:
     #super parameter
 
     #句子最长长度
-    max_length = 128
-    batch_size  = 128
+    max_length = 60
+    batch_size  = 16
 
 
     train_level  = MODE_RELFACT_BAG
@@ -45,7 +45,7 @@ class model:
     max_epoch = 60
 
 
-    learning_rate= 0.5
+    learning_rate= 0.05
     optimizer = tf.train.AdamOptimizer
 
     pos_embedding_dim = 5
