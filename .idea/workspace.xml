@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71989670-ae16-4d29-8253-1e12aba81766" name="Default" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/algorithm/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/algorithm/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relationExtraction/algorithm/module/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/relationExtraction/algorithm/module/data_loader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,14 +24,14 @@
     <session id="-1132213663">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,7 +39,7 @@
           <entry key="html" value="4" />
           <entry key="json" value="36" />
           <entry key="md" value="2" />
-          <entry key="py" value="38" />
+          <entry key="py" value="39" />
           <entry key="txt" value="27" />
         </counts>
       </usages-collector>
@@ -51,7 +49,7 @@
           <entry key="JSON" value="36" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="38" />
+          <entry key="Python" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -76,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/network/embedding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="75">
               <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -88,17 +86,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="3000">
               <caret line="206" column="39" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="315">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -106,10 +104,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/toolkit/pre_load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/data_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2257">
+            <state relative-caret-position="7890">
               <caret line="532" selection-start-line="532" selection-end-line="532" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
@@ -130,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>question_answering</find>
       <find>get_shi_address</find>
       <find>get_xian_plant</find>
       <find>get_xian_address</find>
@@ -160,6 +166,7 @@
       <find>ori_word_vec</find>
       <find>iter_logit</find>
       <find>Mean</find>
+      <find>micropedia_tree.txt</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -227,7 +234,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -255,11 +262,45 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="relationExtraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="relationExtraction" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="wikidataSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="wikidataSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="wikidataProcessing" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -289,39 +330,6 @@
               <item name="relationExtraction" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="module" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="relationExtraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="relationExtraction" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="wikidataSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agriculture_KnowledgeGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture_KnowledgeGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="wikidataSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="wikidataProcessing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -534,10 +542,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-1" y="23" width="1440" height="828" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17596567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17811158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -547,9 +555,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5028612" side_tool="true" visible="true" weight="0.20120482" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5028612" side_tool="true" visible="true" weight="0.095108695" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -779,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/toolkit/pre_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo/question_answering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6135">
@@ -810,9 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
-          <folding>
-            <marker date="1542856172052" expanded="true" signature="5975:5978" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,9 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="88" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,9 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#40#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,13 +836,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/toolkit/PCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/toolkit/relationStaticResult.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -860,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/network/embedding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="75">
           <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -870,14 +856,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="3000">
           <caret line="206" column="39" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/module/data_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2257">
+        <state relative-caret-position="7890">
           <caret line="532" selection-start-line="532" selection-end-line="532" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
@@ -887,11 +873,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/relationExtraction/algorithm/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/toolkit/pre_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
