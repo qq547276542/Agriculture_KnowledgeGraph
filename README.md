@@ -75,11 +75,11 @@
 
 ## 项目配置
 
-**0.基本环境：**
-- python 3
-- Django     
-- neo4j 
+**0.安装基本环境：**
 
+确保安装好python3和Neo4j（任意版本）
+ 
+安装一系列pip依赖： cd至项目根目录，运行 sudo pip3 install -r requirement.txt
 
 **1.导入数据：**
 
