@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block mainbody %}
 
+<script src="/static/js/echarts.common.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -7,78 +9,43 @@
             <!--overview start-->
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="page-header"><i class="icon_images"></i> 农业实体检索 </h3>
+                    <h3 class="page-header"><i class="icon_images"></i> 图片检索 </h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="\">Home</a></li>
-                        <li><i class="icon_images"></i>农业实体检索</li>
+                        <li><i class="icon_images"></i>图片检索</li>
                     </ol>
                 </div>
             </div>
 
             <div class="row">
             <div class="col-md-3">
+
                 <section class="panel panel-default">
                     <header class="panel-heading">
                         拍照上传 :
                     </header>
                     <div class="panel-body">
+                        <form action="/decision" method="post">
+                            {% csrf_token %}
                         <a href="#" class="thumbnail">
-                        <img src="http://a3.att.hudong.com/86/90/01300000312288125775905277965_s.jpg"  height="100%" width="100%">
+                        <img id="img_upload_show"  height="100%" width="100%">
                         </a>
-                        <input type="file"/>
+                        <input name="img_base64" id="img_base64" class="form-control" style="display: none" > </input>
+                        <input id="img_upload_file" type="file" onchange="handleSelected()"/>
+                        <button type="submit" class="btn-primary btn-block"> Match! </button>
+                        </form>
                     </div>
 
                 </section>
                 <section class="panel panel-default">
                     <header class="panel-heading">
-                        匹配实体 :
+                        其它匹配结果 :
                     </header>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="#" class="thumbnail">
-                                <img src="http://a0.att.hudong.com/58/30/20300001128119142899300094576_s.jpg" height="100%" width="100%"/>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <h2>龙舌兰</h2>
-                            </div>
-                        </div>
+                        {% autoescape off %}
+                        {{ other_match }}
+                        {% endautoescape %}
 
-
-                        其它匹配结果：
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="thumbnail">
-                                <img src="http://img.redocn.com/sheying/20151012/gongyuanlidejianma_5073679.jpg" height="100%" width="100%"/>
-                                </a>
-                            </div>
-                            <div class="col-md-7">
-                                <h4>剑麻</h4>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="thumbnail">
-                                <img src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=ca3aca44a0345982d187edc06d9d5ac8/7c1ed21b0ef41bd5f089b6c45cda81cb39db3d23.jpg" height="100%" width="100%"/>
-                                </a>
-                            </div>
-                            <div class="col-md-7">
-                                <h4>芦荟</h4>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="thumbnail">
-                                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2611173860,633447030&fm=26&gp=0.jpg" height="100%" width="100%"/>
-                                </a>
-                            </div>
-                            <div class="col-md-7">
-                                <h4>吊兰</h4>
-                            </div>
-                        </div>
 
 
                     </div>
@@ -87,120 +54,24 @@
             <div class="col-md-9">
                 <section class="panel panel-default">
                     <header class="panel-heading">
-                         农业方案：
+                         最优匹配结果：
                     </header>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <h1 > 龙舌兰 <small>[植物]</small></h1>
-                            </div>
-                            <div class="col-md-9">
-龙舌兰（Agaveamericana）又名龙舌掌、番麻。龙舌兰科，龙舌兰属。多年生常绿大型草本，原产墨西哥，中国华南及西南各省区常引种栽培。因其叶片坚挺，四季常青，为南方园林布置的重要材料之一，长江流域及以北地区常温室盆栽。喜排水良好，肥沃而湿润的沙质壤。原产地一般要几十年后才开花，开花后母株枯死，异花授粉才能结实...
-                                <a href="detail.html?title=龙舌兰"> [查看详细] </a>
-                            </div>
-                        </div>
-
-                        <!--collapse start-->
-            <div class="panel-group m-bot20" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    [基本概述]
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            【拼音】longshelan
-【英文名】 Centnry plant,American aloe<br/>
-【拉丁名】Agave americana Linn.
-【学名】 Agave Americana L.<br/>
-【别名】龙舌掌、番麻
-【科名】 龙舌兰科<br/>
-【采集】随时可采，鲜用或晒干。<br/>
-【性味】甘微辛，平。
-① 《南宁市药物志》 ：“甘微辛，平，无毒。”
-② 《成都中草药》 ：“甘淡，平。”<br/>
-【功用主治】润肺，化痰，止咳。治虚劳咳嗽，吐血，哮喘。
-① 《民间常用草药汇编》 ：“化瘀定喘。治咳嗽吐血。”
-②《南宁市药物志》：“有祛瘀生新作用。治肺胃出血。外敷治毒疮。”
-③ 《成都中草药》 ：“清热，润肺，止血。”<br/>
-【用法与用量】内服：煎汤，鲜者1～2两。外用：捣敷。
-有毒部位：汁液
-中毒症状：皮肤过敏者接触汁液后，会引起灼痛，发痒，出红疹，甚至产生水泡；对眼睛也有相当的毒害作用。
-龙舌兰是世界上最长的花序，白色或浅黄色的铃状花多达数百朵，花后植株即枯死，所以龙舌兰被称为“世纪植物”。该物种为中国植物图谱数据库收录的有毒植物，其毒性为叶汁有毒，可刺激皮肤，产生灼热感。兔每天口服100ml叶汁，第三天出现厌食、活动减少、后肢麻痹等中毒症状，如不治疗可致死；解剖检查有胃粘膜充血和肝脏缺血。羊食后可出现中耳炎、紫绀、呼吸困难和心率加快等症状。还可毒鱼。
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    [形态与品种]
-                        </a>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                    [栽培种植]
-                        </a>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse">
-                        <div class="panel-body">
-龙舌兰栽培管理较简便，除热带、亚热带地区外，其他地区盆栽，冬季要放入低温温室保护过冬。翌年清明后移至室外。彩叶变种，在夏季要适当遮阳。生长季节应保持盆土湿润，浇水时不可将水洒在叶片上，以防发生褐斑病。随着新叶的生长，要将下部黄枯的老叶及时修除。
-                            <br/>
-                            一、栽培条件：
-日照 龙舌兰的原始生长环境经常有相当炽烈的阳光，因此，龙舌兰非常能适应日照充沛的环境，若环境中的阳光不够充足时，常会使植株的生长不好，失去它原有的英姿。因此，到了冬天，日照条件比较差，需要特别注意龙舌兰栽培环境的日照情形，尽量提供充足的日照，如此才能有益于龙舌兰的生长，使其安全过冬。
-温度 龙舌兰具有坚硬的生命力，这当然也表示龙舌兰可以忍受比较恶劣的环境，在南方，纵然是冬天寒流来袭时，只要有充足的阳光，龙舌兰亦能适应。龙舌兰最低的生长温度为7℃左右，因此当温度过低时，宜移到室内养护，其余时间刚可在户外栽培。
-浇水 龙舌兰的生性十分强健，对于水分的要求并不苛刻，不过，在它的生长期间必须给予充分的水分，才能使其生长良好。除此之外，冬季休眠期中，龙舌兰不宜浇灌过多的水分，否则容易引起根部腐烂。
-施肥 由于龙舌兰对于环境的适应能力非常强，纵然在相当贫瘠的土壤上生长，也不会影响到植株的发育。不过，介质肥沃仍会使龙舌兰生长得更为良好。施肥的次数经每年一次为宜，切勿经常喷洒肥料，否则容易引起肥害。
-盆土及换盆 龙舌兰的生长速度十分缓慢，因此，不须经常换盆，倘若经常欣赏，不但对植株没有帮助，反而会使龙舌兰的生长势变差，龙舌兰比较适合干燥的环境，因此它的盆土宜采用排水性良好的砂质土壤。
-繁殖 在龙舌兰漫长的生命中，有时候会长出一些侧芽，您可利用这些侧芽来进行繁殖；除此之外，分株法也是一种常用于龙舌兰的繁殖方法，分株法也是一种常用于龙舌兰的繁殖方法，还有较不常用的播种法，这主要是因为龙舌兰一生只开一次花、只结一次果的缘故。
-                            <br/>二、栽培管理：
-合适的生长温度为15～25℃，在夜间10～16℃生长最好。冬季凉冷干燥对其生育最有利，越冬温度应保持在5℃以上。较喜光，要常放在外面接受阳光，但对花叶品种在夏日需适当遮荫，以保持色泽鲜嫩。冬季，如果所处位置的光线较暗，则应保持低温、不浇水，并且保持干燥，否则会腐烂。春天应立即恢复光照。空气湿度在40%左右即可。
-对土壤要求不太严格，但以疏松、肥沃、排水良好的壤土为好。盆栽时通常以腐叶土加粗沙混合，生长季节两星期施一次稀薄肥水。夏季可大量浇水，但排水应好。入秋后应少浇水，盆土以保持稍干燥为宜。
-每年4月换盆。应小心的抖去根间老土，切去死根，用疏松透水的盆栽土上盆，盆底铺一层碎瓦片。开始几个星期应少浇水，以后逐渐增加。
-<br/>三、繁殖：
-播种或分株繁殖。播种后需较长时期才能达到观赏效果，实用价值不大。分株繁殖方法常用，通常结合换盆时进行，即在4月份，把母株周围的分蘖芽分开，另行栽植，栽后的幼株放在半阴处，成活后再移至光线充足的地方。
-常用分株繁殖。于春季3～4月将根际处萌生的萌蘖苗，带根挖掘另栽。如根蘖苗没有根系，可扦插沙土中发根后再种。也可以在春季换盆或移栽时，切取带有4～6个芽的一段根株盆栽。
-<br/>四、病虫害防治：
-常发生叶斑病、炭疽病和灰霉病，可用50%退菌特可湿性粉剂1000倍液喷洒。
-有介壳虫危害，用80%敌敌畏乳油1000倍液喷杀。
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                    [应用价值]
-                        </a>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                    [病虫害防治]
-                        </a>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!--collapse end-->
+                        {% autoescape off %}
+                        {{ best_match }}
+                        {% endautoescape %}
                     </div>
                 </section>
+
+                <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                <div class="panel panel-default ">
+                    <header class="panel-heading">
+                        关系图 :
+                    </header>
+                    <div class = "panel-body ">
+                        <div id="graph" style="width: 90%;height:450px;"></div>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -209,4 +80,185 @@
     </div>
 </div>
 
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+        //{entity2,rel}
+        var entityRelation = [ {{ graph|safe }} ] ;
+
+        var data = [] ;
+        var links = [] ;
+        if(entityRelation.length != 0){
+            var node = {} ;
+            //实体１
+            node['name'] = '{{ best_match_title|safe }}';
+            //alert(document.getElementById('user_text').value)
+            node['draggable'] = true ;
+            var id = 0;
+            node['id'] = id.toString() ;
+            data.push(node) ;
+
+            //获取实体２，存储在data中，如果实体2已经存在于data中，则不push
+            var maxDisPlayNode = 15 ;
+            for( var i = 0 ;i < Math.min(maxDisPlayNode,entityRelation[0].length) ; i++ ){
+                node = {} ;
+                node['name'] = entityRelation[0][i]['entity2']['title'] ;
+                node['draggable'] = true ;
+                if('url' in entityRelation[0][i]['entity2']){
+                    node['category'] = 1 ;
+                }
+                else{
+                    node['category'] = 2 ;
+                }
+                id = i + 1
+                node['id'] = id.toString();
+                var flag = 1 ;
+                relationTarget = id.toString() ;
+                for(var j = 0 ; j<data.length ;j++){
+                    if(data[j]['name'] === node['name']){
+                        flag = 0 ;
+                        relationTarget = data[j]['id']  ;
+                        break ;
+                    }
+                }
+                relation = {}
+                relation['source'] = 0 ;
+                relation['target'] = relationTarget ;
+                relation['category'] = 0 ;
+
+                if(flag === 1){
+                    data.push(node) ;
+                    relation['value'] = entityRelation[0][i]['rel']['type'] ;
+                    relation['symbolSize'] = 10
+                    links.push(relation) ;
+                }
+                else{
+                    maxDisPlayNode += 1 ;
+                    for(var j = 0; j<links.length ;j++){
+                        if(links[j]['target'] === relationTarget){
+                            links[j]['value'] = links[j]['value']+" | "+entityRelation[0][i]['rel']['type']
+                            break ;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('graph'));
+        option = {
+            title: {
+                text: ''
+            },
+            tooltip: {},
+            animationDurationUpdate: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            label: {
+                normal: {
+                    show: true,
+                    textStyle: {
+                        fontSize: 12
+                    },
+                }
+            },
+            legend: {
+                x: "center",
+                show: false
+            },
+            series: [
+
+                {
+                    type: 'graph',
+                    layout: 'force',
+                    symbolSize: 45,
+                    focusNodeAdjacency: true,
+                    roam: true,
+                    edgeSymbol: ['none', 'arrow'],
+                    categories: [{
+                        name: '查询实体',
+                        itemStyle: {
+                            normal: {
+                                color: "#009800",
+                            }
+                        }
+                    }, {
+                        name: 'HudongItem',
+                        itemStyle: {
+                            normal: {
+                                color: "#4592FF",
+                            }
+                        }
+                    }, {
+                        name: 'NewNode',
+                        itemStyle: {
+                            normal: {
+                                color: "#C71585",
+                            }
+                        }
+                    }],
+                    label: {
+                        normal: {
+                            show: true,
+                            textStyle: {
+                                fontSize: 12,
+                            },
+                        }
+                    },
+                    force: {
+                        repulsion: 1000
+                    },
+                    edgeSymbolSize: [4, 50],
+                    edgeLabel: {
+                        normal: {
+                            show: true,
+                            textStyle: {
+                                fontSize: 10
+                            },
+                            formatter: "{c}"
+                        }
+                    },
+                    data: data,
+                    links: links,
+                    lineStyle: {
+                        normal: {
+                            opacity: 0.9,
+                            width: 1.3,
+                            curveness: 0,
+                            color:"#262626"
+                        }
+                    }
+                }
+            ]
+        };
+
+// 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+    <!--图片检索js start-->
+    <script type="text/javascript">
+        function handleSelected(){
+			/**得到FileList的第一个元素，也就是上传的图片**/
+			var e = window.event || arguments[0];
+     		let file = e.target.files[0];
+     		console.log(file);
+    		/**创建一个FileReader实例，用来读取文件**/
+     		let reader = new FileReader();
+    		/**成功读取之后将图片显示出来**/
+	    	reader.onload = function(e){
+	       		let image = document.getElementById('img_upload_show');
+	       		image.src = e.target.result;
+	       		image.onload = function (){
+	       		    document.getElementById('img_base64').value = e.target.result;
+	       			console.log(e.target.result);
+	        		console.log('图片加载出来了...')
+	       		}
+	     	};
+	     	reader.readAsDataURL(file);
+	     }
+
+    </script>
+    <!--图片检索js end-->
 {% endblock %}
+
