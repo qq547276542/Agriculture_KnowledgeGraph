@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.http import HttpResponse
 from toolkit.pre_load import neo_con
@@ -7,7 +8,7 @@ import os
 import json
 relationCountDict = {}
 filePath = os.path.abspath(os.path.join(os.getcwd(),"."))
-with open(filePath+"/toolkit/relationStaticResult.txt","r") as fr:
+with open(filePath+"/toolkit/relationStaticResult.txt","r",encoding='utf8') as fr:
 	for line in fr:
 		relationNameCount = line.split(",")
 		relationName = relationNameCount[0][2:-1]

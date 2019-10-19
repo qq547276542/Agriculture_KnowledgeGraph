@@ -9,6 +9,7 @@ class Neo4j():
 		self.graph = Graph("http://localhost:7474", username="neo4j", password="123456")
 
 	def matchItembyTitle(self,value):
+
 		sql = "MATCH (n:Item { title: '" + str(value) + "' }) return n;"
 		answer = self.graph.run(sql).data()
 		return answer
@@ -16,7 +17,10 @@ class Neo4j():
 	# 根据title值返回互动百科item
 	def matchHudongItembyTitle(self,value):
 		sql = "MATCH (n:HudongItem { title: '" + str(value) + "' }) return n;"
-		answer = self.graph.run(sql).data()
+		try:
+			answer = self.graph.run(sql).data()
+		except:
+			print(sql)
 		return answer
 
 	# 根据entity的名称返回关系
