@@ -25,9 +25,9 @@
 >
 >| Title               | Name | Homepage                                 |
 >| ------------------- | ---- | ---------------------------------------- |
->| Associate Professor | 高　明  | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>[http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
->| Master              | 陈远哲  | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Master              | 匡　俊  | [https://github.com/CrisJk](https://github.com/CrisJk) |
+>| Associate Professor | Ming Gao  | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>[http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
+>| Master              | Yuanzhe Chen  | [https://github.com/qq547276542](https://github.com/qq547276542) |
+>| Master              | Jung kuang  | [https://github.com/CrisJk](https://github.com/CrisJk) |
 
 
 
