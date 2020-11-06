@@ -2,7 +2,7 @@
 
 由于工作原因，该项目已停止维护。因此项目代码仅供参考，项目中包含的数据可免费用于学术等非商业用途。
 > 相关工作请引用paper: 
-> AgriKG: An Agricultural Knowledge Graph and Its Applications[C]. DASFAA (3) 2019: 533-537
+> - AgriKG: An Agricultural Knowledge Graph and Its Applications[C]. DASFAA (3) 2019: 533-537
 
 ## 项目介绍：
 
