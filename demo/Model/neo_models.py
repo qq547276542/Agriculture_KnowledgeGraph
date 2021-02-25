@@ -81,8 +81,8 @@ class Neo4j():
 		if(answer is not None):
 			for x in answer:
 				tmp = {}
-				start_node = x.start_node
-				end_node = x.end_node
+				start_node = x.start_node()
+				end_node = x.end_node()
 				tmp['n1'] = start_node
 				tmp['n2'] = end_node
 				tmp['rel'] = x
