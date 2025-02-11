@@ -29,7 +29,7 @@
 >| ------------------- | ---- | ---------------------------------------- |
 >| Professor | Ming Gao  | [http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy](http://faculty.ecnu.edu.cn/s/2844/t/30305/main.jspy)<br>[http://dase.ecnu.edu.cn/mgao](http://dase.ecnu.edu.cn/mgao) |
 >| Master              | Yuanzhe Chen  | [https://github.com/qq547276542](https://github.com/qq547276542) |
->| Master              | Jun Kuang  | [https://github.com/CrisJk](https://github.com/JunKuang-algo)](https://github.com/JunKuang-algo) |
+>| Master              | Jun Kuang  | [https://github.com/JunKuang-algo](https://github.com/JunKuang-algo) |
 
 
 
