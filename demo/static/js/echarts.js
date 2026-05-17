@@ -72630,7 +72630,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	    function trim(str) {
-	        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+	        return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
 	    }
 	    /**
 	     * If a block is tsv format
